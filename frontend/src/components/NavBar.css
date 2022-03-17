@@ -1,0 +1,15 @@
+
+.navbarContainer {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #691BC0;
+}
+
+.navButton {
+    background-color: #8234DA;
+    font-size: 1rem;
+}
+
