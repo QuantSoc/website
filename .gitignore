@@ -1,3 +1,9 @@
+# Ignore config files for local workspaces
+**/.DS_STORE
+**/.vscode
+**/.vscode/
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
