@@ -2,7 +2,8 @@ import React from "react";
 
 import "./NavBar.css";
 import NavButton from "./NavButton";
-import Logo from './Logo'
+import NavLogo from "./NavLogo.js"
+
 
 const NavBar = () => {
   const navlinks = [
@@ -35,9 +36,7 @@ const NavBar = () => {
 
   return (
     <div className="navbarContainer">
-      <div>
-        <Logo />
-      </div>
+      <NavLogo/>
       {navlinks.map(({ text, dest, key }) => (
         <>
           <NavButton key={key.toString()} text={text} dest={dest} />
@@ -48,3 +47,4 @@ const NavBar = () => {
 };
 
 export default NavBar;
+

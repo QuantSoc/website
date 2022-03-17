@@ -1,10 +1,11 @@
 import React from 'react'
+import './NavBar.css'
 
 const NavButton = (props) => {
   console.log(props.text, props.dest);
   return (
     <a href={props.dest} className="navButton">
-          {props.text}
+          {props.text.toUpperCase()}
     </a>
   )
 }
