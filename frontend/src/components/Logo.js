@@ -1,8 +1,9 @@
 import React from 'react'
+import logo from '../assets/logo.png'
 
 const Logo = () => {
   return (
-    <img src="../assets/logo.png" alt="quantsoc logo"/>
+    <img src={logo} alt="quantsoc logo" height="10px"/>
   )
 }
 
