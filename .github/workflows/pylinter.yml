@@ -20,9 +20,9 @@ on:
     # [un]-comment the following line to toggle for push to master
     # branches-ignore: [master, main]
 
-  This will only work when this workflow is on default branch
-  TODO: Uncomment when merging
-  pull_requests:
+  # This will only work when this workflow is on default branch
+  # TODO: Uncomment when merging
+  pull_request:
     branches: [dev, master, main]
 
 jobs:
