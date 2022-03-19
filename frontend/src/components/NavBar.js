@@ -23,7 +23,7 @@ const NavBar = () => {
       key: 3
     },
     {
-      text: "resources",
+      text: "sponsors",
       dest: "",
       key: 4
     },
