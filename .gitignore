@@ -4,6 +4,8 @@
 .vscode
 .vscode/
 
+# JSDoc
+.idea
 
 #
 # JS
