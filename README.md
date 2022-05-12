@@ -1,5 +1,5 @@
 <p align="center">
-   <img src="https://github.com/QuantSoc/website/tree/main/src/assets/logo_circle.png" width="70" height="70" align="center">
+   <img src="https://github.com/QuantSoc/website/blob/main/src/assets/logo_circle.png" width="70" height="70" align="center">
    <img width="70">
    <img src="https://www.unsw.edu.au/sites/all/themes/mobileunswcorporate/logo.png" width="165" height="70" align="center">
 </p>
