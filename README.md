@@ -6,9 +6,10 @@
 
 <h1 align="center"> Frontend of QuantSoc Website</h1>
 
-<!-- deployment badge here -->
+[![Production test](https://github.com/QuantSoc/website/actions/workflows/production_check.yml/badge.svg)](https://github.com/QuantSoc/website/actions/workflows/production_check.yml)
 
 This repo contains the source code for the frontend of the main website of the 📈UNSW Quantitative Finance and Trading Society (Quantsoc), powered by [ReactJs](https://reactjs.org/).
+
 
 <!-- ## Major packages (add this later perhaps) --> 
 
