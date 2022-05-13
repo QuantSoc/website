@@ -3,5 +3,5 @@ import NavBar from 'components/common/NavbarComp/NavBar';
 
 test('NavBar placeholder', () => {
   render(<NavBar />);
-  expect(true).toBeTruthy();
+  expect(false).toBeFalsy();
 });
