@@ -1,6 +1,6 @@
 import './NavBar.less';
 
-function Navbar() {
+const NavBar = () =>  {
   // const navlinks = [
 	//    {
 	//      text: 'about us',
@@ -41,4 +41,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default NavBar;
