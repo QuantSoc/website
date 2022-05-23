@@ -1,9 +1,8 @@
 import NavBar from 'components/common/NavbarComp/NavBar';
 import Body from 'components/common/Body';
 
-import './App.css';
-import './global.css';
-import './assets/logo.png';
+import './App.less';
+import './global.less';
 
 function App() {
   return (
@@ -15,3 +14,4 @@ function App() {
 }
 
 export default App;
+
