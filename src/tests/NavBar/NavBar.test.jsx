@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react';
-import NavBar from 'components/common/NavBar';
+import NavBar from '/src/components/common/NavBar';
 
 test('NavBar placeholder', () => {
   render(<NavBar />);
