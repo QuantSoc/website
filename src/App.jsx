@@ -7,13 +7,14 @@ import {
 } from 'react-router-dom';
 
 import NavBar from './components/common/NavBar';
+import LandingPage from './pages/LandingPage';
 
 function App() {
   return (
     <BrowserRouter>
       <NavBar />
       <Routes>
-        <Route path="/" element={<div>HOME</div>} />
+        <Route path="/" element={<LandingPage />} />
         <Route path="/about" element={<RedirectUnimplementedHome />} />
         <Route path="/events" element={<RedirectUnimplementedHome />} />
         <Route path="/resources" element={<RedirectUnimplementedHome />} />
