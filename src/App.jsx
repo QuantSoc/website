@@ -1,15 +1,17 @@
 import './App.scss';
 import './global.scss';
-
 import {
   BrowserRouter,
   Routes,
   Route,
 } from 'react-router-dom';
 
+import NavBar from './components/common/NavBar';
+
 function App() {
   return (
     <BrowserRouter>
+      <NavBar />
       <Routes>
         <Route path="/" element={<div>HOME</div>} />
         <Route path="/about" element={<RedirectUnimplementedHome />} />
