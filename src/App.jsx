@@ -11,13 +11,27 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route ddath="/" element={<h1>Home</h1>} />
-        <Route path="/about" element={<h1>About</h1>} />
-        <Route path="/events" element={<h1>events</h1>} />
-        <Route path="/resources" element={<h1>resources</h1>} />
-        <Route path="/contact" element={<h1>contact</h1>} />
+        <Route path="/" element={<div>HOME</div>} />
+        <Route path="/about" element={<RedirectUnimplementedHome />} />
+        <Route path="/events" element={<RedirectUnimplementedHome />} />
+        <Route path="/resources" element={<RedirectUnimplementedHome />} />
+        <Route path="/contact" element={<RedirectUnimplementedHome />} />
+        <Route path="*" element={<RedirectUnimplementedHome />} />
       </Routes>
     </BrowserRouter>
+  );
+}
+
+function RedirectUnimplementedHome() {
+  return (
+    <div className="redirect-unimplemented-home">
+      <h1>
+        This page is not yet implemented.
+      </h1>
+      <a href="/">
+        Go back to the home page.
+      </a>
+    </div>
   );
 }
 

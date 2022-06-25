@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -27,6 +28,14 @@
 .App-link {
   color: #61dafb;
 }
+
+.redirect-unimplemented-home {
+  display: flex;
+  margin: none;
+  width: 100vh;
+  flex-direction: column;
+}
+
 
 @keyframes App-logo-spin {
   from {
