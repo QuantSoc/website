@@ -1,5 +1,5 @@
-import './App.less';
-import './global.less';
+import './App.scss';
+import './global.scss';
 
 function App() {
   return (

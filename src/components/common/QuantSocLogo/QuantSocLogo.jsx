@@ -1,5 +1,5 @@
 import logo from 'assets/logo.png';
-import "./index.less";
+import "./index.scss";
 
 const QuantSocLogo = () => {
   return (
