@@ -1,12 +1,12 @@
 import './index.scss';
 
 // Wrapper around antd nav
-function NavBar() {
+const NavBar = () => {
   return (
     <div className="navbar-cont">
-      Navbar
+      Nabbar
     </div>
   );
-}
+};
 
 export default NavBar;

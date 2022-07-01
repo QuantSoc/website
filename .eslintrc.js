@@ -21,11 +21,14 @@ module.exports = {
   ],
   rules: {
     'no-unused-vars': 'warn',
-    'react/jsx-uses-react': 'off',
+    'react/jsx-uses-react': 'error',
     'react/react-in-jsx-scope': 'off',
     'react/prop-types': 'off',
     'import/no-absolute-path': 'off',
     'no-self-compare': 'warn',
+    'arrow-body-style': ['error', 'always'],
+    'react/function-component-definition': ['error', { namedComponents: 'arrow-function', unnamedComponents: 'arrow-function' }],
+    'quotes': ['error', 'single', { 'avoidEscape': true }],
   },
   settings: {
     'import/resolver': {

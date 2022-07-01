@@ -1,4 +1,3 @@
-import QuantSocLogo from "./QuantSocLogo.jsx";
+import QuantSocLogo from './QuantSocLogo';
 
 export default QuantSocLogo;
-
