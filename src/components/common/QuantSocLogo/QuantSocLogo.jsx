@@ -1,9 +1,12 @@
-import logo from 'assets/logo.png';
+import square from 'assets/logo_square.png';
+import circle from 'assets/logo_circle.png';
 import './index.scss';
 
-const QuantSocLogo = () => {
+const QuantSocLogo = ({ type, style }) => {
   return (
-    <img className="logo" src={logo} alt="quantsoc logo" />
+    <div className="quantsoc-logo" style={style}>
+      <img src={(type === 'circle') ? circle : square} alt="quantsoc logo" />
+    </div>
   );
 };
 

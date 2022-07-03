@@ -1,1 +1,29 @@
+// TODO: download this instead
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap');
 
+.navbar {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #691BC0;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  >.badge {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5ch;
+
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.5ch;
+    font-weight: 300;
+  }
+
+  >.links {
+    flex-grow: 1;
+  }
+}
