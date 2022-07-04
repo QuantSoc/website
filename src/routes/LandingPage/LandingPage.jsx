@@ -1,6 +1,6 @@
 import './index.scss';
 
-function LandingPage() {
+const LandingPage = () => {
   return (
     <div className="landing-page">
       <section>1. Main Introduction</section>
@@ -12,6 +12,6 @@ function LandingPage() {
       <section>7. Sponsors</section>
     </div>
   );
-}
+};
 
 export default LandingPage;
