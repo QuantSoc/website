@@ -24,6 +24,7 @@
   .glb-foot-content-cont {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 
     .glb-foot-content {
       display: flex;
@@ -72,4 +73,13 @@
   font-weight: 300;
 }
 
+// TODO: Media query to make it collapse to columsn
+// for small width
+@media (max-width: 650px) {
+  .glb-foot {
+    .glb-foot-content-cont {
+      flex-direction: column;
+    }
+  }
+}
 
