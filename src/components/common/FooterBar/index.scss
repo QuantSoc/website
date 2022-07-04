@@ -9,6 +9,25 @@
 
 .glb-foot-section {
   border: solid lightblue 1px;
+  align-items: flex-start;
+  padding: 1em;
+}
+
+.glb-foot-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  // border: solid green 1px;
+}
+
+.glb-foot-content > li {
+  padding: 0.4em;
+  padding-left: 0px;
+  list-style-type: none;
+}
+
+.glb-foot-head {
+  display: flex;
 }
 
 

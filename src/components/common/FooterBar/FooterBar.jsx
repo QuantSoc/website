@@ -33,7 +33,7 @@ const FooterColumn = ({ title, children }) => {
   return (
     <div className="glb-foot-section">
       <div className="glb-foot-head">
-        <Title level={5}>{ title }</Title>
+        <Title strong level={5}>{ title }</Title>
       </div>
       <div className="glb-foot-content">
         { children }
