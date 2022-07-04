@@ -33,7 +33,7 @@ const FooterBar = () => {
       </div>
        {/* TODO: Add actualy C character */}
       <HorizontalEOLBAR>
-        (c) 2022 QuantSoc UNSW
+        <span className="copyright-text">(c) 2022 QuantSoc UNSW</span>
       </HorizontalEOLBAR>
     </footer>
   );

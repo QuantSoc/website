@@ -1,39 +1,61 @@
 // TODO: Rewrite with nesting
 
+// Purple dark #691BC0
+// Mid Purple #8A42EF
+// Lightest Purple #EDE4FD
+
 .glb-foot {
   display: flex;
   flex-direction: column;
-  border: solid black 1px;
   justify-content: space-between;
   padding: 3.5em;
-}
-
+  background-color: #691BC0;
   // flex-wrap: row;
-.glb-foot-section {
-  border: solid lightblue 1px;
-  align-items: flex-start;
-  padding: 1em;
-}
 
-.glb-foot-content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  // border: solid green 1px;
-}
+  .glb-foot-section {
+    // border: solid lightblue 1px;
+    align-items: flex-start;
+    padding: 1em;
+    .glb-foot-head {
+      display: flex;
+    }
+  }
 
-.glb-foot-content > li {
-  padding: 0.4em;
-  padding-left: 0px;
-  list-style-type: none;
-}
+  .glb-foot-content-cont {
+    display: flex;
+    flex-direction: row;
 
-.glb-foot-head {
-  display: flex;
-}
+    .glb-foot-content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      color: white;
+      // border: solid green 1px;
+      > li {
+        padding: 0.4em;
+        padding-left: 0px;
+        list-style-type: none;
+      }
+    }
+  }
 
-* {
-  // background-color: grey;
+  .horizontal-eol-bar-cont {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    > .horizontal-eol-bar {
+      // border-radius: 10px 0px 0px 10px;
+      margin-left: 25px;
+      height: 5px;
+      // width: 100%;
+      flex-grow: 1;
+      background-color: white;
+    }
+    .copyright-text {
+      color: white;
+    }
+  }
+
 }
 
 .badge {
@@ -43,10 +65,11 @@
   gap: 0.5ch;
 
   // Change back to white
-  color: black;
+  color: white;
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   letter-spacing: 0.4ch;
   font-weight: 300;
 }
+
 
