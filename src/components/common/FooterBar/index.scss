@@ -1,12 +1,14 @@
+// TODO: Rewrite with nesting
 
 .glb-foot {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   border: solid black 1px;
-  justify-content: space-evenly;
-  padding-top: 1em;
+  justify-content: space-between;
+  padding: 3.5em;
 }
 
+  // flex-wrap: row;
 .glb-foot-section {
   border: solid lightblue 1px;
   align-items: flex-start;
@@ -30,4 +32,21 @@
   display: flex;
 }
 
+* {
+  // background-color: grey;
+}
+
+.badge {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5ch;
+
+  // Change back to white
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.4ch;
+  font-weight: 300;
+}
 
