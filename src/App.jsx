@@ -9,6 +9,7 @@ import {
 import NotFoundPage from 'routes/NotFound';
 import LandingPage from 'routes/LandingPage';
 import NavBar from 'components/common/NavBar';
+import FooterBar from 'components/common/FooterBar';
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
           <Route path="/sponsors" element={<NotFoundPage />} />
           <Route path="/contact" element={<NotFoundPage />} />
         </Routes>
+        <FooterBar />
       </BrowserRouter>
     </div>
   );
