@@ -14,8 +14,8 @@ import FooterBar from 'components/common/FooterBar';
 const App = () => {
   return (
     <div className="App">
-      <BrowserRouter>
-        <NavBar />
+      <NavBar />
+      <BrowserRouter className="app-page">
         <Routes>
           <Route path="*" element={<NotFoundPage />} />
           <Route path="/" element={<LandingPage />} />
@@ -25,8 +25,8 @@ const App = () => {
           <Route path="/sponsors" element={<NotFoundPage />} />
           <Route path="/contact" element={<NotFoundPage />} />
         </Routes>
-        <FooterBar />
       </BrowserRouter>
+      <FooterBar />
     </div>
   );
 };

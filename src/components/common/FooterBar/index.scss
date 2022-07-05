@@ -1,15 +1,11 @@
-// TODO: Rewrite with nesting
-
-// Purple dark #691BC0
-// Mid Purple #8A42EF
-// Lightest Purple #EDE4FD
+@import "global.scss";
 
 .glb-foot {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 3.5em;
-  background-color: #691BC0;
+  background-color: $darkest-purple;
   // flex-wrap: row;
 
   .glb-foot-section {
@@ -18,6 +14,11 @@
     padding: 1em;
     .glb-foot-head {
       display: flex;
+
+      .glb-foot-head-h5 {
+        font-size: 1rem;
+        color: white;    
+      }
     }
   }
 
@@ -26,6 +27,7 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: 1.5em;
 
     .glb-foot-content {
       display: flex;
@@ -34,7 +36,8 @@
       color: white;
       width: 200px;
       // border: solid green 1px;
-      > li {
+      > a.footer-link > li {
+        color: white;
         padding: 0.4em;
         padding-left: 0px;
         list-style-type: none;
@@ -61,6 +64,7 @@
 
 }
 
+// Should really be in its own element or something
 .badge {
   display: flex;
   flex-direction: row;
@@ -85,4 +89,3 @@
     }
   }
 }
-
