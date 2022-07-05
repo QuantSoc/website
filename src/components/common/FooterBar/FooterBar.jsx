@@ -21,7 +21,7 @@ const FooterBar = () => {
         <FooterColumn title="Links">
           <li>Home</li>
           <li>Resources</li>
-          <li>About Our Sponsors</li>
+  <li>About Our Sponsors</li>
           <li>Github</li>
         </FooterColumn>
         <FooterColumn title="Our Social Media">

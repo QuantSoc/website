@@ -25,12 +25,14 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     .glb-foot-content {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       color: white;
+      width: 200px;
       // border: solid green 1px;
       > li {
         padding: 0.4em;
@@ -75,10 +77,11 @@
 
 // TODO: Media query to make it collapse to columsn
 // for small width
-@media (max-width: 650px) {
+@media (max-width: 560px) {
   .glb-foot {
     .glb-foot-content-cont {
       flex-direction: column;
+      align-items: center;
     }
   }
 }
