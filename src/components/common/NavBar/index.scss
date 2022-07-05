@@ -27,16 +27,3 @@
     flex-grow: 1;
   }
 }
-
-.horizontal-eol-bar-cont {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  > .horizontal-eol-bar {
-    border-radius: 10px 0px 0px 10px;
-    margin-left: 25px;
-    height: 10px;
-    width: 100%;
-    background-color: black;
-  }
-}

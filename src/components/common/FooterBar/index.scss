@@ -1,49 +1,82 @@
-// TODO: Rewrite with nesting
+@import "global.scss";
 
 .glb-foot {
   display: flex;
   flex-direction: column;
-  border: solid black 1px;
   justify-content: space-between;
   padding: 3.5em;
+  background-color: $darkest-purple;
+
+  .glb-foot-section {
+    align-items: flex-start;
+    padding: 1em;
+    .glb-foot-head {
+      display: flex;
+
+      .glb-foot-head-h5 {
+        font-size: 1rem;
+        color: white;    
+      }
+    }
+  }
+
+  .glb-foot-content-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 1.5em;
+
+    .glb-foot-content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      color: white;
+      width: 200px;
+      > a.footer-link > li {
+        color: white;
+        padding: 0.4em;
+        padding-left: 0px;
+        list-style-type: none;
+      }
+    }
+  }
+
+  .horizontal-eol-bar-cont {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    > .horizontal-eol-bar {
+      margin-left: 25px;
+      height: 5px;
+      flex-grow: 1;
+      background-color: white;
+    }
+    .copyright-text {
+      color: white;
+    }
+  }
+
 }
 
-  // flex-wrap: row;
-.glb-foot-section {
-  border: solid lightblue 1px;
-  align-items: flex-start;
-  padding: 1em;
+@media (max-width: 560px) {
+  .glb-foot {
+    .glb-foot-content-cont {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
 }
 
-.glb-foot-content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  // border: solid green 1px;
-}
 
-.glb-foot-content > li {
-  padding: 0.4em;
-  padding-left: 0px;
-  list-style-type: none;
-}
-
-.glb-foot-head {
-  display: flex;
-}
-
-* {
-  // background-color: grey;
-}
-
+// Should really be in its own element or something
 .badge {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 0.5ch;
 
-  // Change back to white
-  color: black;
+  color: white;
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   letter-spacing: 0.4ch;
