@@ -6,10 +6,8 @@
   justify-content: space-between;
   padding: 3.5em;
   background-color: $darkest-purple;
-  // flex-wrap: row;
 
   .glb-foot-section {
-    // border: solid lightblue 1px;
     align-items: flex-start;
     padding: 1em;
     .glb-foot-head {
@@ -35,7 +33,6 @@
       align-items: flex-start;
       color: white;
       width: 200px;
-      // border: solid green 1px;
       > a.footer-link > li {
         color: white;
         padding: 0.4em;
@@ -50,10 +47,8 @@
     flex-direction: row;
     align-items: center;
     > .horizontal-eol-bar {
-      // border-radius: 10px 0px 0px 10px;
       margin-left: 25px;
       height: 5px;
-      // width: 100%;
       flex-grow: 1;
       background-color: white;
     }
@@ -64,23 +59,6 @@
 
 }
 
-// Should really be in its own element or something
-.badge {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 0.5ch;
-
-  // Change back to white
-  color: white;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1rem;
-  letter-spacing: 0.4ch;
-  font-weight: 300;
-}
-
-// TODO: Media query to make it collapse to columsn
-// for small width
 @media (max-width: 560px) {
   .glb-foot {
     .glb-foot-content-cont {
@@ -89,3 +67,19 @@
     }
   }
 }
+
+
+// Should really be in its own element or something
+.badge {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5ch;
+
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.4ch;
+  font-weight: 300;
+}
+
