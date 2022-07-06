@@ -1,5 +1,5 @@
 import './index.scss';
-import ResourceSection from '../ResourcesSection';
+import ResourceSection from '../ResourceSection';
 
 const LandingPage = () => {
   return (
