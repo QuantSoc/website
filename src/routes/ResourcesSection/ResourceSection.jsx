@@ -1,11 +1,14 @@
 import React from 'react';
 import './index.scss';
 import ResourcesLayout from './ResourcesLayout/ResourcesLayout';
+import ResourcesHeader from './ResourcesHeader/ResourcesHeader';
+import ResourcesDivider from './ResourcesDivider/ResourcesDivider';
 
 const ResourceSection = () => {
   return (
     <div className="ResourceSection">
-      <hr />
+      <ResourcesHeader />
+      <ResourcesDivider />
       <ResourcesLayout />
     </div>
   );
