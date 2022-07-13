@@ -1,0 +1,45 @@
+.SplashSection {
+    height: 772px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+};
+
+.SplashBlurb {
+    font-size: 1rem;
+    color: rgba(25, 4, 49, 1);
+    max-width: 35%;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    text-align: left;
+}
+
+.SplashButton {
+    color: white;
+    background-color: rgba(130, 52, 218, 1);
+    font-size: 1rem;
+    display: inline-block;
+    padding: 10px;
+    width: 15%;
+    margin-left: 300px;
+}
+
+.SplashHeader {
+    font-size: 2rem;
+    text-align: left;
+    font-weight: bold;
+    color: rgba(64, 21, 112, 1);
+    margin-bottom: 100px;
+    margin-left: 100px;
+    text-align: left;
+}
+
+.icon {
+    height: 100%;
+}
+
+.SplashLayout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }

@@ -1,5 +1,7 @@
+/* eslint-disable */
+
 import React from 'react';
-import './SplashIcon.scss';
+import '../index.scss'
 import QuantSocLogo from 'assets/crop_logo_circle.png';
 
 const SplashIcon = () => {

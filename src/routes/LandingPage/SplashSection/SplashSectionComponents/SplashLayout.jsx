@@ -1,11 +1,11 @@
 /* eslint-disable */
 
 import React from "react";
-import './SplashLayout.scss'
+import '../index.scss';
 
-import SplashHeader from "../SplashHeader/SplashHeader";
-import SplashBlurb from "../SplashBlurb/SplashBlurb";
-import SplashButton from "../SplashButton/SplashButton";
+import SplashHeader from "./SplashHeader";
+import SplashBlurb from "./SplashBlurb";
+import SplashButton from "./SplashButton";
 
 const SplashLayout = () => {
   return (

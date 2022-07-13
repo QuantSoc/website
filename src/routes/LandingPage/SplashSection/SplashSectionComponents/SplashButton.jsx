@@ -1,7 +1,7 @@
 /* eslint-disable */
 
 import React from "react";
-import './SplashButton.scss'
+import '../index.scss'
 
 const SplashButton = () => {
   return (

@@ -1,7 +1,7 @@
 /* eslint-disable */
 
 import React from "react";
-import './SplashSection.scss';
+import 'index.scss';
 
 import {
   SplashIcon, SplashHeader, SplashBlurb, SplashLayout

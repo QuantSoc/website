@@ -1,7 +1,7 @@
 /* eslint-disable */
 
 import React from "react";
-import './SplashBlurb.scss'
+import '../index.scss'
 
 const SplashBlurb = () => {
   return (

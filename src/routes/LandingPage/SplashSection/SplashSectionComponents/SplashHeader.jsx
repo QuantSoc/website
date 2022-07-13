@@ -1,7 +1,7 @@
 /* eslint-disable */
 
 import React from "react";
-import './SplashHeader.scss';
+import '../index.scss'
 
 const SplashHeader = () => {
   return (

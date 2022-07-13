@@ -1,7 +1,7 @@
 /* eslint-disable */
 
-import SplashIcon from "./SplashIcon/SplashIcon";
-import SplashLayout from "./SplashLayout/SplashLayout";
+import SplashIcon from "./SplashIcon";
+import SplashLayout from "./SplashLayout";
 
 export {
   SplashIcon, SplashLayout
