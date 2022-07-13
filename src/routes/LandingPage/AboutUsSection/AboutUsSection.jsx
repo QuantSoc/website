@@ -1,7 +1,6 @@
 import React from 'react';
 
 import { Typography } from 'antd';
-import AboutUsImg from './AboutUsImg.svg';
 
 const AboutUsSection = () => {
   const { Title } = Typography;
@@ -19,9 +18,9 @@ const AboutUsSection = () => {
           <div className="about-us-text-cont">
             <p className="about-us-text">{aboutUsText}</p>
           </div>
-          <div className="about-us-img">
-            <AboutUsImg />
-          </div>
+          {/* <div className="about-us-img"> */}
+          {/*   <AboutUsImg /> */}
+          {/* </div> */}
         </div>
       </div>
     </section>
