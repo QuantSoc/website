@@ -1,11 +1,11 @@
-.SplashSection {
+.splash-section {
     height: 772px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 };
 
-.SplashBlurb {
+.splash-blurb {
     font-size: 1rem;
     color: rgba(25, 4, 49, 1);
     max-width: 35%;
@@ -14,7 +14,7 @@
     text-align: left;
 }
 
-.SplashButton {
+.splash-button {
     color: white;
     background-color: rgba(130, 52, 218, 1);
     font-size: 1rem;
@@ -22,9 +22,10 @@
     padding: 10px;
     width: 15%;
     margin-left: 300px;
+    border: none;
 }
 
-.SplashHeader {
+.splash-header {
     font-size: 2rem;
     text-align: left;
     font-weight: bold;
@@ -38,7 +39,7 @@
     height: 100%;
 }
 
-.SplashLayout {
+.splash-layout {
     display: flex;
     flex-direction: column;
     justify-content: center;

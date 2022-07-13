@@ -1,11 +1,9 @@
-/* eslint-disable */
-
-import React from "react";
-import '../index.scss'
+import React from 'react';
+import '../index.scss';
 
 const SplashHeader = () => {
   return (
-    <div className="SplashHeader">
+    <div className="splash-header">
       UNSW QUANTSOC
     </div>
   );

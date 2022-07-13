@@ -9,7 +9,7 @@ import {
 
 const SplashSection = () => {
   return (
-    <div className="SplashSection">
+    <div className="splash-section">
       <SplashIcon />
       <SplashLayout />
     </div>

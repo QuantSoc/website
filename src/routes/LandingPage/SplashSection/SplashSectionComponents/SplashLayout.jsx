@@ -9,7 +9,7 @@ import SplashButton from "./SplashButton";
 
 const SplashLayout = () => {
   return (
-    <div className="SplashLayout">
+    <div className="splash-layout">
       <SplashHeader />
       <SplashBlurb />
       <SplashButton />
