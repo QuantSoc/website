@@ -1,5 +1,4 @@
 import React from 'react';
-import styles from './ResourcesDivider.module.scss';
 
 const ResourcesDivider = () => {
   return (

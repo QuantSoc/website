@@ -1,8 +1,6 @@
 import React from 'react';
 import './index.scss';
-import ResourcesLayout from './ResourcesLayout/ResourcesLayout';
-import ResourcesHeader from './ResourcesHeader/ResourcesHeader';
-import ResourcesDivider from './ResourcesDivider/ResourcesDivider';
+import {ResourcesDivider, ResourcesHeader, ResourcesLayout} from './components';
 
 const ResourceSection = () => {
   return (

@@ -1,7 +1,6 @@
 import React from 'react';
 import image from 'assets/comingsoon.png';
-import ResourceButton from '../ResourceButton/ResourceButton';
-import styles from './ResourceBlock.module.scss';
+import ResourceButton from './ResourceButton';
 
 const ResourceBlock = ({ name }) => {
   return (

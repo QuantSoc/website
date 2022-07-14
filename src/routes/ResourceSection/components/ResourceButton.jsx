@@ -1,6 +1,5 @@
 import React from 'react';
 import { RightOutlined } from '@ant-design/icons';
-import styles from './ResourceButton.module.scss';
 
 const ResourceButton = ({ name }) => {
   return (

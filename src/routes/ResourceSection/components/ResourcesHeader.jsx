@@ -1,8 +1,7 @@
 import React from 'react';
-import ResourcesBlurb from '../ResourcesBlurb/ResourcesBlurb';
-import ResourceButton from '../ResourceButton/ResourceButton';
-import PageTitle from '../PageTitle/PageTitle';
-import styles from './ResourcesHeader.module.scss';
+import ResourcesBlurb from './ResourcesBlurb';
+import ResourceButton from './ResourceButton';
+import PageTitle from './PageTitle';
 
 const ResourcesHeader = () => {
   return (

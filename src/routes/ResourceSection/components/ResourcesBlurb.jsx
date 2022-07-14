@@ -1,5 +1,4 @@
 import React from 'react';
-import styles from './ResourcesBlurb.module.scss';
 
 const ResourcesBlurb = () => {
   return (

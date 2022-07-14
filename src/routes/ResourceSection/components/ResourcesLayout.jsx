@@ -1,6 +1,5 @@
 import React from 'react';
-import ResourceBlock from '../ResourceBlock/ResourceBlock';
-import styles from './ResourcesLayout.module.scss';
+import ResourceBlock from './ResourceBlock';
 
 const ResourcesLayout = () => {
   return (
