@@ -3,7 +3,7 @@ import ResourceBlock from './ResourceBlock';
 
 const ResourcesLayout = () => {
   return (
-    <div className={styles.ResourcesLayout}>
+    <div className="ResourcesLayout">
       <ResourceBlock name="WORKSHOPS" />
       <ResourceBlock name="ARTICLES" />
       <ResourceBlock name="BLOGS" />

@@ -5,7 +5,7 @@ import PageTitle from './PageTitle';
 
 const ResourcesHeader = () => {
   return (
-    <div className={styles.ResourcesHeader}>
+    <div className="ResourcesHeader">
       <PageTitle />
       <ResourcesBlurb />
       <ResourceButton name="SEE MORE ..." />
