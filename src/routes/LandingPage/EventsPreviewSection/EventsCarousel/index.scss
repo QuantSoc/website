@@ -1,0 +1,35 @@
+.container-carousel {
+    outline-style: solid;
+    justify-content: center;
+    aspect-ratio: 2.77;
+}
+
+.carousel-content {
+    padding-top: 10.7%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.event-description {
+    width: 75%;
+    aspect-ratio: 1.43;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.event-divider {
+    width: '71.8%';
+    height: '100%';
+    margin-top: '10px';
+    margin-bottom: '15px';
+}
+
+@media screen {
+    .container-carousel {
+        padding-left: 7.77vw;
+        padding-right: 7.77vw;
+    }
+}

@@ -1,5 +1,6 @@
 import './index.scss';
 import ResourceSection from '../ResourceSection';
+import EventsPreview from './EventsPreviewSection';
 
 const LandingPage = () => {
   return (
@@ -8,7 +9,7 @@ const LandingPage = () => {
       <section>2. About Us</section>
       <section>3. Learn Connect Network</section>
       <section>4. Events - Lorem Ipsum</section>
-      <section>5. Be Part of or next event</section>
+      <section><EventsPreview /></section>
       <section><ResourceSection /></section>
       <section>7. Sponsors</section>
     </div>
