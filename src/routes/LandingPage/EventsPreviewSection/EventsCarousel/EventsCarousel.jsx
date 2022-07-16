@@ -1,4 +1,4 @@
-import React from 'react';
+import { React, useState } from 'react';
 import './index.scss';
 
 import { Carousel, Layout } from 'antd';
@@ -7,6 +7,8 @@ import EventContent from './EventContent';
 const { Sider, Content } = Layout;
 
 const EventsCarousel = () => {
+  const [EventNum, setEventNum] = useState(0);
+
   const ContentStyle = {
     color: '#fff',
     lineHeight: '100px',
@@ -16,21 +18,28 @@ const EventsCarousel = () => {
     aspectRatio: '1.63',
   };
 
-  const CarouselContent = {
+  const CarouselSider = {
     background: '#EAE0FA',
     outlineStyle: 'solid',
+    AspectRatio: '1.487',
   };
 
   const LayoutStyle = {
     AspectRatio: '2.3',
   };
 
+  const DummyData = [
+    {
+      description: '',
+    },
+  ];
+
   return (
     <div className="container-carousel">
       <Layout style={LayoutStyle}>
-        <Content>
+        <Content style={ContentStyle}>
           <div className="carousel-events">
-            <Carousel autoplay dots={false}>
+            <Carousel autoplay autoplaySpeed={7000}>
               <div>
                 <h3 style={ContentStyle}>Image 1</h3>
               </div>
@@ -46,7 +55,7 @@ const EventsCarousel = () => {
             </Carousel>
           </div>
         </Content>
-        <Sider style={CarouselContent} width="30%">
+        <Sider style={CarouselSider} width="30%">
           <EventContent />
         </Sider>
       </Layout>

@@ -1,3 +1,7 @@
+.carousel-events {
+    aspect-ratio: 1.63;
+}
+
 .container-carousel {
     outline-style: solid;
     justify-content: center;
@@ -5,19 +9,23 @@
 }
 
 .carousel-content {
+    height: 100%;
     padding-top: 10.7%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    // aspect-ratio: 1.63;
+    padding-bottom: 10.7%;
 }
 
 .event-description {
+    height: 100%;
     width: 75%;
-    aspect-ratio: 1.43;
-    text-align: center;
-    justify-content: center;
-    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    // aspect-ratio: 1.43;
+    justify-content: left;
 }
 
 .event-divider {
@@ -25,6 +33,20 @@
     height: '100%';
     margin-top: '10px';
     margin-bottom: '15px';
+}
+
+.divider {
+    background-color: #8234DA;
+    height: 5px;
+    margin-top: 18px;
+    margin-bottom: 15px;
+}
+
+.events-info {
+    font-size: 1.7em;
+    text-align: left;
+    margin-top: auto;
+
 }
 
 @media screen {
