@@ -1,64 +1,44 @@
-import { React, useState } from 'react';
+import { React } from 'react';
 import './index.scss';
 
-import { Carousel, Layout } from 'antd';
-import EventContent from './EventContent';
-
-const { Sider, Content } = Layout;
+import { Carousel } from 'antd';
+import EventEntry from './EventEntry';
 
 const EventsCarousel = () => {
-  const [EventNum, setEventNum] = useState(0);
-
-  const ContentStyle = {
-    color: '#fff',
-    lineHeight: '100px',
-    textAlign: 'center',
-    background: '#364d79',
-    marginBottom: 0,
-    aspectRatio: '1.63',
-  };
-
-  const CarouselSider = {
-    background: '#EAE0FA',
-    outlineStyle: 'solid',
-    AspectRatio: '1.487',
-  };
-
-  const LayoutStyle = {
-    AspectRatio: '2.3',
-  };
-
   const DummyData = [
     {
-      description: '',
+      id: 0,
+      image: 'https://www.inside.unsw.edu.au/sites/default/files/article/2_UNSW%20Student%20Life%201900%20x%201200%20-%209.jpg',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      date: '1st Jan - 2nd Jan',
+      time: '4:00pm - 5:00pm',
+      delivery: 'Online',
+    },
+    {
+      id: 1,
+      image: 'https://www.inside.unsw.edu.au/sites/default/files/article/3-plus-students-quad-750x400.jpg',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      date: '1st Jan - 2nd Jan',
+      time: '4:00pm - 5:00pm',
+      delivery: 'Online',
+    },
+    {
+      id: 2,
+      image: 'https://www.inside.unsw.edu.au/sites/default/files/article/UNSW-Online-students-750x400.png',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      date: '1st Jan - 2nd Jan',
+      time: '4:00pm - 5:00pm',
+      delivery: 'Online',
     },
   ];
 
   return (
     <div className="container-carousel">
-      <Layout style={LayoutStyle}>
-        <Content style={ContentStyle}>
-          <div className="carousel-events">
-            <Carousel autoplay autoplaySpeed={7000}>
-              <div>
-                <h3 style={ContentStyle}>Image 1</h3>
-              </div>
-              <div>
-                <h3 style={ContentStyle}>Image 2</h3>
-              </div>
-              <div>
-                <h3 style={ContentStyle}>Image 3</h3>
-              </div>
-              <div>
-                <h3 style={ContentStyle}>Image 4</h3>
-              </div>
-            </Carousel>
-          </div>
-        </Content>
-        <Sider style={CarouselSider} width="30%">
-          <EventContent />
-        </Sider>
-      </Layout>
+      <Carousel autoplay draggable pauseOnHover dots autoplaySpeed={8000}>
+        {DummyData.map((entry) => {
+          return <EventEntry key={entry.id} data={entry} />;
+        })}
+      </Carousel>
     </div>
   );
 };

@@ -22,29 +22,27 @@ const ButtonStyle = {
   // backgroundColor: '#8234DA',
 };
 
-const EventContent = () => {
-  const DummyDesc = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
-  const DummyDate = '1st Jan - 2nd Jan';
-  const DummyTime = '4:00pm - 5:00pm';
-  const DummyDeli = 'Online';
-
+const EventContent = ({
+  desc, date, time, delivery,
+}) => {
   return (
     <div className="carousel-content">
       <div className="event-description">
         <Paragraph style={ParaStyle} ellipsis={{ rows: 6, expandable: false, symbol: 'more' }}>
-          {DummyDesc}
+          {desc}
         </Paragraph>
         <div className="events-info">
           <div className="divider" />
-          {`⭐ ${DummyDate}`}
+          {`⭐ ${date}`}
           {' '}
           <br />
-          {`⏰ ${DummyTime}`}
+          {`⏰ ${time}`}
           {' '}
           <br />
-          {`💻 ${DummyDeli}`}
+          {`💻 ${delivery}`}
           {' '}
           <br />
+          {/* uhhh... button does nothing... will change soon */}
           <Button type="primary" size="large" style={ButtonStyle}>
             GO
             {' '}

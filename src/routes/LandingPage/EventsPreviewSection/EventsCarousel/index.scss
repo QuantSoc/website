@@ -1,21 +1,16 @@
-.carousel-events {
-    aspect-ratio: 1.63;
-}
-
 .container-carousel {
-    outline-style: solid;
     justify-content: center;
-    aspect-ratio: 2.77;
+    aspect-ratio: 2.777;
 }
 
 .carousel-content {
     height: 100%;
+    width: 100%;
     padding-top: 10.7%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    // aspect-ratio: 1.63;
     padding-bottom: 10.7%;
 }
 
@@ -24,7 +19,6 @@
     width: 75%;
     display: flex;
     flex-direction: column;
-    // aspect-ratio: 1.43;
     justify-content: left;
 }
 
@@ -49,6 +43,13 @@
 
 }
 
+.EventImage {
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: fill;
+}
+
+// probably need to change this later... we will see
 @media screen {
     .container-carousel {
         padding-left: 7.77vw;
