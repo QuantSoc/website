@@ -1,5 +1,6 @@
 import './index.scss';
 import ResourceSection from '../ResourceSection';
+import SponsorSection from './SponsorSection';
 
 const LandingPage = () => {
   return (
@@ -10,7 +11,7 @@ const LandingPage = () => {
       <section>4. Events - Lorem Ipsum</section>
       <section>5. Be Part of or next event</section>
       <section><ResourceSection /></section>
-      <section>7. Sponsors</section>
+      <section><SponsorSection /></section>
     </div>
   );
 };
