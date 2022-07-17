@@ -1,10 +1,11 @@
 import './index.scss';
+import SplashSection from './SplashSection';
 import ResourceSection from '../ResourceSection';
 
 const LandingPage = () => {
   return (
     <div className="landing-page">
-      <section>1. Main Introduction</section>
+      <section><SplashSection /></section>
       <section>2. About Us</section>
       <section>3. Learn Connect Network</section>
       <section>4. Events - Lorem Ipsum</section>
