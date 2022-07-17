@@ -6,22 +6,19 @@
 
   .sponsor-head {
     display: flex;
-    margin-top: 5%;
+    margin-top: 2.75rem;
     margin-right: 5%;
-    margin-left: 5%;   
-    flex-grow: 1;
-    flex-shrink: 1;
+    margin-left: 5%;  
     justify-content:space-between;
     overflow-inline: hidden;
-    .sponsor-button-container {
+    .sponsor-button-cont {
       .sponsor-button {
         color: white;
+        text-align: center;
         background-color: $darkest-purple;
-        // background-color: rgba(130, 52, 218, 1);
         font-size: 1rem;
-        display: box;
-        padding: 10ch;
-        margin-left: 300px;
+        display: flex;
+        padding: 0.65em 3ch;
         border: none;
       }
     }

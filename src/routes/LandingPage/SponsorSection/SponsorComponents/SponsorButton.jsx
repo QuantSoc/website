@@ -5,7 +5,7 @@ const SponsorButton = () => {
   return (
     <div className="sponsor-button-cont">
       <button type="button" className="sponsor-button">
-        SPONSOR US (pls)
+        SPONSOR US
       </button>
     </div>
   );
