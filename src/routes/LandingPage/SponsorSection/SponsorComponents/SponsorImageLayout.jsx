@@ -1,9 +1,9 @@
 import React from 'react';
 
-import AccentureLogo from '/assets/SponsorImages/accenture_logo.png';
-import ArcLogo from '/assets/SponsorImages/SponsorArcImage.png';
-import UNSWBusinessLogo from '/assets/SponsorImages/unsw_business.png';
-import UNSWLogo from '/assets/SponsorImages/SponsorUNSWImage.png';
+import AccentureLogo from '../../../../assets/SponsorImages/accenture_logo.png';
+import ArcLogo from '../../../../assets/SponsorImages/arc_logo.png';
+import UNSWBusinessLogo from '../../../../assets/SponsorImages/unsw_business.png';
+import UNSWLogo from '../../../../assets/SponsorImages/unsw.png';
 
 const ImageLayout = () => {
   return (
