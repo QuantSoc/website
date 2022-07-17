@@ -1,17 +1,20 @@
 import './index.scss';
+
+import SplashSection from './SplashSection';
 import ResourceSection from '../ResourceSection';
 import EventsBanner from './EventsBanner';
+import SponsorSection from './SponsorSection';
 
 const LandingPage = () => {
   return (
     <div className="landing-page">
-      <section>1. Main Introduction</section>
+      <section><SplashSection /></section>
       <section>2. About Us</section>
       <section>3. Learn Connect Network</section>
       <section><EventsBanner /></section>
       <section>5. Be Part of or next event</section>
       <section><ResourceSection /></section>
-      <section>7. Sponsors</section>
+      <section><SponsorSection /></section>
     </div>
   );
 };
