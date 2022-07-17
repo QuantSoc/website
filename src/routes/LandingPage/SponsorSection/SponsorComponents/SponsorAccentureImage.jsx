@@ -5,7 +5,7 @@ import Acc from 'assets/SponsorImages/accenture-1.png';
 const Accenture = () => {
   return (
     <div>
-      <img className="logo" src={Acc} alt="accenture logo" />
+      <img className="sponsor-logo" src={Acc} alt="accenture logo" />
     </div>
   );
 };
