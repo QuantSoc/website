@@ -11,10 +11,9 @@
     justify-content:space-between;
     overflow-inline: hidden;
     .sponsor-button-container {
-      
       .sponsor-button {
-        color: rgb(230, 19, 19);
-        background-color: $lightest-purple;
+        color: white;
+        background-color: $darkest-purple;
         // background-color: rgba(130, 52, 218, 1);
         font-size: 1rem;
         display: box;
