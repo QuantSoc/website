@@ -1,5 +1,6 @@
 import './index.scss';
 import SplashSection from './SplashSection';
+import ResourceSection from '../ResourceSection';
 
 const LandingPage = () => {
   return (
@@ -9,7 +10,7 @@ const LandingPage = () => {
       <section>3. Learn Connect Network</section>
       <section>4. Events - Lorem Ipsum</section>
       <section>5. Be Part of or next event</section>
-      <section>6. Resources</section>
+      <section><ResourceSection /></section>
       <section>7. Sponsors</section>
     </div>
   );
