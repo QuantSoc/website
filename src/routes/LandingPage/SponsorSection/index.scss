@@ -1,0 +1,57 @@
+@import "global.scss";
+
+.sponsor-section {
+  display: flex;
+  flex-direction: column;
+
+  .sponsor-head {
+    display: flex;
+    margin-top: 2.75rem;
+    margin-right: 5%;
+    margin-left: 5%;  
+    justify-content:space-between;
+    overflow-inline: hidden;
+    .sponsor-button-cont {
+      .sponsor-button {
+        color: white;
+        text-align: center;
+        background-color: $darkest-purple;
+        font-size: 1rem;
+        display: flex;
+        padding: 0.65em 3ch;
+        border: none;
+      }
+    }
+    .sponsor-header {
+      font-size: 2rem;
+      min-width: fit-content;
+      font-weight: bold;
+      color: rgba(64, 21, 112, 1);
+      margin-bottom: 100px;
+      display: box;
+    }
+  }
+
+  .sponsor-image-layout {
+    margin-right: 15%;
+    margin-left: 15%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+    .sponsor-image-cont {
+      margin: 50px;
+      .sponsor-image {
+        max-height: 80px;
+        margin: 5px; 
+      }
+    }
+    // > .sponsor-logo {
+    //   max-height: 80px;
+    //   margin: 5%;
+    // }
+  }
+}
