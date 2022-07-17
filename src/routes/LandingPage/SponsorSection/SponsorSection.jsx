@@ -1,8 +1,8 @@
 import React from 'react';
-import 'index.scss';
+import './index.scss';
 
 import {
-  SponsorHeader, SponsorButton, ImageLayout,
+  SponsorHeader, SponsorButton, SponsorImageLayout,
 } from './SponsorComponents';
 
 const SponsorSection = () => {
@@ -12,7 +12,7 @@ const SponsorSection = () => {
         <SponsorHeader />
         <SponsorButton />
       </div>
-      <ImageLayout />
+      <SponsorImageLayout />
     </div>
   );
 };

@@ -1,7 +1,7 @@
 import SponsorHeader from './SponsorHeader';
 import SponsorButton from './SponsorButton';
-import ImageLayout from './SponsorImageLayout';
+import SponsorImageLayout from './SponsorImageLayout';
 
 export {
-  SponsorButton, SponsorHeader, ImageLayout,
+  SponsorButton, SponsorHeader, SponsorImageLayout,
 };
