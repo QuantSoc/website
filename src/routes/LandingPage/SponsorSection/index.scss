@@ -1,3 +1,5 @@
+@import "global.scss";
+
 .sponsor-section {
   .sponsor-head {
     display: flex;
@@ -8,20 +10,19 @@
     flex-shrink: 1;
     justify-content:space-between;
     overflow-inline: hidden;
-    
-    .sponsor-button {
-      color: white;
-      align-self: flex-start;
-      background-color: rgba(130, 52, 218, 1);
-      font-size: 1rem;
-      display: box;
-      min-width: fit-content;
-      padding: 10px;
-      width: 15%;
-      margin-left: 300px;
-      border: none;
+    .sponsor-button-container {
+      
+      .sponsor-button {
+        color: rgb(230, 19, 19);
+        background-color: $lightest-purple;
+        // background-color: rgba(130, 52, 218, 1);
+        font-size: 1rem;
+        display: box;
+        padding: 10ch;
+        margin-left: 300px;
+        border: none;
+      }
     }
-
     .sponsor-header {
       font-size: 2rem;
       min-width: fit-content;
@@ -32,7 +33,7 @@
     }
   }
 
-  .image-layout {
+  .sponsor-image-layout {
     margin-right: 15%;
     margin-left: 15%;
     margin-bottom: 5%;

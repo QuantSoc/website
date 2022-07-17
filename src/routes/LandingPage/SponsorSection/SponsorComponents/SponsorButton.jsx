@@ -3,9 +3,11 @@ import '../index.scss';
 
 const SponsorButton = () => {
   return (
-    <button type="button" className="sponsor-button">
-      SPONSOR US
-    </button>
+    <div className="sponsor-button-cont">
+      <button type="button" className="sponsor-button">
+        SPONSOR US (pls)
+      </button>
+    </div>
   );
 };
 
