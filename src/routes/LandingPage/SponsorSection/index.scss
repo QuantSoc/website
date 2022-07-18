@@ -1,4 +1,4 @@
-@import "global.scss";
+@import "styles/global.scss";
 
 .sponsor-section {
   display: flex;
@@ -8,9 +8,10 @@
     display: flex;
     margin-top: 2.75rem;
     margin-right: 5%;
-    margin-left: 5%;  
-    justify-content:space-between;
+    margin-left: 5%;
+    justify-content: space-between;
     overflow-inline: hidden;
+
     .sponsor-button-cont {
       .sponsor-button {
         color: white;
@@ -22,6 +23,7 @@
         border: none;
       }
     }
+
     .sponsor-header {
       font-size: 2rem;
       min-width: fit-content;
@@ -41,14 +43,16 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    
+
     .sponsor-image-cont {
       margin: 50px;
+
       .sponsor-image {
         max-height: 80px;
-        margin: 5px; 
+        margin: 5px;
       }
     }
+
     // > .sponsor-logo {
     //   max-height: 80px;
     //   margin: 5%;
