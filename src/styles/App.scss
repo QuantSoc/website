@@ -1,5 +1,4 @@
-
-@import "./global.scss";
+@import "styles/global.scss";
 
 .App {
   text-align: center;
@@ -9,8 +8,7 @@
   width: 100%;
   justify-content: space-between;
 
-  > .app-page {
+  >.app-page {
     flex-grow: 1;
   }
 }
-
