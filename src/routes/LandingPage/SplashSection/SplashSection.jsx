@@ -1,10 +1,10 @@
 /* eslint-disable */
 
 import React from "react";
-import 'index.scss';
+import 'styles/index.scss';
 
 import {
-  SplashIcon, SplashHeader, SplashBlurb, SplashLayout
+  SplashIcon, SplashLayout
 } from './SplashSectionComponents';
 
 const SplashSection = () => {

@@ -6,7 +6,7 @@ import QuantSocLogo from 'assets/crop_logo_circle.png';
 
 const SplashIcon = () => {
   return (
-    <div>
+    <div className="splash-icon">
       <img className="icon" src={QuantSocLogo} alt="quantsoc logo" />
     </div>
   );
