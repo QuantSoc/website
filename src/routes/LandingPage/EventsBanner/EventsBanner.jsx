@@ -1,5 +1,3 @@
-/* eslint-disable */
-
 import React from 'react';
 import './index.scss';
 import classnames from 'classnames'
