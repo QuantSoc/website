@@ -1,0 +1,58 @@
+.container-carousel {
+    justify-content: center;
+    aspect-ratio: 2.777;
+}
+
+.carousel-content {
+    height: 100%;
+    width: 100%;
+    padding-top: 10.7%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10.7%;
+}
+
+.event-description {
+    height: 100%;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.event-divider {
+    width: '71.8%';
+    height: '100%';
+    margin-top: '10px';
+    margin-bottom: '15px';
+}
+
+.divider {
+    background-color: #8234DA;
+    height: 5px;
+    margin-top: 18px;
+    margin-bottom: 15px;
+}
+
+.events-info {
+    font-size: 1.7em;
+    text-align: left;
+    margin-top: auto;
+
+}
+
+.EventImage {
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: fill;
+}
+
+// probably need to change this later... we will see
+@media screen {
+    .container-carousel {
+        padding-left: 7.77vw;
+        padding-right: 7.77vw;
+    }
+}

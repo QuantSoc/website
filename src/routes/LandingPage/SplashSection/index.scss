@@ -1,0 +1,52 @@
+.splash-section {
+  height: 772px;
+  display: flex;
+  flex-direction: row;
+  // justify-content: space-between;
+  text-align: left;
+}
+
+;
+
+.splash-blurb {
+  font-size: 1rem;
+  color: rgba(25, 4, 49, 1);
+  max-width: 35%;
+  margin-bottom: 100px;
+  margin-left: 100px;
+  text-align: left;
+}
+
+.splash-button {
+  color: white;
+  background-color: rgba(130, 52, 218, 1);
+  font-size: 1rem;
+  display: inline-block;
+  padding: 10px;
+  width: 15%;
+  margin-left: 300px;
+  border: none;
+}
+
+.splash-header {
+  font-size: 2rem;
+  text-align: left;
+  font-weight: bold;
+  color: rgba(64, 21, 112, 1);
+  margin-bottom: 100px;
+  margin-left: 100px;
+  text-align: left;
+}
+
+.splash-icon {
+  .icon {
+    max-height: 100%;
+    // max-width: 100%; // TODO: fix this for firefox
+  }
+}
+
+.splash-layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
