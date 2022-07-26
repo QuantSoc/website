@@ -2,7 +2,7 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
-    'jest/globals': true,
+    // 'jest/globals': true,
   },
   extends: [
     'plugin:react/recommended',
@@ -17,7 +17,7 @@ module.exports = {
   },
   plugins: [
     'react',
-    'jest',
+    // 'jest',
   ],
   rules: {
     'no-unused-vars': 'warn',
@@ -29,6 +29,7 @@ module.exports = {
     'arrow-body-style': ['error', 'always'],
     'react/function-component-definition': ['error', { namedComponents: 'arrow-function', unnamedComponents: 'arrow-function' }],
     'quotes': ['error', 'single', { 'avoidEscape': true }],
+    'import/no-extraneous-dependencies': 'off',
   },
   settings: {
     'import/resolver': {

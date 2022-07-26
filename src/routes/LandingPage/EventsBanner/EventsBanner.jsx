@@ -13,7 +13,6 @@ const EventsBanner = () => {
     </div>
   );
 };
-//
 
 const EventsDescription = ({ text }) => {
   return (
