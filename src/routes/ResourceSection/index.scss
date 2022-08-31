@@ -1,82 +1,83 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;700&display=swap');
+@import 'styles/constants.scss';
 
 .ResourceSection {
-    height: 772px;
-    background-color: #691BC0;
+  height: 772px;
+  background-color: $darkest-purple;
 }
 
 .arrow {
-    color: #d2afff;
-    font-family: Roboto;
-    font-weight: 700;
-    font-size: 2em;
-    font-style: italic;
-    margin-left: 1em;
+  color: #d2afff;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 2em;
+  font-style: italic;
+  margin-left: 1em;
 }
 
 .text {
-    color: white;
-    font-family: Poppins;
-    font-weight: 700;
-    font-size: 2em;
-    font-style: italic;
-    margin-left: 90px;
+  color: white;
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 2em;
+  font-style: italic;
+  margin-left: 90px;
 }
 
 .ResourceBlock {
-    display: flexbox;
-    justify-items: center;
-    margin-top: 61px;
+  display: flexbox;
+  justify-items: center;
+  margin-top: 61px;
 }
 
 .image {
-    margin-bottom: 38px;
-    width: 75%;
+  margin-bottom: 38px;
+  width: 75%;
 }
 
 .ResourceButton {
-    background-color: #A761F4;
-    color: white;
-    border: none;
-    font-size: 1em;
-    padding: 15px;
-    display: inline-flex;
+  background-color: #A761F4;
+  color: white;
+  border: none;
+  font-size: 1em;
+  padding: 15px;
+  display: inline-flex;
 }
 
 .ResourcesBlurb {
-    color: white;
-    font-size: 1.4em;
-    font-family: Roboto;
-    font-weight: 400;
-    vertical-align: top;
-    line-height: 32px;
+  color: white;
+  font-size: 1.4em;
+  font-family: Roboto;
+  font-weight: 400;
+  vertical-align: top;
+  line-height: 32px;
 }
 
 .ResourcesDivider {
-    background-color: white;
-    height: 5px;
-    margin-left: 90px;
-    margin-right: 90px;
+  background-color: white;
+  height: 5px;
+  margin-left: 90px;
+  margin-right: 90px;
 }
 
 .ResourcesHeader {
-    display: flex;
-    padding-top: 61px;
-    padding-bottom: 30px;
-    align-items: center;
-    justify-content: space-between;
-    margin-right: 90px;
+  display: flex;
+  padding-top: 61px;
+  padding-bottom: 30px;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 90px;
 }
 
 .ResourcesLayout {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 90px;
-    margin-right: 90px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 90px;
+  margin-right: 90px;
 }
 
 .PageTitle {
-    display: flexbox;
-    align-content: space-between;
+  display: flexbox;
+  align-content: space-between;
 }

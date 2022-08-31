@@ -17,8 +17,8 @@ const ButtonStyle = {
   fontSize: '1em',
   height: '67px',
   aspectratio: '1.51',
-  background: '#8234DA',
-  borderColor: '#8234DA',
+  // background: '#8234DA',
+  // borderColor: '#8234DA',
   // backgroundColor: '#8234DA',
 };
 

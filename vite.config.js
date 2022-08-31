@@ -14,4 +14,14 @@ export default defineConfig({
       { find: 'styles', replacement: resolve(__dirname, 'src/styles') },
     ],
   },
+  css: {
+    preprocessorOptions: {
+      less: {
+        modifyVars: {
+          'primary-color': '#8234DA',
+        },
+        javascriptEnabled: true,
+      },
+    },
+  },
 });
