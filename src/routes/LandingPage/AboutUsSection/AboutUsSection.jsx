@@ -1,4 +1,5 @@
 import React from 'react';
+import './index.scss';
 
 import { Typography } from 'antd';
 
@@ -9,10 +10,10 @@ const AboutUsSection = () => {
   const aboutUsText = aboutUsTextBase + aboutUsTextBase + aboutUsTextBase;
 
   return (
-    <section className="about-us-section">
+    <div className="about-us-section">
       <div className="about-us-cont">
         <div className="about-us-title">
-          <Title level={2}>About Us</Title>
+          <Title level={2} className="about-us-title">ABOUT US</Title>
         </div>
         <div className="about-us-content-cont">
           <div className="about-us-text-cont">
@@ -23,7 +24,7 @@ const AboutUsSection = () => {
           {/* </div> */}
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

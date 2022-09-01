@@ -12,8 +12,8 @@ const LandingPage = () => {
     <div className="landing-page">
       <section>1. Main Introduction</section>
       <section><SplashSection /></section>
-      <section><AboutUsSection /></section>
       <section>3. Learn Connect Network</section>
+      <section><AboutUsSection /></section>
       <section><EventsPreview /></section>
       <section><EventsBanner /></section>
       <section><ResourceSection /></section>

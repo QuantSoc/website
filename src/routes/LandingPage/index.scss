@@ -1,25 +1,3 @@
-@import 'global.scss';
-
-section.about-us-section {
-  padding: 1.4rem 0rem;
-  background-color: $lightest-purple;
-  width: 100%;
-
-  .about-us-cont {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 0rem 4rem;
-
-    .about-us-title {
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-    }
-  }
-}
-
 // Base - Breakpoints
 // Feel free to adapt these in your own stylesheet
 $ultrawide-width: 2000px;
