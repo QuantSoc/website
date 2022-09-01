@@ -1,6 +1,8 @@
 import React from 'react';
 import './index.scss';
 
+import placeholder from '../../../assets/about_us_placeholder.png';
+
 import { Typography } from 'antd';
 
 const AboutUsSection = () => {
@@ -11,21 +13,29 @@ const AboutUsSection = () => {
 
   return (
     <div className="about-us-section">
-      <div className="about-us-cont">
-        <div className="about-us-title">
-          <Title level={2} className="about-us-title">ABOUT US</Title>
-        </div>
-        <div className="about-us-content-cont">
+        <div className="about-us-cont">
           <div className="about-us-text-cont">
+            <Title level={2} className="about-us-title">ABOUT US</Title>
+            <p className="about-us-text">{aboutUsText}</p>
             <p className="about-us-text">{aboutUsText}</p>
           </div>
-          {/* <div className="about-us-img"> */}
-          {/*   <AboutUsImg /> */}
-          {/* </div> */}
+          <AboutUsImg imageSrc={placeholder} altText="Circle of mathematical symbols" />
         </div>
-      </div>
+
     </div>
   );
 };
+
+
+const AboutUsImg = ({imageSrc, altText}) => {
+  return (
+    <div className='about-us-img-cont'>
+      <img className="about-us-img"
+        src={imageSrc}
+        alt={altText}
+      />
+    </div>
+  );
+}
 
 export default AboutUsSection;
