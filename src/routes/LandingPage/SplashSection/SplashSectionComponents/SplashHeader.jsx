@@ -4,7 +4,9 @@ import '../index.scss';
 const SplashHeader = () => {
   return (
     <div className="splash-header">
-      UNSW QUANTSOC
+      <div className='unsw'>UNSW</div>
+      <div>QUANT</div>
+      <div>SOC</div>
     </div>
   );
 };

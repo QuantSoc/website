@@ -4,12 +4,23 @@
   justify-content: space-between;
 }
 
+.splash-header {
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgba(64, 21, 112, 1);
+  margin-bottom: 100px;
+  display: flex;
+
+  .unsw {
+    margin-right: 1rem;
+  }
+}
+
 .splash-blurb {
   font-size: 1rem;
   color: rgba(25, 4, 49, 1);
   max-width: 35%;
   margin-bottom: 100px;
-  margin-left: 100px;
   text-align: left;
 }
 
@@ -20,24 +31,14 @@
   display: inline-block;
   padding: 10px;
   width: 15%;
-  margin-left: 300px;
   border: none;
-}
-
-.splash-header {
-  font-size: 2rem;
-  text-align: left;
-  font-weight: bold;
-  color: rgba(64, 21, 112, 1);
-  margin-bottom: 100px;
-  margin-left: 100px;
-  text-align: left;
+  margin-left: 240px;
 }
 
 .splash-icon {
+  width: 40%;
   .icon {
-    max-height: 100%;
-    max-width: 100%; 
+    max-width: 100%;
   }
 }
 
@@ -45,6 +46,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 40%;
 }
 
 @media screen and (max-width: 700px) {
@@ -55,42 +57,49 @@
   }
   
   .splash-header {
-    font-size: 1rem;
-    text-align: left;
+    font-size: 50px;
     font-weight: bold;
     color: rgba(64, 21, 112, 1);
-    margin-left: 10px;
-    margin-top: 20px;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    order: 1;
+    align-items: flex-end;
+    margin-right: 40px;
+  
+    .unsw {
+      margin-right: 0rem;
+    }
   }
-
-  .splash-blurb {
-    font-size: 0.5rem;
-    color: rgba(25, 4, 49, 1);
-    max-width: 100%;
-    margin-bottom: 0px;
-    margin-top: 10px;
-    margin-left: 10px;
-    text-align: left;
-  }
-
+  
   .splash-button {
     color: white;
     background-color: rgba(130, 52, 218, 1);
-    font-size: 0.5rem;
+    font-size: 27px;
     display: inline-block;
-    padding: 7px;
-    width: 40%;
-    margin-top: 20px;
-    margin-left: 100px;
+    padding: 10px;
+    width: 203px;
     border: none;
+    margin-left: -60px;
+    order: 2;
+  }
+
+  .splash-blurb {
+    font-size: 27px;
+    color: rgba(25, 4, 49, 1);
+    max-width: 400px;
+    text-align: left;
+    margin-top: 40px;
+    margin-left: -190px;
+    padding: 30px;
+    order: 3;
   }
   
   .splash-icon {
-    max-width: 50%;
+    width: 90%;
+    margin-left: -100px;
     .icon {
-      max-height: 100%;
-      max-width: 100%; 
+      max-width: 100%;
     }
   }
   
@@ -98,5 +107,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 45%;
   }
 }
