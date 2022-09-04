@@ -1,15 +1,45 @@
 import React from 'react';
 import './index.scss';
 import classnames from 'classnames';
+import Marquee from 'react-fast-marquee';
 
 const EventsBanner = () => {
+  const NontechEvents = [
+    'Meet ups',
+    'Parties',
+    'BBQ',
+    'Trivia nights',
+    'Employer events',
+  ];
+
+  const TechEvents = [
+    'Mock Interview',
+    'Trading Workshops',
+    'Discussions',
+    'Trading competitions',
+  ];
+
+  const dummy = `Lorem ipsum dolor sit amet, 
+  consectetur adipiscing elit, sed do eiusmod
+   tempor incididunt ut labore et dolore magna
+    aliqua. Ut enim ad minim veniam, quis 
+    nostrud exercitation ullamco laboris nisi ut
+     aliquip ex ea commodo consequat. Duis aute 
+     irure dolor in reprehenderit in voluptate 
+     velit esse cillum dolore eu fugiat nulla pariatur.`;
+
   return (
     <div className="evts-banner">
-      <EventsDivider highlight="1" />
-      <EventsDescription text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-      />
-      <EventsDivider highlight="6" />
+      {/* <EventsDivider highlight="1" /> */}
+      <Marquee gradient={false} speed={40}>
+        <EventsDivider highlight="0" events={NontechEvents} />
+      </Marquee>
+
+      <EventsDescription text={dummy} />
+
+      <Marquee gradient={false} speed={40}>
+        <EventsDivider highlight="1" events={TechEvents} />
+      </Marquee>
     </div>
   );
 };
@@ -17,21 +47,23 @@ const EventsBanner = () => {
 const EventsDescription = ({ text }) => {
   return (
     <div className="evts-desc">
-      <p1>
+      <p>
         {text}
-      </p1>
+      </p>
     </div>
   );
 };
 
-const EventsDivider = ({ highlight, rows }) => {
-  const words = [];
-  for (let i = 0; i < rows; i += 1) {
-    if (i === parseInt(highlight, 10)) {
-      words.push(<EventsIndividual type="solid" />);
-    } else {
-      words.push(<EventsIndividual />);
-    }
+const EventsDivider = ({ highlight, events }) => {
+  let words = Array((events.length) ? events.length : 9).fill(0);
+  words[highlight] = 1;
+
+  if (!events.length) {
+    words = words.map((h) => { return <EventsIndividual type={h} />; });
+  } else {
+    words = words.map((h, i) => {
+      return <EventsIndividual type={h} text={events[i]} />;
+    });
   }
 
   return (
@@ -42,20 +74,20 @@ const EventsDivider = ({ highlight, rows }) => {
 };
 
 EventsDivider.defaultProps = {
-  highlight: '0',
-  rows: '9',
+  highlight: 0,
+  events: [],
 };
 
 const EventsIndividual = ({ type, text }) => {
   return (
-    <div className={classnames('evts-single', type)}>
+    <div className={classnames('evts-single', type ? 'solid' : 'trans')}>
       {text}
     </div>
   );
 };
 
 EventsIndividual.defaultProps = {
-  type: 'trans',
+  type: 0,
   text: 'events',
 };
 
