@@ -15,7 +15,7 @@
     align-items: center;
     justify-content: center;
 
-    padding: 1rem;
+    // padding: 1rem;
     color: white;
 
     >.banner-lcg {
@@ -32,6 +32,7 @@
 
     >.banner-desc {
       font-size: 1rem;
+      padding: 1rem;
       font-family: Roboto;
       font-weight: regular;
     }
@@ -40,5 +41,16 @@
   >.banner-image {
     width: 60%;
     height: 100%;
+  }
+}
+
+@media (max-width: 860px) {
+  .main-banner {
+    display: block;
+
+    >.banner-text {
+      width: 100%;
+      padding: unset;
+    }
   }
 }

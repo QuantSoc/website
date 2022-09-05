@@ -2,8 +2,17 @@ import React from 'react';
 
 import './index.scss';
 import bannerImage from 'assets/bannerimage.png';
+import useMediaQuery from 'hooks/useMediaQuery';
 
 const MainBannerSection = () => {
+  const isDesktop = useMediaQuery('(min-width: 860px)');
+
+  const imageComponent = (
+    <div className="banner-image">
+      <img src={bannerImage} alt="banner" width="100%" height="100%" />
+    </div>
+  );
+
   return (
     <div className="main-banner">
       <div className="banner-text">
@@ -12,6 +21,7 @@ const MainBannerSection = () => {
           <div style={{ textAlign: 'center' }}>connect.</div>
           <div style={{ textAlign: 'end' }}>network.</div>
         </div>
+        {!isDesktop && imageComponent}
         <div className="banner-desc">
           <span>
             We&apos;re here to help jumpstart
@@ -21,9 +31,7 @@ const MainBannerSection = () => {
           </span>
         </div>
       </div>
-      <div className="banner-image">
-        <img src={bannerImage} alt="cool" width="100%" height="100%" />
-      </div>
+      {isDesktop && imageComponent}
     </div>
   );
 };
