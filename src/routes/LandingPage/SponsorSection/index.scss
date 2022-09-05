@@ -22,12 +22,6 @@
         padding: 0.65em 3ch;
         border: none;
       }
-      @media screen and (max-width: 560px) {
-        .sponsor-button {
-          display: none;
-          text-align: left;
-        }
-      }
     }
 
     .sponsor-header {
@@ -37,22 +31,6 @@
       color: rgba(64, 21, 112, 1);
       margin-bottom: 100px;
       display: box;
-    }
-
-    @media screen and (max-width: 560px) {
-      .sponsor-header {
-        font-size: 2rem;
-        display: column;
-        text-align: left;
-        margin-left: 5%;
-        margin-right: 30%;
-      }
-    }
-
-    @media screen and (max-width: 560px) {
-      .sponsor-header {
-        margin-bottom: 20px;
-      }
     }
   }
 
@@ -72,19 +50,44 @@
         max-height: 80px;
         margin: 5px;
       }
-      @media screen and (max-width: 560px) {
-        .sponsor-image {
-          max-height: 35px;
-          margin: 1px;          
+    }
+
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .sponsor-section {
+    .sponsor-head {
+      .sponsor-button-cont {
+        .sponsor-button {
+          display: none;
+          text-align: left;
         }
+      }
+
+      .sponsor-header {
+        font-size: 2rem;
+        display: column;
+        text-align: left;
+        margin-left: 5%;
+        margin-right: 30%;
+      }
+
+      .sponsor-header {
+        margin-bottom: 20px;
       }
     }
 
-    @media screen and (max-width: 560px) {
+    .sponsor-image-layout {
+      .sponsor-image {
+        max-height: 35px;
+        margin: 1px;
+      }
+
       .sponsor-image-cont {
         margin: 2%;
       }
-    }
 
+    }
   }
 }
