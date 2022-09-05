@@ -12,10 +12,10 @@ const LandingPage = () => {
       <section><SplashSection /></section>
       <section>2. About Us</section>
       <section>3. Learn Connect Network</section>
-      <section><EventsBanner /></section>
-      <section><EventsPreview /></section>
-      <section><ResourceSection /></section>
-      <section><SponsorSection /></section>
+      {/* <section><EventsBanner /></section> */}
+      {/* <section><EventsPreview /></section> */}
+      {/* <section><ResourceSection /></section> */}
+      {/* <section><SponsorSection /></section> */}
     </div>
   );
 };
