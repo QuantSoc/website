@@ -1,5 +1,6 @@
 import './index.scss';
 
+import AboutUsSection from './AboutUsSection/AboutUsSection';
 import SplashSection from './SplashSection';
 import ResourceSection from '../ResourceSection';
 import EventsPreview from './EventsPreviewSection';
@@ -10,8 +11,8 @@ const LandingPage = () => {
   return (
     <div className="landing-page">
       <section><SplashSection /></section>
-      <section>2. About Us</section>
       <section>3. Learn Connect Network</section>
+      <section><AboutUsSection /></section>
       <section><EventsBanner /></section>
       <section><EventsPreview /></section>
       <section><ResourceSection /></section>

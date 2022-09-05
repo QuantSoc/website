@@ -1,4 +1,3 @@
-
 // Base - Breakpoints
 // Feel free to adapt these in your own stylesheet
 $ultrawide-width: 2000px;
@@ -6,3 +5,8 @@ $desktop-width: 1200px;
 $tablet-width: 768px;
 $mobile-width: 480px;
 
+@media (min-width: $desktop-width) {
+  section {
+    max-height: 30%;
+  }
+}
