@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React from 'react';
 
 import AccentureLogo from '../../../../assets/SponsorImages/accenture_logo.png';
@@ -9,7 +8,7 @@ import UNSWLogo from '../../../../assets/SponsorImages/unsw.png';
 const SponsorImageLayout = () => {
   return (
     <div className="sponsor-image-layout">
-      <SponsorImg imageSrc={UNSWLogo} altText={"unsw logo"} />
+      <SponsorImg imageSrc={UNSWLogo} altText="unsw logo" />
       <SponsorImg imageSrc={AccentureLogo} altText="Accenture Logo" />
       <SponsorImg imageSrc={ArcLogo} altText="Arc Logo" />
       <SponsorImg imageSrc={UNSWBusinessLogo} altText="UNSW Business school logo" />
