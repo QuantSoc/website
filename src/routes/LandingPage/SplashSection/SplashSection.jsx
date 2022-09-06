@@ -5,11 +5,16 @@ import 'styles/index.scss';
 import QuantSocLogo from 'assets/crop_logo_circle.png';
 import mobileQuantSocLogo from 'assets/logo_circle.png';
 
+const { Text, Title } = Typography;
+
+/* const blurbText = '' */
+
 const SplashSection = () => {
   return (
     <div className="splash-section">
-      <SplashIcon />
-      <SplashLayout />
+      {/* The thing on the right */}
+      <div>
+      </div>
     </div>
   );
 };
@@ -54,7 +59,6 @@ const SplashBlurb = () => {
   );
 };
 
-const { Text } = Typography;
 
 const ButtonStyle = {
   marginTop: '35px',
