@@ -17,9 +17,9 @@ const EventsBanner = () => {
 const EventsDescription = ({ text }) => {
   return (
     <div className="evts-desc">
-      <p1>
+      <p>
         {text}
-      </p1>
+      </p>
     </div>
   );
 };
