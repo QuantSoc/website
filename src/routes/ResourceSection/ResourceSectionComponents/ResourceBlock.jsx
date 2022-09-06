@@ -11,12 +11,15 @@ const ButtonStyle = {
 const ResourceBlock = ({ name }) => {
   return (
     <div className="ResourceBlock">
-      <img className="image" src={image} alt="coming soon" />
-      <br />
-      <Button type="primary" size="large" style={ButtonStyle}>
-        {name}
-        <RightOutlined />
-      </Button>
+      <div>
+        <img className="image" src={image} alt="coming soon" />
+      </div>
+      <div>
+        <Button type="primary" size="large" style={ButtonStyle}>
+          {name}
+          <RightOutlined />
+        </Button>
+      </div>
     </div>
   );
 };

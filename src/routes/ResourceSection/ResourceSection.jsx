@@ -24,9 +24,11 @@ const ResourceSection = () => {
       <div className="ResourcesHeader">
         <PageTitle />
         <div className="ResourcesBlurb">See our resources from previous events and more!</div>
-        <Button type="primary" size="large" style={ButtonStyle}>
-          SEE MORE...
-        </Button>
+        <div>
+          <Button type="primary" size="large" style={ButtonStyle}>
+            SEE MORE...
+          </Button>
+        </div>
       </div>
       <ResourcesDivider />
       <div className="ResourcesLayout">
