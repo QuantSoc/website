@@ -1,8 +1,14 @@
 import React from 'react';
 import { Button, Typography } from 'antd';
 import 'styles/index.scss';
+import circle from 'assets/logo_circle.png';
 
-import QuantSocLogo from 'assets/crop_logo_circle.png';
+
+/* import QuantSocLogo from 'assets/crop_logo_circle.png'; */
+import QuantSocLogo from 'components/common/QuantSocLogo';
+/* import square_logo from 'assets/logo_square.png'; */
+
+
 import mobileQuantSocLogo from 'assets/logo_circle.png';
 import './index.scss';
 
@@ -15,16 +21,24 @@ const blurbText = 'To be, or not to be, that is a question: Whether it is nobler
 const SplashSection = () => {
   return (
     <div className="splash-section">
-      <img src={QuantSocLogo} alt="QuantSoc Logo" className="quantsoc-logo"/>
+      <QuantSocLogo />
+      {/* <img src={QuantSocLogo} alt="QuantSoc Logo" className="quantsoc-logo"/> */}
       {/* The thing on the right */}
-      <div className="splash-cont">
-        <Title>
-          UNSW QUANT SOC
-        </Title>
-        <Text>
-          { blurbText }
-        </Text>
+      <div className="quantsoc-logo">
+        <div className="splash-img" backgroundImage={circle} />
       </div>
+      <span>
+        <div className="splash-cont">
+          <div className="splash-title">
+            <Title>
+              UNSW QUANT SOC
+            </Title>
+          </div>
+          <Text>
+            { blurbText }
+          </Text>
+        </div>
+      </span>
     </div>
   );
 };

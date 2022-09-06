@@ -1,21 +1,50 @@
+@import "styles/global.scss";
+
+
 .splash-section {
   display: flex;
+  justify-content: flex-end;
   border: solid pink 1px;
+  align-items: center;
+  height: 500px;
 
   .quantsoc-logo {
-    position: relative;
-    width: 50%;
-    height: 50%;
-    object-fit: contain;
-    border: solid blue 1px;
+    position: absolute;
+    left: 0px;
+    /* width: 50%; */
+    /* height: 50%; */
+    /* min-width: 50%; */
+    /* min-height: 50%; */
+    /* max-width: 75%; */
+    /* max-height: 500px; */
+    z-index: -1;
+    height: 500px;
+    width: 500px;
+    /* object-fit: contain; */
+    aspect-ratio: 1/1;
+    .splash-img {
+      height: 500px;
+      width: 500px;
+      aspect-ratio: 1/1;
+    }
+    /* border: solid blue 1px; */
+    /* border-radius: 50%; */
+    /* border-top-left-radius: 0px; */
+    /* border-bottom-left-radius: 0px; */
+    /* background-color: $lightest-purple; */
   }
   .splash-cont {
     display: flex;
     flex-direction: column;
     justify-content: center;
     max-width: 80ch;
-    line-height: 1.8;
-    border: solid black 1px;
+    /* border: solid black 1px; */
+    .splash-title {
+      margin-bottom: 1rem;
+    }
+    .splash-text {
+      line-height: 1.8;
+    }
   }
 }
 
