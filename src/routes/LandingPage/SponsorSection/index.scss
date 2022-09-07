@@ -16,7 +16,7 @@
       .sponsor-button {
         color: white;
         text-align: center;
-        background-color: $darkest-purple;
+        background-color: $dark-purple;
         font-size: 1rem;
         display: flex;
         padding: 0.65em 3ch;
@@ -53,9 +53,42 @@
       }
     }
 
-    // > .sponsor-logo {
-    //   max-height: 80px;
-    //   margin: 5%;
-    // }
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .sponsor-section {
+    .sponsor-head {
+      .sponsor-button-cont {
+        .sponsor-button {
+          display: none;
+          text-align: left;
+        }
+      }
+
+      .sponsor-header {
+        font-size: 2rem;
+        display: column;
+        text-align: left;
+        margin-left: 5%;
+        margin-right: 30%;
+      }
+
+      .sponsor-header {
+        margin-bottom: 20px;
+      }
+    }
+
+    .sponsor-image-layout {
+      .sponsor-image {
+        max-height: 35px;
+        margin: 1px;
+      }
+
+      .sponsor-image-cont {
+        margin: 2%;
+      }
+
+    }
   }
 }

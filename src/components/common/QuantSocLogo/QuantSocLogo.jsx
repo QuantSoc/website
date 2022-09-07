@@ -4,7 +4,7 @@ import './index.scss';
 
 const QuantSocLogo = ({ type, style }) => {
   return (
-    <div className="quantsoc-logo" style={style}>
+    <div className="common-quantsoc-logo" style={style}>
       <img src={(type === 'circle') ? circle : square} alt="quantsoc logo" />
     </div>
   );

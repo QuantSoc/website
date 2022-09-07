@@ -1,0 +1,50 @@
+.about-us-section {
+  padding: 1.4rem 0rem;
+  background-color: white;
+  width: 100%;
+
+
+  .about-us-cont {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0rem 2rem;
+    justify-content: space-around;
+    align-items: center;
+
+    .about-us-text-cont {
+      width: 60%;
+      padding-right: 2rem;
+
+      .about-us-title {
+        color: #401570;
+        font-family: Poppins;
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 1.5rem;
+
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      .about-us-text {
+        color: #190431;
+        font-family: Roboto;
+        font-weight: normal;
+        font-size: 1.3em;
+        line-height: 1.5em;
+        text-align: left;
+      }
+
+    }
+
+    .about-us-img-cont {
+      width: 40%;
+
+      .about-us-img {
+        height: 100%;
+        max-width: 80%;
+      }
+    }
+  }
+}
