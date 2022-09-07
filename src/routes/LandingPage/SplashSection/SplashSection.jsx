@@ -1,8 +1,8 @@
 import React from 'react';
+import 'styles/index.scss';
+
 import { Button, Typography } from 'antd';
-
 import QuantSocLogo from 'components/common/QuantSocLogo';
-
 import './index.scss';
 
 const { Text, Title } = Typography;
