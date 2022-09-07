@@ -45,17 +45,49 @@
     align-items: center;
 
     .sponsor-image-cont {
-      margin: 50px;
-
+      margin: 50px;      
       .sponsor-image {
         max-height: 80px;
         margin: 5px;
       }
     }
 
-    // > .sponsor-logo {
-    //   max-height: 80px;
-    //   margin: 5%;
-    // }
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .sponsor-section {
+    .sponsor-head {
+      .sponsor-button-cont {
+        .sponsor-button {
+          display: none;
+          text-align: left;
+        }
+      }
+
+      .sponsor-header {
+        font-size: 2rem;
+        display: column;
+        text-align: left;
+        margin-left: 5%;
+        margin-right: 30%;
+      }
+
+      .sponsor-header {
+        margin-bottom: 20px;
+      }
+    }
+
+    .sponsor-image-layout {
+      .sponsor-image {
+        max-height: 35px;
+        margin: 1px;
+      }
+
+      .sponsor-image-cont {
+        margin: 2%;
+      }
+
+    }
   }
 }
