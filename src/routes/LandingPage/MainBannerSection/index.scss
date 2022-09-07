@@ -1,3 +1,5 @@
+@import "styles/constants.scss";
+
 .main-banner {
   display: flex;
   flex-direction: row;
@@ -15,7 +17,7 @@
     width: 40%;
     flex-grow: 1;
 
-    background-color: #691BC0;
+    background-color: $dark-purple;
     color: white;
 
     >.banner-lcg {
