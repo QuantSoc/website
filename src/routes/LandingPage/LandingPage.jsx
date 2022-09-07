@@ -1,5 +1,6 @@
 import './index.scss';
 
+import AboutUsSection from './AboutUsSection/AboutUsSection';
 import SplashSection from './SplashSection';
 import ResourceSection from '../ResourceSection';
 import EventsPreview from './EventsPreviewSection';
@@ -12,7 +13,7 @@ const LandingPage = () => {
     <div className="landing-page">
       <section><SplashSection /></section>
       <section><MainBanner /></section>
-      <section>2. About Us</section>
+      <section><AboutUsSection /></section>
       <section><EventsBanner /></section>
       <section><EventsPreview /></section>
       <section><ResourceSection /></section>
