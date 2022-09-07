@@ -1,10 +1,8 @@
-/* eslint-disable */
-
-import React from "react";
+import React from 'react';
 import 'styles/index.scss';
 
 import {
-  SplashIcon, SplashLayout
+  SplashIcon, SplashLayout,
 } from './SplashSectionComponents';
 
 const SplashSection = () => {
@@ -17,3 +15,4 @@ const SplashSection = () => {
 };
 
 export default SplashSection;
+
