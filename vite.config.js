@@ -12,6 +12,7 @@ export default defineConfig({
       { find: 'fonts', replacement: resolve(__dirname, 'src/fonts') },
       { find: 'routes', replacement: resolve(__dirname, 'src/routes') },
       { find: 'styles', replacement: resolve(__dirname, 'src/styles') },
+      { find: 'hooks', replacement: resolve(__dirname, 'src/hooks') },
     ],
   },
 });

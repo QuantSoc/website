@@ -6,12 +6,13 @@ import ResourceSection from '../ResourceSection';
 import EventsPreview from './EventsPreviewSection';
 import EventsBanner from './EventsBanner';
 import SponsorSection from './SponsorSection';
+import MainBanner from './MainBannerSection/MainBannerSection';
 
 const LandingPage = () => {
   return (
     <div className="landing-page">
       <section><SplashSection /></section>
-      <section>3. Learn Connect Network</section>
+      <section><MainBanner /></section>
       <section><AboutUsSection /></section>
       <section><EventsBanner /></section>
       <section><EventsPreview /></section>
