@@ -1,28 +1,28 @@
 .main-banner {
   display: flex;
   flex-direction: row;
-  // justify-content: space-around;
   align-items: stretch;
 
+  max-height: 500px;
   width: 100%;
 
   >.banner-text {
-    width: 40%;
-
-    background-color: #691BC0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    // padding: 1rem;
+    width: 40%;
+    flex-grow: 1;
+
+    background-color: #691BC0;
     color: white;
 
     >.banner-lcg {
-      padding: 1rem;
+      padding: 18px;
       margin: 0 auto;
       width: 100%;
-      max-width: 18rem;
+      max-width: 13ch;
 
       font-size: 2rem;
       font-family: Poppins;
@@ -31,26 +31,53 @@
     }
 
     >.banner-desc {
+      padding: 18px;
+
       font-size: 1rem;
-      padding: 1rem;
       font-family: Roboto;
       font-weight: regular;
     }
   }
 
-  >.banner-image {
-    width: 60%;
-    height: 100%;
+  img {
+    display: block;
   }
 }
 
 @media (max-width: 860px) {
   .main-banner {
     display: block;
+    max-height: unset;
 
     >.banner-text {
       width: 100%;
-      padding: unset;
+      padding: 36px;
+
+      >.banner-lcg {
+        padding-top: 0px;
+        padding-bottom: 36px;
+      }
+
+      >.banner-desc {
+        padding-bottom: 0px;
+        padding-top: 36px;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .main-banner {
+    >.banner-text {
+      padding: 18px;
+
+      >.banner-lcg {
+        padding-bottom: 18px;
+      }
+
+      >.banner-desc {
+        padding-top: 18px;
+      }
     }
   }
 }
