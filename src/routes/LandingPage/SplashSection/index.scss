@@ -1,52 +1,114 @@
+@import "styles/global.scss";
+@import "routes/LandingPage/index.scss";
+
 .splash-section {
-  height: 772px;
+  position: relative;
   display: flex;
-  flex-direction: row;
-  // justify-content: space-between;
-  text-align: left;
-}
+  justify-content: flex-end;
 
-;
+  height: 720px;
+  padding: 36px;
 
-.splash-blurb {
-  font-size: 1rem;
-  color: rgba(25, 4, 49, 1);
-  max-width: 35%;
-  margin-bottom: 100px;
-  margin-left: 100px;
-  text-align: left;
-}
+  .quantsoc-logo {
+    position: absolute;
+    left: -180px;
+    top: -180px;
 
-.splash-button {
-  color: white;
-  background-color: rgba(130, 52, 218, 1);
-  font-size: 1rem;
-  display: inline-block;
-  padding: 10px;
-  width: 15%;
-  margin-left: 300px;
-  border: none;
-}
+    z-index: -1;
+    height: 1080px;
+    width: 1080px;
+  }
 
-.splash-header {
-  font-size: 2rem;
-  text-align: left;
-  font-weight: bold;
-  color: rgba(64, 21, 112, 1);
-  margin-bottom: 100px;
-  margin-left: 100px;
-  text-align: left;
-}
+  .splash-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
 
-.splash-icon {
-  .icon {
-    max-height: 100%;
-    // max-width: 100%; // TODO: fix this for firefox
+    max-width: 60ch;
+    margin-left: 180px;
+
+    text-align: left;
+
+    .splash-title>* {
+      color: $darkest-purple;
+      font-size: 2.5rem;
+      font-family: 'Poppins';
+      font-weight: bold;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .splash-text>* {
+      font-size: 1rem;
+      font-family: 'Roboto';
+    }
+
+    .splash-button {
+      align-self: flex-end;
+    }
   }
 }
 
-.splash-layout {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+@media (max-width: $desktop-width) {
+  .splash-section {
+    height: 576px;
+
+    .quantsoc-logo {
+      height: 864px;
+      width: 864px;
+      top: -144px;
+      left: -144px;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .splash-section {
+    .quantsoc-logo {
+      left: -288px;
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .splash-section {
+    height: unset;
+    min-height: 630px;
+
+    .quantsoc-logo {
+      z-index: -1;
+      height: 540px;
+      width: 540px;
+
+      left: -252px;
+      top: -90px;
+    }
+
+    .splash-cont {
+      margin: unset;
+      justify-content: space-evenly;
+
+      .splash-title {
+        text-align: right;
+
+        order: 1;
+        margin-left: 180px;
+      }
+
+      .splash-text {
+        order: 3;
+      }
+
+      .splash-button {
+        order: 2;
+        margin-left: 180px;
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .splash-section {
+    padding: 18px;
+  }
 }

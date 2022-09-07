@@ -16,7 +16,7 @@
       .sponsor-button {
         color: white;
         text-align: center;
-        background-color: $darkest-purple;
+        background-color: $dark-purple;
         font-size: 1rem;
         display: flex;
         padding: 0.65em 3ch;
@@ -45,7 +45,8 @@
     align-items: center;
 
     .sponsor-image-cont {
-      margin: 50px;      
+      margin: 50px;
+
       .sponsor-image {
         max-height: 80px;
         margin: 5px;
