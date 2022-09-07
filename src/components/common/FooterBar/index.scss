@@ -6,17 +6,18 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 3.5em;
-  background-color: $darkest-purple;
+  background-color: $dark-purple;
 
   .glb-foot-section {
     align-items: flex-start;
     padding: 1em;
+
     .glb-foot-head {
       display: flex;
 
       .glb-foot-head-h5 {
         font-size: 1rem;
-        color: white;    
+        color: white;
       }
     }
   }
@@ -34,7 +35,8 @@
       align-items: flex-start;
       color: white;
       width: 200px;
-      > a.footer-link > li {
+
+      >a.footer-link>li {
         color: white;
         padding: 0.4em;
         padding-left: 0px;
@@ -47,12 +49,14 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    > .horizontal-eol-bar {
+
+    >.horizontal-eol-bar {
       margin-left: 25px;
       height: 5px;
       flex-grow: 1;
       background-color: white;
     }
+
     .copyright-text {
       color: white;
     }
@@ -83,4 +87,3 @@
   letter-spacing: 0.4ch;
   font-weight: 300;
 }
-
