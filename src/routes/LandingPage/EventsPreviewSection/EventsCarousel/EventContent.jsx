@@ -2,6 +2,7 @@ import React from 'react';
 import './index.scss';
 import { Typography, Button } from 'antd';
 import { RightOutlined } from '@ant-design/icons';
+import LandingButton from 'components/common/LandingButton/LandingButton';
 
 const { Paragraph } = Typography;
 
@@ -10,13 +11,6 @@ const ParaStyle = {
   textAlign: 'left',
   lineHeight: '31px',
   marginBottom: '0px',
-};
-
-const ButtonStyle = {
-  marginTop: '35px',
-  fontSize: '1em',
-  height: '67px',
-  aspectratio: '1.51',
 };
 
 const EventContent = ({
@@ -40,12 +34,12 @@ const EventContent = ({
           {' '}
           <br />
           {/* uhhh... button does nothing... will change soon */}
-          <Button type="primary" size="large" style={ButtonStyle}>
+          <LandingButton style={{ marginTop: '35px', height: '67px' }}>
             GO
             {' '}
             <RightOutlined />
             {' '}
-          </Button>
+          </LandingButton>
         </div>
       </div>
     </div>

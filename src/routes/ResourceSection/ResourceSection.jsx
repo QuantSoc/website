@@ -3,14 +3,7 @@ import { Button } from 'antd';
 import { RightOutlined } from '@ant-design/icons';
 import image from 'assets/comingsoon.png';
 import './index.scss';
-
-const ButtonStyle = {
-  fontSize: '1.2rem',
-  height: '2.7rem',
-  background: '#8234DA',
-  borderColor: '#8234DA',
-  borderRadius: '3px',
-};
+import LandingButton from 'components/common/LandingButton/LandingButton';
 
 const resourcesBlurbText = 'See our resources from previous events and more!';
 
@@ -25,13 +18,9 @@ const ResourceSection = () => {
           </div>
           <div className="resources-blurb">{resourcesBlurbText}</div>
         </div>
-        <Button
-          type="primary"
-          size="large"
-          style={ButtonStyle}
-        >
+        <LandingButton>
           See More
-        </Button>
+        </LandingButton>
       </div>
       <div className="resources-layout">
         <ResourceBlock name="WORKSHOPS" />
@@ -49,10 +38,10 @@ const ResourceBlock = ({ name }) => {
         <img className="image" src={image} alt="coming soon" />
       </div>
       <div>
-        <Button type="primary" size="large" style={ButtonStyle}>
+        <LandingButton>
           {name}
           <RightOutlined />
-        </Button>
+        </LandingButton>
       </div>
     </div>
   );
