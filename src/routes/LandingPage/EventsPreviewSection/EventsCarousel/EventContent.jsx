@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.scss';
-import { Typography, Button } from 'antd';
+import { Typography } from 'antd';
 import { RightOutlined } from '@ant-design/icons';
 import LandingButton from 'components/common/LandingButton/LandingButton';
 

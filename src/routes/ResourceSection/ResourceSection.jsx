@@ -1,5 +1,4 @@
 import React from 'react';
-import { Button } from 'antd';
 import { RightOutlined } from '@ant-design/icons';
 import image from 'assets/comingsoon.png';
 import './index.scss';
