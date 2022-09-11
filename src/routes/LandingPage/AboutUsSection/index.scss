@@ -1,3 +1,5 @@
+@import "styles/constants.scss";
+
 .about-us-section {
   padding: 1.4rem 0rem;
   background-color: white;
@@ -17,7 +19,7 @@
       padding-right: 2rem;
 
       .about-us-title {
-        color: #401570;
+        color: $darkest-purple;
         font-family: Poppins;
         font-size: 2rem;
         font-weight: bold;

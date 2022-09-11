@@ -1,20 +1,14 @@
 import React from 'react';
 import 'styles/index.scss';
 
-import { Button, Typography } from 'antd';
+import { Typography } from 'antd';
 import QuantSocLogo from 'components/common/QuantSocLogo';
 import './index.scss';
+import LandingButton from 'components/common/LandingButton/LandingButton';
 
 const { Text, Title } = Typography;
 
 const blurbText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
-const ButtonStyle = {
-  marginTop: '35px',
-  fontSize: '1.3em',
-  aspectratio: '1.51',
-  height: '54px',
-  width: '12ch',
-};
 
 const SplashSection = () => {
   return (
@@ -34,9 +28,9 @@ const SplashSection = () => {
           </Text>
         </div>
         <div className="splash-button">
-          <Button style={ButtonStyle} type="primary">
+          <LandingButton>
             JOIN US
-          </Button>
+          </LandingButton>
         </div>
       </div>
     </div>

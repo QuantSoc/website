@@ -15,4 +15,14 @@ export default defineConfig({
       { find: 'hooks', replacement: resolve(__dirname, 'src/hooks') },
     ],
   },
+  css: {
+    preprocessorOptions: {
+      less: {
+        modifyVars: {
+          'primary-color': '#8234DA',
+        },
+        javascriptEnabled: true,
+      },
+    },
+  },
 });

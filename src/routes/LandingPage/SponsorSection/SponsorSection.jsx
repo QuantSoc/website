@@ -1,6 +1,7 @@
 import React from 'react';
 import './index.scss';
 
+import LandingButton from 'components/common/LandingButton/LandingButton';
 import AccentureLogo from '../../../assets/SponsorImages/accenture_logo.png';
 import ArcLogo from '../../../assets/SponsorImages/arc_logo.png';
 import UNSWBusinessLogo from '../../../assets/SponsorImages/unsw_business.png';
@@ -21,9 +22,9 @@ const SponsorSection = () => {
 const SponsorButton = () => {
   return (
     <div className="sponsor-button-cont">
-      <button type="button" className="sponsor-button">
+      <LandingButton>
         SPONSOR US
-      </button>
+      </LandingButton>
     </div>
   );
 };

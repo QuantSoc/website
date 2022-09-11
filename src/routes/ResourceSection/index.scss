@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;700&display=swap');
+@import 'styles/constants.scss';
 
 @import "styles/global.scss";
 
 .resources-section {
-  background-color: $darkest-purple;
+  background-color: $dark-purple;
   color: white;
 
   display: flex;
@@ -34,12 +35,14 @@
         font-weight: 700;
         font-size: 2rem;
         gap: 1ch;
+
         /* font-style: italic; */
         .resources-title-arrow {
           color: #d2afff;
           font-family: Roboto;
         }
       }
+
       .resources-blurb {
         font-size: 1rem;
         font-family: Roboto;
@@ -65,6 +68,7 @@
       justify-content: center;
       gap: 2rem;
     }
+
     .image {
       width: 75%;
     }
@@ -77,25 +81,30 @@
       .resources-header-cont {
         flex-direction: column;
         align-items: flex-start;
+
         .resources-title {
+
           /* border: solid black 1px; */
           .resources-title-arrow {
             display: flex;
           }
         }
+
         .resources-blurb {
           display: none;
         }
       }
     }
-    
+
     .resources-layout {
       align-items: center;
       flex-wrap: wrap;
       gap: 2rem;
+
       .resource-block {
         width: 45%;
         align-items: center;
+
         .image {
           width: 100%;
         }
@@ -118,10 +127,12 @@
 
     .resources-layout {
       flex-direction: column;
+
       .resource-block {
         width: 80%;
         min-width: 250px;
         align-items: center;
+
         .image {
           width: 100%;
         }
@@ -137,4 +148,3 @@
     }
   }
 }
-

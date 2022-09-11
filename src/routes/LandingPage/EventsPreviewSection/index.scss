@@ -1,15 +1,17 @@
+@import "styles/constants.scss";
+
 .EventsPreview {
-    display: flexbox;
-    justify-items: center;
-    flex-direction: column;
-    padding-bottom: 6em;
+  display: flexbox;
+  justify-items: center;
+  flex-direction: column;
+  padding-bottom: 6em;
 }
 
 .EventsTitle {
-    color: #401570;
-    font-size: 2.3em;
-    font-weight: bold;
-    padding-top: 1.2em;
-    padding-bottom: 1.2em;
-    margin-bottom: 0;
+  color: $darkest-purple;
+  font-size: 2.3em;
+  font-weight: bold;
+  padding-top: 1.2em;
+  padding-bottom: 1.2em;
+  margin-bottom: 0;
 }
