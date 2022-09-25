@@ -4,7 +4,7 @@ import React from 'react';
 import QuantSocLogo from 'components/common/QuantSocLogo';
 import { Typography } from 'antd';
 
-import './index.scss';
+import './index.less';
 
 const FooterBar = () => {
   return (

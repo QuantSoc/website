@@ -1,6 +1,6 @@
 import square from 'assets/logo_square.png';
 import circle from 'assets/logo_circle.png';
-import './index.scss';
+import './index.less';
 
 const QuantSocLogo = ({ type, style }) => {
   return (

@@ -1,4 +1,4 @@
-import './index.scss';
+import './index.less';
 
 import AboutUsSection from './AboutUsSection/AboutUsSection';
 import SplashSection from './SplashSection';

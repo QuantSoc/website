@@ -1,5 +1,5 @@
 import React from 'react';
-import './index.scss';
+import './index.less';
 
 import LandingButton from 'components/common/LandingButton/LandingButton';
 import AccentureLogo from '../../../assets/SponsorImages/accenture_logo.png';

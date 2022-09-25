@@ -1,5 +1,5 @@
 import React from 'react';
-import './index.scss';
+import './index.less';
 
 import { Layout } from 'antd';
 import EventContent from './EventContent';

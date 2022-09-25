@@ -1,9 +1,9 @@
 import React from 'react';
-import 'styles/index.scss';
+import 'styles/index.less';
 
 import { Typography } from 'antd';
 import QuantSocLogo from 'components/common/QuantSocLogo';
-import './index.scss';
+import './index.less';
 import LandingButton from 'components/common/LandingButton/LandingButton';
 
 const { Text, Title } = Typography;

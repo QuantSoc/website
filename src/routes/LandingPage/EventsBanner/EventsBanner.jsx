@@ -1,5 +1,5 @@
 import React from 'react';
-import './index.scss';
+import './index.less';
 import classnames from 'classnames';
 import Marquee from 'react-fast-marquee';
 

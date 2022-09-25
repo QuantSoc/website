@@ -1,7 +1,7 @@
 import React from 'react';
 import { RightOutlined } from '@ant-design/icons';
 import image from 'assets/comingsoon.png';
-import './index.scss';
+import './index.less';
 import LandingButton from 'components/common/LandingButton/LandingButton';
 
 const resourcesBlurbText = 'See our resources from previous events and more!';

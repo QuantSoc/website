@@ -1,5 +1,5 @@
 import React from 'react';
-import './index.scss';
+import './index.less';
 
 import { Typography } from 'antd';
 import placeholder from '../../../assets/about_us_placeholder.png';
