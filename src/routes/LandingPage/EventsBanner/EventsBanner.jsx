@@ -10,9 +10,18 @@ const EventsBanner = () => {
     'BBQ',
     'Trivia nights',
     'Employer events',
+    'Meet ups',
+    'Parties',
+    'BBQ',
+    'Trivia nights',
+    'Employer events',
   ];
 
   const TechEvents = [
+    'Mock Interview',
+    'Trading Workshops',
+    'Discussions',
+    'Trading competitions',
     'Mock Interview',
     'Trading Workshops',
     'Discussions',
