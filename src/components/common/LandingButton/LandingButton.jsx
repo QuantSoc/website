@@ -1,7 +1,7 @@
 import { Button } from 'antd';
 import React from 'react';
 
-const LandingButton = ({ children, style }) => {
+const LandingButton = ({ children, style, className }) => {
   return (
     <Button
       type="primary"
@@ -11,6 +11,7 @@ const LandingButton = ({ children, style }) => {
         height: '2.7rem',
         ...style,
       }}
+      className={className}
     >
       {children}
     </Button>

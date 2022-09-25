@@ -22,7 +22,7 @@ const SponsorSection = () => {
 const SponsorButton = () => {
   return (
     <div className="sponsor-button-cont">
-      <LandingButton>
+      <LandingButton className="sponsor-button">
         SPONSOR US
       </LandingButton>
     </div>
