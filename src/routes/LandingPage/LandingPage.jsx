@@ -2,7 +2,7 @@ import './index.scss';
 
 import AboutUsSection from './AboutUsSection/AboutUsSection';
 import SplashSection from './SplashSection';
-import ResourceSection from '../ResourceSection';
+import ResourceSection from './ResourceSection';
 import EventsPreview from './EventsPreviewSection';
 import EventsBanner from './EventsBanner';
 import SponsorSection from './SponsorSection';
