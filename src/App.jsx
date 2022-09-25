@@ -9,6 +9,7 @@ import {
 import NotFoundPage from 'routes/NotFound';
 import LandingPage from 'routes/LandingPage';
 import NavBar from 'components/common/NavBar';
+
 import FooterBar from 'components/common/FooterBar';
 
 const App = () => {
