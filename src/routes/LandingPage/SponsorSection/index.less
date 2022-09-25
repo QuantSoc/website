@@ -1,5 +1,5 @@
-@import "styles/global.scss";
-@import "styles/constants.scss";
+@import "styles/global.less";
+@import "styles/constants.less";
 
 .sponsor-section {
   display: flex;
@@ -12,18 +12,6 @@
     margin-left: 5%;
     justify-content: space-between;
     overflow-inline: hidden;
-
-    .sponsor-button-cont {
-      .sponsor-button {
-        color: white;
-        text-align: center;
-        background-color: $dark-purple;
-        font-size: 1rem;
-        display: flex;
-        padding: 0.65em 3ch;
-        border: none;
-      }
-    }
 
     .sponsor-header {
       font-size: 2rem;
@@ -63,19 +51,13 @@
       .sponsor-button-cont {
         .sponsor-button {
           display: none;
-          text-align: left;
         }
       }
 
       .sponsor-header {
         font-size: 2rem;
-        display: column;
         text-align: left;
         margin-left: 5%;
-        margin-right: 30%;
-      }
-
-      .sponsor-header {
         margin-bottom: 20px;
       }
     }

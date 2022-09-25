@@ -1,5 +1,5 @@
-@import "styles/global.scss";
-@import "styles/constants.scss";
+@import "styles/global.less";
+@import "styles/constants.less";
 
 .glb-foot {
   margin-top: auto;
@@ -7,7 +7,7 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 3.5em;
-  background-color: $dark-purple;
+  background-color: @dark-purple;
 
   .glb-foot-section {
     align-items: flex-start;
@@ -35,7 +35,7 @@
       flex-direction: column;
       align-items: flex-start;
       color: white;
-      width: 200px;
+      width: 220px;
 
       >a.footer-link>li {
         color: white;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './index.scss';
+import './index.less';
 import bannerImage from 'assets/bannerimage.png';
 import useMediaQuery from 'hooks/useMediaQuery';
 

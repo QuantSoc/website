@@ -1,5 +1,5 @@
-import 'styles/App.scss';
-import 'styles/global.scss';
+import 'styles/App.less';
+import 'styles/global.less';
 import {
   Routes,
   Route,

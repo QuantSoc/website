@@ -4,7 +4,7 @@ import React from 'react';
 import QuantSocLogo from 'components/common/QuantSocLogo';
 import { Typography } from 'antd';
 
-import './index.scss';
+import './index.less';
 
 const FooterBar = () => {
   return (
@@ -14,7 +14,7 @@ const FooterBar = () => {
       </HorizontalEOLBAR>
       <div className="glb-foot-content-cont">
         <FooterColumn title="Contact us for Enquiries">
-          <FooterLink text="email: quantsoc.org.au" newTab link="mailto:quantsoc.org.au" />
+          <FooterLink text="email: unsw.quantsoc@gmail.com" newTab link="mailto:unsw.quantsoc@gmail.com" />
         </FooterColumn>
         <FooterColumn title="Links">
           <FooterLink text="Home" link="/" />

@@ -1,6 +1,6 @@
-@import "styles/global.scss";
-@import "styles/constants.scss";
-@import "routes/LandingPage/index.scss";
+@import "styles/global.less";
+@import "styles/constants.less";
+@import "routes/LandingPage/index.less";
 
 .splash-section {
   position: relative;
@@ -32,7 +32,7 @@
     text-align: left;
 
     .splash-title>* {
-      color: $darkest-purple;
+      color: @darkest-purple;
       font-size: 2.5rem;
       font-family: 'Poppins';
       font-weight: bold;
@@ -50,7 +50,7 @@
   }
 }
 
-@media (max-width: $desktop-width) {
+@media (max-width: @desktop-width) {
   .splash-section {
     height: 576px;
 
@@ -71,7 +71,7 @@
   }
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: @tablet-width) {
   .splash-section {
     height: unset;
     min-height: 630px;
@@ -108,7 +108,7 @@
   }
 }
 
-@media (max-width: $mobile-width) {
+@media (max-width: @mobile-width) {
   .splash-section {
     padding: 18px;
   }

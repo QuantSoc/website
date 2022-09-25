@@ -1,5 +1,5 @@
 import { React } from 'react';
-import './index.scss';
+import './index.less';
 
 import { Carousel } from 'antd';
 import EventEntry from './EventEntry';

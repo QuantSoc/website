@@ -1,11 +1,12 @@
 import React from 'react';
-import './index.scss';
+import './index.less';
 
 import LandingButton from 'components/common/LandingButton/LandingButton';
-import AccentureLogo from '../../../assets/SponsorImages/accenture_logo.png';
-import ArcLogo from '../../../assets/SponsorImages/arc_logo.png';
-import UNSWBusinessLogo from '../../../assets/SponsorImages/unsw_business.png';
-import UNSWLogo from '../../../assets/SponsorImages/unsw.png';
+import ArcLogo from 'assets/SponsorImages/arc_logo.png';
+import UNSWBusinessLogo from 'assets/SponsorImages/unsw_business.png';
+import UNSWLogo from 'assets/SponsorImages/unsw.png';
+import CitSecLogo from 'assets/SponsorImages/citsec.png';
+import SigLogo from 'assets/SponsorImages/sig.png';
 
 const SponsorSection = () => {
   return (
@@ -22,7 +23,7 @@ const SponsorSection = () => {
 const SponsorButton = () => {
   return (
     <div className="sponsor-button-cont">
-      <LandingButton>
+      <LandingButton className="sponsor-button">
         SPONSOR US
       </LandingButton>
     </div>
@@ -34,7 +35,8 @@ const SponsorImageLayout = () => {
   return (
     <div className="sponsor-image-layout">
       <SponsorImg imageSrc={UNSWLogo} altText="unsw logo" />
-      <SponsorImg imageSrc={AccentureLogo} altText="Accenture Logo" />
+      <SponsorImg imageSrc={CitSecLogo} altText="Citadel Securities Logo" />
+      <SponsorImg imageSrc={SigLogo} altText="Sig Logo" />
       <SponsorImg imageSrc={ArcLogo} altText="Arc Logo" />
       <SponsorImg imageSrc={UNSWBusinessLogo} altText="UNSW Business school logo" />
       <SponsorImg imageSrc={UNSWLogo} altText="unsw logo" />

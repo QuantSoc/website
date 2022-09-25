@@ -1,5 +1,5 @@
 import QuantSocLogo from 'components/common/QuantSocLogo';
-import './index.scss';
+import './index.less';
 
 // TODO: Wrapper around antd nav
 const NavBar = () => {

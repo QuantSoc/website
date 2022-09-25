@@ -1,14 +1,14 @@
 import React from 'react';
-import 'styles/index.scss';
+import 'styles/index.less';
 
 import { Typography } from 'antd';
 import QuantSocLogo from 'components/common/QuantSocLogo';
-import './index.scss';
+import './index.less';
 import LandingButton from 'components/common/LandingButton/LandingButton';
 
 const { Text, Title } = Typography;
 
-const blurbText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
+const blurbText = 'UNSW QuantSoc is a new student society that aims to connect UNSW students interested in mathematical finance, quantitative trading and algorithmic market-making with opportunities to learn, socialise and network with like-minded students and industry partners.';
 
 const SplashSection = () => {
   return (
