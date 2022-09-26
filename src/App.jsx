@@ -8,7 +8,12 @@ import {
 
 import NotFoundPage from 'routes/NotFound';
 import LandingPage from 'routes/LandingPage';
+import AboutUsPage from 'routes/AboutUsPage';
+import EventsPage from 'routes/EventsPage';
+import ResourcesPage from 'routes/ResourcesPage';
+import SponsorsPage from 'routes/SponsorsPage';
 import NavBar from 'components/common/NavBar';
+
 import FooterBar from 'components/common/FooterBar';
 
 const App = () => {
@@ -19,11 +24,12 @@ const App = () => {
         <Routes>
           <Route path="*" element={<NotFoundPage />} />
           <Route path="/" element={<LandingPage />} />
-          <Route path="/about" element={<NotFoundPage />} />
-          <Route path="/events" element={<NotFoundPage />} />
-          <Route path="/resources" element={<NotFoundPage />} />
-          <Route path="/sponsors" element={<NotFoundPage />} />
-          <Route path="/contact" element={<NotFoundPage />} />
+          <Route path="/about" element={<AboutUsPage />} />
+          <Route path="/events" element={<EventsPage />} />
+          <Route path="/resources" element={<ResourcesPage />} />
+          <Route path="/sponsors" element={<SponsorsPage />} />
+          {/* The following route *may* just be integrated to AboutUsPage; TBA */}
+          {/* <Route path="/contact" element={<NotFoundPage />} /> */}
         </Routes>
       </BrowserRouter>
       <FooterBar />
