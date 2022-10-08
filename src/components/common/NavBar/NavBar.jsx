@@ -1,5 +1,10 @@
+/* eslint-disable */
+import { Typography } from 'antd';
 import QuantSocLogo from 'components/common/QuantSocLogo';
 import './index.less';
+
+const { Text } = Typography;
+
 
 // TODO: Wrapper around antd nav
 const NavBar = () => {
@@ -9,7 +14,7 @@ const NavBar = () => {
         <QuantSocLogo type="circle" style={{ width: '3rem', height: '3rem' }} />
         <div className="title">uantsoc</div>
       </div>
-      <div className="menuTabs">  
+      <div className="menuTabs">
         <div className='menuWord'>
           EVENTS
         </div>
@@ -22,8 +27,9 @@ const NavBar = () => {
         <div className='menuWord'>
           SPONSORS
         </div>
-        <text> ABOUT US</text>
-        CONTACT US
+        <div className="menuWord">
+          CONTACT US
+        </div>
       </div>
       <div className="links">
         {/* <Link></Link> */}

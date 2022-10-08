@@ -3,6 +3,7 @@
 @import '/src/styles/constants.less';
 
 .navbar {
+
   width: 100%;
   padding: 0.5rem;
   background-color: @dark-purple;
@@ -12,7 +13,7 @@
   flex-direction: row;
   align-items: center;
 
-  >.badge {
+  > .badge {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -25,26 +26,35 @@
     font-weight: 300;
   }
 
-  >.links {
+  > .links {
     flex-grow: 1;
   }
 
-  >.menuWord {
-    min-width: 600px;
-  }
 
-  >.menuTabs {
+  > .menuTabs {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    gap: 20%;
-    
-    margin-left: 10%;
+    // gap: 20%;
+
+    width: 100%;
 
     color: white;
     font-family: 'Roboto';
     font-size: 1rem;
     font-weight: 400;
+
+    > .menuWord {
+      padding: 0.45em 0.80em;
+      min-width: 11ch;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
   }
 
 }
+
+
