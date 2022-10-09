@@ -1,29 +1,33 @@
 import React from 'react';
 import { Card } from 'antd';
-import { RightOutlined } from '@ant-design/icons';
+import { RightOutlined, SettingOutlined } from '@ant-design/icons';
 import './index.less';
-import LandingButton from '../LandingButton/LandingButton';
 
 const { Meta } = Card;
 
-const PastEventsCard = ({ img, title, description, link }) => {
+const PastEventsCard = ({ img, title, description, actions }) => {
+
   return (
     <Card
       className="past-events-card"
       hoverable
-      cover={<img alt={title} src={img} />}
+      style={{ width: 300, margin: '20px' }}
+      cover={<img alt={title} src={img} style={{padding: 20}}/>}
+      actions={actions ? actions : [
+        <SettingOutlined key="setting" />, // Facebook or smth
+        <div>
+          Read More
+          &nbsp;
+          <RightOutlined />
+          {/* <EditOutlined key="edit" /> */}
+        </div>
+      ]}
     >
       <Meta
         className="card-cont"
         title={title}
         description={description}
       />
-
-      <LandingButton className="read-more-button">
-        Read more
-        <RightOutlined />
-      </LandingButton>
-
     </Card>
   );
 };
