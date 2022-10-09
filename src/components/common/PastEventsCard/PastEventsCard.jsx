@@ -5,13 +5,13 @@ import './index.less';
 
 const { Meta } = Card;
 
-const PastEventsCard = ({ img, title, description, actions }) => {
+const PastEventsCard = ({ img, title, description, actions,  width }) => {
 
   return (
     <Card
       className="past-events-card"
       hoverable
-      style={{ width: 300, margin: '20px' }}
+      style={{ width: width ?? 300, margin: '20px' }}
       cover={<img alt={title} src={img} style={{padding: 20}}/>}
       actions={actions ? actions : [
         <SettingOutlined key="setting" />, // Facebook or smth
