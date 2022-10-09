@@ -3,58 +3,146 @@
 @import '/src/styles/constants.less';
 
 .navbar {
-
-  width: 100%;
-  padding: 0.5rem;
-  background-color: @dark-purple;
-  opacity: 70%;
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-
-  > .badge {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 0.5ch;
-
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
-    letter-spacing: 0.5ch;
-    font-weight: 300;
+  &:hover {
+    cursor: pointer;
   }
-
-  > .links {
-    flex-grow: 1;
-  }
-
-
-  > .menuTabs {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    // gap: 20%;
-
+  >.navbar_toggled { 
     width: 100%;
+    padding: 0.5rem;
+    background-color: @dark-purple;
+    opacity: 70%;
 
-    color: white;
-    font-family: 'Roboto';
-    font-size: 1rem;
-    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .badge {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 0.5ch;
 
-    > .menuWord {
-      padding: 0.45em 0.80em;
-      min-width: 11ch;
+      color: white;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1rem;
+      letter-spacing: 0.5ch;
+      font-weight: 300;
+    }
 
-      &:hover {
-        cursor: pointer;
+    > .links {
+      flex-grow: 1;
+    }
+
+    >.toggle_top {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;    
+
+    }
+    > .menuTabs {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+
+      color: white;
+      font-family: 'Roboto';
+      font-size: 0.85rem;
+        > .menuWord {
+          padding: 0.45em 0.80em;
+          font-weight: 500;
+          min-width: 14ch;
+          
+          &:hover {
+            cursor: pointer;
+            background-color: @darkest-purple;
+          }
+      }
+    
+    }
+
+    .exit {
+      align-items: left;
+      color: white;
+      font-family: 'Roboto';
+      font-size: 1.5rem;
+      margin-right: 5%;
+    }     
+
+  }
+    
+  >.navbar_normal { 
+    width: 100%;
+    padding: 0.5rem;
+    background-color: @dark-purple;
+    opacity: 70%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    .badge {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 0.5ch;
+
+      color: white;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1rem;
+      letter-spacing: 0.5ch;
+      font-weight: 300;
+    }
+
+    > .links {
+      flex-grow: 1;
+    }
+
+    > .menuTabs {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+
+      color: white;
+      font-family: 'Roboto';
+      font-size: 0.85rem;
+        > .menuWord {
+          padding: 0.45em 0.80em;
+          font-weight: 500;
+          min-width: 14ch;
+          
+          &:hover {
+            cursor: pointer;
+            background-color: @darkest-purple;
+          }
+        }
+    }
+
+    
+
+    @media screen and (min-width: 790px) {
+      .dropDown {
+        display: none;
       }
     }
+
+    @media screen and (max-width: 790px) {
+      .menuWord {
+        display: none;
+      }   
+    }   
+
   }
-
+  .dropDown {
+    align-items: left;
+    color: white;
+    font-family: 'Roboto';
+    font-size: 1.5rem;
+    margin-right: 5%;
+  }
 }
-
-
