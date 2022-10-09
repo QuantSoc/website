@@ -1,3 +1,4 @@
+/* eslint-disable */
 /* import { Typography } from 'antd'; */
 import { MenuOutlined, CloseOutlined } from '@ant-design/icons';
 import QuantSocLogo from 'components/common/QuantSocLogo';
@@ -14,19 +15,22 @@ const NavBar = () => {
   if (isDesktop && !isOpen) {
     setOpen(!isOpen);
   }
+
+  const toggleOpen = () => {
+    setOpen(!isOpen);
+  };
+
   return (
     <div className="navbar">
       {
         isOpen
           ? (
             <NavBarOpen
-              setOpen={setOpen}
-              isOpen={isOpen}
+              toggleOpen={toggleOpen}
             />
           ) : (
             <NavBarClosed
-              setOpen={setOpen}
-              isOpen={isOpen}
+              toggleOpen={toggleOpen}
             />
           )
       }
@@ -34,7 +38,7 @@ const NavBar = () => {
   );
 };
 
-export const NavBarOpen = ({ isOpen, setIsOpen }) => {
+export const NavBarOpen = ({ toggleOpen }) => {
   return (
     <div className="navbar_normal">
       <div className="badge">
@@ -58,7 +62,7 @@ export const NavBarOpen = ({ isOpen, setIsOpen }) => {
           CONTACT US
         </div>
       </div>
-      <MenuOutlined className="dropDown" onClick={() => { return setIsOpen(!isOpen); }} />
+      <MenuOutlined className="dropDown" onClick={() => { toggleOpen(); }} />
       <div className="links">
         {}
       </div>
@@ -66,7 +70,7 @@ export const NavBarOpen = ({ isOpen, setIsOpen }) => {
   );
 };
 
-export const NavBarClosed = ({ isOpen, setIsOpen }) => {
+export const NavBarClosed = ({ toggleOpen }) => {
   return (
     <div className="navbar_toggled">
       <div className="toggle_top">
@@ -74,7 +78,10 @@ export const NavBarClosed = ({ isOpen, setIsOpen }) => {
           <QuantSocLogo type="circle" style={{ width: '3rem', height: '3rem' }} />
           <div className="title">uantsoc</div>
         </div>
-        <CloseOutlined className="exit" onClick={() => { return setIsOpen(!isOpen); }} />
+        <CloseOutlined
+          className="exit"
+          onClick={() => { console.log('oooo'); toggleOpen(); }}
+        />
       </div>
       <div className="menuTabs">
         <div className="menuWord">
