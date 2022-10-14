@@ -1,11 +1,11 @@
-import React from 'react';
-import { Card } from 'antd';
-import { RightOutlined, SettingOutlined } from '@ant-design/icons';
+import React, { useState } from 'react';
+import { Card, Modal } from 'antd';
+import { RightOutlined, SettingOutlined, CalendarOutlined } from '@ant-design/icons';
 import './index.less';
 
 const { Meta } = Card;
 
-const PastEventsCard = ({
+const InfoCard = ({
   img, title, description, actions, width,
 }) => {
   return (
@@ -15,13 +15,20 @@ const PastEventsCard = ({
       style={{ width: width ?? 300, margin: '20px' }}
       cover={<img alt={title} src={img} style={{ padding: 20 }} />}
       actions={actions || [
-        <SettingOutlined key="setting" />, // Facebook or smth
+        <a href="https://www.facebook.com/unswquantsoc" target="_blank" rel="noreferrer">
+          <SettingOutlined key="setting" />
+        </a>, // Facebook or smth
         <div>
           Read More
           &nbsp;
           <RightOutlined />
+          <Modal title={title}>
+            <img alt={title} src={img} style={{ maxWidth: 460, padding: 20 }} />
+            <p>{description}</p>
+          </Modal>
           {/* <EditOutlined key="edit" /> */}
         </div>,
+        <CalendarOutlined />,
       ]}
     >
       <Meta
@@ -33,4 +40,4 @@ const PastEventsCard = ({
   );
 };
 
-export default PastEventsCard;
+export default InfoCard;
