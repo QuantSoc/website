@@ -21,7 +21,6 @@ const EventEntry = ({ key, data }) => {
 
   const ContentStyleMobile = {
     maxWidth: '100%',
-    position: 'relative',
     margin: '0 auto',
     aspectRatio: '16/9',
     overflow: 'hidden',
