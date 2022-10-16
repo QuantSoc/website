@@ -1,6 +1,10 @@
 import 'styles/App.less';
 import 'styles/global.less';
-import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import {
+  Routes,
+  Route,
+  BrowserRouter,
+} from 'react-router-dom';
 
 import NotFoundPage from 'routes/NotFound';
 import LandingPage from 'routes/LandingPage';
@@ -14,16 +18,16 @@ import FooterBar from 'components/common/FooterBar';
 
 const App = () => {
   return (
-    <div className='App'>
+    <div className="App">
       <NavBar />
-      <BrowserRouter className='app-page'>
+      <BrowserRouter className="app-page">
         <Routes>
-          <Route path='*' element={<NotFoundPage />} />
-          <Route path='/' element={<LandingPage />} />
-          <Route path='/about' element={<AboutUsPage />} />
-          <Route path='/events' element={<EventsPage />} />
-          <Route path='/resources' element={<ResourcesPage />} />
-          <Route path='/sponsors' element={<SponsorsPage />} />
+          <Route path="*" element={<NotFoundPage />} />
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/about" element={<AboutUsPage />} />
+          <Route path="/events" element={<EventsPage />} />
+          <Route path="/resources" element={<ResourcesPage />} />
+          <Route path="/sponsors" element={<SponsorsPage />} />
           {/* The following route *may* just be integrated to AboutUsPage; TBA */}
           {/* <Route path="/contact" element={<NotFoundPage />} /> */}
         </Routes>
