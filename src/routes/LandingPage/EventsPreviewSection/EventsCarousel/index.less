@@ -42,13 +42,39 @@
   font-size: 1.7em;
   text-align: left;
   margin-top: auto;
-
 }
 
 .EventImage {
   min-height: 100%;
   min-width: 100%;
   object-fit: fill;
+}
+
+// mobile 
+@media (max-width: 860px) {
+  .EventImage {
+    top: 50%;
+    left: 50%;
+    object-fit: scale-down;
+    object-position: center;
+    position: relative;
+    transform: translateX(-50%);
+  }
+
+  .carousel-content {
+    padding-top: 0%;
+    padding-bottom: 5%;
+  }
+
+  .event-description {
+    width: 95%;
+  }
+
+  .events-info {
+    font-size: 1.3em;
+    text-align: left;
+    margin-top: auto;
+  }
 }
 
 // probably need to change this later... we will see
