@@ -1,9 +1,14 @@
-/* eslint-disable */
 import React, { useState } from 'react';
 import { Card, Modal, Button } from 'antd';
 import {
-  RightOutlined, SettingOutlined, CalendarOutlined, ArrowsAltOutlined, EditOutlined, FacebookOutlined,
+  CalendarOutlined, ArrowsAltOutlined,
+  FacebookOutlined,
 } from '@ant-design/icons';
+// Unused (no)
+// import {
+//   RightOutlined, SettingOutlined,
+//   EditOutlined,
+// }
 import './index.less';
 
 const { Meta } = Card;
@@ -28,7 +33,8 @@ const CalendarConfirmModal = ({ open, setOpen }) => {
         <Button key="submit" type="primary" onClick={handleOk} />,
       ]}
     >
-      Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.
+      Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint
+      cillum sint consectetur cupidatat.
     </Modal>
   );
 };
@@ -36,13 +42,12 @@ const CalendarConfirmModal = ({ open, setOpen }) => {
 const InfoCard = ({
   img, title, description, actions, width,
 }) => {
-
   const [calendarOpen, setCalendarOpen] = useState(false);
 
   const openCalendar = () => {
     // works but hidden on dev
     /* setCalendarOpen(true); */
-  }
+  };
 
   return (
     <Card
