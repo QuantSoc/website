@@ -1,9 +1,8 @@
 import React from 'react';
+import AboutUsSection from 'routes/LandingPage/AboutUsSection';
 
 const AboutUsPage = () => {
-  return (
-    <div />
-  );
+  return <AboutUsSection />;
 };
 
 export default AboutUsPage;
