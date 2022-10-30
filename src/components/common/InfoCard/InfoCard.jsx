@@ -24,15 +24,44 @@ const CalendarConfirmModal = ({ open, setOpen }) => {
 
   return (
     <Modal
-      title="Example Event"
+      title="Add Example Event to Calender"
       open={open}
       onOk={handleOk}
       onCancel={handleCancel}
       footer={[
-        <Button key="close" onClick={handleCancel} />,
-        <Button key="submit" type="primary" onClick={handleOk} />,
+        <Button key="close" onClick={handleCancel}>
+          Cancel
+        </Button>,
+        <Button key="submit" type="primary" onClick={handleOk}>
+          Confirm
+        </Button>,
       ]}
     >
+      Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint
+      cillum sint consectetur cupidatat.
+    </Modal>
+  );
+};
+
+const InfoCardExpandModal = ({ open, setOpen, img }) => {
+  const handleOk = () => {
+    setOpen(false);
+  };
+
+  const handleCancel = () => {
+    setOpen(false);
+  };
+
+  return (
+    <Modal
+      title="Example Event"
+      open={open}
+      onOk={handleOk}
+      onCancel={handleCancel}
+      width={1000}
+      footer={null}
+    >
+      <img alt="Example Event" src={img} />
       Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint
       cillum sint consectetur cupidatat.
     </Modal>
@@ -43,10 +72,15 @@ const InfoCard = ({
   img, title, description, actions, width,
 }) => {
   const [calendarOpen, setCalendarOpen] = useState(false);
+  const [InfoCardExpand, setInfoCardExpand] = useState(false);
 
   const openCalendar = () => {
     // works but hidden on dev
-    /* setCalendarOpen(true); */
+    setCalendarOpen(true);
+  };
+
+  const expandInfoCard = () => {
+    setInfoCardExpand(true);
   };
 
   return (
@@ -59,13 +93,12 @@ const InfoCard = ({
         <a href="https://www.facebook.com/unswquantsoc" target="_blank" rel="noreferrer">
           <FacebookOutlined key="facebook" />
         </a>, // Facebook
-        <CalendarOutlined />,
-        <div>
-          <ArrowsAltOutlined
-            onClick={openCalendar}
-          />
-          {/* <EditOutlined key="edit" /> */}
-        </div>,
+        <CalendarOutlined
+          onClick={openCalendar}
+        />,
+        <ArrowsAltOutlined
+          onClick={expandInfoCard}
+        />,
       ]}
     >
       <Meta
@@ -80,6 +113,11 @@ const InfoCard = ({
       <CalendarConfirmModal
         open={calendarOpen}
         setOpen={setCalendarOpen}
+      />
+      <InfoCardExpandModal
+        open={InfoCardExpand}
+        setOpen={setInfoCardExpand}
+        img={img}
       />
     </Card>
   );
