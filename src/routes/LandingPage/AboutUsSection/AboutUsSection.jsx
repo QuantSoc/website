@@ -6,16 +6,8 @@ import { Link } from 'react-router-dom';
 import placeholder from '../../../assets/about_us_placeholder.png';
 
 const AboutUsSection = ({ link = false }) => {
-  if (link) {
-    return (
-      <Link to="/about">
-        <AboutUsSectionBase />
-      </Link>
-    );
-  }
-
   return (
-    <AboutUsSectionBase />
+    link ? <Link to="/about"><AboutUsSectionBase /></Link> : <AboutUsSectionBase />
   );
 };
 
