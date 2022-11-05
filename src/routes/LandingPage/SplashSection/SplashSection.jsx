@@ -28,7 +28,7 @@ const SplashSection = () => {
           </Text>
         </div>
         <div className="splash-button">
-          <LandingButton>
+          <LandingButton href="#footerBar">
             JOIN US
           </LandingButton>
         </div>

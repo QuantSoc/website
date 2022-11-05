@@ -28,12 +28,12 @@ const EventContent = ({
 
   const btnDesktop = {
     marginTop: '35px',
-    height: '67px',
+    height: '45px',
   };
 
   const btnMobile = {
     marginTop: '25px',
-    height: '50px',
+    height: '45px',
   };
 
   return (
@@ -53,8 +53,8 @@ const EventContent = ({
           {`💻 ${delivery}`}
           {' '}
           <br />
-          {/* uhhh... button does nothing... will change soon */}
-          <LandingButton style={isDesktop ? btnDesktop : btnMobile}>
+
+          <LandingButton style={isDesktop ? btnDesktop : btnMobile} href="/events">
             GO
             {' '}
             <RightOutlined />

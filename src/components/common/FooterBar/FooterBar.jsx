@@ -8,7 +8,7 @@ import './index.less';
 
 const FooterBar = () => {
   return (
-    <footer className="glb-foot">
+    <footer className="glb-foot" id="footerBar">
       <HorizontalEOLBAR>
         <LogoWithText />
       </HorizontalEOLBAR>
