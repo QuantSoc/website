@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
-import { Card, Modal, Button } from 'antd';
+import {
+  Card, Modal, Button, Typography,
+} from 'antd';
 import {
   CalendarOutlined, ArrowsAltOutlined,
-  FacebookOutlined,
+  FacebookOutlined, FieldTimeOutlined,
+  GlobalOutlined, CompassOutlined,
 } from '@ant-design/icons';
 // Unused (no)
 // import {
@@ -12,6 +15,7 @@ import {
 import './index.less';
 
 const { Meta } = Card;
+const { Text, Title } = Typography;
 
 const CalendarConfirmModal = ({ open, setOpen }) => {
   const handleOk = () => {
@@ -43,7 +47,9 @@ const CalendarConfirmModal = ({ open, setOpen }) => {
   );
 };
 
-const InfoCardExpandModal = ({ open, setOpen, img }) => {
+const InfoCardExpandModal = ({
+  open, setOpen, img, title, description, time, location, duration, people,
+}) => {
   const handleOk = () => {
     setOpen(false);
   };
@@ -54,22 +60,40 @@ const InfoCardExpandModal = ({ open, setOpen, img }) => {
 
   return (
     <Modal
-      title="Example Event"
+      title={title}
       open={open}
       onOk={handleOk}
       onCancel={handleCancel}
       width={1000}
       footer={null}
     >
-      <img alt="Example Event" src={img} />
-      Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint
-      cillum sint consectetur cupidatat.
+      <img alt={title} src={img} style={{ maxWidth: 950 }} />
+      <Title level={5} type="danger">
+        <CalendarOutlined style={{ marginRight: 5 }} />
+        {time}
+      </Title>
+      <Title level={5}>
+        <CompassOutlined style={{ marginRight: 5 }} />
+        {location}
+      </Title>
+      <Title level={5}>
+        <FieldTimeOutlined style={{ marginRight: 5 }} />
+        Duration:
+        {duration}
+      </Title>
+      <Title level={5}>
+        <GlobalOutlined style={{ marginRight: 5 }} />
+        {people}
+      </Title>
+      <Title level={5}>
+        {description}
+      </Title>
     </Modal>
   );
 };
 
 const InfoCard = ({
-  img, title, description, actions, width,
+  img, title, description, actions, width, time, location, duration, people,
 }) => {
   const [calendarOpen, setCalendarOpen] = useState(false);
   const [InfoCardExpand, setInfoCardExpand] = useState(false);
@@ -118,6 +142,12 @@ const InfoCard = ({
         open={InfoCardExpand}
         setOpen={setInfoCardExpand}
         img={img}
+        title={title}
+        description={description}
+        time={time}
+        location={location}
+        duration={duration}
+        people={people}
       />
     </Card>
   );
