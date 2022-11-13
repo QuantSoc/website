@@ -13,7 +13,7 @@ const LandingPage = () => {
     <div className="landing-page">
       <section><SplashSection /></section>
       <section><MainBanner /></section>
-      <section><AboutUsSection /></section>
+      <section><AboutUsSection link /></section>
       <section><EventsBanner /></section>
       <section><EventsPreview /></section>
       <section><ResourceSection /></section>
