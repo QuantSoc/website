@@ -41,26 +41,26 @@ const NavBar = () => {
 export const NavBarOpen = ({ toggleOpen }) => {
   return (
     <div className="navbar_normal">
-      <div className="badge">
+      <a className="badge" href='/'>
         <QuantSocLogo type="circle" style={{ width: '3rem', height: '3rem' }} />
         <div className="title">uantsoc</div>
-      </div>
+      </a>
       <div className="menuTabs">
-        <div className="menuWord">
+        <a className="menuWord" style={{color: 'white'}} href='/events'>
           EVENTS
-        </div>
-        <div className="menuWord">
+        </a>
+        <a className="menuWord" style={{color: 'white'}} href='/resources'>
           RESOURCES
-        </div>
-        <div className="menuWord">
+        </a>
+        <a className="menuWord" style={{color: 'white'}}  href='/about'>
           ABOUT US
-        </div>
-        <div className="menuWord">
+        </a>
+        <a className="menuWord" style={{color: 'white'}}  href='/sponsors'>
           SPONSORS
-        </div>
-        <div className="menuWord">
+        </a>
+        <a className="menuWord" style={{color: 'white'}} href='#footerBar'>
           CONTACT US
-        </div>
+        </a>
       </div>
       <MenuOutlined className="dropDown" onClick={() => { toggleOpen(); }} />
       <div className="links">
