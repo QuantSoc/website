@@ -18,9 +18,9 @@ import FooterBar from 'components/common/FooterBar';
 
 const App = () => {
   return (
-    <div className="App">
-      <NavBar />
-      <BrowserRouter className="app-page">
+    <BrowserRouter className="app-page">
+      <div className="App">
+        <NavBar />
         <Routes>
           <Route path="*" element={<NotFoundPage />} />
           <Route path="/" element={<LandingPage />} />
@@ -31,9 +31,9 @@ const App = () => {
           {/* The following route *may* just be integrated to AboutUsPage; TBA */}
           {/* <Route path="/contact" element={<NotFoundPage />} /> */}
         </Routes>
-      </BrowserRouter>
-      <FooterBar />
-    </div>
+        <FooterBar />
+      </div>
+    </BrowserRouter>
   );
 };
 

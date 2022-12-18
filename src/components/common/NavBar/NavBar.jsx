@@ -1,14 +1,12 @@
 /* eslint-disable */
-/* import { Typography } from 'antd'; */
 import { MenuOutlined, CloseOutlined } from '@ant-design/icons';
 import QuantSocLogo from 'components/common/QuantSocLogo';
 import './index.less';
 import { useState } from 'react';
 import useMediaQuery from 'hooks/useMediaQuery';
+import { Link } from 'react-router-dom';
 
-/* const { Text } = Typography; */
 
-// TODO: Wrapper around antd nav
 const NavBar = () => {
   const [isOpen, setOpen] = useState(false);
   const isDesktop = useMediaQuery('(min-width: 790px)');
@@ -41,23 +39,23 @@ const NavBar = () => {
 export const NavBarOpen = ({ toggleOpen }) => {
   return (
     <div className="navbar_normal">
-      <a className="badge" href='/'>
+      <Link to="/" className="badge">
         <QuantSocLogo type="circle" style={{ width: '3rem', height: '3rem' }} />
         <div className="title">uantsoc</div>
-      </a>
+      </Link>
       <div className="menuTabs">
-        <a className="menuWord" style={{color: 'white'}} href='/events'>
+        <Link className="menuWord" style={{color: 'white'}} to='/events'>
           EVENTS
-        </a>
-        <a className="menuWord" style={{color: 'white'}} href='/resources'>
+        </Link>
+        <Link className="menuWord" style={{color: 'white'}} to='/resources'>
           RESOURCES
-        </a>
-        <a className="menuWord" style={{color: 'white'}}  href='/about'>
+        </Link>
+        <Link className="menuWord" style={{color: 'white'}}  to='/about'>
           ABOUT US
-        </a>
-        <a className="menuWord" style={{color: 'white'}}  href='/sponsors'>
+        </Link>
+        <Link className="menuWord" style={{color: 'white'}}  to='/sponsors'>
           SPONSORS
-        </a>
+        </Link>
         <a className="menuWord" style={{color: 'white'}} href='#footerBar'>
           CONTACT US
         </a>
