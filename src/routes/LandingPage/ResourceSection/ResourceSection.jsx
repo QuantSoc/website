@@ -17,27 +17,27 @@ const ResourceSection = () => {
           </div>
           <div className="resources-blurb">{resourcesBlurbText}</div>
         </div>
-        <LandingButton>
+        <LandingButton href="/resources">
           See More
         </LandingButton>
       </div>
       <div className="resources-layout">
-        <ResourceBlock name="WORKSHOPS" />
-        <ResourceBlock name="ARTICLES" />
-        <ResourceBlock name="BLOGS" />
+        <ResourceBlock name="WORKSHOPS" href="/resources" />
+        <ResourceBlock name="ARTICLES" href="/resources" />
+        <ResourceBlock name="BLOGS" href="/resources" />
       </div>
     </div>
   );
 };
 
-const ResourceBlock = ({ name }) => {
+const ResourceBlock = ({ name, href }) => {
   return (
     <div className="resource-block">
       <div>
         <img className="image" src={image} alt="coming soon" />
       </div>
       <div>
-        <LandingButton>
+        <LandingButton href={href}>
           {name}
           <RightOutlined />
         </LandingButton>
