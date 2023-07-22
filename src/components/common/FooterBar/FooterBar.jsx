@@ -29,7 +29,7 @@ const FooterBar = () => {
         </FooterColumn>
       </div>
       <HorizontalEOLBAR>
-        <span className="copyright-text">&copy; 2022 QuantSoc UNSW</span>
+        <span className="copyright-text">&copy; 2023 QuantSoc UNSW</span>
       </HorizontalEOLBAR>
     </footer>
   );
