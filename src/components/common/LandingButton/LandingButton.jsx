@@ -13,7 +13,6 @@ const LandingButton = (
       size="large"
       style={{
         fontSize: '1.2rem',
-        height: '2.7rem',
         ...style,
       }}
       className={className}
