@@ -34,12 +34,21 @@ const SponsorImageLayout = () => {
   // TODO: make this a map over an array
   return (
     <div className="sponsor-image-layout">
-      <SponsorImg imageSrc={UNSWLogo} altText="unsw logo" />
-      <SponsorImg imageSrc={CitSecLogo} altText="Citadel Securities Logo" />
-      <SponsorImg imageSrc={SigLogo} altText="Sig Logo" />
-      <SponsorImg imageSrc={ArcLogo} altText="Arc Logo" />
-      <SponsorImg imageSrc={UNSWBusinessLogo} altText="UNSW Business school logo" />
-      <SponsorImg imageSrc={UNSWLogo} altText="unsw logo" />
+      <a href="https://www.unsw.edu.au/" target="_blank" rel="noopener noreferrer">
+        <SponsorImg imageSrc={UNSWLogo} altText="unsw logo" />
+      </a>
+      <a href="https://www.citadelsecurities.com/" target="_blank" rel="noopener noreferrer">
+        <SponsorImg imageSrc={CitSecLogo} altText="Citadel Securities Logo" />
+      </a>
+      <a href="https://sig.com/" target="_blank" rel="noopener noreferrer">
+        <SponsorImg imageSrc={SigLogo} altText="Sig Logo" />
+      </a>
+      <a href="https://www.arc.unsw.edu.au/clubs" target="_blank" rel="noopener noreferrer">
+        <SponsorImg imageSrc={ArcLogo} altText="Arc Logo" />
+      </a>
+      <a href="https://www.unsw.edu.au/business" target="_blank" rel="noopener noreferrer">
+        <SponsorImg imageSrc={UNSWBusinessLogo} altText="UNSW Business school logo" />
+      </a>
     </div>
   );
 };
