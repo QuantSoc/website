@@ -17,7 +17,7 @@ import './index.less';
 const { Meta } = Card;
 const { Text, Title } = Typography;
 
-const CalendarConfirmModal = ({ open, setOpen }) => {
+const CalendarConfirmModal = ({ open, setOpen, title }) => {
   const handleOk = () => {
     setOpen(false);
   };
@@ -28,7 +28,7 @@ const CalendarConfirmModal = ({ open, setOpen }) => {
 
   return (
     <Modal
-      title="Add Example Event to Calender"
+      title={`Add ${title} to Calendar?`}
       open={open}
       onOk={handleOk}
       onCancel={handleCancel}
@@ -78,8 +78,7 @@ const InfoCardExpandModal = ({
       </Title>
       <Title level={5}>
         <FieldTimeOutlined style={{ marginRight: 5 }} />
-        Duration:
-        {duration}
+        {`Duration: ${duration}`}
       </Title>
       <Title level={5}>
         <GlobalOutlined style={{ marginRight: 5 }} />
@@ -93,7 +92,7 @@ const InfoCardExpandModal = ({
 };
 
 const InfoCard = ({
-  img, title, description, actions, width, time, location, duration, people,
+  img, title, description, link, actions, width, time, location, duration, people,
 }) => {
   const [calendarOpen, setCalendarOpen] = useState(false);
   const [InfoCardExpand, setInfoCardExpand] = useState(false);
@@ -114,7 +113,7 @@ const InfoCard = ({
       style={{ width: width ?? 300, margin: '20px' }}
       cover={<img alt={title} src={img} style={{ padding: 20 }} />}
       actions={actions || [
-        <a href="https://www.facebook.com/unswquantsoc" target="_blank" rel="noreferrer">
+        <a href={link} target="_blank" rel="noreferrer">
           <FacebookOutlined key="facebook" />
         </a>, // Facebook
         <CalendarOutlined
@@ -135,6 +134,7 @@ const InfoCard = ({
       {/*   <p>{description}</p> */}
       {/* </Modal> */}
       <CalendarConfirmModal
+        title={title}
         open={calendarOpen}
         setOpen={setCalendarOpen}
       />
