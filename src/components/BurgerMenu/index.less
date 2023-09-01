@@ -1,0 +1,89 @@
+// Adaptive Hamburger menu CSS by alvarotrigo
+// at https://codepen.io/alvarotrigo/pen/yLzaPVJ
+
+.hamburger-menu {
+  display: none;
+}
+
+#menu-toggle {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  z-index: 2;
+  opacity: 0;
+}
+#menu-toggle:checked + .menu-btn > span {
+  transform: rotate(45deg);
+}
+#menu-toggle:checked + .menu-btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+#menu-toggle:checked + .menu-btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu-toggle:checked ~ .menu-vertical {
+  left: 0 !important;
+}
+.menu-btn {
+  position: relative;
+  right: -3px;
+  margin-top: -20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+.menu-btn > span,
+.menu-btn > span::before,
+.menu-btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #212121;
+  transition-duration: 0.25s;
+}
+.menu-btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu-btn > span::after {
+  content: '';
+  top: 8px;
+}
+.menu-vertical {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: #eceff1;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  transition-duration: 0.25s;
+  .menu-item {
+    display: block;
+    padding: 12px 24px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: 0.25s;
+  }
+  .menu-item:hover {
+    background-color: #cfd8dc;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .hamburger-menu {
+    display: block;
+    cursor: pointer;
+  }
+}
