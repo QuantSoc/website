@@ -2,7 +2,7 @@ import React from 'react';
 import { RightOutlined } from '@ant-design/icons';
 import image from 'assets/comingsoon.png';
 import './index.less';
-import LandingButton from 'components/common/LandingButton/LandingButton';
+import LandingButton from 'components.old/common/LandingButton/LandingButton';
 
 const resourcesBlurbText = 'See our resources from previous events and more!';
 
@@ -17,9 +17,7 @@ const ResourceSection = () => {
           </div>
           <div className="resources-blurb">{resourcesBlurbText}</div>
         </div>
-        <LandingButton href="/resources">
-          See More
-        </LandingButton>
+        <LandingButton href="/resources">See More</LandingButton>
       </div>
       <div className="resources-layout">
         <ResourceBlock name="WORKSHOPS" href="/resources" />

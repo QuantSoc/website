@@ -1,6 +1,6 @@
 import { React, useRef, useEffect } from 'react';
 import './index.less';
-import InfoCard from 'components/common/InfoCard';
+import InfoCard from 'components.old/common/InfoCard';
 
 import { Typography } from 'antd';
 
@@ -12,9 +12,7 @@ const ResourcesPage = () => {
   return (
     <div>
       <div>
-        <Title className="resources-page-title">
-          Workshops
-        </Title>
+        <Title className="resources-page-title">Workshops</Title>
         <div className="card-container">
           <InfoCard
             title="Quantitative Society"
@@ -139,9 +137,7 @@ const ResourcesPage = () => {
         </div>
       </div>
       <div>
-        <Title className="resources-page-title">
-          Opportunities
-        </Title>
+        <Title className="resources-page-title">Opportunities</Title>
         <div className="card-container">
           <InfoCard
             title="Quantitative Society"
@@ -156,9 +152,7 @@ const ResourcesPage = () => {
         </div>
       </div>
       <div>
-        <Title className="resources-page-title">
-          Other
-        </Title>
+        <Title className="resources-page-title">Other</Title>
         <div className="card-container">
           <InfoCard
             title="Quantitative Society"

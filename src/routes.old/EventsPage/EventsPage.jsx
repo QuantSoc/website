@@ -1,9 +1,8 @@
 import React from 'react';
-import InfoCard from 'components/common/InfoCard';
+import InfoCard from 'components.old/common/InfoCard';
 
 /* import logo from 'assets/logo_circle.png'; */
 import logo from 'assets/SponsorImages/citsec.png';
-
 
 const EventsPage = () => {
   return (

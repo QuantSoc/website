@@ -2,14 +2,12 @@ import React from 'react';
 import './index.less';
 import { Typography } from 'antd';
 import { RightOutlined } from '@ant-design/icons';
-import LandingButton from 'components/common/LandingButton/LandingButton';
+import LandingButton from 'components.old/common/LandingButton/LandingButton';
 import useMediaQuery from 'hooks/useMediaQuery';
 
 const { Paragraph } = Typography;
 
-const EventContent = ({
-  desc, date, time, delivery,
-}) => {
+const EventContent = ({ desc, date, time, delivery }) => {
   const isDesktop = useMediaQuery('(min-width: 860px)');
 
   const ParaStyleDesktop = {
@@ -39,26 +37,22 @@ const EventContent = ({
   return (
     <div className="carousel-content">
       <div className="event-description">
-        <Paragraph style={isDesktop ? ParaStyleDesktop : ParaStyleMobile} ellipsis={{ rows: 6, expandable: false, symbol: 'more' }}>
+        <Paragraph
+          style={isDesktop ? ParaStyleDesktop : ParaStyleMobile}
+          ellipsis={{ rows: 6, expandable: false, symbol: 'more' }}
+        >
           {desc}
         </Paragraph>
         <div className="events-info">
           <div className="divider" />
-          {`⭐ ${date}`}
-          {' '}
-          <br />
-          {`⏰ ${time}`}
-          {' '}
-          <br />
-          {`💻 ${delivery}`}
-          {' '}
-          <br />
-
-          <LandingButton style={isDesktop ? btnDesktop : btnMobile} href="/events">
-            GO
-            {' '}
-            <RightOutlined />
-            {' '}
+          {`⭐ ${date}`} <br />
+          {`⏰ ${time}`} <br />
+          {`💻 ${delivery}`} <br />
+          <LandingButton
+            style={isDesktop ? btnDesktop : btnMobile}
+            href="/events"
+          >
+            GO <RightOutlined />{' '}
           </LandingButton>
         </div>
       </div>

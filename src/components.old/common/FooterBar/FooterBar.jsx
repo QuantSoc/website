@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-no-target-blank */
 import React from 'react';
 
-import QuantSocLogo from 'components/common/QuantSocLogo';
+import QuantSocLogo from 'components.old/common/QuantSocLogo';
 import { Typography } from 'antd';
 
 import './index.less';
@@ -14,18 +14,38 @@ const FooterBar = () => {
       </HorizontalEOLBAR>
       <div className="glb-foot-content-cont">
         <FooterColumn title="Contact us for Enquiries">
-          <FooterLink text="email: unsw.quantsoc@gmail.com" newTab link="mailto:unsw.quantsoc@gmail.com" />
+          <FooterLink
+            text="email: unsw.quantsoc@gmail.com"
+            newTab
+            link="mailto:unsw.quantsoc@gmail.com"
+          />
         </FooterColumn>
         <FooterColumn title="Links">
           <FooterLink text="Home" link="/" />
           <FooterLink text="Resources" link="/resources" />
           <FooterLink text="About Our Sponsors" link="/sponsors" />
-          <FooterLink text="Github" newTab link="https://github.com/QuantSoc/" />
+          <FooterLink
+            text="Github"
+            newTab
+            link="https://github.com/QuantSoc/"
+          />
         </FooterColumn>
         <FooterColumn title="Our Social Media">
-          <FooterLink text="Discord Community" newTab link="https://discord.gg/2qYRNKubRz" />
-          <FooterLink text="Facebook Page" newTab link="https://www.facebook.com/unswquantsoc" />
-          <FooterLink text="LinkedIn" newTab link="https://www.linkedin.com/company/quantsoc" />
+          <FooterLink
+            text="Discord Community"
+            newTab
+            link="https://discord.gg/2qYRNKubRz"
+          />
+          <FooterLink
+            text="Facebook Page"
+            newTab
+            link="https://www.facebook.com/unswquantsoc"
+          />
+          <FooterLink
+            text="LinkedIn"
+            newTab
+            link="https://www.linkedin.com/company/quantsoc"
+          />
         </FooterColumn>
       </div>
       <HorizontalEOLBAR>
@@ -37,14 +57,8 @@ const FooterBar = () => {
 
 const FooterLink = ({ link, text, newTab }) => {
   return (
-    <a
-      className="footer-link"
-      href={link}
-      target={newTab ? '_blank' : ''}
-    >
-      <li>
-        {text}
-      </li>
+    <a className="footer-link" href={link} target={newTab ? '_blank' : ''}>
+      <li>{text}</li>
     </a>
   );
 };
@@ -55,12 +69,10 @@ const FooterColumn = ({ title, children }) => {
     <div className="glb-foot-section">
       <div className="glb-foot-head">
         <Title strong level={5} className="glb-foot-head-h5">
-          { title }
+          {title}
         </Title>
       </div>
-      <div className="glb-foot-content">
-        { children }
-      </div>
+      <div className="glb-foot-content">{children}</div>
     </div>
   );
 };
@@ -78,7 +90,7 @@ const LogoWithText = () => {
 const HorizontalEOLBAR = ({ children }) => {
   return (
     <div className="horizontal-eol-bar-cont">
-      { children }
+      {children}
       <div className="horizontal-eol-bar" />
     </div>
   );
