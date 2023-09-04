@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+  scroll-padding-top: 3em;
+}
+
 body {
   font-family: Poppins, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
     'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -13,8 +18,6 @@ body {
   gap: 4em;
   width: auto !important;
   font-family: 'Inter', sans-serif;
-  color: var(--text);
-  background-color: var(--bg);
   scroll-behavior: smooth;
   border: 1px solid red;
 }
@@ -43,6 +46,18 @@ h1 {
   font-family: 'Poppins';
   font-size: 20px;
   font-weight: 300;
+}
+
+.page {
+  flex-grow: 1;
+}
+
+.link {
+  color: inherit;
+}
+.link:hover {
+  opacity: 0.75;
+  transition: opacity 0.2s ease-in-out;
 }
 
 code {
