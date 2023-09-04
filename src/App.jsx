@@ -9,6 +9,7 @@ import LandingPage from 'routes/LandingPage';
 // import ResourcesPage from 'routes/ResourcesPage';
 // import SponsorsPage from 'routes/SponsorsPage';
 import NavBar from 'components/NavBar';
+import Footer from 'components/Footer';
 
 // import FooterBar from 'components/common/FooterBar';
 
@@ -27,7 +28,7 @@ const App = () => {
           {/* The following route *may* just be integrated to AboutUsPage; TBA */}
           {/* <Route path="/contact" element={<NotFoundPage />} /> */}
         </Routes>
-        {/* <FooterBar /> */}
+        <Footer />
       </div>
     </BrowserRouter>
   );
