@@ -1,17 +1,12 @@
 import React from 'react';
 import BurgerMenu from 'components/BurgerMenu';
-import logo from '../../assets/logo-quantsoc.svg';
 import './index.less';
+import QuantSocLogo from 'components/QuantSocLogo';
 
 const NavBar = () => {
   return (
     <nav>
-      <div className="logo">
-        <img src={logo} alt="logo" className="logo-img" />
-        <a href="/" className="logo-title">
-          <h2 className="logo-title">QuantSoc</h2>
-        </a>
-      </div>
+      <QuantSocLogo />
       <BurgerMenu />
       <div className="menu hidden">
         <a
