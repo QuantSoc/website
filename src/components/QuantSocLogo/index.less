@@ -1,8 +1,10 @@
 .logo {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 10px;
+  cursor: pointer;
 }
 
 .logo-title {
@@ -11,4 +13,18 @@
   font-family: Poppins;
   font-size: 32px;
   font-weight: 500;
+}
+
+.logo-img {
+  max-width: 50px;
+  margin-left: 25px;
+}
+
+@media screen and (max-width: 1200px) {
+  .logo-title {
+    font-size: 24px;
+  }
+  .logo-img {
+    max-width: 35px;
+  }
 }
