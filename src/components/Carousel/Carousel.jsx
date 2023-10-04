@@ -40,10 +40,22 @@ const Carousel = ({ slides }) => {
       onFocus={handleFocusEnter}
       onMouseLeave={handleFocusExit}
     >
-      {/* <div className="left arrow" onClick={goToPrevSlide}>
+      {/* <div
+        className="left arrow"
+        onClick={goToPrevSlide}
+        onKeyDown={goToPrevSlide}
+        role="button"
+        tabIndex={0}
+      >
         ❰
       </div>
-      <div className="right arrow" onClick={goToNextSlide}>
+      <div
+        className="right arrow"
+        onClick={goToNextSlide}
+        onKeyDown={goToNextSlide}
+        role="button"
+        tabIndex={0}
+      >
         ❱
       </div> */}
       <div
@@ -72,7 +84,8 @@ const Carousel = ({ slides }) => {
               onKeyDown={() => {
                 setCurrentIndex(slideIndex);
               }}
-              role="presentation"
+              role="button"
+              tabIndex={0}
             >
               •
             </div>

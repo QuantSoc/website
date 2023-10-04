@@ -13,7 +13,8 @@ const QuantSocLogo = () => {
       className="logo"
       onClick={handleClick}
       onKeyDown={handleClick}
-      role="presentation"
+      role="button"
+      tabIndex={0}
     >
       <img src={logo} alt="logo" className="logo-img" />
       <h2 className="logo-title">QuantSoc</h2>
