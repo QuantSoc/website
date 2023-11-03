@@ -1,8 +1,9 @@
 import HeroSlide from 'routes/LandingPage/HeroSection/HeroSlide';
 import './index.less';
+import compBanner from '../../assets/quantsoc-teams/competitions.svg';
 
 const portfolios = [
-  { team: 'competitions', src: 'https://unsplash.it/500/250' },
+  { team: 'competitions', src: compBanner },
   { team: 'education', src: 'https://unsplash.it/500/250' },
   { team: 'events', src: 'https://unsplash.it/500/250' },
   { team: 'technical', src: 'https://unsplash.it/500/250' },
@@ -26,7 +27,7 @@ const AboutUsPage = () => {
               <div className="team-container">
                 <img
                   className="team-image"
-                  src="https://unsplash.it/500/250"
+                  src={pf.src}
                   alt={`quantsoc-${pf.team}-banner`}
                 />
                 <div className="team-image-overlay">
