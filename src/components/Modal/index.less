@@ -1,0 +1,69 @@
+@import 'styles/constants.less';
+
+.overlay {
+  background-color: #41414188;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.modal-container {
+  min-height: 500px;
+  min-width: 800px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 1.75rem 2.5rem;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.modal-header {
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.modal-description {
+  color: @text-secondary;
+  font-family: Poppins;
+  font-size: 16px;
+  margin: 0.5rem 0;
+  * {
+    margin: 0.2rem 0;
+  }
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  p {
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0.5rem 0;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .modal-container {
+    min-width: 600px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .modal-container {
+    min-width: 400px;
+    padding: 1rem 2rem;
+  }
+}
