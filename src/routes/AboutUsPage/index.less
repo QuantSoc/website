@@ -14,16 +14,16 @@
   cursor: pointer;
   display: block;
   margin: 0.15rem;
-  border-radius: 10px;
+  border-radius: 15px;
 
-  img {
+  .team-image {
     width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 15px;
   }
 
   .team-image-overlay {
-    border-radius: 10px;
+    border-radius: 15px;
     position: absolute;
     top: 0;
     left: 0;
@@ -32,23 +32,33 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #00000066;
+    background-color: #00000055;
     z-index: -1;
+    transition: background-color 0.25s linear;
     p {
-      transition: all 0.3s ease-in-out;
-      opacity: 0.75;
-      font-size: xx-large;
+      font-synthesis-weight: 450;
+      font-size: 1.85rem;
       color: #fff;
+      opacity: 0.85;
+      transition: all 0.3s ease-in-out;
     }
   }
 }
 
 .team-container:hover .team-image-overlay {
-  z-index: 1;
+  z-index: 0;
+  background-color: #00000077;
   p {
+    font-size: 2rem;
     opacity: 1;
   }
 }
 .team-container:hover {
-  box-shadow: @quantsoc-primary 0px 8px 20px 0px;
+  box-shadow: @quantsoc-primary 0px 8px 15px 0px;
+}
+
+.team-modal-image {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
 }
