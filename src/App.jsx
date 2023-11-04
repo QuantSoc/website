@@ -4,7 +4,7 @@ import { Routes, Route, BrowserRouter } from 'react-router-dom';
 
 import NotFoundPage from 'routes/NotFoundPage';
 import LandingPage from 'routes/LandingPage';
-// import AboutUsPage from 'routes/AboutUsPage';
+import AboutUsPage from 'routes/AboutUsPage';
 // import EventsPage from 'routes/EventsPage';
 // import ResourcesPage from 'routes/ResourcesPage';
 // import SponsorsPage from 'routes/SponsorsPage';
@@ -21,7 +21,7 @@ const App = () => {
         <Routes>
           <Route path="*" element={<NotFoundPage />} />
           <Route path="/" element={<LandingPage />} />
-          {/* <Route path="/about" element={<AboutUsPage />} /> */}
+          <Route path="/about" element={<AboutUsPage />} />
           {/* <Route path="/events" element={<EventsPage />} /> */}
           {/* <Route path="/resources" element={<ResourcesPage />} /> */}
           {/* <Route path="/sponsors" element={<SponsorsPage />} /> */}

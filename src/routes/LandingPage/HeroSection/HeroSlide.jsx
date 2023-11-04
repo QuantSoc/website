@@ -2,7 +2,7 @@ import RedirectButton from 'components/RedirectButton/RedirectButton';
 import heroCandlestick from '../../../assets/hero-candlestick.svg';
 import './index.less';
 
-const HeroSlide = () => {
+const HeroSlide = ({ hideRedirect = false }) => {
   return (
     <section className="hero-section">
       <div className="hero-item">
@@ -19,7 +19,9 @@ const HeroSlide = () => {
           quantitative trading. We aim to help connect and empower students in
           shaping the future of quant trading.
         </p>
-        <RedirectButton btnText="Read more" destination="/about" />
+        {!hideRedirect && (
+          <RedirectButton btnText="Read more" destination="/about" />
+        )}
       </div>
     </section>
   );
