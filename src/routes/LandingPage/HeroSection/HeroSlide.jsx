@@ -4,7 +4,7 @@ import './index.less';
 
 const HeroSlide = ({ hideRedirect = false }) => {
   return (
-    <section className="hero-section">
+    <div className="hero-slide">
       <div className="hero-item">
         <img
           src={heroCandlestick}
@@ -23,7 +23,7 @@ const HeroSlide = ({ hideRedirect = false }) => {
           <RedirectButton btnText="Read more" destination="/about" />
         )}
       </div>
-    </section>
+    </div>
   );
 };
 export default HeroSlide;
