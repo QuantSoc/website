@@ -9,6 +9,7 @@ import technicalBanner from '../../assets/quantsoc-teams/technical.svg';
 import eventsBanner from '../../assets/quantsoc-teams/events.svg';
 import marketingBanner from '../../assets/quantsoc-teams/marketing.svg';
 import designBanner from '../../assets/quantsoc-teams/design.svg';
+import CultureAndValuesSection from './CultureValuesSection/CultureAndValuesSection';
 
 const portfolios = [
   {
@@ -50,7 +51,10 @@ const AboutUsPage = () => {
   const [teamDesc, setTeamDesc] = useState('');
   return (
     <div>
-      <HeroSlide hideRedirect />
+      <section className="banner">
+        <HeroSlide hideRedirect />
+      </section>
+      <CultureAndValuesSection />
       <section>
         <h2>Our teams</h2>
         <p className="tagline">
