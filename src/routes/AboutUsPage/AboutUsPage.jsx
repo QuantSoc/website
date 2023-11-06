@@ -86,6 +86,7 @@ const AboutUsPage = () => {
                   className="team-image"
                   src={pf.src}
                   alt={`quantsoc-${pf.team}-banner`}
+                  loading="lazy"
                 />
                 <div className="team-image-overlay">
                   <p>{pf.team}</p>
