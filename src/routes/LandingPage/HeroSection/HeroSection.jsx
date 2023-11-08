@@ -4,7 +4,7 @@ import EventSlide from './EventSlide';
 
 const HeroSection = () => {
   return (
-    <div className="hero-section">
+    <section className="hero-section">
       <Carousel
         slides={[
           {
@@ -17,7 +17,7 @@ const HeroSection = () => {
           },
         ]}
       />
-    </div>
+    </section>
   );
 };
 export default HeroSection;

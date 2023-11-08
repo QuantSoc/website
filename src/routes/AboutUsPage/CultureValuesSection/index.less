@@ -1,0 +1,26 @@
+@import 'styles/constants.less';
+
+.culture-and-values__container {
+  background-color: #2b2b2b;
+  border-radius: 10px;
+  height: fit-content;
+  padding: 2.5rem 2rem;
+  color: #fff;
+
+  h2 {
+    margin-bottom: 2rem;
+  }
+}
+
+.culture-and-values__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 2.5rem;
+  column-gap: 4rem;
+}
+
+@media screen and (max-width: 900px) {
+  .culture-and-values__grid {
+    grid-template-columns: 1fr;
+  }
+}
