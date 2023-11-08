@@ -1,5 +1,10 @@
 import './index.less';
+import { BiCalendarAlt, BiTimeFive, BiMap } from 'react-icons/bi';
+import { AiOutlineUsergroupAdd } from 'react-icons/ai';
 import { IoMdClose } from 'react-icons/io';
+import EventTag from 'components/EventTag';
+import EventDesc from 'components/EventDesc';
+import placeholder from '../../assets/quantsoc-teams/events.svg';
 
 const EventModal = ({
   isOpen,
@@ -10,17 +15,11 @@ const EventModal = ({
   date,
   times,
   cohosts,
-  tagIcon,
-  tagText,
+  image,
+  tagType,
   children,
 }) => {
   if (!isOpen) return null;
-  const dateStr = new Date(date).toLocaleDateString('en-GB', {
-    weekday: 'short',
-    day: 'numeric',
-    month: 'short',
-    year: 'numeric',
-  });
   return (
     <div className="overlay" onClick={toggleModal} role="presentation">
       <div
@@ -39,17 +38,21 @@ const EventModal = ({
         >
           <IoMdClose />
         </div>
-        <div className="tag">
-          <div className="tag-icon">{tagIcon}</div>
-          <div className="tag-text">{tagText}</div>
-        </div>
+        <EventTag tagType={tagType} />
         <div className="modal-header">{header}</div>
-        <div className="modal-description">
-          <div className="modal-location">{`${location}, ${sublocation}`}</div>
-          <div className="modal-datetime">{`${dateStr}, ${times}`}</div>
-          <div className="modal-cohosts">{`with ${cohosts}`}</div>
-        </div>
-        <div className="modal-body">{children}</div>
+        <EventDesc
+          location={location}
+          sublocation={sublocation}
+          date={date}
+          times={times}
+          cohosts={cohosts}
+        />
+        <img
+          className="event-modal__image"
+          src={image !== '' ? image : placeholder}
+          alt={header}
+        />
+        <p className="modal-body">{children}</p>
       </div>
     </div>
   );

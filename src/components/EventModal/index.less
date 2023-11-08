@@ -7,6 +7,7 @@
   height: 100%;
   top: 0;
   left: 0;
+  z-index: 2;
 }
 
 .modal-container {
@@ -49,14 +50,11 @@
   font-weight: 500;
 }
 
-.modal-description {
-  color: @text-secondary;
-  font-family: Poppins;
-  font-size: 16px;
-  margin: 0.5rem 0;
-  * {
-    margin: 0.2rem 0;
-  }
+.event-modal__image {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  object-fit: contain;
 }
 
 .modal-body {
