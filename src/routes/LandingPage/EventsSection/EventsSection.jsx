@@ -98,6 +98,7 @@ const EventsSection = () => {
       for (let j = i; j < Math.min(i + step, events.length); j += 1) {
         eventCards.push(
           <EventCard
+            key={`${events[j].header}-${j}`}
             toggleModal={toggleModal}
             index={j}
             setEventIndex={setEventIndex}
@@ -137,7 +138,11 @@ const EventsSection = () => {
         tagIcon={events[eventIndex].tagIcon}
       >
         {events[eventIndex].body.split('\n').map((paragraph) => {
-          return <p>{paragraph}</p>;
+          return (
+            <p key={`event-modal-body-${paragraph.slice(0, 10)}`}>
+              {paragraph}
+            </p>
+          );
         })}
       </EventModal>
     </section>
