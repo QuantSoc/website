@@ -52,7 +52,7 @@ const EventModal = ({
           src={image !== '' ? image : placeholder}
           alt={header}
         />
-        <p className="modal-body">{children}</p>
+        <div className="modal-body">{children}</div>
       </div>
     </div>
   );
