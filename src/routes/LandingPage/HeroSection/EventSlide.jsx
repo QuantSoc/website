@@ -4,7 +4,7 @@ import './index.less';
 
 const EventSlide = () => {
   return (
-    <section className="hero-section">
+    <div className="hero-slide">
       <div className="hero-item">
         <img
           src={eventGathering}
@@ -21,7 +21,7 @@ const EventSlide = () => {
         </p>
         <RedirectButton btnText="See events" destination="/events" />
       </div>
-    </section>
+    </div>
   );
 };
 export default EventSlide;

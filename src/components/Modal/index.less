@@ -26,6 +26,7 @@
   top: 10px;
   right: 10px;
   cursor: pointer;
+  font-size: 1.25rem;
 }
 
 .modal-header {
@@ -58,12 +59,18 @@
 
 @media screen and (max-width: 1200px) {
   .modal-container {
-    min-width: 600px;
+    min-width: 60vw;
   }
 }
 @media screen and (max-width: 900px) {
   .modal-container {
-    min-width: 400px;
+    min-width: 80vw;
+    padding: 1rem 2rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .modal-container {
+    min-width: 95vw;
     padding: 1rem 2rem;
   }
 }

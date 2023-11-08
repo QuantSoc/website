@@ -1,4 +1,4 @@
-.hero-section {
+.hero-slide {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
@@ -12,7 +12,7 @@
     display: flex;
     justify-content: center;
     width: 50%;
-    padding: 3rem 0rem;
+    padding: 1rem 0rem;
 
     h1 {
       margin-bottom: 1.5rem;
@@ -21,7 +21,6 @@
 
     p {
       text-wrap: balance;
-      margin-bottom: 1.5rem;
     }
   }
   .stack {
@@ -35,13 +34,12 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .hero-section {
+  .hero-slide {
     flex-direction: column;
-    padding: 0 2rem;
 
     .hero-item {
       width: 100%;
-      padding: 0rem 2rem 3rem 1.5rem;
+      padding: 0rem 2rem 2rem 1.5rem;
     }
     .hero-img {
       width: 60%;
@@ -50,10 +48,10 @@
 }
 
 @media screen and (max-width: 900px) {
-  .hero-section {
+  .hero-slide {
     padding: 0 0;
     .hero-img {
-      width: 80%;
+      width: 70%;
     }
   }
 }
