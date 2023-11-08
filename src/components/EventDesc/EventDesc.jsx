@@ -15,7 +15,7 @@ const EventDesc = ({ location, sublocation, date, times, cohosts }) => {
       {location && sublocation && (
         <p className="event-desc location">
           <BiMap className="icon" />
-          <p>{`${sublocation}, ${location}`}</p>
+          {`${sublocation}, ${location}`}
         </p>
       )}
       {date && (
