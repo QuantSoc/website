@@ -5,7 +5,7 @@ import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import NotFoundPage from 'routes/NotFoundPage';
 import LandingPage from 'routes/LandingPage';
 // import AboutUsPage from 'routes/AboutUsPage';
-// import EventsPage from 'routes/EventsPage';
+import EventsPage from 'routes/EventsPage';
 // import ResourcesPage from 'routes/ResourcesPage';
 // import SponsorsPage from 'routes/SponsorsPage';
 import NavBar from 'components/NavBar';
@@ -22,7 +22,7 @@ const App = () => {
           <Route path="*" element={<NotFoundPage />} />
           <Route path="/" element={<LandingPage />} />
           {/* <Route path="/about" element={<AboutUsPage />} /> */}
-          {/* <Route path="/events" element={<EventsPage />} /> */}
+          <Route path="/events" element={<EventsPage />} />
           {/* <Route path="/resources" element={<ResourcesPage />} /> */}
           {/* <Route path="/sponsors" element={<SponsorsPage />} /> */}
           {/* The following route *may* just be integrated to AboutUsPage; TBA */}

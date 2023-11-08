@@ -1,0 +1,36 @@
+@import 'styles/global.less';
+@import 'styles/constants.less';
+
+
+.socials-button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #363636;
+    border-radius: 6px;
+    border-style: none;
+    box-sizing: border-box;
+    height: 40px;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-weight: 300; 
+    &:hover {
+      background-color: @quantsoc-accent-light;
+    }
+  }
+ 
+.socials-button-text {
+    color: white;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin: 0px 9px;
+}
+
+.socials-button-icon {
+    color: white;
+}
+
