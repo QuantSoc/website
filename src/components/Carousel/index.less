@@ -1,3 +1,5 @@
+@import '../../styles/constants.less';
+
 .carousel {
   overflow: hidden;
   display: flex;
@@ -35,16 +37,18 @@
   top: 50%;
   font-size: 45px;
   transform: translateY(-50%);
-  color: #000;
-  -webkit-text-stroke: 1px #fff;
+  color: @text-secondary;
   z-index: 1;
   cursor: pointer;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
 .left {
-  left: 32px;
+  left: 0;
 }
 .right {
-  right: 32px;
+  right: 0;
 }
 
 .bullet-container {
