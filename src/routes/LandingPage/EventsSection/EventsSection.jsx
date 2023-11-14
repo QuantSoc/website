@@ -15,7 +15,7 @@ const events = [
     cohosts: 'PiSoc',
     tagType: 'trading',
     image: 'https://unsplash.it/1280/720',
-    body: "Are YOU a student interested in what options trading is? Do YOU want to know how to make money with your skills? Quantsoc is partnering up with the Personal Investment Society to bring you our Options Trading Workshop!\nCome bring yourself and all your friends to QuantSoc x Pisoc's Options Trading workshop on Wednesday, 14th of June 5:00pm to 7:00pm at Mathews 104! This workshop is open to people with ALL levels of knowledge.",
+    body: 'Are YOU a student interested in what options trading is? Do YOU want to know how to make money with your skills? Quantsoc is partnering up with the Personal Investment Society to bring you our Options Trading Workshop!',
   },
   {
     header: 'SIG Poker Night',
@@ -59,7 +59,7 @@ const events = [
     cohosts: 'PiSoc',
     tagType: 'career',
     image: 'https://unsplash.it/1920/1080',
-    body: "Are YOU a student interested in what options trading is? Do YOU want to know how to make money with your skills? Quantsoc is partnering up with the Personal Investment Society to bring you our Options Trading Workshop!\nCome bring yourself and all your friends to QuantSoc x Pisoc's Options Trading workshop on Wednesday, 14th of June 5:00pm to 7:00pm at Mathews 104! This workshop is open to people with ALL levels of knowledge.",
+    body: "Are YOU a student interested in what options trading is? Do YOU want to know how to make money with your skills? Quantsoc is partnering up with the Personal Investment Society to bring you our Options Trading Workshop!\nCome bring yourself and all your friends to QuantSoc x Pisoc's Options Trading workshop on Wednesday, 14th of June 5:00pm to 7:00pm at Mathews 104! This workshop is open to people with ALL levels of knowledge.\nLorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia eveniet eaque beatae error sint, cupiditate nostrum sapiente eius voluptatum, cum eum aliquam modi laboriosam. Reprehenderit itaque dignissimos earum necessitatibus. Sapiente.",
   },
 ];
 
@@ -96,6 +96,7 @@ const EventsSection = () => {
     for (let i = 0; i < events.length; i += step) {
       const eventCards = [];
       for (let j = i; j < Math.min(i + step, events.length); j += 1) {
+        // prettier-ignore
         eventCards.push(
           <EventCard
             key={`${events[j].header}-${j}`}
@@ -109,7 +110,7 @@ const EventsSection = () => {
             times={events[j].times}
             image={events[j].image}
             tagType={events[j].tagType}
-          />
+          />,
         );
       }
       eventSlides.push({
