@@ -1,7 +1,10 @@
 import React from 'react';
 import './index.less';
+import { useNavigate } from 'react-router-dom';
+import logo from '../../assets/logo-quantsoc.svg';
 
 const BurgerMenu = () => {
+  const navigate = useNavigate();
   return (
     <div className="hamburger-menu">
       <input id="menu-toggle" type="checkbox" />
@@ -9,28 +12,69 @@ const BurgerMenu = () => {
         <span />
       </div>
 
-      <ul className="menu-vertical">
-        <li>
-          <a className="menu-item" href="/about">
-            About Us
-          </a>
-        </li>
-        <li>
-          <a className="menu-item" href="/events">
-            Events
-          </a>
-        </li>
-        <li>
-          <a className="menu-item" href="/resources">
-            Resources
-          </a>
-        </li>
-        <li>
-          <a className="menu-item" href="/sponsors">
-            Sponsors
-          </a>
-        </li>
-      </ul>
+      <div className="menu-vertical">
+        <img
+          src={logo}
+          alt="QuantSoc's logo within burger menu"
+          className="burger-menu__logo"
+        />
+        <h2>QuantSoc</h2>
+        <div
+          className="burger-menu-item"
+          role="button"
+          onKeyDown={() => {}}
+          tabIndex={-1}
+          onClick={() => {
+            navigate('/');
+          }}
+        >
+          Home
+        </div>
+        <div
+          className="burger-menu-item"
+          role="button"
+          onKeyDown={() => {}}
+          tabIndex={-1}
+          onClick={() => {
+            navigate('/about');
+          }}
+        >
+          About Us
+        </div>
+        <div
+          className="burger-menu-item"
+          role="button"
+          onKeyDown={() => {}}
+          tabIndex={-1}
+          onClick={() => {
+            navigate('/events');
+          }}
+        >
+          Events
+        </div>
+        <div
+          className="burger-menu-item"
+          role="button"
+          onKeyDown={() => {}}
+          tabIndex={-1}
+          onClick={() => {
+            navigate('/resources');
+          }}
+        >
+          Resources
+        </div>
+        <div
+          className="burger-menu-item"
+          role="button"
+          onKeyDown={() => {}}
+          tabIndex={-1}
+          onClick={() => {
+            navigate('/sponsors');
+          }}
+        >
+          Sponsors
+        </div>
+      </div>
     </div>
   );
 };
