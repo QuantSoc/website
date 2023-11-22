@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import './index.less';
 
-const Carousel = ({ slides }) => {
+const Carousel = ({ slides, hideArrows = false }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isHovering, setIsHovering] = useState(false);
   const goToPrevSlide = () => {
@@ -40,24 +40,28 @@ const Carousel = ({ slides }) => {
       onFocus={handleFocusEnter}
       onMouseLeave={handleFocusExit}
     >
-      {/* <div
-        className="left arrow"
-        onClick={goToPrevSlide}
-        onKeyDown={goToPrevSlide}
-        role="button"
-        tabIndex={0}
-      >
-        ❰
-      </div>
-      <div
-        className="right arrow"
-        onClick={goToNextSlide}
-        onKeyDown={goToNextSlide}
-        role="button"
-        tabIndex={0}
-      >
-        ❱
-      </div> */}
+      {!hideArrows && (
+        <div
+          className="left arrow"
+          onClick={goToPrevSlide}
+          onKeyDown={goToPrevSlide}
+          role="button"
+          tabIndex={0}
+        >
+          ❰
+        </div>
+      )}
+      {!hideArrows && (
+        <div
+          className="right arrow"
+          onClick={goToNextSlide}
+          onKeyDown={goToNextSlide}
+          role="button"
+          tabIndex={0}
+        >
+          ❱
+        </div>
+      )}
       <div
         className="inner"
         style={{ transform: `translate(-${currentIndex * 100}%)` }}

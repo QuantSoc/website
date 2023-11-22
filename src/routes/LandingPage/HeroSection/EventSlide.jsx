@@ -2,7 +2,7 @@ import RedirectButton from 'components/RedirectButton/RedirectButton';
 import eventGathering from '../../../assets/event-gathering.svg';
 import './index.less';
 
-const EventSlide = () => {
+const EventSlide = ({ hideRedirect = false }) => {
   return (
     <div className="hero-slide">
       <div className="hero-item">
@@ -19,7 +19,9 @@ const EventSlide = () => {
           you&apos;ve a budding interest or a deeper passion, discover the world
           of trading with us and make fond memories along the way!
         </p>
-        <RedirectButton btnText="See events" destination="/events" />
+        {!hideRedirect && (
+          <RedirectButton btnText="See events" destination="/events" />
+        )}
       </div>
     </div>
   );

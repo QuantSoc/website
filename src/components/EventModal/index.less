@@ -7,11 +7,13 @@
   height: 100%;
   top: 0;
   left: 0;
+  z-index: 2;
 }
 
 .modal-container {
   min-height: 500px;
   min-width: 800px;
+  max-height: 96vh;
   flex-shrink: 0;
   border-radius: 10px;
   position: absolute;
@@ -19,7 +21,7 @@
   top: 50%;
   transform: translate(-50%, -50%);
   background-color: #fff;
-  padding: 1.75rem 2.5rem;
+  padding: 1.75em 2.5rem 2.5rem;
 }
 
 .close-btn {
@@ -49,25 +51,48 @@
   font-weight: 500;
 }
 
-.modal-description {
-  color: @text-secondary;
-  font-family: Poppins;
-  font-size: 16px;
-  margin: 0.5rem 0;
-  * {
-    margin: 0.2rem 0;
-  }
+.event-modal__image {
+  max-width: 75%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  object-fit: contain;
 }
 
 .modal-body {
+  max-height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  overflow-y: scroll;
   p {
     font-size: 16px;
     font-weight: 300;
     margin: 0.5rem 0;
+  }
+}
+
+.scroll-indicator::after {
+  animation: bounce 1s ease infinite;
+  bottom: 0.65rem;
+  color: #000;
+  content: '╲╱';
+  font-size: 0.5rem;
+  height: 1rem;
+  left: calc(50%-3rem);
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  width: 6rem;
+  transition: opacity 0.3s ease;
+}
+
+.scroll-indicator.active::after {
+  opacity: 0.5;
+}
+
+@keyframes bounce {
+  50% {
+    transform: translateY(-25%);
   }
 }
 
@@ -79,12 +104,12 @@
 @media screen and (max-width: 900px) {
   .modal-container {
     min-width: 80vw;
-    padding: 1rem 2rem;
+    padding: 1rem 2rem 2.5rem;
   }
 }
 @media screen and (max-width: 400px) {
   .modal-container {
     min-width: 95vw;
-    padding: 1rem 2rem;
+    padding: 1rem 2rem 2.5rem;
   }
 }

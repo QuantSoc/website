@@ -1,3 +1,4 @@
+@import 'styles/constants.less';
 // Adaptive Hamburger menu CSS by alvarotrigo
 // at https://codepen.io/alvarotrigo/pen/yLzaPVJ
 
@@ -6,11 +7,13 @@
 }
 
 #menu-toggle {
-  width: 25px;
-  height: 25px;
-  position: relative;
-  z-index: 2;
+  width: 20px;
+  height: 20px;
+  position: fixed;
+  z-index: 4;
   opacity: 0;
+  top: 0.75rem;
+  right: 2rem;
   cursor: pointer;
 }
 #menu-toggle:checked + .menu-btn > span {
@@ -25,15 +28,16 @@
   transform: rotate(90deg);
 }
 #menu-toggle:checked ~ .menu-vertical {
-  left: 0 !important;
+  right: 0 !important;
 }
 .menu-btn {
-  position: relative;
-  right: -3px;
-  margin-top: -20px;
-  width: 26px;
-  height: 26px;
-  z-index: 1;
+  position: fixed;
+  top: 2rem;
+  right: calc(2rem + 3px);
+  margin-top: -10px;
+  width: 20px;
+  height: 20px;
+  z-index: 3;
 }
 .menu-btn > span,
 .menu-btn > span::before,
@@ -41,7 +45,7 @@
   display: block;
   position: absolute;
   width: 100%;
-  height: 2px;
+  height: 1px;
   background-color: #212121;
   transition-duration: 0.25s;
 }
@@ -54,30 +58,64 @@
   top: 8px;
 }
 .menu-vertical {
+  font-family: 'Poppins', sans-serif;
   display: block;
   position: fixed;
   top: 0;
-  left: -100%;
-  width: 300px;
+  right: -100%;
+  width: 250px;
   height: 100%;
   margin: 0;
-  padding: 80px 0;
-  list-style: none;
-  background-color: #eceff1;
+  z-index: 2;
+  padding: 3rem 0;
+  background-color: @quantsoc-light;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
   transition-duration: 0.25s;
-  .menu-item {
+
+  .burger-menu__logo {
+    padding: 0 3rem;
+  }
+
+  h2 {
+    padding: 0 3rem;
+  }
+
+  .burger-menu-item {
     display: block;
-    padding: 12px 24px;
-    color: #333;
+    cursor: pointer;
+    margin: 2rem 1.5rem;
+    padding-bottom: 0.25rem;
+    color: @text-secondary;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     font-weight: 600;
     text-decoration: none;
     transition-duration: 0.25s;
+    position: relative;
+    width: max-content;
+    box-sizing: border-box;
   }
-  .menu-item:hover {
-    background-color: #cfd8dc;
+  .burger-menu-item:hover {
+    color: @quantsoc-accent-light;
+  }
+
+  .burger-menu-item::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 0.05rem;
+    background-color: @quantsoc-accent-light;
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+    transform: scale(0);
+    transform-origin: center;
+  }
+  .burger-menu-item:hover::after,
+  .burger-menu-item:focus::after {
+    opacity: 1;
+    transform: scale(1);
   }
 }
 

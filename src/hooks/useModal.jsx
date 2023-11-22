@@ -4,6 +4,7 @@ const useModal = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleModal = () => {
+    document.body.style.overflowY = isOpen ? 'visible' : 'hidden';
     setIsOpen(!isOpen);
   };
 
