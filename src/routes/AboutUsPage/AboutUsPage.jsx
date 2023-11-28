@@ -66,6 +66,7 @@ const AboutUsPage = () => {
             const teamCaps = pf.team.charAt(0).toUpperCase() + pf.team.slice(1);
             return (
               <div
+                key={pf.team}
                 className="team-container"
                 role="button"
                 tabIndex={0}

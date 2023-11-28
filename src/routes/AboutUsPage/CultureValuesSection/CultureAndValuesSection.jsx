@@ -44,6 +44,7 @@ const CultureAndValuesSection = () => {
         {cultureAndValues.map((culVal) => {
           return (
             <CultureAndValues
+              key={culVal.text.split(' ').join('')}
               icon={culVal.icon}
               title={culVal.title}
               text={culVal.text}
