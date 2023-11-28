@@ -1,6 +1,6 @@
 import EventCard from 'components/EventCard';
 import './index.less';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import useModal from 'hooks/useModal';
 import EventModal from 'components/EventModal';
 
