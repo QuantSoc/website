@@ -107,7 +107,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="divider" />
-      <p id="copyright">© Copyright 2023 QuantSoc UNSW</p>
+      <p id="copyright">{`© Copyright ${new Date().getFullYear()} QuantSoc UNSW`}</p>
     </div>
   );
 };
