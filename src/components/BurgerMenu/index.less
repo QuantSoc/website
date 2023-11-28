@@ -9,7 +9,7 @@
 #menu-toggle {
   width: 20px;
   height: 20px;
-  position: fixed;
+  position: absolute;
   z-index: 4;
   opacity: 0;
   top: 0.75rem;
@@ -31,13 +31,19 @@
   right: 0 !important;
 }
 .menu-btn {
-  position: fixed;
+  position: absolute;
   top: 2rem;
   right: calc(2rem + 3px);
   margin-top: -10px;
   width: 20px;
   height: 20px;
   z-index: 3;
+}
+#menu-toggle:checked {
+  position: fixed;
+}
+#menu-toggle:checked + .menu-btn {
+  position: fixed;
 }
 .menu-btn > span,
 .menu-btn > span::before,
@@ -88,7 +94,7 @@
     color: @text-secondary;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 500;
     text-decoration: none;
     transition-duration: 0.25s;
     position: relative;
