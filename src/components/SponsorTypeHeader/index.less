@@ -1,0 +1,32 @@
+@import '../../styles/constants.less';
+
+.sponsor-type__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: @text-secondary;
+  p {
+    margin-left: 0.25rem;
+  }
+
+  position: relative;
+}
+
+.sponsor-type__header__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 0 1rem;
+}
+
+.sponsor-type__header::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 50%;
+  width: 90%;
+  border-top: 1px solid @text-secondary;
+  z-index: -1;
+}
