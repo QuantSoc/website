@@ -4,64 +4,11 @@ import EventCard from 'components/EventCard';
 import { useEffect, useState } from 'react';
 import useModal from 'hooks/useModal';
 import EventModal from 'components/EventModal';
+import quantsocEvents from '../../../data/events.json';
 
-const events = [
-  {
-    header: 'Mock Trading Session',
-    location: 'UNSW',
-    sublocation: 'Theatre 1',
-    date: new Date(),
-    times: '5pm → 7pm',
-    cohosts: 'PiSoc',
-    tagType: 'trading',
-    image: 'https://unsplash.it/1280/720',
-    body: 'Are YOU a student interested in what options trading is? Do YOU want to know how to make money with your skills? Quantsoc is partnering up with the Personal Investment Society to bring you our Options Trading Workshop!',
-  },
-  {
-    header: 'SIG Poker Night',
-    location: 'SIG Office',
-    sublocation: 'Theatre 1',
-    date: new Date(),
-    times: '5pm → 7pm',
-    cohosts: 'PiSoc',
-    tagType: 'fun',
-    image: '',
-    body: "Are YOU a student interested in what options trading is? Do YOU want to know how to make money with your skills? Quantsoc is partnering up with the Personal Investment Society to bring you our Options Trading Workshop!\nCome bring yourself and all your friends to QuantSoc x Pisoc's Options Trading workshop on Wednesday, 14th of June 5:00pm to 7:00pm at Mathews 104! This workshop is open to people with ALL levels of knowledge.",
-  },
-  {
-    header: 'STEMS Career Fair',
-    location: 'UNSW',
-    sublocation: 'Leighton Hall',
-    date: new Date(),
-    times: '5pm → 7pm',
-    cohosts: 'PiSoc',
-    tagType: 'career',
-    image: 'https://unsplash.it/1366/768',
-    body: "Are YOU a student interested in what options trading is? Do YOU want to know how to make money with your skills? Quantsoc is partnering up with the Personal Investment Society to bring you our Options Trading Workshop!\nCome bring yourself and all your friends to QuantSoc x Pisoc's Options Trading workshop on Wednesday, 14th of June 5:00pm to 7:00pm at Mathews 104! This workshop is open to people with ALL levels of knowledge.",
-  },
-  {
-    header: 'SIG Poker Night',
-    location: 'SIG Office',
-    sublocation: 'Theatre 1',
-    date: new Date(),
-    times: '5pm → 7pm',
-    cohosts: 'PiSoc',
-    tagType: 'fun',
-    image: '',
-    body: "Are YOU a student interested in what options trading is? Do YOU want to know how to make money with your skills? Quantsoc is partnering up with the Personal Investment Society to bring you our Options Trading Workshop!\nCome bring yourself and all your friends to QuantSoc x Pisoc's Options Trading workshop on Wednesday, 14th of June 5:00pm to 7:00pm at Mathews 104! This workshop is open to people with ALL levels of knowledge.",
-  },
-  {
-    header: 'STEMS Career Fair',
-    location: 'UNSW',
-    sublocation: 'Leighton Hall',
-    date: new Date(),
-    times: '5pm → 7pm',
-    cohosts: 'PiSoc',
-    tagType: 'career',
-    image: 'https://unsplash.it/1920/1080',
-    body: "Are YOU a student interested in what options trading is? Do YOU want to know how to make money with your skills? Quantsoc is partnering up with the Personal Investment Society to bring you our Options Trading Workshop!\nCome bring yourself and all your friends to QuantSoc x Pisoc's Options Trading workshop on Wednesday, 14th of June 5:00pm to 7:00pm at Mathews 104! This workshop is open to people with ALL levels of knowledge.\nLorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia eveniet eaque beatae error sint, cupiditate nostrum sapiente eius voluptatum, cum eum aliquam modi laboriosam. Reprehenderit itaque dignissimos earum necessitatibus. Sapiente.",
-  },
-];
+const events = quantsocEvents.filter((event) => {
+  return new Date(event.date) >= new Date() ? event : null;
+});
 
 const setInitialStep = () => {
   if (window.innerWidth <= 950) return 1;
@@ -93,23 +40,26 @@ const EventsSection = ({ isEventPage = false }) => {
 
   const createEventSlides = () => {
     const eventSlides = [];
-    for (let i = 0; i < events.length; i += step) {
+    const upcomingEvents = events.filter((event) => {
+      return new Date(event.date) >= new Date() && event;
+    });
+    for (let i = 0; i < upcomingEvents.length; i += step) {
       const eventCards = [];
-      for (let j = i; j < Math.min(i + step, events.length); j += 1) {
+      for (let j = i; j < Math.min(i + step, upcomingEvents.length); j += 1) {
         // prettier-ignore
         eventCards.push(
           <EventCard
-            key={`${events[j].header}-${j}`}
+            key={`${upcomingEvents[j].header}-${j}`}
             toggleModal={toggleModal}
             index={j}
             setEventIndex={setEventIndex}
-            header={events[j].header}
-            location={events[j].location}
-            sublocation={events[j].sublocation}
-            date={events[j].date}
-            times={events[j].times}
-            image={events[j].image}
-            tagType={events[j].tagType}
+            header={upcomingEvents[j].header}
+            location={upcomingEvents[j].location}
+            sublocation={upcomingEvents[j].sublocation}
+            date={upcomingEvents[j].date}
+            times={upcomingEvents[j].times}
+            image={upcomingEvents[j].image}
+            tagType={upcomingEvents[j].tagType}
           />,
         );
       }
