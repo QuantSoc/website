@@ -1,6 +1,5 @@
-import Carousel from 'components/Carousel/Carousel';
-import './index.less';
 import EventCard from 'components/EventCard';
+import './index.less';
 import { useEffect, useState } from 'react';
 import useModal from 'hooks/useModal';
 import EventModal from 'components/EventModal';
@@ -10,7 +9,7 @@ const events = [
     header: 'Mock Trading Session',
     location: 'UNSW',
     sublocation: 'Theatre 1',
-    date: new Date(),
+    date: '27 November 2023',
     times: '5pm → 7pm',
     cohosts: 'PiSoc',
     tagType: 'trading',
@@ -21,7 +20,7 @@ const events = [
     header: 'SIG Poker Night',
     location: 'SIG Office',
     sublocation: 'Theatre 1',
-    date: new Date(),
+    date: '28 November 2023',
     times: '5pm → 7pm',
     cohosts: 'PiSoc',
     tagType: 'fun',
@@ -32,7 +31,7 @@ const events = [
     header: 'STEMS Career Fair',
     location: 'UNSW',
     sublocation: 'Leighton Hall',
-    date: new Date(),
+    date: '29 November 2023',
     times: '5pm → 7pm',
     cohosts: 'PiSoc',
     tagType: 'career',
@@ -43,7 +42,7 @@ const events = [
     header: 'SIG Poker Night',
     location: 'SIG Office',
     sublocation: 'Theatre 1',
-    date: new Date(),
+    date: '30 November 2023',
     times: '5pm → 7pm',
     cohosts: 'PiSoc',
     tagType: 'fun',
@@ -54,7 +53,7 @@ const events = [
     header: 'STEMS Career Fair',
     location: 'UNSW',
     sublocation: 'Leighton Hall',
-    date: new Date(),
+    date: '2 December 2023',
     times: '5pm → 7pm',
     cohosts: 'PiSoc',
     tagType: 'career',
@@ -63,70 +62,58 @@ const events = [
   },
 ];
 
-const setInitialStep = () => {
-  if (window.innerWidth <= 950) return 1;
-  if (window.innerWidth <= 1400) return 2;
-  return 3;
-};
-
-const EventsSection = ({ isEventPage = false }) => {
+const PastEventsSection = () => {
   const [eventIndex, setEventIndex] = useState(0);
-  const [step, setStep] = useState(setInitialStep());
+  const [eventsFilter, setEventsFilter] = useState('');
   const { isOpen, toggleModal } = useModal();
 
-  useEffect(() => {
-    const mediaQueryMedium = window.matchMedia('(max-width: 1400px)');
-    const mediaQuerySmall = window.matchMedia('(max-width: 950px)');
-
-    const handleMediaQueryMediumChange = (event) => {
-      if (event.matches) setStep(2);
-      if (!event.matches) setStep(3);
-    };
-    const handleMediaQuerySmallChange = (event) => {
-      if (event.matches) setStep(1);
-      if (!event.matches) setStep(2);
-    };
-
-    mediaQueryMedium.addEventListener('change', handleMediaQueryMediumChange);
-    mediaQuerySmall.addEventListener('change', handleMediaQuerySmallChange);
-  }, []);
-
-  const createEventSlides = () => {
-    const eventSlides = [];
-    for (let i = 0; i < events.length; i += step) {
-      const eventCards = [];
-      for (let j = i; j < Math.min(i + step, events.length); j += 1) {
-        // prettier-ignore
-        eventCards.push(
-          <EventCard
-            key={`${events[j].header}-${j}`}
-            toggleModal={toggleModal}
-            index={j}
-            setEventIndex={setEventIndex}
-            header={events[j].header}
-            location={events[j].location}
-            sublocation={events[j].sublocation}
-            date={events[j].date}
-            times={events[j].times}
-            image={events[j].image}
-            tagType={events[j].tagType}
-          />,
-        );
-      }
-      eventSlides.push({
-        id: `event-slide-${i}`,
-        slide: <div className="event-carousel__slide">{eventCards}</div>,
-      });
-    }
-    return eventSlides;
-  };
   return (
-    <section className="events-section">
-      <h1 className="events-section__header">
-        {isEventPage ? 'Upcoming Events' : 'Events'}
-      </h1>
-      {!isEventPage && <p>Upcoming events to be excited for!</p>}
-      <Carousel slides={createEventSlides()} />
+    <section className="past-events">
+      <h1 className="past-events__header">Past Events</h1>
+      <input
+        className="past-events__search"
+        type="text"
+        placeholder="Search events"
+        onChange={(e) => {
+          setEventsFilter(e.target.value);
+        }}
+      />
+      <div className="past-events__events">
+        {events
+          .filter((event) => {
+            if (!eventsFilter) return event;
+            const sample = [
+              event.header,
+              event.body,
+              event.date,
+              event.location,
+              event.sublocation,
+              event.times,
+              event.cohosts,
+              event.tagType,
+            ].join('');
+            return (
+              sample.toLowerCase().includes(eventsFilter.toLowerCase()) && event
+            );
+          })
+          .map((event, index) => {
+            return (
+              <EventCard
+                key={event.header + event.date}
+                toggleModal={toggleModal}
+                index={index}
+                setEventIndex={setEventIndex}
+                header={event.header}
+                location={event.location}
+                sublocation={event.sublocation}
+                date={event.date}
+                times={event.times}
+                image={event.image}
+                tagType={event.tagType}
+              />
+            );
+          })}
+      </div>
       <EventModal
         isOpen={isOpen}
         toggleModal={toggleModal}
@@ -151,4 +138,4 @@ const EventsSection = ({ isEventPage = false }) => {
     </section>
   );
 };
-export default EventsSection;
+export default PastEventsSection;
