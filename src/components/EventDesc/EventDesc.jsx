@@ -13,28 +13,28 @@ const EventDesc = ({ location, sublocation, date, times, cohosts }) => {
   return (
     <div className="event-desc__container">
       {location && sublocation && (
-        <p className="event-desc location">
+        <div className="event-desc location">
           <BiMap className="icon" />
-          {`${sublocation}, ${location}`}
-        </p>
+          <p>{`${sublocation}, ${location}`}</p>
+        </div>
       )}
       {date && (
-        <p className="event-desc date">
+        <div className="event-desc date">
           <BiCalendarAlt className="icon" />
-          {dateStr}
-        </p>
+          <p>{dateStr}</p>
+        </div>
       )}
       {times && (
-        <p className="event-desc time">
+        <div className="event-desc time">
           <BiTimeFive className="icon" />
-          {times}
-        </p>
+          <p>{times}</p>
+        </div>
       )}
       {cohosts && (
-        <p className="event-desc cohosts">
+        <div className="event-desc cohosts">
           <AiOutlineUsergroupAdd className="icon" />
-          {`with ${cohosts}`}
-        </p>
+          <p>{`with ${cohosts}`}</p>
+        </div>
       )}
     </div>
   );
