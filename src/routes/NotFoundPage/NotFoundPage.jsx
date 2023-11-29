@@ -10,7 +10,7 @@ const NotFoundPage = () => {
         className="not-found-image"
         src={notFoundBanner}
         alt="quantsoc-page-not-found-illustration"
-        loading="lazy"
+        loading="eager"
       />
       {/* prettier-ignore */}
       <p>

@@ -8,6 +8,7 @@ const HeroSection = () => {
           src={resourcesGraphic}
           alt="quantsoc-hero-section-resources-firework-graphic"
           className="hero-img"
+          loading="eager"
         />
       </div>
 

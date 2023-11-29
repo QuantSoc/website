@@ -11,6 +11,7 @@ const HeroSection = () => {
           src={eventGathering}
           alt="quantsoc-hero-section-event-gathering-graphic"
           className="hero-img"
+          loading="eager"
         />
       </div>
 
