@@ -1,6 +1,7 @@
 import mockTradingScreenshot from 'assets/quantsoc-graphics/mock-trading-screenshot.svg';
 import HeroSection from './HeroSection/HeroSection';
 import ResourceOutline from './ResourceOutline/ResourceOutline';
+import WorkshopSection from './WorkshopSection/WorkshopSection';
 
 const ResourcesPage = () => {
   return (
@@ -13,6 +14,7 @@ const ResourcesPage = () => {
         redirectLink="mtg.quantsoc.org"
         redirectBtnText="Play"
       />
+      <WorkshopSection />
     </div>
   );
 };
