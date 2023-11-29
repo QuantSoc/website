@@ -20,9 +20,9 @@ const Carousel = ({ slides, hideArrows = false }) => {
       if (!isHovering) {
         goToNextSlide();
       }
-    }, 30000);
+    }, 5000);
     return () => {
-      return clearInterval(interval);
+      clearInterval(interval);
     };
   }, [isHovering]);
 
