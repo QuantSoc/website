@@ -2,6 +2,7 @@ import mockTradingScreenshot from 'assets/quantsoc-graphics/mock-trading-screens
 import HeroSection from './HeroSection/HeroSection';
 import ResourceOutline from './ResourceOutline/ResourceOutline';
 import WorkshopSection from './WorkshopSection/WorkshopSection';
+import OpportunitiesSection from './OpportunitiesSection/OpportunitiesSection';
 
 const ResourcesPage = () => {
   return (
@@ -11,10 +12,11 @@ const ResourcesPage = () => {
         outlineTitle="Mock Trading Game"
         index={0}
         imgSrc={mockTradingScreenshot}
-        redirectLink="mtg.quantsoc.org"
+        redirectLink="https://mtg.quantsoc.org"
         redirectBtnText="Play"
       />
       <WorkshopSection />
+      <OpportunitiesSection />
     </div>
   );
 };

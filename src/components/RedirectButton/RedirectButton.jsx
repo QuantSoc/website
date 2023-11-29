@@ -4,6 +4,10 @@ import './index.less';
 const RedirectButton = ({ btnText, destination }) => {
   const navigate = useNavigate();
   const handleClick = () => {
+    if (destination.includes('http')) {
+      window.open(destination, '_blank', 'noopener,noreferrer');
+      return;
+    }
     navigate(destination);
   };
 
