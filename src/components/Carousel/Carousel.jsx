@@ -22,7 +22,7 @@ const Carousel = ({ slides, hideArrows = false }) => {
       }
     }, 30000);
     return () => {
-      return clearInterval(interval);
+      clearInterval(interval);
     };
   }, [isHovering]);
 

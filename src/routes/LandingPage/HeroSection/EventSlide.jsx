@@ -1,5 +1,5 @@
 import RedirectButton from 'components/RedirectButton/RedirectButton';
-import eventGathering from '../../../assets/event-gathering.svg';
+import eventGathering from 'assets/quantsoc-graphics/event-gathering.svg';
 import './index.less';
 
 const EventSlide = ({ hideRedirect = false }) => {

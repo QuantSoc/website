@@ -1,10 +1,9 @@
 import EventsCarousel from 'components/EventsCarousel';
 
-const EventsSection = () => {
+const UpcomingEventsSection = () => {
   return (
     <section className="events-section">
-      <h1 className="events-section__header">Events</h1>
-      <p>Upcoming events to be excited for!</p>
+      <h1 className="events-section__header">Upcoming Events</h1>
       <EventsCarousel
         eventsFilterCondition={(event) => {
           return new Date(event.date) >= new Date() ? event : null;
@@ -13,4 +12,4 @@ const EventsSection = () => {
     </section>
   );
 };
-export default EventsSection;
+export default UpcomingEventsSection;

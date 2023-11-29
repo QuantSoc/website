@@ -1,3 +1,5 @@
+@import './constants.less';
+
 * {
   box-sizing: border-box;
   scroll-padding-top: 3rem;
@@ -107,6 +109,11 @@ section {
   transition: opacity 0.2s ease-in-out;
 }
 
+.bg-dark {
+  background-color: #2b2b2b;
+  color: #fff;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -130,5 +137,17 @@ code {
 @media screen and (max-width: 900px) {
   body {
     margin: 0 3%;
+  }
+}
+
+@media screen and (max-width: @mobile) {
+  h1 {
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 16px;
   }
 }

@@ -16,6 +16,17 @@ const NavBar = () => {
           tabIndex={-1}
           onKeyDown={() => {}}
           onClick={() => {
+            navigate('/');
+          }}
+          className="text-main menu-item menu-item-mobile"
+        >
+          Home
+        </div>
+        <div
+          role="button"
+          tabIndex={-1}
+          onKeyDown={() => {}}
+          onClick={() => {
             navigate('/about');
           }}
           className="text-main menu-item menu-item-mobile"
@@ -44,7 +55,7 @@ const NavBar = () => {
         >
           Resources
         </div>
-        <div
+        {/* <div
           role="button"
           tabIndex={-1}
           onKeyDown={() => {}}
@@ -54,7 +65,7 @@ const NavBar = () => {
           className="text-main menu-item menu-item-mobile"
         >
           Sponsors
-        </div>
+        </div> */}
       </div>
     </nav>
   );

@@ -1,12 +1,12 @@
-import EventsSection from 'routes/LandingPage/EventsSection/EventsSection';
 import HeroSection from './HeroSection/HeroSection';
 import PastEventsSection from './PastEventsSection/PastEventsSection';
+import UpcomingEventsSection from './UpcomingEventsSection/UpcomingEventsSection';
 
 const EventsPage = () => {
   return (
     <div className="page">
       <HeroSection />
-      <EventsSection isEventPage />
+      <UpcomingEventsSection />
       <PastEventsSection />
     </div>
   );

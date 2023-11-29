@@ -14,6 +14,7 @@
   min-height: 500px;
   min-width: 800px;
   max-height: 96vh;
+  max-width: 900px;
   flex-shrink: 0;
   border-radius: 10px;
   position: absolute;
@@ -49,6 +50,9 @@
   font-family: Poppins;
   font-size: 32px;
   font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .event-modal__image {
@@ -98,18 +102,18 @@
 
 @media screen and (max-width: 1200px) {
   .modal-container {
-    min-width: 60vw;
+    width: 60vw;
   }
 }
 @media screen and (max-width: 900px) {
   .modal-container {
-    min-width: 80vw;
+    width: 85vw;
     padding: 1rem 2rem 2.5rem;
   }
 }
 @media screen and (max-width: 400px) {
   .modal-container {
-    min-width: 95vw;
+    width: 95vw;
     padding: 1rem 2rem 2.5rem;
   }
 }

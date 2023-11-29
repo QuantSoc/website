@@ -1,6 +1,6 @@
-@import '../../../styles/constants.less';
+@import 'styles/constants.less';
 
-.past-events__events {
+.events-search__events {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   width: 100%;
@@ -11,23 +11,24 @@
   row-gap: 3rem;
 }
 
-.past-events__search {
+.events-search__search {
   background-color: transparent;
   font-family: Poppins;
   width: 275px;
   height: 40px;
+  margin-top: 1rem;
   padding-left: 18px;
   border-radius: 50px;
   border: 1px solid #00000055;
 }
 
 @media screen and (max-width: 1400px) {
-  .past-events__events {
+  .events-search__events {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media screen and (max-width: 950px) {
-  .past-events__events {
+  .events-search__events {
     grid-template-columns: repeat(1, 1fr);
     padding: 1rem 0rem;
   }
