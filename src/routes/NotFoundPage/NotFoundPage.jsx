@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import notFoundBanner from 'assets/not-found.svg';
+import notFoundBanner from 'assets/quantsoc-graphics/not-found.svg';
 import './index.less';
 
 const NotFoundPage = () => {

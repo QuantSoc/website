@@ -1,6 +1,6 @@
 import { BsFacebook, BsDiscord } from 'react-icons/bs';
 import SocialsButton from 'components/SocialsButton/SocialsButton';
-import eventGathering from '../../../assets/event-gathering.svg';
+import eventGathering from 'assets/quantsoc-graphics/event-gathering.svg';
 import './index.less';
 
 const HeroSection = () => {

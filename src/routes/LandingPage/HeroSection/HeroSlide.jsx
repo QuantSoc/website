@@ -1,5 +1,5 @@
 import RedirectButton from 'components/RedirectButton/RedirectButton';
-import heroCandlestick from '../../../assets/hero-candlestick.svg';
+import heroCandlestick from 'assets/quantsoc-graphics/hero-candlestick.svg';
 import './index.less';
 
 const HeroSlide = ({ hideRedirect = false }) => {
