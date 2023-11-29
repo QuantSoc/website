@@ -10,26 +10,26 @@ const EventDesc = ({ location, sublocation, date, times, cohosts }) => {
     year: 'numeric',
   });
 
+  const daysLeft = (new Date(date) - new Date()) / (1000 * 3600 * 24);
+
   return (
     <div className="event-desc__container">
-      {location && sublocation && (
-        <div className="event-desc location">
-          <BiMap className="icon" />
-          <p>{`${sublocation}, ${location}`}</p>
-        </div>
-      )}
-      {date && (
-        <div className="event-desc date">
-          <BiCalendarAlt className="icon" />
-          <p>{dateStr}</p>
-        </div>
-      )}
-      {times && (
-        <div className="event-desc time">
-          <BiTimeFive className="icon" />
-          <p>{times}</p>
-        </div>
-      )}
+      <div className="event-desc location">
+        <BiMap className="icon" />
+        <p>{`${sublocation && `${sublocation}, `} ${location}`}</p>
+      </div>
+      <div
+        className={`event-desc date ${
+          daysLeft > 0 && daysLeft <= 3 && 'urgent'
+        }`}
+      >
+        <BiCalendarAlt className="icon" />
+        <p>{date ? dateStr : 'N/A'}</p>
+      </div>
+      <div className="event-desc time">
+        <BiTimeFive className="icon" />
+        <p>{!times ? 'N/A' : times}</p>
+      </div>
       {cohosts && (
         <div className="event-desc cohosts">
           <AiOutlineUsergroupAdd className="icon" />
