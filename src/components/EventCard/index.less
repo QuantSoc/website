@@ -64,8 +64,20 @@
   transform: scale(1);
 }
 
-@media (max-width: 400px) {
+@media screen and (max-width: @mobile) {
   .event-card__container {
-    width: 100%;
+    width: 245px;
+    height: 315px;
+  }
+  .event-card__header {
+    font-size: 0.8rem;
+  }
+  .event-card__image {
+    height: 100px;
+  }
+  .event-card__button {
+    button {
+      font-size: 0.7rem;
+    }
   }
 }
