@@ -63,7 +63,7 @@ const BurgerMenu = () => {
         >
           Resources
         </div>
-        <div
+        {/* <div
           className="burger-menu-item"
           role="button"
           onKeyDown={() => {}}
@@ -73,7 +73,7 @@ const BurgerMenu = () => {
           }}
         >
           Sponsors
-        </div>
+        </div> */}
       </div>
     </div>
   );

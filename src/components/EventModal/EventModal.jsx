@@ -14,6 +14,7 @@ const EventModal = ({
   date,
   times,
   cohosts,
+  link,
   image,
   tagType,
   children,
@@ -62,6 +63,7 @@ const EventModal = ({
           date={date}
           times={times}
           cohosts={cohosts}
+          link={link}
         />
         <div
           className="modal-body scroll-indicator"

@@ -7,6 +7,7 @@ const ResourceOutline = ({
   imgSrc,
   redirectLink,
   redirectBtnText,
+  children,
 }) => {
   return (
     <section
@@ -14,17 +15,7 @@ const ResourceOutline = ({
     >
       <div className="resource-outline__main-container">
         <h2>{outlineTitle}</h2>
-        <div className="resource-outline__description">
-          <p>
-            Dive into the fast-paced world of trading, hone your investment
-            strategies, and compete with fellow traders in a mock environment.
-            Create your own markets and play amongst your friends.
-          </p>
-          <br />
-          <p>
-            Learn, compete and have fun in QuantSoc&apos;s Mock Trading Game!
-          </p>
-        </div>
+        <div className="resource-outline__description">{children}</div>
         <RedirectButton btnText={redirectBtnText} destination={redirectLink} />
       </div>
       <div className="resource-outline__img-container">

@@ -16,6 +16,10 @@ const Carousel = ({ slides, hideArrows = false }) => {
   };
 
   useEffect(() => {
+    setCurrentIndex(0);
+  }, [slides]);
+
+  useEffect(() => {
     const interval = setInterval(() => {
       if (!isHovering) {
         goToNextSlide();

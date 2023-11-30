@@ -1,8 +1,9 @@
 import './index.less';
 import { BiCalendarAlt, BiTimeFive, BiMap } from 'react-icons/bi';
 import { AiOutlineUsergroupAdd } from 'react-icons/ai';
+import { FiLink } from 'react-icons/fi';
 
-const EventDesc = ({ location, sublocation, date, times, cohosts }) => {
+const EventDesc = ({ location, sublocation, date, times, cohosts, link }) => {
   const dateStr = new Date(date).toLocaleDateString('en-GB', {
     weekday: 'short',
     day: 'numeric',
@@ -34,6 +35,14 @@ const EventDesc = ({ location, sublocation, date, times, cohosts }) => {
         <div className="event-desc cohosts">
           <AiOutlineUsergroupAdd className="icon" />
           <p>{`with ${cohosts}`}</p>
+        </div>
+      )}
+      {link && (
+        <div className="event-desc link">
+          <FiLink className="icon" />
+          <a href={link} target="_blank" rel="noreferrer">
+            {new URL(link).hostname.replace('www.', '')}
+          </a>
         </div>
       )}
     </div>
