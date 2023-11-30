@@ -10,7 +10,6 @@
   display: flex;
   align-items: center;
   margin: 0.5rem 0;
-  font-size: 0.8rem;
 }
 
 .event-desc > p {
@@ -38,4 +37,10 @@
 
 .urgent {
   color: @quantsoc-red;
+}
+
+@media screen and (max-width: @mobile) {
+  .event-desc p {
+    font-size: 0.8rem;
+  }
 }
