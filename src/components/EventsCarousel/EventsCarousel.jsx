@@ -24,20 +24,24 @@ const EventsCarousel = ({ eventsFilterCondition }) => {
   const { isOpen, toggleModal } = useModal();
 
   useEffect(() => {
-    const mediaQueryMedium = window.matchMedia('(max-width: 1400px)');
-    const mediaQuerySmall = window.matchMedia('(max-width: 950px)');
+    const mediumQuery = window.matchMedia('(max-width: 1400px)');
+    const smallQuery = window.matchMedia('(max-width: 950px)');
 
-    const handleMediaQueryMediumChange = (event) => {
+    const handleMediumQueryChange = (event) => {
       if (event.matches) setStep(2);
       if (!event.matches) setStep(3);
     };
-    const handleMediaQuerySmallChange = (event) => {
+    const handleSmallQueryChange = (event) => {
       if (event.matches) setStep(1);
       if (!event.matches) setStep(2);
     };
 
-    mediaQueryMedium.addEventListener('change', handleMediaQueryMediumChange);
-    mediaQuerySmall.addEventListener('change', handleMediaQuerySmallChange);
+    mediumQuery.addEventListener('change', handleMediumQueryChange);
+    smallQuery.addEventListener('change', handleSmallQueryChange);
+    return () => {
+      mediumQuery.removeEventListener('change', handleMediumQueryChange);
+      smallQuery.removeEventListener('change', handleSmallQueryChange);
+    };
   }, []);
 
   const createEventSlides = () => {
