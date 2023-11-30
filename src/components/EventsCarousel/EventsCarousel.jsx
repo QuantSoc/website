@@ -87,6 +87,7 @@ const EventsCarousel = ({ eventsFilterCondition }) => {
         image={events[eventIndex].image}
         times={events[eventIndex].times}
         cohosts={events[eventIndex].cohosts}
+        link={events[eventIndex].link}
         tagIcon={events[eventIndex].tagIcon}
       >
         {events[eventIndex].body.split('\n').map((paragraph) => {
