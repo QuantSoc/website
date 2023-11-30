@@ -1,3 +1,5 @@
+@import 'styles/constants.less';
+
 .sponsor__container {
   flex: 1 0 33%; /* explanation below */
   display: flex;
@@ -9,4 +11,10 @@
 }
 .sponsor__container img:hover {
   transform: scale(1.1);
+}
+
+@media screen and (max-width: @mobile) {
+  .sponsor__container img {
+    max-width: 200px;
+  }
 }
