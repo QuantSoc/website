@@ -13,7 +13,7 @@ const EventSlide = ({ hideRedirect = false }) => {
         />
       </div>
       <div className="hero-item stack">
-        <h1 className="hero-heading">Upcoming Events at QuantSoc</h1>
+        <h1>Upcoming Events at QuantSoc</h1>
         <p className="text-body">
           Join us for exciting events, competitions and gatherings. Whether
           you&apos;ve a budding interest or a deeper passion, discover the world
