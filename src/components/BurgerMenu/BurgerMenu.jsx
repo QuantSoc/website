@@ -1,18 +1,44 @@
-import React from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import './index.less';
 import { useNavigate } from 'react-router-dom';
 import logo from '../../assets/logo-quantsoc.svg';
 
 const BurgerMenu = () => {
   const navigate = useNavigate();
+  const [isChecked, setIsChecked] = useState(false);
+  const menuRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setIsChecked(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [menuRef]);
+
+  const handleLinkClick = (link) => {
+    navigate(link);
+    setIsChecked(false);
+  };
   return (
     <div className="hamburger-menu">
-      <input id="menu-toggle" type="checkbox" />
+      <input
+        id="menu-toggle"
+        type="checkbox"
+        checked={isChecked}
+        onChange={() => {
+          setIsChecked(!isChecked);
+        }}
+      />
       <div className="menu-btn">
         <span />
       </div>
 
-      <div className="menu-vertical">
+      <div className="menu-vertical" ref={menuRef}>
         <img
           src={logo}
           alt="QuantSoc's logo within burger menu"
@@ -25,7 +51,7 @@ const BurgerMenu = () => {
           onKeyDown={() => {}}
           tabIndex={-1}
           onClick={() => {
-            navigate('/');
+            handleLinkClick('/');
           }}
         >
           Home
@@ -36,7 +62,7 @@ const BurgerMenu = () => {
           onKeyDown={() => {}}
           tabIndex={-1}
           onClick={() => {
-            navigate('/about');
+            handleLinkClick('/about');
           }}
         >
           About Us
@@ -47,7 +73,7 @@ const BurgerMenu = () => {
           onKeyDown={() => {}}
           tabIndex={-1}
           onClick={() => {
-            navigate('/events');
+            handleLinkClick('/events');
           }}
         >
           Events
@@ -58,7 +84,7 @@ const BurgerMenu = () => {
           onKeyDown={() => {}}
           tabIndex={-1}
           onClick={() => {
-            navigate('/resources');
+            handleLinkClick('/resources');
           }}
         >
           Resources
@@ -69,7 +95,7 @@ const BurgerMenu = () => {
           onKeyDown={() => {}}
           tabIndex={-1}
           onClick={() => {
-            navigate('/sponsors');
+            handleLinkClick('/sponsors');
           }}
         >
           Sponsors
