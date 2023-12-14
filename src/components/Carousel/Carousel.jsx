@@ -20,20 +20,20 @@ const Carousel = ({ slides, hideArrows = false }) => {
   const handleTouchStart = (e) => {
     touchStartX.current = e.touches[0].clientX;
   };
-  
+
   const handleTouchMove = (e) => {
     if (touchStartX.current === null) return;
-    
-    const deltaX = e.touches[0].clientX - touchStartX.current;
-    console.log(deltaX)
 
-    deltaX > 7 ? goToPrevSlide() : deltaX < -7 ? goToNextSlide() : null;
+    const deltaX = e.touches[0].clientX - touchStartX.current;
+
+    if (deltaX > 7) goToPrevSlide();
+    if (deltaX < -7) goToNextSlide();
     touchStartX.current = null;
   };
 
   useEffect(() => {
     setCurrentIndex(0);
-  }, [slides]);
+  }, [slides.length]);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -59,7 +59,7 @@ const Carousel = ({ slides, hideArrows = false }) => {
       onMouseOver={handleFocusEnter}
       onFocus={handleFocusEnter}
       onMouseLeave={handleFocusExit}
-      >
+    >
       {!hideArrows && (
         <div
           className="left arrow"
