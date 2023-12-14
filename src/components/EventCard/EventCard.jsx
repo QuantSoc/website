@@ -34,6 +34,9 @@ const EventCard = ({
         className="event-card__image"
         src={image !== '' ? image : placeholder}
         alt={header}
+        onError={(e) => {
+          e.target.src = placeholder;
+        }}
       />
       <div className="event-card__button">
         <BiExpandVertical />

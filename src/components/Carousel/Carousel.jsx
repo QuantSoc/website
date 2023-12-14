@@ -1,9 +1,11 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import './index.less';
 
 const Carousel = ({ slides, hideArrows = false }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isHovering, setIsHovering] = useState(false);
+  const touchStartX = useRef(null);
+
   const goToPrevSlide = () => {
     setCurrentIndex((prevIndex) => {
       return prevIndex === 0 ? slides.length - 1 : prevIndex - 1;
@@ -15,9 +17,23 @@ const Carousel = ({ slides, hideArrows = false }) => {
     });
   };
 
+  const handleTouchStart = (e) => {
+    touchStartX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchMove = (e) => {
+    if (touchStartX.current === null) return;
+
+    const deltaX = e.touches[0].clientX - touchStartX.current;
+
+    if (deltaX > 7) goToPrevSlide();
+    if (deltaX < -7) goToNextSlide();
+    touchStartX.current = null;
+  };
+
   useEffect(() => {
     setCurrentIndex(0);
-  }, [slides]);
+  }, [slides.length]);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -69,6 +85,8 @@ const Carousel = ({ slides, hideArrows = false }) => {
       <div
         className="inner"
         style={{ transform: `translate(-${currentIndex * 100}%)` }}
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
       >
         {slides.map((slide) => {
           return (
