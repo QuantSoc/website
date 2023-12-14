@@ -74,6 +74,9 @@ const EventModal = ({
             className="event-modal__image"
             src={image !== '' ? image : placeholder}
             alt={header}
+            onError={(e) => {
+              e.target.src = placeholder;
+            }}
           />
           {children}
         </div>

@@ -18,9 +18,6 @@ const EventCard = ({
   image,
   tagType,
 }) => {
-  const handleImageError = (event) => {
-    event.target.src = placeholder;
-  };
   return (
     <div className="event-card__container">
       <EventTag tagType={tagType} />
@@ -37,7 +34,9 @@ const EventCard = ({
         className="event-card__image"
         src={image !== '' ? image : placeholder}
         alt={header}
-        onError={handleImageError}
+        onError={(e) => {
+          e.target.src = placeholder;
+        }}
       />
       <div className="event-card__button">
         <BiExpandVertical />
