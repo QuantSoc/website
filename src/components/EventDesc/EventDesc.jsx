@@ -20,7 +20,9 @@ const intuitiveDates = (date, endDate) => {
   });
   if (date && !endDate) return dateStr;
   if (!date && !endDate) return 'N/A';
-  if (startDay === endDay) return dateStr;
+  if (startDay === endDay && startMonth === endMonth && startYear === endYear) {
+    return dateStr;
+  }
   if (startMonth === endMonth && startYear === endYear) {
     return `${startDay} - ${endDay}, ${startMonth} ${startYear}`;
   }
