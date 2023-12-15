@@ -7,7 +7,9 @@ const EventsSection = () => {
       <p>Upcoming events to be excited for!</p>
       <EventsCarousel
         eventsFilterCondition={(event) => {
-          return new Date(event.date) >= new Date() ? event : null;
+          return event.showAsEvent && new Date(event.date) >= new Date()
+            ? event
+            : null;
         }}
       />
     </section>
