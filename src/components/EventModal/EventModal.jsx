@@ -12,6 +12,7 @@ const EventModal = ({
   location,
   sublocation,
   date,
+  endDate,
   times,
   cohosts,
   link,
@@ -61,6 +62,7 @@ const EventModal = ({
           location={location}
           sublocation={sublocation}
           date={date}
+          endDate={endDate}
           times={times}
           cohosts={cohosts}
           link={link}

@@ -44,6 +44,7 @@ const EventsSearch = ({ searchRestriction }) => {
                 location={event.location}
                 sublocation={event.sublocation}
                 date={event.date}
+                endDate={event.endDate}
                 times={event.times}
                 image={event.image}
                 tagType={event.tagType}
@@ -58,6 +59,7 @@ const EventsSearch = ({ searchRestriction }) => {
         location={events[eventIndex].location}
         sublocation={events[eventIndex].sublocation}
         date={events[eventIndex].date}
+        endDate={events[eventIndex].endDate}
         tagType={events[eventIndex].tagType}
         image={events[eventIndex].image}
         times={events[eventIndex].times}

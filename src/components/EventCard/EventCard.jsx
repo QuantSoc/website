@@ -13,6 +13,7 @@ const EventCard = ({
   location,
   sublocation,
   date,
+  endDate,
   times,
   cohosts,
   image,
@@ -26,6 +27,7 @@ const EventCard = ({
         location={location}
         sublocation={sublocation}
         date={date}
+        endDate={endDate}
         times={times}
         cohosts={cohosts}
         isSmall
