@@ -12,7 +12,7 @@ const EventCard = ({
   header,
   location,
   sublocation,
-  date,
+  startDate,
   endDate,
   times,
   cohosts,
@@ -26,7 +26,7 @@ const EventCard = ({
       <EventDesc
         location={location}
         sublocation={sublocation}
-        date={date}
+        startDate={startDate}
         endDate={endDate}
         times={times}
         cohosts={cohosts}

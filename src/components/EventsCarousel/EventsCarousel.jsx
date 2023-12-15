@@ -59,7 +59,7 @@ const EventsCarousel = ({ eventsFilterCondition }) => {
             header={events[j].header}
             location={events[j].location}
             sublocation={events[j].sublocation}
-            date={events[j].date}
+            startDate={events[j].startDate}
             endDate={events[j].endDate}
             times={events[j].times}
             image={events[j].image}
@@ -83,7 +83,7 @@ const EventsCarousel = ({ eventsFilterCondition }) => {
         header={events[eventIndex].header}
         location={events[eventIndex].location}
         sublocation={events[eventIndex].sublocation}
-        date={events[eventIndex].date}
+        startDate={events[eventIndex].startDate}
         endDate={events[eventIndex].endDate}
         tagType={events[eventIndex].tagType}
         image={events[eventIndex].image}

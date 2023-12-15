@@ -36,14 +36,14 @@ const EventsSearch = ({ searchRestriction }) => {
           .map((event, index) => {
             return (
               <EventCard
-                key={event.header + event.date}
+                key={event.header + event.startDate}
                 toggleModal={toggleModal}
                 index={index}
                 setEventIndex={setEventIndex}
                 header={event.header}
                 location={event.location}
                 sublocation={event.sublocation}
-                date={event.date}
+                startDate={event.startDate}
                 endDate={event.endDate}
                 times={event.times}
                 image={event.image}
@@ -58,7 +58,7 @@ const EventsSearch = ({ searchRestriction }) => {
         header={events[eventIndex].header}
         location={events[eventIndex].location}
         sublocation={events[eventIndex].sublocation}
-        date={events[eventIndex].date}
+        startDate={events[eventIndex].startDate}
         endDate={events[eventIndex].endDate}
         tagType={events[eventIndex].tagType}
         image={events[eventIndex].image}
