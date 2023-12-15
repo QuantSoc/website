@@ -3,15 +3,46 @@ import { BiCalendarAlt, BiTimeFive, BiMap } from 'react-icons/bi';
 import { AiOutlineUsergroupAdd } from 'react-icons/ai';
 import { FiLink } from 'react-icons/fi';
 
-const EventDesc = ({ location, sublocation, date, times, cohosts, link }) => {
-  const dateStr = new Date(date).toLocaleDateString('en-GB', {
+const intuitiveDates = (startDate, endDate) => {
+  const start = new Date(startDate);
+  const end = new Date(endDate);
+  const startMonth = start.toLocaleString('default', { month: 'short' });
+  const endMonth = end.toLocaleString('default', { month: 'short' });
+  const startYear = start.getFullYear();
+  const endYear = end.getFullYear();
+  const startDay = start.getDate();
+  const endDay = end.getDate();
+  const dateStr = new Date(startDate).toLocaleDateString('en-GB', {
     weekday: 'short',
     day: 'numeric',
     month: 'short',
     year: 'numeric',
   });
+  if (startDate && !endDate) return dateStr;
+  if (!startDate && !endDate) return 'N/A';
+  if (startDay === endDay && startMonth === endMonth && startYear === endYear) {
+    return dateStr;
+  }
+  if (startMonth === endMonth && startYear === endYear) {
+    return `${startDay} - ${endDay}, ${startMonth} ${startYear}`;
+  }
+  if (startMonth !== endMonth && startYear === endYear) {
+    return `${startDay} ${startMonth} - ${endDay} ${endMonth}, ${startYear}`;
+  }
+  return `${startDay} ${startMonth} ${startYear} - ${endDay} ${endMonth} ${endYear}`;
+};
 
-  const daysLeft = (new Date(date) - new Date()) / (1000 * 3600 * 24);
+const EventDesc = ({
+  location,
+  sublocation,
+  startDate,
+  endDate,
+  times,
+  cohosts,
+  link,
+}) => {
+  const dateStr = intuitiveDates(startDate, endDate);
+  const daysLeft = (new Date(endDate) - new Date()) / (1000 * 3600 * 24);
 
   return (
     <div className="event-desc__container">
@@ -25,7 +56,7 @@ const EventDesc = ({ location, sublocation, date, times, cohosts, link }) => {
         }`}
       >
         <BiCalendarAlt className="icon" />
-        <p>{date ? dateStr : 'N/A'}</p>
+        <p>{dateStr}</p>
       </div>
       <div className="event-desc time">
         <BiTimeFive className="icon" />

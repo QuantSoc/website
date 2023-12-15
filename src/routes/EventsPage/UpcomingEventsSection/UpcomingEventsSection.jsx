@@ -6,7 +6,9 @@ const UpcomingEventsSection = () => {
       <h1 className="events-section__header">Upcoming Events</h1>
       <EventsCarousel
         eventsFilterCondition={(event) => {
-          return new Date(event.date) >= new Date() ? event : null;
+          return event.showAsEvent && new Date(event.endDate) >= new Date()
+            ? event
+            : null;
         }}
       />
     </section>

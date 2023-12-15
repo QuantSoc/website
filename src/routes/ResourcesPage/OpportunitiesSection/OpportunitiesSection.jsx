@@ -7,7 +7,7 @@ const OpportunitiesSection = () => {
       <EventsSearch
         searchRestriction={(event) => {
           // prettier-ignore
-          return new Date(event.date) >= new Date()
+          return new Date(event.endDate) >= new Date()
             && event.tagType === 'opportunity'
             ? event
             : null;
