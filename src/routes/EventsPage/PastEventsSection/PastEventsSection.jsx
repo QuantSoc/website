@@ -6,7 +6,7 @@ const PastEventsSection = () => {
       <h1 className="past-events__header">Past Events</h1>
       <EventsSearch
         searchRestriction={(event) => {
-          return event.showAsEvent && new Date(event.date) < new Date()
+          return event.showAsEvent && new Date(event.endDate) < new Date()
             ? event
             : null;
         }}

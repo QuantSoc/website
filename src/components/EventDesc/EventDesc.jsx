@@ -3,8 +3,8 @@ import { BiCalendarAlt, BiTimeFive, BiMap } from 'react-icons/bi';
 import { AiOutlineUsergroupAdd } from 'react-icons/ai';
 import { FiLink } from 'react-icons/fi';
 
-const intuitiveDates = (date, endDate) => {
-  const start = new Date(date);
+const intuitiveDates = (startDate, endDate) => {
+  const start = new Date(startDate);
   const end = new Date(endDate);
   const startMonth = start.toLocaleString('default', { month: 'short' });
   const endMonth = end.toLocaleString('default', { month: 'short' });
@@ -12,14 +12,14 @@ const intuitiveDates = (date, endDate) => {
   const endYear = end.getFullYear();
   const startDay = start.getDate();
   const endDay = end.getDate();
-  const dateStr = new Date(date).toLocaleDateString('en-GB', {
+  const dateStr = new Date(startDate).toLocaleDateString('en-GB', {
     weekday: 'short',
     day: 'numeric',
     month: 'short',
     year: 'numeric',
   });
-  if (date && !endDate) return dateStr;
-  if (!date && !endDate) return 'N/A';
+  if (startDate && !endDate) return dateStr;
+  if (!startDate && !endDate) return 'N/A';
   if (startDay === endDay && startMonth === endMonth && startYear === endYear) {
     return dateStr;
   }
@@ -35,14 +35,14 @@ const intuitiveDates = (date, endDate) => {
 const EventDesc = ({
   location,
   sublocation,
-  date,
+  startDate,
   endDate,
   times,
   cohosts,
   link,
 }) => {
-  const dateStr = intuitiveDates(date, endDate);
-  const daysLeft = (new Date(date) - new Date()) / (1000 * 3600 * 24);
+  const dateStr = intuitiveDates(startDate, endDate);
+  const daysLeft = (new Date(endDate) - new Date()) / (1000 * 3600 * 24);
 
   return (
     <div className="event-desc__container">
