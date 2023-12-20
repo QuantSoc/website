@@ -6,7 +6,7 @@ const ResourcesSection = () => {
   return (
     <section className="resources-section">
       <h1 className="resources-section__header">Resources</h1>
-      <p>QuantSoc&apos;s resources and opportunities</p>
+      <p>QuantSoc&apos;s resources and opportunities.</p>
       <div className="resources-buttons">
         <ResourcesButton
           btnTitle="Mock Trading Game"

@@ -8,15 +8,11 @@ const ResourcesButton = ({
   Icon,
 }) => {
   return (
-    <HashLink smooth to={destination}>
-      <div
-        className="resources-button"
-      >
-        <Icon className="resources-button-icon" />
-        <div className="resources-button-text">
-          <div className="resources-button-title">{btnTitle}</div>
-          <div className="resources-button-subtext">{btnText}</div>
-        </div>
+    <HashLink className="resources-button" to={destination}>
+      <Icon className="resources-button-icon" />
+      <div className="resources-button-text">
+        <div className="resources-button-title">{btnTitle}</div>
+        <div className="resources-button-subtext">{btnText}</div>
       </div>
     </HashLink>
   );

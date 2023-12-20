@@ -2,20 +2,17 @@
 @import 'styles/constants.less';
 
 .resources-section {
-  p {
-    margin-bottom: 1.5rem;
-  }
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
 
+  p {
+    margin-bottom: 1.5rem;
+  }
+
   .resources-buttons {
-    border: 1px dashed black;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: flex-end;
     gap: 24px;
     
     a {
@@ -28,64 +25,80 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: baseline;
 
   // background-color: #F1E9FF;
   color: black;
   background-color: @lightest-purple;
+  filter: drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.25));
+
   border-radius: 10px;
   min-height: 100px;
   width: 590px;
   text-wrap: nowrap;
-  cursor: pointer;
   transition: all 0.1s ease-in-out;
+  cursor: pointer;
+
   &:hover {
     background-color: @quantsoc-primary;
   }
-  filter: drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.25));
-}
 
-.resources-button-icon {
-  width: 40px;
-  height: 40px;
-  margin: 20px;
-  flex-shrink: 0.2;
-}
-
-.resources-button-text {
-  font-family: 'Poppins';
-  text-decoration: none;
-  line-height: 27px;
-
-  .resources-button-title {
-    font-size: 20px;
-    font-weight: 500;
-    margin-bottom: 15px;
+  &:nth-of-type(even) {
+    justify-self: start;
   }
 
-  .resources-button-subtext {
-    font-size: 16px;
-    font-weight: 400;
-    color: @text-secondary;
-    margin-right: 20px;
+  .resources-button-icon {
+    width: 40px;
+    height: 40px;
+    margin: 20px;
+    flex-shrink: 0.2;
   }
-}
-
-@media screen and (max-width: 1500px) {
-  .resources-section {  
-    .resources-buttons {
-      justify-content: center;
+  
+  .resources-button-text {
+    font-family: 'Poppins';
+    text-decoration: none;
+    line-height: 27px;
+  
+    .resources-button-title {
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 15px;
+    }
+  
+    .resources-button-subtext {
+      color: @text-secondary;
+      font-size: 16px;
+      font-weight: 400;
+      margin-right: 20px;
     }
   }
 }
 
-@media screen and (max-width: 696px) {
+@media screen and (max-width: 1440px) {
+  .resources-section .resources-buttons {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 680px) {
   .resources-button {
     width: 360px;
     text-wrap: balance;
+    &:nth-of-type(even) {
+      justify-self: center;
+    }
   }
 
-  .resources-button-text > .resources-button-title {
-    margin-bottom: 5px;
+  .resources-button-text {
+    .resources-button-title {
+      margin-top: 10px;
+      margin-bottom: 8px !important;
+    }
+    .resources-button-subtext {
+      margin-bottom: 10px;
+    }
+  }
+
+  .resources-section .resources-buttons {
+    place-items: center;
   }
 }
