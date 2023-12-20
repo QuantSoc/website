@@ -1,6 +1,7 @@
 import mockTradingScreenshot from 'assets/quantsoc-graphics/mock-trading-screenshot.svg';
 import ResourceOutline from 'components/ResourceOutline';
 import EventsSection from './EventsSection/EventsSection';
+import ResourcesSection from './ResourcesSection/ResourcesSection';
 import HeroSection from './HeroSection/HeroSection';
 import SponsorshipSection from '../../components/SponsorshipSection';
 
@@ -24,6 +25,7 @@ const LandingPage = () => {
         <p>Learn, compete and have fun in QuantSoc&apos;s Mock Trading Game!</p>
       </ResourceOutline>
       <EventsSection />
+      <ResourcesSection />
       <SponsorshipSection />
     </div>
   );
