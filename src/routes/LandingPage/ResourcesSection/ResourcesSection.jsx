@@ -27,7 +27,6 @@ const ResourcesSection = () => {
           Icon={BiBriefcase}
         />
       </div>
-
     </section>
   );
 };
