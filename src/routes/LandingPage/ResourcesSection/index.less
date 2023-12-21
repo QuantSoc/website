@@ -1,0 +1,118 @@
+@import 'styles/global.less';
+@import 'styles/constants.less';
+
+.resources-section {
+  display: flex;
+  flex-direction: column;
+
+  p {
+    margin-bottom: 1.5rem;
+  }
+
+  .resources-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: flex-end;
+    gap: 24px;
+
+    a {
+      text-decoration: none; // remove default underlining of anchor element (from HashLink)
+    }
+  }
+}
+
+.resources-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  // background-color: #F1E9FF;
+  color: black;
+  background-color: @lightest-purple;
+  filter: drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.25));
+
+  border-radius: 10px;
+  min-height: 90px;
+  width: 605px;
+  text-wrap: nowrap;
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background-color: @quantsoc-primary;
+  }
+
+  &:nth-of-type(even) {
+    justify-self: start;
+  }
+
+  .resources-button-icon {
+    width: 35px;
+    height: 35px;
+    margin: 20px;
+    flex-shrink: 0.2;
+  }
+
+  .resources-button-text {
+    font-family: 'Poppins';
+    text-decoration: none;
+    line-height: 27px;
+
+    .resources-button-title {
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 15px;
+    }
+
+    .resources-button-subtext {
+      color: @text-secondary;
+      font-size: 16px;
+      font-weight: 400;
+      margin-right: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .resources-section .resources-buttons {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .resources-button {
+    &:nth-of-type(1) {
+      justify-self: start;
+    }
+    &:nth-of-type(2) {
+      justify-self: center;
+    }
+    &:nth-of-type(3) {
+      justify-self: end;
+    }
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .resources-button {
+    width: 320px;
+    text-wrap: balance;
+    &:nth-of-type(even) {
+      justify-self: center;
+    }
+  }
+
+  .resources-button-text {
+    .resources-button-title {
+      margin-top: 10px;
+      margin-bottom: 8px !important;
+      font-size: 18px !important;
+    }
+    .resources-button-subtext {
+      margin-bottom: 10px;
+      font-size: 14px !important;
+    }
+  }
+
+  .resources-section .resources-buttons {
+    place-items: center;
+  }
+}

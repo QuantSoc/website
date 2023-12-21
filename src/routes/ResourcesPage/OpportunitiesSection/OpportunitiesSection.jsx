@@ -1,8 +1,8 @@
 import EventsSearch from 'components/EventsSearch';
 
-const OpportunitiesSection = () => {
+const OpportunitiesSection = ({ anchorTag }) => {
   return (
-    <section className="opportunities__section">
+    <section id={anchorTag} className="opportunities__section">
       <h1 className="opportunities__header">Upcoming Opportunities</h1>
       <EventsSearch
         searchRestriction={(event) => {

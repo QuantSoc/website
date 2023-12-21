@@ -8,7 +8,9 @@ const ResourcesPage = () => {
   return (
     <div className="page">
       <HeroSection />
+      {/* separate div to ensure universal focusability of anchor */}
       <ResourceOutline
+        anchorTag="mock-trading-game"
         outlineTitle="Mock Trading Game"
         index={0}
         imgSrc={mockTradingScreenshot}
@@ -23,8 +25,8 @@ const ResourcesPage = () => {
         <br />
         <p>Learn, compete and have fun in QuantSoc&apos;s Mock Trading Game!</p>
       </ResourceOutline>
-      <WorkshopSection />
-      <OpportunitiesSection />
+      <WorkshopSection anchorTag="workshops" />
+      <OpportunitiesSection anchorTag="opportunities" />
     </div>
   );
 };

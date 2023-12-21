@@ -2,6 +2,7 @@ import './index.less';
 import RedirectButton from 'components/RedirectButton';
 
 const ResourceOutline = ({
+  anchorTag,
   outlineTitle,
   index,
   imgSrc,
@@ -11,6 +12,7 @@ const ResourceOutline = ({
 }) => {
   return (
     <section
+      id={anchorTag}
       className={`resource-outline__container ${index % 2 === 0 && 'bg-dark'}`}
     >
       <div className="resource-outline__main-container">
