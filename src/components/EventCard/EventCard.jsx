@@ -2,7 +2,7 @@ import { BiExpandVertical } from 'react-icons/bi';
 import './index.less';
 import EventTag from 'components/EventTag';
 import EventDesc from 'components/EventDesc';
-import placeholder from '../../assets/Logo.svg';
+import placeholder from '../../assets/logo_square.png';
 
 // TODO - add location link redirect to Google Maps, requires additional prop
 const EventCard = ({
