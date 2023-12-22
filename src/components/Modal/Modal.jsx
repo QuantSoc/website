@@ -1,8 +1,26 @@
 import './index.less';
 import { IoMdClose } from 'react-icons/io';
+import { useEffect, useRef } from 'react';
 
 const Modal = ({ isOpen, toggleModal, header, children }) => {
   if (!isOpen) return null;
+  const scrollableDivRef = useRef(null);
+
+  useEffect(() => {
+    const target = scrollableDivRef.current;
+    const isScrollable = target.scrollHeight > target.clientHeight;
+    target.classList.toggle('active', isScrollable);
+  }, [isOpen]);
+
+  const handleScroll = () => {
+    const target = scrollableDivRef.current;
+    const currHeight = target.scrollTop + target.clientHeight;
+    const threshold = target.scrollHeight - 3;
+    const isAtBottom = currHeight >= threshold;
+
+    target.classList.toggle('active', !isAtBottom);
+  };
+
   return (
     <div className="overlay" onClick={toggleModal} role="presentation">
       <div
@@ -22,8 +40,13 @@ const Modal = ({ isOpen, toggleModal, header, children }) => {
           <IoMdClose />
         </div>
         <div className="modal-header">{header}</div>
-        <div className="modal-description" />
-        <div className="modal-body">{children}</div>
+        <div
+          className="modal-body scroll-indicator"
+          ref={scrollableDivRef}
+          onScroll={handleScroll}
+        >
+          {children}
+        </div>
       </div>
     </div>
   );

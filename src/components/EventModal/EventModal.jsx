@@ -3,7 +3,7 @@ import { useEffect, useRef } from 'react';
 import { IoMdClose } from 'react-icons/io';
 import EventTag from 'components/EventTag';
 import EventDesc from 'components/EventDesc';
-import placeholder from '../../assets/quantsoc-teams/events.svg';
+import placeholder from '../../assets/logo_square.png';
 
 const EventModal = ({
   isOpen,
