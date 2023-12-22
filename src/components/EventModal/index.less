@@ -76,7 +76,7 @@
 }
 
 .scroll-indicator::after {
-  animation: bounce 1s ease infinite;
+  animation: bounce 0.75s ease infinite;
   bottom: 0.65rem;
   color: #000;
   content: '╲╱';
@@ -91,12 +91,12 @@
 }
 
 .scroll-indicator.active::after {
-  opacity: 0.5;
+  opacity: 1;
 }
 
 @keyframes bounce {
   50% {
-    transform: translateY(-25%);
+    transform: translateY(-35%);
   }
 }
 
