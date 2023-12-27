@@ -7,7 +7,7 @@ import LandingPage from 'routes/LandingPage';
 import AboutUsPage from 'routes/AboutUsPage';
 import EventsPage from 'routes/EventsPage';
 import ResourcesPage from 'routes/ResourcesPage';
-import EventCreationPage from 'routes/EventCreationPage'
+import EventCreationPage from 'routes/EventCreationPage';
 // import SponsorsPage from 'routes/SponsorsPage';
 import NavBar from 'components/NavBar';
 import Footer from 'components/Footer';
