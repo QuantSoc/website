@@ -7,6 +7,7 @@ import LandingPage from 'routes/LandingPage';
 import AboutUsPage from 'routes/AboutUsPage';
 import EventsPage from 'routes/EventsPage';
 import ResourcesPage from 'routes/ResourcesPage';
+import EventCreationPage from 'routes/EventCreationPage'
 // import SponsorsPage from 'routes/SponsorsPage';
 import NavBar from 'components/NavBar';
 import Footer from 'components/Footer';
@@ -24,6 +25,7 @@ const App = () => {
           <Route path="/about" element={<AboutUsPage />} />
           <Route path="/events" element={<EventsPage />} />
           <Route path="/resources" element={<ResourcesPage />} />
+          <Route path="/eventcreation" element={<EventCreationPage />} />
           {/* <Route path="/sponsors" element={<SponsorsPage />} /> */}
           {/* The following route *may* just be integrated to AboutUsPage; TBA */}
           {/* <Route path="/contact" element={<NotFoundPage />} /> */}
