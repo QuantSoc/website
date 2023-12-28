@@ -89,4 +89,95 @@ p {
       height: 35px;
     }
   }
+  @import 'styles/global.less';
+@import 'styles/constants.less';
+
+p {
+  justify-self: right;
+  padding-right: 10px;
+  align-self: center;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  margin-bottom: 15px;
+  
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#body-row {
+  margin-left: 25%;
+}
+
+#heading {
+  text-align: center;
+  padding: 20px;
+}
+
+.form-textfield {
+    background-color: transparent;
+    color: #6a6a6a;
+    font-family: Poppins;
+    font-size: medium;
+    width: 275px;
+    height: 40px;
+    padding-left: 8px;
+    border-radius: 3px;
+    border: 1px solid @quantsoc-secondary;
+}
+
+#body {
+    background-color: transparent;
+    color: #6a6a6a;
+    font-family: Poppins;
+    font-size: medium;
+    padding-left: 8px;
+    border-radius: 3px;
+    border: 1px solid @quantsoc-secondary;
+    margin-top: 5px;
+}
+
+#form-textarea {
+    background-color: transparent;
+    color: #6a6a6a;
+    font-family: Poppins;
+    padding-left: 8px;
+    border-radius: 3px;
+    border: 1px solid @quantsoc-secondary;
+}
+
+#button-container {
+  text-align: center;
+}
+
+.redirect-button {
+    background-color: @quantsoc-primary;
+    border-radius: 6px;
+    border-style: none;
+    box-sizing: border-box;
+    display: inline-block;
+    width: fit-content;
+    min-width: 120px;
+    height: 45px;
+    text-wrap: nowrap;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-weight: 300;
+    margin: 2rem 0;
+    &:hover {
+      background-color: @quantsoc-accent-light;
+    }
+  }
+  
+  @media screen and (max-width: @mobile) {
+    .redirect-button {
+      color: #000;  // ios defaults to blue text
+      font-size: 0.8rem;
+      height: 35px;
+    }
+  }
   
