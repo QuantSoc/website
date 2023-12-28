@@ -25,7 +25,6 @@ const App = () => {
           <Route path="/about" element={<AboutUsPage />} />
           <Route path="/events" element={<EventsPage />} />
           <Route path="/resources" element={<ResourcesPage />} />
-          <Route path="/eventcreation" element={<EventCreationPage />} />
           {/* <Route path="/sponsors" element={<SponsorsPage />} /> */}
           {/* The following route *may* just be integrated to AboutUsPage; TBA */}
           {/* <Route path="/contact" element={<NotFoundPage />} /> */}
