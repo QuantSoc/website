@@ -1,5 +1,6 @@
 import { BiCandles, BiParty, BiBriefcase } from 'react-icons/bi';
 import { LiaChalkboardTeacherSolid, LiaHandshake } from 'react-icons/lia';
+import { BsShopWindow } from "react-icons/bs";
 import './index.less';
 
 const iconMap = {
@@ -8,6 +9,7 @@ const iconMap = {
   career: <BiBriefcase className="event-tag__icon" />,
   workshop: <LiaChalkboardTeacherSolid className="event-tag__icon" />,
   opportunity: <LiaHandshake className="event-tag__icon" />,
+  stall: <BsShopWindow className="event-tag__icon" />
 };
 const tagMap = {
   trading: 'Mock Trading',
@@ -15,6 +17,7 @@ const tagMap = {
   career: 'Careers',
   workshop: 'Workshop',
   opportunity: 'Opportunity',
+  stall: 'Stall',
 };
 const EventTag = ({ tagType }) => {
   return (

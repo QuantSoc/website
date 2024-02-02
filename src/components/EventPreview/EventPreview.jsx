@@ -60,6 +60,7 @@ const EventsCarousel = ({ formData }) => {
             endDate={events[j].endDate}
             times={events[j].times}
             image={events[j].image}
+            link={events[j].link}
             tagType={events[j].tagType}
           />,
         );

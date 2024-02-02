@@ -14,6 +14,7 @@ const ResourcesPage = () => {
     times: '',
     cohosts: '',
     image: '',
+    link: '',
     body: ''
   })
   const {
@@ -27,6 +28,7 @@ const ResourcesPage = () => {
     times,
     cohosts,
     image,
+    link,
     body  
   } = formData
 
@@ -49,6 +51,7 @@ const ResourcesPage = () => {
             <option value="career">Careers</option>
             <option value="workshop">Workshop</option>
             <option value="opportunity">Opportunity</option>
+            <option value="stall">Stall</option>
           </select>
         </div>
         <div className='row'>
@@ -100,7 +103,7 @@ const ResourcesPage = () => {
           <input
             id="endDate"
             value={endDate}
-            placeholder="e.g. 51 February 2024"
+            placeholder="e.g. 31 February 2024"
             type="text"
             className="form-textfield"
             onChange={onChange}
@@ -138,6 +141,17 @@ const ResourcesPage = () => {
             onChange={onChange}
           />
         </div>
+        <div className='row'>
+          <p>Link</p>
+          <input
+            id="link"
+            value={link}
+            placeholder="e.g. https://quantsoc.org/"
+            type="text"
+            className="form-textfield"
+            onChange={onChange}
+          />
+        </div>
         <div id='body-row'>
           <p>Body</p>
           <textarea 
@@ -151,10 +165,16 @@ const ResourcesPage = () => {
           />
         </div>
         <h3>Preview</h3>
+        
         <EventPreview formData={ formData } />
+        <h4>Copy and paste the object into the google doc:</h4>
+        <p>{ JSON.stringify(formData) }</p>
+        
         <div id='button-container'>
-          <button className="redirect-button" type="submit">Add Event</button>
+          <button className="redirect-button" type="submit" disabled>Add Event</button>
         </div>
+        <p>(the 'add event' button is not functional yet [we are working on it])</p>
+        
       </form>
     </div>
   );
