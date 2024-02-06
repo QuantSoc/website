@@ -15,9 +15,10 @@ const HeroSlide = ({ hideRedirect = false }) => {
       <div className="hero-item stack">
         <h1>Empowering Quantitative Futures at UNSW</h1>
         <p className="text-body">
-          We are UNSW&apos;s largest and fastest growing student community for
-          quantitative trading. We aim to help connect and empower students in
-          shaping the future of quant trading.
+          We are UNSW's largest and fastest growing student community for 
+          quantitative trading. Our aim is to connect students with 
+          opportunities in mathematical finance, quantitative trading and 
+          algorithmic market-making.
         </p>
         {!hideRedirect && (
           <RedirectButton btnText="Read more" destination="/about" />

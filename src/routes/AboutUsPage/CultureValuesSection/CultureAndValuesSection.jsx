@@ -39,7 +39,7 @@ const cultureAndValues = [
 const CultureAndValuesSection = () => {
   return (
     <section className="culture-and-values__container">
-      <h2>Our values & culture</h2>
+      <h2>Our Values & Culture</h2>
       <div className="culture-and-values__grid">
         {cultureAndValues.map((culVal) => {
           return (

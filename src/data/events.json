@@ -13,20 +13,6 @@
     "body": "Are YOU a student interested in what options trading is? Do YOU want to know how to make money with your skills? Quantsoc is partnering up with the Personal Investment Society to bring you our Options Trading Workshop!\nCome bring yourself and all your friends to QuantSoc x Pisoc's Options Trading workshop on Wednesday, 14th of June 5:00pm to 7:00pm at Mathews 104! This workshop is open to people with ALL levels of knowledge.\nLorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia eveniet eaque beatae error sint, cupiditate nostrum sapiente eius voluptatum, cum eum aliquam modi laboriosam. Reprehenderit itaque dignissimos earum necessitatibus. Sapiente."
   },
   {
-    "tagType": "opportunity",
-    "header": "SIG Sydney Women's Discovery Days",
-    "showAsEvent": false,
-    "location": "Barangaroo, Sydney",
-    "sublocation": "SIG Office",
-    "startDate": "28 February 2024",
-    "endDate": "29 February 2024",
-    "times": "",
-    "cohosts": "",
-    "image": "https://scontent.fsyd11-1.fna.fbcdn.net/v/t39.30808-6/400851171_351896954046977_1840294798652978091_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=3635dc&_nc_ohc=velTtdcK-8IAX9b0nSf&_nc_ht=scontent.fsyd11-1.fna&oh=00_AfBIjt40A-tNkDihqG4hzoMhFo0zkklrcScXojB0Y5E8Dw&oe=656CDEDF",
-    "link": "https://www.facebook.com/unswquantsoc/posts/pfbid02QsAyaTE6cZqKudNertckv9apFdcBWwKBwY2WuD8KTRc1jXUQaUqcus6QND7aXAmXl",
-    "body": "lorem ipsum amet sit dolor elit consectetur adipisicing elit. Mollitia eveniet eaque beatae error sint, cupiditate nostrum sapiente eius voluptatum, cum eum aliquam modi laboriosam. Reprehenderit itaque dignissimos earum necessitatibus. Sapiente."
-  },
-  {
     "tagType": "stall",
     "header": "O-Week 2024",
     "showAsEvent": true,
@@ -52,17 +38,32 @@
     "image": "",
     "body": ""
   },
-  {
-    "tagType": "trading",
-    "header": "SQT x Mock Trading Event",
-    "showAsEvent": true,
-    "location": "USYD",
-    "sublocation": "Thinkspace",
-    "startDate": "15 February 2024",
-    "endDate": "15 February 2024",
+{
+"tagType":"trading",
+"header":"SQT x QuantSoc Mock Trading",
+"showAsEvent":"true",
+"location":"USYD",
+"sublocation":"Thinkspace",
+"startDate":"22 February 2024",
+"endDate":"22 February 2024",
+"times":"3pm - 4:30pm",
+"cohosts":"Sydney Quant Traders",
+"image":"https://scontent-syd2-1.xx.fbcdn.net/v/t39.30808-6/424996539_376430275132555_4776359446449838475_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=d8d9c5&_nc_ohc=OWkAaQOrNn0AX-uwXOs&_nc_ht=scontent-syd2-1.xx&oh=00_AfD71tkn569yx5_h5GbAErbb8h8x0bFpoKqRn6XQCqnJGw&oe=65C200DA",
+"link":"https://www.facebook.com/events/792500642705260",
+"body":"SQT has joined forces with QuantSoc to bring you the first Mock Trading event of the semester 🚀🚀🚀\nClick GOING on FB to register!\n_________________________________________________________\nMOCK TRADING is an adrenaline-filled game of quick thinking and psychological discipline. 🧠🔥\nNo knowledge of finance or trading needed! Make bets with each other on the actual value of something in a 'market' like:\n🥇 What's the top eSports tournaments prize pool in history?\n💪 How many push-ups can Karl do in 2 minutes?\n👴 What's the average age of everyone who'll be attending mock trading?\nTake calculated risks and sophisticated trades to outsmart your competition. The player with the most profit at the end of the game is the WINNER! 👑\nBeginners welcome, we explain the rules before any game! Free food and drinks will be provided. 🍔\nRegister to play on the day 👉 https://quanttraders.club/"
+},
+{
+    "tagType": "opportunity",
+    "header": "SIG Sydney Women's Discovery Days",
+    "showAsEvent": false,
+    "location": "Barangaroo, Sydney",
+    "sublocation": "SIG Office",
+    "startDate": "28 February 2024",
+    "endDate": "29 February 2024",
     "times": "",
-    "cohosts": "SQT",
-    "image": "",
-    "body": ""
+    "cohosts": "",
+    "image": "https://scontent.fsyd11-1.fna.fbcdn.net/v/t39.30808-6/400851171_351896954046977_1840294798652978091_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=3635dc&_nc_ohc=velTtdcK-8IAX9b0nSf&_nc_ht=scontent.fsyd11-1.fna&oh=00_AfBIjt40A-tNkDihqG4hzoMhFo0zkklrcScXojB0Y5E8Dw&oe=656CDEDF",
+    "link": "https://www.facebook.com/unswquantsoc/posts/pfbid02QsAyaTE6cZqKudNertckv9apFdcBWwKBwY2WuD8KTRc1jXUQaUqcus6QND7aXAmXl",
+    "body": "lorem ipsum amet sit dolor elit consectetur adipisicing elit. Mollitia eveniet eaque beatae error sint, cupiditate nostrum sapiente eius voluptatum, cum eum aliquam modi laboriosam. Reprehenderit itaque dignissimos earum necessitatibus. Sapiente."
   }
 ]

@@ -6,6 +6,7 @@ import {
   BsLinkedin,
   BsDiscord,
   BsGithub,
+  BsInstagram,
 } from 'react-icons/bs';
 
 const Footer = () => {
@@ -53,6 +54,11 @@ const Footer = () => {
                   Sponsors
                 </a>
               </li>
+              <li>
+                <a className="nav-link" href="/jobsboard">
+                  Jobs Board
+                </a>
+              </li>
             </ul>
           </div>
           <div id="socials" className="nav-link-section">
@@ -67,6 +73,17 @@ const Footer = () => {
                 >
                   <BsFacebook className="icon" />
                   Facebook
+                </a>
+              </li>
+              <li>
+                <a
+                  className="nav-link"
+                  href="https://www.instagram.com/quantsoc_unsw/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <BsInstagram className="icon" />
+                  Instagram
                 </a>
               </li>
               <li>

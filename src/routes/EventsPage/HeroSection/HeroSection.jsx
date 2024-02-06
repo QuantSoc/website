@@ -1,4 +1,4 @@
-import { BsFacebook, BsDiscord } from 'react-icons/bs';
+import { BsFacebook, BsDiscord, BsInstagram } from 'react-icons/bs';
 import SocialsButton from 'components/SocialsButton/SocialsButton';
 import eventGathering from 'assets/quantsoc-graphics/event-gathering.svg';
 import './index.less';
@@ -20,8 +20,8 @@ const HeroSection = () => {
         <p className="text-body">
           We run a wide-variety of events for fun, learning new skills and
           careers. Keep up to date with the latest workshops, competitions,
-          games nights, company meet-and-greets, and more events via Facebook or
-          Discord!
+          games nights, company meet-and-greets, and more events via Facebook, 
+          Instagram or Discord!
         </p>
 
         <div className="socials-buttons">
@@ -29,6 +29,11 @@ const HeroSection = () => {
             btnText="Facebook"
             socialsLink="https://www.facebook.com/unswquantsoc/"
             IconComponent={BsFacebook}
+          />
+          <SocialsButton
+            btnText="Instagram"
+            socialsLink="https://www.instagram.com/quantsoc_unsw/"
+            IconComponent={BsInstagram}
           />
           <SocialsButton
             btnText="Discord"
