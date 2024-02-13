@@ -31,7 +31,6 @@ const SponsorshipSection = () => {
         <Sponsor logoSrc={vivcourtLogo} sponsorLink="https://www.vivcourt.com" />
         <Sponsor logoSrc={citadelLogo} sponsorLink="https://www.citadelsecurities.com/" />          
         <Sponsor logoSrc={imcLogo} sponsorLink="https://www.imc.com/ap" />
-        <Sponsor logoSrc={tibraLogo} sponsorLink="https://www.tibra.com" />
       </div>
       <div className="sponsorship-section__sponsor-us">
         <p>
