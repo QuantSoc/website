@@ -38,21 +38,21 @@
     "image": "",
     "body": ""
   },
-{
-"tagType":"trading",
-"header":"SQT x QuantSoc Mock Trading",
-"showAsEvent":"true",
-"location":"USYD",
-"sublocation":"Thinkspace",
-"startDate":"22 February 2024",
-"endDate":"22 February 2024",
-"times":"3pm - 4:30pm",
-"cohosts":"Sydney Quant Traders",
-"image":"https://scontent-syd2-1.xx.fbcdn.net/v/t39.30808-6/424996539_376430275132555_4776359446449838475_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=d8d9c5&_nc_ohc=OWkAaQOrNn0AX-uwXOs&_nc_ht=scontent-syd2-1.xx&oh=00_AfD71tkn569yx5_h5GbAErbb8h8x0bFpoKqRn6XQCqnJGw&oe=65C200DA",
-"link":"https://www.facebook.com/events/792500642705260",
-"body":"SQT has joined forces with QuantSoc to bring you the first Mock Trading event of the semester 🚀🚀🚀\nClick GOING on FB to register!\n_________________________________________________________\nMOCK TRADING is an adrenaline-filled game of quick thinking and psychological discipline. 🧠🔥\nNo knowledge of finance or trading needed! Make bets with each other on the actual value of something in a 'market' like:\n🥇 What's the top eSports tournaments prize pool in history?\n💪 How many push-ups can Karl do in 2 minutes?\n👴 What's the average age of everyone who'll be attending mock trading?\nTake calculated risks and sophisticated trades to outsmart your competition. The player with the most profit at the end of the game is the WINNER! 👑\nBeginners welcome, we explain the rules before any game! Free food and drinks will be provided. 🍔\nRegister to play on the day 👉 https://quanttraders.club/"
-},
-{
+  {
+    "tagType": "trading",
+    "header": "SQT x QuantSoc Mock Trading",
+    "showAsEvent": true,
+    "location": "USYD",
+    "sublocation": "Thinkspace",
+    "startDate": "22 February 2024",
+    "endDate": "22 February 2024",
+    "times": "3pm - 4:30pm",
+    "cohosts": "Sydney Quant Traders",
+    "image": "https://scontent-syd2-1.xx.fbcdn.net/v/t39.30808-6/424996539_376430275132555_4776359446449838475_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=d8d9c5&_nc_ohc=OWkAaQOrNn0AX-uwXOs&_nc_ht=scontent-syd2-1.xx&oh=00_AfD71tkn569yx5_h5GbAErbb8h8x0bFpoKqRn6XQCqnJGw&oe=65C200DA",
+    "link": "https://www.facebook.com/events/792500642705260",
+    "body": "SQT has joined forces with QuantSoc to bring you the first Mock Trading event of the semester 🚀🚀🚀\nClick GOING on FB to register!\n_________________________________________________________\nMOCK TRADING is an adrenaline-filled game of quick thinking and psychological discipline. 🧠🔥\nNo knowledge of finance or trading needed! Make bets with each other on the actual value of something in a 'market' like:\n🥇 What's the top eSports tournaments prize pool in history?\n💪 How many push-ups can Karl do in 2 minutes?\n👴 What's the average age of everyone who'll be attending mock trading?\nTake calculated risks and sophisticated trades to outsmart your competition. The player with the most profit at the end of the game is the WINNER! 👑\nBeginners welcome, we explain the rules before any game! Free food and drinks will be provided. 🍔\nRegister to play on the day 👉 https://quanttraders.club/"
+  },
+  {
     "tagType": "opportunity",
     "header": "SIG Sydney Women's Discovery Days",
     "showAsEvent": false,

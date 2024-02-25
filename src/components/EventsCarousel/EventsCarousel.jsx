@@ -74,33 +74,46 @@ const EventsCarousel = ({ eventsFilterCondition }) => {
     }
     return eventSlides;
   };
+
   return (
-    <>
-      <Carousel slides={createEventSlides()} />
-      <EventModal
-        isOpen={isOpen}
-        toggleModal={toggleModal}
-        header={events[eventIndex].header}
-        location={events[eventIndex].location}
-        sublocation={events[eventIndex].sublocation}
-        startDate={events[eventIndex].startDate}
-        endDate={events[eventIndex].endDate}
-        tagType={events[eventIndex].tagType}
-        image={events[eventIndex].image}
-        times={events[eventIndex].times}
-        cohosts={events[eventIndex].cohosts}
-        link={events[eventIndex].link}
-        tagIcon={events[eventIndex].tagIcon}
-      >
-        {events[eventIndex].body.split('\n').map((paragraph) => {
-          return (
-            <p key={`event-modal-body-${paragraph.slice(0, 10)}`}>
-              {paragraph}
-            </p>
-          );
-        })}
-      </EventModal>
-    </>
+    <div className="event-carousel-section">
+      {
+        events.length > 0
+          ? (
+            <div>
+              <Carousel slides={createEventSlides()} />
+              <EventModal
+                isOpen={isOpen}
+                toggleModal={toggleModal}
+                header={events[eventIndex].header}
+                location={events[eventIndex].location}
+                sublocation={events[eventIndex].sublocation}
+                startDate={events[eventIndex].startDate}
+                endDate={events[eventIndex].endDate}
+                tagType={events[eventIndex].tagType}
+                image={events[eventIndex].image}
+                times={events[eventIndex].times}
+                cohosts={events[eventIndex].cohosts}
+                link={events[eventIndex].link}
+                tagIcon={events[eventIndex].tagIcon}
+              >
+                {events[eventIndex].body.split('\n').map((paragraph) => {
+                  return (
+                    <p key={`event-modal-body-${paragraph.slice(0, 10)}`}>
+                      {paragraph}
+                    </p>
+                  );
+                })}
+              </EventModal>
+            </div>
+          )
+          : (
+            <div className="no-events-text">
+              There are no upcoming events at this time.
+            </div>
+          )
+      }
+    </div>
   );
 };
 export default EventsCarousel;
