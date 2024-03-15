@@ -1,4 +1,3 @@
-import './index.less';
 import { useState, useEffect, useRef } from 'react'
 import EventPreview from 'components/EventPreview';
 import { getAuth, onAuthStateChanged } from 'firebase/auth'
@@ -6,7 +5,7 @@ import { useNavigate } from 'react-router-dom'
 import { db } from '../../firebase.config'
 import { doc, onSnapshot, addDoc, collection } from 'firebase/firestore'
 
-const EventCreationPage = () => {
+const JobListingFormPage = () => {
   const [formData, setFormData] = useState({
     tagType: 'trading',
     header: '',
@@ -83,7 +82,7 @@ const EventCreationPage = () => {
 
   return (
     <div className="page">
-      <h2 id='heading'>Create an Event</h2>
+      <h2 id='heading'>Create a Job Listing</h2>
       <form onSubmit={onSubmit}>
         <div className='row'>
           <p className='item'>Tag Type</p>
@@ -208,19 +207,15 @@ const EventCreationPage = () => {
           />
         </div>
         <h3>Preview</h3>
-        
-        <EventPreview formData={ formData } />
 
-        <p><em>Event creator: {auth.currentUser.displayName}</em></p>
+        <p>Listing creator: <em>{auth.currentUser.displayName}</em></p>
         {(rank < 3) ? "You do not have permission to create an event, please contact Sam T for account verification." :
           <div id='button-container'>
-            <button className="redirect-button" type="submit">Add Event</button>
+            <button className="redirect-button" type="submit">Add Job Listing</button>
           </div>
         }        
       </form>
     </div>
   );
 };
-export default EventCreationPage;
-
-// <p onClick={() => navigate("/admin")}>Admin Dashboard</p>
+export default JobListingFormPage;
