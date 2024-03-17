@@ -24,7 +24,7 @@ const App = () => {
       <div className="App">
         <NavBar />
         <Routes>
-          // Public Pages 
+          {/* Public Pages */}
           <Route path="*" element={<NotFoundPage />} />
           <Route path="/" element={<LandingPage />} />
           <Route path="/about" element={<AboutUsPage />} />
@@ -32,14 +32,14 @@ const App = () => {
           <Route path="/resources" element={<ResourcesPage />} />
           <Route path="/jobsboard" element={<JobsBoardPage />} />
           <Route path="/boardlogin" element={<BoardLoginPage />} />
-          // Pages for logged in users only
-          <Route path='/admin' element={<PrivateRoute />}>
+          {/* Private Pages: only accessibly by Google authenticated users */}
+          <Route path="/admin" element={<PrivateRoute />}>
             <Route path="/admin" element={<AdminPage />} />
           </Route>
-          <Route path='/eventcreation' element={<PrivateRoute />}>
+          <Route path="/eventcreation" element={<PrivateRoute />}>
             <Route path="/eventcreation" element={<EventCreationPage />} />
           </Route>
-          <Route path='/joblistingform' element={<PrivateRoute />}>
+          <Route path="/joblistingform" element={<PrivateRoute />}>
             <Route path="/joblistingform" element={<JobListingFormPage />} />
           </Route>
           {/* <Route path="/sponsors" element={<SponsorsPage />} /> */}
