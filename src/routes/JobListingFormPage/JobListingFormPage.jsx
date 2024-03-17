@@ -3,6 +3,7 @@ import { getAuth, onAuthStateChanged } from 'firebase/auth'
 import { useNavigate } from 'react-router-dom'
 import { db } from '../../firebase.config'
 import { doc, onSnapshot, addDoc, collection } from 'firebase/firestore'
+import './index.less'
 
 const JobListingFormPage = () => {
   const [formData, setFormData] = useState({
@@ -130,13 +131,13 @@ const JobListingFormPage = () => {
         <div id='body-row'>
           <p>Description</p>
           <textarea 
-            id="body"
+            id="description"
             value={description}
             onChange={onChange}
             name="content"
-            rows={7} 
+            rows={10} 
             cols={75}
-            placeholder="Brief role description"
+            placeholder="Brief job description"
           />
         </div>
         <p>Listing creator: <em>{auth.currentUser.displayName}</em></p>

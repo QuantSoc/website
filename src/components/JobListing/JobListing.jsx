@@ -21,7 +21,7 @@ function JobListing({ job }) {
                                                 {job.applicationsClose.toDate().getFullYear()}
                     </em>
                 </p>}
-            <p id="description">{job.description}</p>
+            <p id="desc">{job.description}</p>
             <ApplyButton btnText="Apply" destination={job.link} />
         </div>
     )
