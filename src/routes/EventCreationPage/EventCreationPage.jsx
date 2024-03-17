@@ -74,7 +74,7 @@ const EventCreationPage = () => {
     const formDataCopy = {...formData}
     formDataCopy.author = auth.currentUser.displayName;
     await addDoc(collection(db, 'events'), formDataCopy)
-    navigate('/boardlogin')
+    navigate('/admin')
   }
 
   if(loading) {
@@ -211,7 +211,7 @@ const EventCreationPage = () => {
         
         <EventPreview formData={ formData } />
 
-        <p><em>Event creator: {auth.currentUser.displayName}</em></p>
+        <p>Event creator: <em>{auth.currentUser.displayName}</em></p>
         {(rank < 3) ? "You do not have permission to create an event, please contact Sam T for account verification." :
           <div id='button-container'>
             <button className="redirect-button" type="submit">Add Event</button>

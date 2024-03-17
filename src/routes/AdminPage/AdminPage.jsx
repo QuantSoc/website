@@ -4,6 +4,7 @@ import { db } from '../../firebase.config'
 import { updateDoc, doc, onSnapshot } from 'firebase/firestore'
 import { useState } from 'react'
 import RedirectButton from 'components/RedirectButton'
+import './index.less'
 
 const AboutUsPage = () => {
     const auth = getAuth();
@@ -20,7 +21,7 @@ const AboutUsPage = () => {
     })
 
     return (
-        <div>
+        <div className='admin-page'>
             <h1>Admin Dashboard</h1>
             <h3>Hi, {auth.currentUser.displayName}!</h3>
             <p>Position: {(rank == 0) ? "Unverified user" :
@@ -31,9 +32,10 @@ const AboutUsPage = () => {
                             (rank == 5) ? "Superuser" :
                             "Error"}</p>
             <button onClick={onLogout}>Logout</button>
+            <div><br /></div>
             <h2>Events</h2>
             <RedirectButton btnText="Create an Event" destination={'/eventcreation'} />
-            <h2>Job Listings</h2>
+            <h2>Jobs Board</h2>
             <RedirectButton btnText="Create a Job Listing" destination={'/joblistingform'} />
         </div>
     );

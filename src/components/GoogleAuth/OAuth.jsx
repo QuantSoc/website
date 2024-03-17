@@ -4,8 +4,9 @@ import { getAuth, signInWithPopup, GoogleAuthProvider } from 'firebase/auth'
 import { doc, setDoc, getDoc, serverTimestamp } from 'firebase/firestore'
 import { db } from '../../firebase.config'
 import RedirectButton from 'components/RedirectButton'
+import './index.less'
 
-function OAuth(prop) {
+function OAuth() {
   const navigate = useNavigate()
   const [error, setError] = useState(false)
 
@@ -27,7 +28,7 @@ function OAuth(prop) {
           name: user.displayName,
           email: user.email,
           timestamp: serverTimestamp(),
-          class: 0,
+          rank: 0,
         })
       }
       navigate('/admin')
@@ -38,11 +39,12 @@ function OAuth(prop) {
 
   return (
     <div>
-      <button onClick={onGoogleClick}>Login with a Google account</button>
-      {error && <div class="alert alert-error shadow-lg">
-            <div>
-                <span>Google Authentication Failed</span>
-            </div>
+      <div id='button-container'>
+        <button className="redirect-button" onClick={onGoogleClick}>Login with Google</button>
+      </div>
+      {error && 
+        <div>
+          <span>Google Authentication Failed</span>
         </div>}
     </div>
   )

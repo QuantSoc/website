@@ -109,13 +109,11 @@ const EventsCarousel = ({ eventsFilterCondition }) => {
   };
 
   return (
-    <>
-    {loading ? "Loading..." :
       <div className="event-carousel-section">
         {
           events.length > 0
             ? (
-              <div>
+              <>
                 <Carousel slides={createEventSlides()} />
                 <EventModal
                   isOpen={isOpen}
@@ -140,7 +138,7 @@ const EventsCarousel = ({ eventsFilterCondition }) => {
                     );
                   })}
                 </EventModal>
-              </div>
+              </>
             )
             : (
               <div className="no-events-text">
@@ -149,8 +147,6 @@ const EventsCarousel = ({ eventsFilterCondition }) => {
             )
         }
       </div>
-    }
-    </>
   );
 };
 export default EventsCarousel;

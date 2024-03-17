@@ -1,5 +1,4 @@
 import { useState, useEffect, useRef } from 'react'
-import EventPreview from 'components/EventPreview';
 import { getAuth, onAuthStateChanged } from 'firebase/auth'
 import { useNavigate } from 'react-router-dom'
 import { db } from '../../firebase.config'
@@ -7,32 +6,20 @@ import { doc, onSnapshot, addDoc, collection } from 'firebase/firestore'
 
 const JobListingFormPage = () => {
   const [formData, setFormData] = useState({
-    tagType: 'trading',
-    header: '',
-    showAsEvent: 'true',
+    applicationsClose: '',
     location: '',
-    sublocation: '',
-    startDate: '',
-    endDate: '',
-    times: '',
-    cohosts: '',
-    image: '',
+    title: '',
+    company: '',
     link: '',
-    body: ''
+    description: ''
   })
   const {
-    tagType, 
-    header, 
-    showAsEvent, 
-    location, 
-    sublocation,
-    startDate,
-    endDate,
-    times,
-    cohosts,
-    image,
-    link,
-    body  
+    location,
+    title,
+    company,
+    applicationsClose,
+    description,
+    link
   } = formData
 
   const onChange = (e) => {
@@ -72,8 +59,8 @@ const JobListingFormPage = () => {
     e.preventDefault()
     const formDataCopy = {...formData}
     formDataCopy.author = auth.currentUser.displayName;
-    await addDoc(collection(db, 'events'), formDataCopy)
-    navigate('/boardlogin')
+    await addDoc(collection(db, 'jobs'), formDataCopy)
+    navigate('/admin')
   }
 
   if(loading) {
@@ -85,24 +72,24 @@ const JobListingFormPage = () => {
       <h2 id='heading'>Create a Job Listing</h2>
       <form onSubmit={onSubmit}>
         <div className='row'>
-          <p className='item'>Tag Type</p>
-          <select value={tagType} id='tagType' onChange={onChange} className="form-textfield">
-            <option value="trading">Mock Trading</option>
-            <option value="fun">Fun & Games</option>
-            <option value="career">Careers</option>
-            <option value="workshop">Workshop</option>
-            <option value="opportunity">Opportunity</option>
-            <option value="stall">Stall</option>
-          </select>
-        </div>
-        <div className='row'>
-          <p className='item'>Header</p>
+          <p>Job Title</p>
           <input
-            id="header"
+            id="title"
+            value={title}
+            placeholder="e.g. Trading Intern"
             type="text"
             className="form-textfield"
-            placeholder="e.g. Probability Workshop"
-            value={header}
+            onChange={onChange}
+          />
+        </div>
+        <div className='row'>
+          <p className='item'>Company</p>
+          <input
+            id="company"
+            type="text"
+            className="form-textfield"
+            placeholder="e.g. Lehman Brothers"
+            value={company}
             onChange={onChange}
           />
         </div>
@@ -112,79 +99,25 @@ const JobListingFormPage = () => {
             id="location"
             type="text"
             className="form-textfield"
-            placeholder="e.g. UNSW"
+            placeholder="e.g. Sydney, Australia"
             value={location}
             onChange={onChange}
           />
         </div>
+      
         <div className='row'>
-          <p>Sublocation</p>
+          <p>Applications Close</p>
           <input
-            id="sublocation"
-            value={sublocation}
-            placeholder="e.g. Quadrangle 4001"
+            id="applicationsClose"
+            value={applicationsClose}
+            placeholder="e.g. 1 July 2024 (optional)"
             type="text"
             className="form-textfield"
             onChange={onChange}
           />
         </div>
         <div className='row'>
-          <p>Start date</p>
-          <input
-            id="startDate"
-            value={startDate}
-            placeholder="e.g. 30 February 2024"
-            type="text"
-            className="form-textfield"
-            onChange={onChange}
-          />
-        </div>
-        <div className='row'>
-          <p>End date</p>
-          <input
-            id="endDate"
-            value={endDate}
-            placeholder="e.g. 31 February 2024"
-            type="text"
-            className="form-textfield"
-            onChange={onChange}
-          />
-        </div>
-        <div className='row'>
-          <p>Times</p>
-          <input
-            id="times"
-            value={times}
-            placeholder="e.g. 5pm - 7pm"
-            type="text"
-            className="form-textfield"
-            onChange={onChange}
-          />
-        </div>
-        <div className='row'>
-          <p>Co-hosts</p>
-          <input
-            id="cohosts"
-            value={cohosts}
-            placeholder="e.g. PiSoc"
-            type="text"
-            className="form-textfield"
-            onChange={onChange}
-          />
-        </div>
-        <div className='row'>
-          <p>Image URL</p>
-          <input
-            id="image"
-            value={image}
-            placeholder="*include the https://"
-            type="text"
-            className="form-textfield"
-            onChange={onChange}
-          />
-        </div>
-        <div className='row'>
-          <p>Link</p>
+          <p>Application Link</p>
           <input
             id="link"
             value={link}
@@ -195,19 +128,17 @@ const JobListingFormPage = () => {
           />
         </div>
         <div id='body-row'>
-          <p>Body</p>
+          <p>Description</p>
           <textarea 
             id="body"
-            value={body}
+            value={description}
             onChange={onChange}
             name="content"
-            rows={10} 
+            rows={7} 
             cols={75}
-            placeholder="e.g. Are YOU a student interested in what options trading is?..."
+            placeholder="Brief role description"
           />
         </div>
-        <h3>Preview</h3>
-
         <p>Listing creator: <em>{auth.currentUser.displayName}</em></p>
         {(rank < 3) ? "You do not have permission to create an event, please contact Sam T for account verification." :
           <div id='button-container'>

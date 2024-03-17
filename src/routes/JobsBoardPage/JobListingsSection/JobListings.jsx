@@ -13,6 +13,7 @@ import {
 } from 'firebase/firestore'
 import { db } from '../../../firebase.config'
 import { HashLink } from 'react-router-hash-link';
+import './index.less'
 
 const JobListings = () => {
 	const [jobs, setJobs] = useState(null);
@@ -45,7 +46,7 @@ const JobListings = () => {
 	}, [])
 
     return (
-    	<div className="">
+    	<div className='job-listings'>
 			{error ? 'There was an error, please contact the QuantSoc team.' :
 				loading ? 'Loading ...' : <>
 					{jobs.map((job) => (
