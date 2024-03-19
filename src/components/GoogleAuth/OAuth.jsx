@@ -22,15 +22,43 @@ const OAuth = () => {
       // Check for user
       const docRef = doc(db, 'users', user.uid);
       const docSnap = await getDoc(docRef);
+      const preVerified = ['unsw.quantsoc@gmail.com',
+        'victor.tang423@gmail.com',
+        'albert.yan1104@gmail.com',
+        'antonragusa0@gmail.com',
+        'austinhoe15@gmail.com',
+        'helenwang1801@outlook.com',
+        'henrytang50@gmail.com',
+        'jackylv0216@gmail.com',
+        'joshuazhang999666@gmail.com',
+        'li.andrew9265@gmail.com',
+        'mikhail.savkin0@gmail.com',
+        'mli.maria383@gmail.com',
+        'PeteTheBossch1@gmail.com',
+        'sam.axford02@gmail.com',
+        'samtr0211@gmail.com',
+        'sankalpatripathee@gmail.com',
+        'veneciayong@gmail.com',
+        'vncnt.lim2002@gmail.com',
+      ];
 
       // If user, doesn't exist, create user
       if (!docSnap.exists()) {
-        await setDoc(doc(db, 'users', user.uid), {
-          name: user.displayName,
-          email: user.email,
-          timestamp: serverTimestamp(),
-          rank: 0,
-        });
+        if (preVerified.includes(user.email)) {
+          await setDoc(doc(db, 'users', user.uid), {
+            name: user.displayName,
+            email: user.email,
+            timestamp: serverTimestamp(),
+            rank: 3,
+          });
+        } else {
+          await setDoc(doc(db, 'users', user.uid), {
+            name: user.displayName,
+            email: user.email,
+            timestamp: serverTimestamp(),
+            rank: 0,
+          });
+        }
       }
       navigate('/admin');
     } catch (error) {
