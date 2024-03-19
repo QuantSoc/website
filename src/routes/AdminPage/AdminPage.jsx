@@ -24,12 +24,12 @@ const AboutUsPage = () => {
     <div className="admin-page">
       <h1>Admin Dashboard</h1>
       <h3>
-        Hi,
+        Hi,{' '}
         {auth.currentUser.displayName}
         !
       </h3>
       <p>
-        Position:
+        Position:{' '}
         {(rank == 0) ? 'Unverified user'
           : (rank == 1) ? 'Verified user'
             : (rank == 2) ? 'Subcom member'

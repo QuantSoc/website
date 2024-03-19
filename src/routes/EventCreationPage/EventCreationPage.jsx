@@ -211,14 +211,14 @@ const EventCreationPage = () => {
             placeholder="e.g. Are YOU a student interested in what options trading is?..."
           />
         </div>
-        <h3>Preview</h3>
+        <h3 id='preview'>Preview</h3>
 
         <div className="preview-section">
           <EventPreview className="preview" formData={formData} />
         </div>
 
         <p>
-          Event creator:
+          Event creator:{' '}
           <em>{auth.currentUser.displayName}</em>
         </p>
         {(rank < 3) ? 'You do not have permission to create an event, please contact Sam T for account verification.' : (

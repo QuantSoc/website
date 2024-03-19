@@ -36,7 +36,7 @@ const JobListings = () => {
             data: doc.data(),
           });
         });
-        setJobs(jobs);
+        setJobs(jbs);
         setLoading(false);
       } catch {
         setError(true);

@@ -145,7 +145,7 @@ const JobListingFormPage = () => {
           />
         </div>
         <p>
-          Listing creator:
+          Listing creator:{' '}
           <em>{auth.currentUser.displayName}</em>
         </p>
         {(rank < 3) ? 'You do not have permission to create an event, please contact Sam T for account verification.' : (
