@@ -53,6 +53,7 @@ const EventModal = ({
           onClick={toggleModal}
           onKeyDown={toggleModal}
           tabIndex={0}
+          aria-label="close"
         >
           <IoMdClose />
         </div>
@@ -74,7 +75,7 @@ const EventModal = ({
         >
           <img
             className="event-modal__image"
-            src={image !== '' ? image : placeholder}
+            src={image || placeholder}
             alt={header}
             onError={(e) => {
               e.target.src = placeholder;

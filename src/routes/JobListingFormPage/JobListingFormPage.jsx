@@ -1,9 +1,11 @@
-import { useState, useEffect, useRef } from 'react'
-import { getAuth, onAuthStateChanged } from 'firebase/auth'
-import { useNavigate } from 'react-router-dom'
-import { db } from '../../firebase.config'
-import { doc, onSnapshot, addDoc, collection } from 'firebase/firestore'
-import './index.less'
+import { useState, useEffect, useRef } from 'react';
+import { getAuth, onAuthStateChanged } from 'firebase/auth';
+import { useNavigate } from 'react-router-dom';
+import {
+  doc, onSnapshot, addDoc, collection,
+} from 'firebase/firestore';
+import { db } from '../../firebase.config';
+import './index.less';
 
 const JobListingFormPage = () => {
   const [formData, setFormData] = useState({
@@ -12,67 +14,69 @@ const JobListingFormPage = () => {
     title: '',
     company: '',
     link: '',
-    description: ''
-  })
+    description: '',
+  });
   const {
     location,
     title,
     company,
     applicationsClose,
     description,
-    link
-  } = formData
+    link,
+  } = formData;
 
   const onChange = (e) => {
-    setFormData((prevState) => ({
+    setFormData((prevState) => {
+      return {
         ...prevState,
         [e.target.id]: e.target.value,
-    }))
-  }
+      };
+    });
+  };
 
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(false);
   const auth = getAuth();
   const navigate = useNavigate();
-  const isMounted = useRef(true)
+  const isMounted = useRef(true);
 
   useEffect(() => {
-    if(isMounted) {
-        onAuthStateChanged(auth, (user) => {
-            if(user) {
-                setFormData({...formData, useRef: user.uid})
-            } else {
-                navigate('/boardlogin')
-            }
-        })
+    if (isMounted) {
+      onAuthStateChanged(auth, (user) => {
+        if (user) {
+          setFormData({ ...formData, useRef: user.uid });
+        } else {
+          navigate('/boardlogin');
+        }
+      });
     }
     return () => {
-        isMounted.current = false
-    }
-  }, [isMounted])
+      isMounted.current = false;
+    };
+  }, [isMounted]);
 
-  const [rank, setRank] = useState(0)
+  const [rank, setRank] = useState(0);
   onSnapshot(doc(db, 'users', auth.currentUser.uid), (doc) => {
-      setRank(doc.data().rank)
-  })
+    setRank(doc.data().rank);
+  });
 
   const onSubmit = async (e) => {
-    setLoading(true)
-    e.preventDefault()
-    const formDataCopy = {...formData}
+    setLoading(true);
+    e.preventDefault();
+    const formDataCopy = { ...formData };
     formDataCopy.author = auth.currentUser.displayName;
-    await addDoc(collection(db, 'jobs'), formDataCopy)
-    navigate('/admin')
-  }
+    await addDoc(collection(db, 'jobs'), formDataCopy);
+    navigate('/admin');
+  };
 
-  if(loading) {
-    return <p>Loading...</p>
+  if (loading) {
+    return <p>Loading...</p>;
   }
 
   return (
     <div className="page">
-      <h2 id='heading'>Create a Job Listing</h2>
+      <h2 id="heading">Create a Job Listing</h2>
       <form onSubmit={onSubmit}>
-        <div className='row'>
+        <div className="row">
           <p>Job Title</p>
           <input
             id="title"
@@ -83,8 +87,8 @@ const JobListingFormPage = () => {
             onChange={onChange}
           />
         </div>
-        <div className='row'>
-          <p className='item'>Company</p>
+        <div className="row">
+          <p className="item">Company</p>
           <input
             id="company"
             type="text"
@@ -94,7 +98,7 @@ const JobListingFormPage = () => {
             onChange={onChange}
           />
         </div>
-        <div className='row'>
+        <div className="row">
           <p>Location</p>
           <input
             id="location"
@@ -105,8 +109,8 @@ const JobListingFormPage = () => {
             onChange={onChange}
           />
         </div>
-      
-        <div className='row'>
+
+        <div className="row">
           <p>Applications Close</p>
           <input
             id="applicationsClose"
@@ -117,7 +121,7 @@ const JobListingFormPage = () => {
             onChange={onChange}
           />
         </div>
-        <div className='row'>
+        <div className="row">
           <p>Application Link</p>
           <input
             id="link"
@@ -128,24 +132,27 @@ const JobListingFormPage = () => {
             onChange={onChange}
           />
         </div>
-        <div id='body-row'>
+        <div id="body-row">
           <p>Description</p>
-          <textarea 
+          <textarea
             id="description"
             value={description}
             onChange={onChange}
             name="content"
-            rows={10} 
+            rows={10}
             cols={75}
             placeholder="Brief job description"
           />
         </div>
-        <p>Listing creator: <em>{auth.currentUser.displayName}</em></p>
-        {(rank < 3) ? "You do not have permission to create an event, please contact Sam T for account verification." :
-          <div id='button-container'>
+        <p>
+          Listing creator:
+          <em>{auth.currentUser.displayName}</em>
+        </p>
+        {(rank < 3) ? 'You do not have permission to create an event, please contact Sam T for account verification.' : (
+          <div id="button-container">
             <button className="redirect-button" type="submit">Add Job Listing</button>
           </div>
-        }        
+        )}
       </form>
     </div>
   );

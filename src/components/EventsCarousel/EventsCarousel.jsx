@@ -6,15 +6,15 @@ import Carousel from 'components/Carousel/Carousel';
 import EventCard from 'components/EventCard';
 import EventModal from 'components/EventModal';
 
-import eventsData from '../../data/events.json';
-
 import {
   collection,
   getDocs,
   query,
   orderBy,
-} from 'firebase/firestore'
-import { db } from '../../firebase.config'
+} from 'firebase/firestore';
+// import eventsData from '../../data/events.json';
+
+import { db } from '../../firebase.config';
 
 const setInitialStep = () => {
   if (window.innerWidth <= 950) return 1;
@@ -24,29 +24,29 @@ const setInitialStep = () => {
 
 const EventsCarousel = ({ eventsFilterCondition }) => {
   const [preevents, setEvents] = useState([]);
-	const [loading, setLoading] = useState(true);
-	const [error, setError] = useState(false);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(false);
 
-	useEffect(() => {
-		const fetchEvents = async () => {
-			try {
-				const eventsRef = collection(db, 'events');
-				const q = query(
-					eventsRef,
-				);
-				const querySnap = await getDocs(q);
-				const preevents = [];
-				querySnap.forEach((doc) => {
-					return preevents.push(doc.data())
-				});
-				setEvents(preevents);
-				setLoading(false);
-			} catch (error) {
-				setError(true);
-			}
-		}
-		fetchEvents()
-	}, [])
+  useEffect(() => {
+    const fetchEvents = async () => {
+      try {
+        const eventsRef = collection(db, 'events');
+        const q = query(
+          eventsRef,
+        );
+        const querySnap = await getDocs(q);
+        const pe = [];
+        querySnap.forEach((doc) => {
+          return pe.push(doc.data());
+        });
+        setEvents(pe);
+        setLoading(false);
+      } catch {
+        setError(true);
+      }
+    };
+    fetchEvents();
+  }, []);
 
   const events = preevents.filter((event) => {
     return eventsFilterCondition(event);
@@ -109,8 +109,8 @@ const EventsCarousel = ({ eventsFilterCondition }) => {
   };
 
   return (
-      <div className="event-carousel-section">
-        {
+    <div className="event-carousel-section">
+      {
           events.length > 0
             ? (
               <>
@@ -146,7 +146,7 @@ const EventsCarousel = ({ eventsFilterCondition }) => {
               </div>
             )
         }
-      </div>
+    </div>
   );
 };
 export default EventsCarousel;

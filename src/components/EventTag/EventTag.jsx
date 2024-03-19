@@ -1,6 +1,6 @@
 import { BiCandles, BiParty, BiBriefcase } from 'react-icons/bi';
 import { LiaChalkboardTeacherSolid, LiaHandshake } from 'react-icons/lia';
-import { BsShopWindow } from "react-icons/bs";
+import { BsShopWindow } from 'react-icons/bs';
 import './index.less';
 
 const iconMap = {
