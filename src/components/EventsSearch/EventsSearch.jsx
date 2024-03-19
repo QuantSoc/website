@@ -1,12 +1,46 @@
 import EventCard from 'components/EventCard';
 import './index.less';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import useModal from 'hooks/useModal';
 import EventModal from 'components/EventModal';
-import quantsocEvents from '../../data/events.json';
+
+import {
+  collection,
+  getDocs,
+  query,
+  orderBy,
+} from 'firebase/firestore';
+// import quantsocEvents from '../../data/events.json';
+
+import { db } from '../../firebase.config';
 
 const EventsSearch = ({ searchRestriction }) => {
-  const events = quantsocEvents.filter((event) => {
+  const [preevents, setEvents] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(false);
+
+  useEffect(() => {
+    const fetchEvents = async () => {
+      try {
+        const eventsRef = collection(db, 'events');
+        const q = query(
+          eventsRef,
+        );
+        const querySnap = await getDocs(q);
+        const pe = [];
+        querySnap.forEach((doc) => {
+          return pe.push(doc.data());
+        });
+        setEvents(pe);
+        setLoading(false);
+      } catch {
+        setError(true);
+      }
+    };
+    fetchEvents();
+  }, []);
+
+  const events = preevents.filter((event) => {
     return searchRestriction(event);
   });
 
@@ -15,16 +49,18 @@ const EventsSearch = ({ searchRestriction }) => {
   const { isOpen, toggleModal } = useModal();
 
   return (
-    <div className="events-search-section">
-      <input
-        className="events-search__search"
-        type="text"
-        placeholder="Search events"
-        onChange={(e) => {
-          setEventsFilter(e.target.value);
-        }}
-      />
-      {
+    <div>
+      {loading ? 'Loading...' : (
+        <div className="events-search-section">
+          <input
+            className="events-search__search"
+            type="text"
+            placeholder="Search events"
+            onChange={(e) => {
+              setEventsFilter(e.target.value);
+            }}
+          />
+          {
         events.length > 0
           ? (
             <div>
@@ -87,6 +123,8 @@ const EventsSearch = ({ searchRestriction }) => {
             </div>
           )
       }
+        </div>
+      )}
     </div>
   );
 };

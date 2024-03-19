@@ -34,7 +34,7 @@ const EventCard = ({
       />
       <img
         className="event-card__image"
-        src={image !== '' ? image : placeholder}
+        src={image || placeholder}
         alt={header}
         onError={(e) => {
           e.target.src = placeholder;

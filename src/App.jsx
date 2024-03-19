@@ -12,7 +12,10 @@ import JobsBoardPage from 'routes/JobsBoardPage';
 // import SponsorsPage from 'routes/SponsorsPage';
 import NavBar from 'components/NavBar';
 import Footer from 'components/Footer';
-
+import AdminPage from 'routes/AdminPage';
+import BoardLoginPage from 'routes/BoardLoginPage';
+import PrivateRoute from 'components/PrivateRoute/PrivateRoute';
+import JobListingFormPage from 'routes/JobListingFormPage/JobListingFormPage';
 // import FooterBar from 'components/common/FooterBar';
 
 const App = () => {
@@ -21,13 +24,24 @@ const App = () => {
       <div className="App">
         <NavBar />
         <Routes>
+          {/* Public Pages */}
           <Route path="*" element={<NotFoundPage />} />
           <Route path="/" element={<LandingPage />} />
           <Route path="/about" element={<AboutUsPage />} />
           <Route path="/events" element={<EventsPage />} />
           <Route path="/resources" element={<ResourcesPage />} />
-          <Route path="/eventcreation" element={<EventCreationPage />} />
           <Route path="/jobsboard" element={<JobsBoardPage />} />
+          <Route path="/boardlogin" element={<BoardLoginPage />} />
+          {/* Private Pages: only accessibly by Google authenticated users */}
+          <Route path="/admin" element={<PrivateRoute />}>
+            <Route path="/admin" element={<AdminPage />} />
+          </Route>
+          <Route path="/eventcreation" element={<PrivateRoute />}>
+            <Route path="/eventcreation" element={<EventCreationPage />} />
+          </Route>
+          <Route path="/joblistingform" element={<PrivateRoute />}>
+            <Route path="/joblistingform" element={<JobListingFormPage />} />
+          </Route>
           {/* <Route path="/sponsors" element={<SponsorsPage />} /> */}
           {/* The following route *may* just be integrated to AboutUsPage; TBA */}
           {/* <Route path="/contact" element={<NotFoundPage />} /> */}

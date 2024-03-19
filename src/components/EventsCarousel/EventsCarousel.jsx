@@ -6,7 +6,15 @@ import Carousel from 'components/Carousel/Carousel';
 import EventCard from 'components/EventCard';
 import EventModal from 'components/EventModal';
 
-import eventsData from '../../data/events.json';
+import {
+  collection,
+  getDocs,
+  query,
+  orderBy,
+} from 'firebase/firestore';
+// import eventsData from '../../data/events.json';
+
+import { db } from '../../firebase.config';
 
 const setInitialStep = () => {
   if (window.innerWidth <= 950) return 1;
@@ -15,7 +23,32 @@ const setInitialStep = () => {
 };
 
 const EventsCarousel = ({ eventsFilterCondition }) => {
-  const events = eventsData.filter((event) => {
+  const [preevents, setEvents] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(false);
+
+  useEffect(() => {
+    const fetchEvents = async () => {
+      try {
+        const eventsRef = collection(db, 'events');
+        const q = query(
+          eventsRef,
+        );
+        const querySnap = await getDocs(q);
+        const pe = [];
+        querySnap.forEach((doc) => {
+          return pe.push(doc.data());
+        });
+        setEvents(pe);
+        setLoading(false);
+      } catch {
+        setError(true);
+      }
+    };
+    fetchEvents();
+  }, []);
+
+  const events = preevents.filter((event) => {
     return eventsFilterCondition(event);
   });
 
@@ -78,41 +111,41 @@ const EventsCarousel = ({ eventsFilterCondition }) => {
   return (
     <div className="event-carousel-section">
       {
-        events.length > 0
-          ? (
-            <div>
-              <Carousel slides={createEventSlides()} />
-              <EventModal
-                isOpen={isOpen}
-                toggleModal={toggleModal}
-                header={events[eventIndex].header}
-                location={events[eventIndex].location}
-                sublocation={events[eventIndex].sublocation}
-                startDate={events[eventIndex].startDate}
-                endDate={events[eventIndex].endDate}
-                tagType={events[eventIndex].tagType}
-                image={events[eventIndex].image}
-                times={events[eventIndex].times}
-                cohosts={events[eventIndex].cohosts}
-                link={events[eventIndex].link}
-                tagIcon={events[eventIndex].tagIcon}
-              >
-                {events[eventIndex].body.split('\n').map((paragraph) => {
-                  return (
-                    <p key={`event-modal-body-${paragraph.slice(0, 10)}`}>
-                      {paragraph}
-                    </p>
-                  );
-                })}
-              </EventModal>
-            </div>
-          )
-          : (
-            <div className="no-events-text">
-              There are no upcoming events at this time.
-            </div>
-          )
-      }
+          events.length > 0
+            ? (
+              <>
+                <Carousel slides={createEventSlides()} />
+                <EventModal
+                  isOpen={isOpen}
+                  toggleModal={toggleModal}
+                  header={events[eventIndex].header}
+                  location={events[eventIndex].location}
+                  sublocation={events[eventIndex].sublocation}
+                  startDate={events[eventIndex].startDate}
+                  endDate={events[eventIndex].endDate}
+                  tagType={events[eventIndex].tagType}
+                  image={events[eventIndex].image}
+                  times={events[eventIndex].times}
+                  cohosts={events[eventIndex].cohosts}
+                  link={events[eventIndex].link}
+                  tagIcon={events[eventIndex].tagIcon}
+                >
+                  {events[eventIndex].body.split('\n').map((paragraph) => {
+                    return (
+                      <p key={`event-modal-body-${paragraph.slice(0, 10)}`}>
+                        {paragraph}
+                      </p>
+                    );
+                  })}
+                </EventModal>
+              </>
+            )
+            : (
+              <div className="no-events-text">
+                There are no upcoming events at this time.
+              </div>
+            )
+        }
     </div>
   );
 };

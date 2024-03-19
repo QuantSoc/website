@@ -1,8 +1,14 @@
 import './index.less';
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react';
 import EventPreview from 'components/EventPreview';
+import { getAuth, onAuthStateChanged } from 'firebase/auth';
+import { useNavigate } from 'react-router-dom';
+import {
+  doc, onSnapshot, addDoc, collection,
+} from 'firebase/firestore';
+import { db } from '../../firebase.config';
 
-const ResourcesPage = () => {
+const EventCreationPage = () => {
   const [formData, setFormData] = useState({
     tagType: 'trading',
     header: '',
@@ -15,13 +21,13 @@ const ResourcesPage = () => {
     cohosts: '',
     image: '',
     link: '',
-    body: ''
-  })
+    body: '',
+  });
   const {
-    tagType, 
-    header, 
-    showAsEvent, 
-    location, 
+    tagType,
+    header,
+    showAsEvent,
+    location,
     sublocation,
     startDate,
     endDate,
@@ -29,23 +35,63 @@ const ResourcesPage = () => {
     cohosts,
     image,
     link,
-    body  
-  } = formData
+    body,
+  } = formData;
 
   const onChange = (e) => {
-    setFormData((prevState) => ({
+    setFormData((prevState) => {
+      return {
         ...prevState,
         [e.target.id]: e.target.value,
-    }))
+      };
+    });
+  };
+
+  const [loading, setLoading] = useState(false);
+  const auth = getAuth();
+  const navigate = useNavigate();
+  const isMounted = useRef(true);
+
+  useEffect(() => {
+    if (isMounted) {
+      onAuthStateChanged(auth, (user) => {
+        if (user) {
+          setFormData({ ...formData, useRef: user.uid });
+        } else {
+          navigate('/boardlogin');
+        }
+      });
+    }
+    return () => {
+      isMounted.current = false;
+    };
+  }, [isMounted]);
+
+  const [rank, setRank] = useState(0);
+  onSnapshot(doc(db, 'users', auth.currentUser.uid), (doc) => {
+    setRank(doc.data().rank);
+  });
+
+  const onSubmit = async (e) => {
+    setLoading(true);
+    e.preventDefault();
+    const formDataCopy = { ...formData };
+    formDataCopy.author = auth.currentUser.displayName;
+    await addDoc(collection(db, 'events'), formDataCopy);
+    navigate('/admin');
+  };
+
+  if (loading) {
+    return <p>Loading...</p>;
   }
 
   return (
     <div className="page">
-      <h2 id='heading'>Create an Event</h2>
-      <form>
-        <div className='row'>
-          <p className='item'>Tag Type</p>
-          <select value={tagType} id='tagType' onChange={onChange} className="form-textfield">
+      <h2 id="heading">Create an Event</h2>
+      <form onSubmit={onSubmit}>
+        <div className="row">
+          <p className="item">Tag Type</p>
+          <select value={tagType} id="tagType" onChange={onChange} className="form-textfield">
             <option value="trading">Mock Trading</option>
             <option value="fun">Fun & Games</option>
             <option value="career">Careers</option>
@@ -54,8 +100,8 @@ const ResourcesPage = () => {
             <option value="stall">Stall</option>
           </select>
         </div>
-        <div className='row'>
-          <p className='item'>Header</p>
+        <div className="row">
+          <p className="item">Header</p>
           <input
             id="header"
             type="text"
@@ -65,7 +111,7 @@ const ResourcesPage = () => {
             onChange={onChange}
           />
         </div>
-        <div className='row'>
+        <div className="row">
           <p>Location</p>
           <input
             id="location"
@@ -76,7 +122,7 @@ const ResourcesPage = () => {
             onChange={onChange}
           />
         </div>
-        <div className='row'>
+        <div className="row">
           <p>Sublocation</p>
           <input
             id="sublocation"
@@ -87,29 +133,29 @@ const ResourcesPage = () => {
             onChange={onChange}
           />
         </div>
-        <div className='row'>
+        <div className="row">
           <p>Start date</p>
           <input
             id="startDate"
             value={startDate}
-            placeholder="e.g. 30 February 2024"
+            placeholder="e.g. 30 March 2024"
             type="text"
             className="form-textfield"
             onChange={onChange}
           />
         </div>
-        <div className='row'>
+        <div className="row">
           <p>End date</p>
           <input
             id="endDate"
             value={endDate}
-            placeholder="e.g. 31 February 2024"
+            placeholder="e.g. 31 March 2024"
             type="text"
             className="form-textfield"
             onChange={onChange}
           />
         </div>
-        <div className='row'>
+        <div className="row">
           <p>Times</p>
           <input
             id="times"
@@ -120,7 +166,7 @@ const ResourcesPage = () => {
             onChange={onChange}
           />
         </div>
-        <div className='row'>
+        <div className="row">
           <p>Co-hosts</p>
           <input
             id="cohosts"
@@ -131,52 +177,59 @@ const ResourcesPage = () => {
             onChange={onChange}
           />
         </div>
-        <div className='row'>
+        <div className="row">
           <p>Image URL</p>
           <input
             id="image"
             value={image}
+            placeholder="*include the https://"
             type="text"
             className="form-textfield"
             onChange={onChange}
           />
         </div>
-        <div className='row'>
+        <div className="row">
           <p>Link</p>
           <input
             id="link"
             value={link}
-            placeholder="e.g. https://quantsoc.org/"
+            placeholder="*include the https://"
             type="text"
             className="form-textfield"
             onChange={onChange}
           />
         </div>
-        <div id='body-row'>
+        <div id="body-row">
           <p>Body</p>
-          <textarea 
+          <textarea
             id="body"
             value={body}
             onChange={onChange}
             name="content"
-            rows={10} 
+            rows={10}
             cols={75}
             placeholder="e.g. Are YOU a student interested in what options trading is?..."
           />
         </div>
-        <h3>Preview</h3>
-        
-        <EventPreview formData={ formData } />
-        <h4>Copy and paste the object into the google doc:</h4>
-        <p>{ JSON.stringify(formData) }</p>
-        
-        <div id='button-container'>
-          <button className="redirect-button" type="submit" disabled>Add Event</button>
+        <h3 id='preview'>Preview</h3>
+
+        <div className="preview-section">
+          <EventPreview className="preview" formData={formData} />
         </div>
-        <p>(the 'add event' button is not functional yet [we are working on it])</p>
-        
+
+        <p>
+          Event creator:{' '}
+          <em>{auth.currentUser.displayName}</em>
+        </p>
+        {(rank < 3) ? 'You do not have permission to create an event, please contact Sam T for account verification.' : (
+          <div id="button-container">
+            <button className="redirect-button" type="submit">Add Event</button>
+          </div>
+        )}
       </form>
     </div>
   );
 };
-export default ResourcesPage;
+export default EventCreationPage;
+
+// <p onClick={() => navigate("/admin")}>Admin Dashboard</p>

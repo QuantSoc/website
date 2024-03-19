@@ -1,0 +1,31 @@
+@import 'styles/global.less';
+@import 'styles/constants.less';
+
+.apply-button {
+  background-color: @quantsoc-primary;
+  border-radius: 6px;
+  border-style: none;
+  box-sizing: border-box;
+  display: inline-block;
+  width: fit-content;
+  min-width: 120px;
+  height: 45px;
+  text-wrap: nowrap;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+  font-family: 'Poppins';
+  font-size: 18px;
+  font-weight: 300;
+  margin: 10px 0;
+  &:hover {
+    background-color: @quantsoc-accent-light;
+  }
+}
+
+@media screen and (max-width: @mobile) {
+  .apply-button {
+    color: #000;  // ios defaults to blue text
+    font-size: 0.8rem;
+    height: 35px;
+  }
+}
