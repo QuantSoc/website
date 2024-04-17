@@ -49,6 +49,17 @@ const NavBar = () => {
           tabIndex={-1}
           onKeyDown={() => {}}
           onClick={() => {
+            navigate('/articles');
+          }}
+          className="text-main menu-item menu-item-mobile"
+        >
+          News
+        </div>
+        <div
+          role="button"
+          tabIndex={-1}
+          onKeyDown={() => {}}
+          onClick={() => {
             navigate('/resources');
           }}
           className="text-main menu-item menu-item-mobile"
