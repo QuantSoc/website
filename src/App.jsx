@@ -19,7 +19,6 @@ import JobListingFormPage from 'routes/JobListingFormPage/JobListingFormPage';
 // import FooterBar from 'components/common/FooterBar';
 import ArticlesPage from 'routes/ArticlesPage';
 
-
 const App = () => {
   return (
     <BrowserRouter className="app-page">
