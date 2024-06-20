@@ -17,6 +17,7 @@ import BoardLoginPage from 'routes/BoardLoginPage';
 import PrivateRoute from 'components/PrivateRoute/PrivateRoute';
 import JobListingFormPage from 'routes/JobListingFormPage/JobListingFormPage';
 // import FooterBar from 'components/common/FooterBar';
+import Mathsprint from 'routes/MathsprintPage/MathsprintPage';
 
 const App = () => {
   return (
@@ -32,6 +33,7 @@ const App = () => {
           <Route path="/resources" element={<ResourcesPage />} />
           <Route path="/jobsboard" element={<JobsBoardPage />} />
           <Route path="/boardlogin" element={<BoardLoginPage />} />
+          <Route path="/mathsprint" element={<Mathsprint />} />
           {/* Private Pages: only accessibly by Google authenticated users */}
           <Route path="/admin" element={<PrivateRoute />}>
             <Route path="/admin" element={<AdminPage />} />

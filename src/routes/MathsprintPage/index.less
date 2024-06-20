@@ -1,0 +1,39 @@
+@import 'styles/global.less';
+@import 'styles/constants.less';
+
+#heading {
+  text-align: center;
+  padding: 20px;
+  font-style: italic;
+  font-size: 45px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-bottom: 55px;
+  padding: 40px;
+  
+  margin-left: auto;
+  margin-right: auto;
+  //background-color: rgb(240, 240, 240);
+  font-size: 35px;
+
+  p {
+    justify-self: right;
+    padding-right: 10px;
+    align-self: center;
+    
+  }
+}
+#answer {
+  font-size: 35px;
+  background-color: transparent;
+  color: #717171;
+  font-family: Poppins;
+  width: 140px;
+  height: 80px;
+  padding-left: 8px;
+  border-radius: 3px;
+  border: 2px solid @quantsoc-primary;
+}
