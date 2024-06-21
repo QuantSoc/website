@@ -1,7 +1,10 @@
 import { useEffect, useState, useRef } from 'react';
 import './index.less';
+import { useCookies } from 'react-cookie'
 
 const Mathsprint = () => {
+  const [cookies, setCookie] = useCookies(['highScore']);
+
   const calcResult = (n1, n2, opcode) => {
     switch (opcode) {
       case 0: return n1 + n2;
@@ -103,6 +106,7 @@ const Mathsprint = () => {
       setElapsedTime(0);
       newQuestion(false);
       setAnswer('');
+      if (cookies.highScore < score) setCookie('highScore', score);
     }
   }, [elapsedTime]);
 
@@ -117,14 +121,21 @@ const Mathsprint = () => {
       <h1 id="heading">MATHSPRINT</h1>
       <div className='top-row'>
         <p id='timer'>
-          Time:
+          High Score:
           {' '}
-          {formatTime()}
+          {cookies.highScore}
         </p>
         <p>
           Score:
           {' '}
           {score}
+        </p>
+      </div>
+      <div className='second-row'>
+        <p id='timer'>
+          Time:
+          {' '}
+          {formatTime()}
         </p>
       </div>
       { isRunning ? (
@@ -152,7 +163,7 @@ const Mathsprint = () => {
         </div>
       ) : (
         <div className='buttonContainer'>
-          <button id="start-button" onClick={start}>Start</button>
+          <button id="start-button" onClick={start} autoFocus>Start</button>
         </div>
       )}
     </div>
