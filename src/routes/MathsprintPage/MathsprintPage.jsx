@@ -30,12 +30,18 @@ const Mathsprint = () => {
   } = formData;
 
   const newQuestion = (increaseScore) => {
-    const operationCode = Math.floor(Math.random() * 4);
+    let operationCode = Math.floor(Math.random() * 4);
     let num1 = Math.ceil(Math.random() * 99) + 1; // Rand num between 2 - 100
     let num2 = Math.ceil(Math.random() * ((operationCode <= 1) ? 99 : 11)) + 1;
     // Re-chooses a value for n2 if result of division is not an integer
+    let i = 0;
     while (operationCode === 3 && (num1/num2) % 1 !== 0) {
       num2 = Math.ceil(Math.random() * ((operationCode <= 1) ? 99 : 11)) + 1;
+      i += 1;
+      if (i > 100) { // In case n1 is a prime (undivisible)
+        operationCode = 2;
+        break;
+      }
     }
     // Avoids negative subtraction results
     if (operationCode === 1 && num1 < num2) {
