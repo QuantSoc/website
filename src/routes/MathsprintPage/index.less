@@ -11,7 +11,7 @@
 .row {
   display: grid;
   grid-template-columns: 50% 50%;
-  margin-bottom: 55px;
+  margin-bottom: 30%;
   padding: 40px;
   
   margin-left: auto;
@@ -26,6 +26,26 @@
     
   }
 }
+
+.top-row {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 40px;
+  
+  margin-left: auto;
+  margin-right: auto;
+
+  p {
+    justify-self: right;
+    padding-right: 10px;
+    align-self: center;
+    
+  }
+  #timer {
+    justify-self: left;
+  }
+}
+
 #answer {
   font-size: 35px;
   background-color: transparent;
@@ -36,4 +56,30 @@
   padding-left: 8px;
   border-radius: 3px;
   border: 2px solid @quantsoc-primary;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  margin-bottom: 30%;
+}
+
+#start-button {
+  justify-self: center;
+  background-color: @quantsoc-primary;
+  border-radius: 6px;
+  border-style: none;
+  box-sizing: border-box;
+  display: inline-block;
+  width: fit-content;
+  min-width: 120px;
+  height: 45px;
+  font-size: 18px;
+  font-weight: 300;
+  margin: 2rem 0;
+  &:hover {
+    background-color: @quantsoc-accent-light;
+  }
 }
