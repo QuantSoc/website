@@ -39,24 +39,22 @@ const Mathsprint = () => {
     // Re-chooses a value for n2 if result of division is not an integer
     let i = 0;
     while (operationCode === 3 && (num1/num2) % 1 !== 0) {
-      num2 = Math.ceil(Math.random() * ((operationCode <= 1) ? 99 : 11)) + 1;
+      num2 = Math.ceil(Math.random() * 11) + 1;
       i += 1;
       if (i > 100) { // In case n1 is a prime (undivisible)
-        operationCode = 2;
+        operationCode = 2; // Reassign to multiplication
         break;
       }
     }
     // Avoids negative subtraction results
-    if (operationCode === 1 && num1 < num2) {
-      const numTemp = num1;
-      num1 = num2;
-      num2 = numTemp;
-    }
+    if (operationCode === 1 && num1 < num2) [num1, num2] = [num2, num1];
+    const resultOfCalc = calcResult(num1, num2, operationCode);
     setFormData({
       score: increaseScore ? formData.score + 1 : formData.score,
       n1: num1,
       n2: num2,
       opcode: operationCode,
+      result: resultOfCalc,
     });
   };
 
@@ -65,12 +63,6 @@ const Mathsprint = () => {
       setAnswer('');
       newQuestion(true);
     }
-    setFormData((prevState) => {
-      return {
-        ...prevState,
-        result: calcResult(n1, n2, opcode),
-      };
-    });
   }, [answer]);
 
   // Timer stuff
