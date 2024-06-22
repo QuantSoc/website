@@ -38,7 +38,7 @@ const Mathsprint = () => {
     let num2 = Math.ceil(Math.random() * ((operationCode <= 1) ? 99 : 11)) + 1;
     // Re-chooses a value for n2 if result of division is not an integer
     let i = 0;
-    while (operationCode === 3 && (num1/num2) % 1 !== 0) {
+    while (operationCode === 3 && (num1 / num2) % 1 !== 0) {
       num2 = Math.ceil(Math.random() * 11) + 1;
       i += 1;
       if (i > 100) { // In case n1 is a prime (undivisible)
@@ -59,7 +59,7 @@ const Mathsprint = () => {
   };
 
   useEffect(() => {
-    if (Number(answer) === formData.result) {
+    if (Number(answer) === result) {
       setAnswer('');
       newQuestion(true);
     }
@@ -111,8 +111,8 @@ const Mathsprint = () => {
   return (
     <div>
       <h1 id="heading">MATHSPRINT</h1>
-      <div className='top-row'>
-        <p id='timer'>
+      <div className="top-row">
+        <p id="timer">
           High Score:
           {' '}
           {cookies.highScore}
@@ -123,15 +123,15 @@ const Mathsprint = () => {
           {score}
         </p>
       </div>
-      <div className='second-row'>
-        <p id='timer'>
+      <div className="second-row">
+        <p id="timer">
           Time:
           {' '}
           {formatTime()}
         </p>
       </div>
       { isRunning ? (
-        <div className='row'>
+        <div className="row">
           <p>
             {n1}
             {' '}
@@ -154,8 +154,10 @@ const Mathsprint = () => {
           />
         </div>
       ) : (
-        <div className='buttonContainer'>
-          <button id="start-button" onClick={start} autoFocus>Start</button>
+        <div className="buttonContainer">
+          <button id="start-button" onClick={start} autoFocus type="button">
+            Start
+          </button>
         </div>
       )}
     </div>
