@@ -16,7 +16,7 @@ const HeroSection = ({ hideRedirect = false }) => {
         />
       </div>
       <div className="hero-item stack">
-        <h1>Quantsoc Newsletter</h1>
+        <h1>The Official Quantsoc Newsletter</h1>
         <p className="text-body">
           Welcome to our fortnightly newsletter. Our team has been working hard so that you can keep up to date with the latest news, learn about some interesting theories, 
           be notified of job opportunities and our exciting events and maybe even contemplate on some difficult puzzles!
