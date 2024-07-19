@@ -18,8 +18,8 @@ const HeroSection = ({ hideRedirect = false }) => {
       <div className="hero-item stack">
         <h1>Quantsoc Newsletter</h1>
         <p className="text-body">
-          Welcome to our fortnightly newsletter. Our team has been working hard so that you can keep up to date with the latest news, learn about new and exciting theories, 
-          be notified of job opportunities and events and maybe even contemplate on difficult problems and puzzles!
+          Welcome to our fortnightly newsletter. Our team has been working hard so that you can keep up to date with the latest news, learn about some interesting theories, 
+          be notified of job opportunities and our exciting events and maybe even contemplate on some difficult puzzles!
         </p>
         {!hideRedirect && (
           <RedirectButton btnText="Sign Up" destination="https://docs.google.com/forms/d/e/1FAIpQLSfzxswnxt3i2kA6ShYJ-OLb3iJnvRLtm4g83wkzhzECannTNA/viewform?pli=1" />
