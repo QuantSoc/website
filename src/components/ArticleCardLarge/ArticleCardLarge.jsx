@@ -1,18 +1,56 @@
 import './index.less';
 
+import {
+  collection,
+  getDocs,
+  query,
+  orderBy,
+} from 'firebase/firestore';
+
+import { db } from '../../firebase.config';
+
+import React, { useEffect, useState } from 'react';
+
+
+
 const ArticleCardLarge = ({
-    heading,
-    subheading,
-    image
+  heading,
+  subheading,
+  image
 }) => {
-    // TODO: add more optional elements to the article card and automate the main page
-    return (
-      <div className="article-card-large__container">
-        {/* <h4 className="article-card-large__heading">{heading}</h4>
-        <h5 className="article-card-large__subheading">{subheading}</h5> */}
-        <iframe className='article-card-large__embed' src="https://preview.mailerlite.io/preview/829979/emails/122848449040221658" title="recent"></iframe>
-      </div>
-    );
-  };
+  const [articleUrl, setArticleUrl] = useState('');
+
+  useEffect(() => {
+    const fetchArticle = async () => {
+      const q = query(collection(db, 'articles'), orderBy('id', 'desc'));
+      const querySnapshot = await getDocs(q);
+
+      if (!querySnapshot.empty) {
+        const largestIdDoc = querySnapshot.docs[0];
+        const articleData = largestIdDoc.data();
+        if (articleData && articleData.article) {
+          setArticleUrl(articleData.article);
+        }
+      }
+    };
+
+    fetchArticle();
+  }, []);
+
+  return (
+    <div className="article-card-large__container">
+      {/* <h4 className="article-card-large__heading">{heading}</h4>
+      <h5 className="article-card-large__subheading">{subheading}</h5> */}
+      {articleUrl && (
+        <iframe
+          className='article-card-large__embed'
+          src={articleUrl}
+          title="recent"
+        />
+      )}
+    </div>
+  );
+};
+
   export default ArticleCardLarge;
   
