@@ -4,14 +4,17 @@ import './index.less';
  
 import PreviouslySection from './PreviouslySection/PreviouslySection';
 import RecentSection from './RecentSection/RecentSection';
+import HeroSection from './HeroSection/HeroSection';
+
 
 const ArticlesPage = () => {
   return (
     <div className="articles-page">
-      {/* The Article Card large is the most recent news article */}
+      <HeroSection />
+      {/* The recent section contains the most recent news article */}
       <RecentSection />
       
-      {/* <RecentSection /> */}
+      {/* This displays a bunch of links to the previous articles */}
       <PreviouslySection />
 
     </div>
