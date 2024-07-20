@@ -17,6 +17,7 @@ import BoardLoginPage from 'routes/BoardLoginPage';
 import PrivateRoute from 'components/PrivateRoute/PrivateRoute';
 import JobListingFormPage from 'routes/JobListingFormPage/JobListingFormPage';
 // import FooterBar from 'components/common/FooterBar';
+import ArticlesPage from 'routes/ArticlesPage';
 
 const App = () => {
   return (
@@ -29,6 +30,7 @@ const App = () => {
           <Route path="/" element={<LandingPage />} />
           <Route path="/about" element={<AboutUsPage />} />
           <Route path="/events" element={<EventsPage />} />
+          <Route path="/articles" element={<ArticlesPage />} />
           <Route path="/resources" element={<ResourcesPage />} />
           <Route path="/jobsboard" element={<JobsBoardPage />} />
           <Route path="/boardlogin" element={<BoardLoginPage />} />
