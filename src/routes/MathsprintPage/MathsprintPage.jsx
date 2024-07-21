@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from 'react';
 import './index.less';
-import { useCookies } from 'react-cookie'
+import { useCookies } from 'react-cookie';
 
 const Mathsprint = () => {
   const [cookies, setCookie] = useCookies(['highScore']);
@@ -10,7 +10,7 @@ const Mathsprint = () => {
       case 0: return n1 + n2;
       case 1: return n1 - n2;
       case 2: return n1 * n2;
-      case 3: return n1 / n2;
+      case 3: return n1 * n2;
       default: return 0;
     }
   };
@@ -33,22 +33,18 @@ const Mathsprint = () => {
   } = formData;
 
   const newQuestion = (increaseScore) => {
-    let operationCode = Math.floor(Math.random() * 4);
+    const operationCode = Math.floor(Math.random() * 4);
     let num1 = Math.ceil(Math.random() * 99) + 1; // Rand num between 2 - 100
     let num2 = Math.ceil(Math.random() * ((operationCode <= 1) ? 99 : 11)) + 1;
-    // Re-chooses a value for n2 if result of division is not an integer
-    let i = 0;
-    while (operationCode === 3 && (num1 / num2) % 1 !== 0) {
-      num2 = Math.ceil(Math.random() * 11) + 1;
-      i += 1;
-      if (i > 100) { // In case n1 is a prime (undivisible)
-        operationCode = 2; // Reassign to multiplication
-        break;
-      }
-    }
     // Avoids negative subtraction results
     if (operationCode === 1 && num1 < num2) [num1, num2] = [num2, num1];
-    const resultOfCalc = calcResult(num1, num2, operationCode);
+    let resultOfCalc = calcResult(num1, num2, operationCode);
+    if (operationCode === 3) {
+      // Division is reverse multiplication
+      const r = resultOfCalc;
+      resultOfCalc = num1;
+      num1 = r;
+    }
     setFormData({
       score: increaseScore ? formData.score + 1 : formData.score,
       n1: num1,
