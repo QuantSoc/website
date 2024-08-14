@@ -1,4 +1,4 @@
-.hero-slide {
+.register-section {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
@@ -31,7 +31,7 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .hero-slide {
+  .register-section {
     flex-direction: column;
 
     .hero-item {
@@ -39,16 +39,16 @@
       padding: 1rem 2rem 2rem 1.5rem;
     }
     .hero-img {
-      width: 60%;
+      display: none
     }
   }
 }
 
 @media screen and (max-width: 900px) {
-  .hero-slide {
+  .register-section {
     padding: 0 0;
     .hero-img {
-      width: 70%;
+      display: none;
     }
   }
 }

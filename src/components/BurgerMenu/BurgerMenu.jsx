@@ -84,6 +84,17 @@ const BurgerMenu = () => {
           onKeyDown={() => {}}
           tabIndex={-1}
           onClick={() => {
+            handleLinkClick('/articles');
+          }}
+        >
+          News
+        </div>
+        <div
+          className="burger-menu-item"
+          role="button"
+          onKeyDown={() => {}}
+          tabIndex={-1}
+          onClick={() => {
             handleLinkClick('/resources');
           }}
         >
