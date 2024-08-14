@@ -1,9 +1,9 @@
 import { useEffect, useState, useRef } from 'react';
 import './index.less';
-import { useCookies } from 'react-cookie';
+import Cookies from "js-cookie";
 
 const Mathsprint = () => {
-  const [cookies, setCookie] = useCookies(['highScore']);
+  if (typeof(Cookies.get('highScore'))  === 'undefined') Cookies.set('highScore', 0);
 
   const calcResult = (n1, n2, opcode) => {
     switch (opcode) {
@@ -94,7 +94,7 @@ const Mathsprint = () => {
       setElapsedTime(0);
       newQuestion(false);
       setAnswer('');
-      if (cookies.highScore < score) setCookie('highScore', score);
+      if (Cookies.get('highScore') < score) Cookies.set('highScore', score);
     }
   }, [elapsedTime]);
 
@@ -111,7 +111,7 @@ const Mathsprint = () => {
         <p id="timer">
           High Score:
           {' '}
-          {cookies.highScore}
+          {Cookies.get('highScore')}
         </p>
         <p>
           Score:
