@@ -14,7 +14,7 @@ const LandingPage = () => {
         index={0}
         imgSrc={mockTradingScreenshot}
         redirectLink="https://mtg.quantsoc.org"
-        redirectBtnText="Play"
+        redirectBtnText="Play Now"
       >
         <p>
           Dive into the fast-paced world of trading, hone your investment
