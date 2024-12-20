@@ -1,0 +1,33 @@
+@import '../../../styles/constants.less';
+
+.candlestick-container {
+  width: 100vw; /* Full screen width */
+  height: 700px; 
+  overflow: hidden; /* Hide overflow */
+  position: relative;
+}
+
+.candlestick-scroller {
+  overflow: visible;
+  position:absolute;
+  top:0px; 
+  left:0px; 
+  animation: scrollRight 100s linear infinite;
+}
+
+.candlestick-scroller img {
+  // width: 100vw; /* Each image spans the full screen width */
+  height: auto; /* Maintain aspect ratio */
+  overflow: hidden; /* Hide overflow */
+  white-space: nowrap;
+  margin: 0 0.5em 
+}
+
+@keyframes scrollRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50vw);
+  }
+}

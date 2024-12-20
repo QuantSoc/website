@@ -2,13 +2,13 @@ import mockTradingScreenshot from 'assets/quantsoc-graphics/mock-trading-screens
 import ResourceOutline from 'components/ResourceOutline';
 import EventsSection from './EventsSection/EventsSection';
 import ResourcesSection from './ResourcesSection/ResourcesSection';
-import HeroSection from './HeroSection/HeroSection';
+import HeroSectionNew from './HeroSectionNew/HeroSectionNew';
 import SponsorshipSection from '../../components/SponsorshipSection';
 
 const LandingPage = () => {
   return (
     <div className="page">
-      <HeroSection />
+      <HeroSectionNew />
       <ResourceOutline
         outlineTitle="Mock Trading Game"
         index={0}
