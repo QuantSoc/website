@@ -2,8 +2,9 @@
 @import 'styles/constants.less';
 
 .redirect-button {
-  background-color: @quantsoc-primary;
-  border-radius: 6px;
+  background-color: @quantsoc-darker !important;
+  color: @quantsoc-light !important;
+  border-radius: 6px !important;
   border-style: none;
   box-sizing: border-box;
   display: inline-block;
@@ -15,12 +16,13 @@
   transition: all 0.1s ease-in-out;
   font-family: 'Poppins';
   font-size: 18px;
-  font-weight: 300;
-  margin: 1rem 0;
+  font-weight: 400 ! important;
+  margin: 1rem 0rem !important;
   &:hover {
-    background-color: @quantsoc-accent-light;
+    background-color: @quantsoc-accent !important;
   }
 }
+
 
 @media screen and (max-width: @mobile) {
   .redirect-button {
