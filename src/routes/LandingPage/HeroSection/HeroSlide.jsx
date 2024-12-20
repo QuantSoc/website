@@ -21,7 +21,7 @@ const HeroSlide = ({ hideRedirect = false }) => {
           algorithmic market-making.
         </p>
         {!hideRedirect && (
-          <RedirectButton btnText="Read more" destination="/about" />
+          <RedirectButton btnText="Join Us" destination="https://docs.google.com/forms/d/1yJJ246LoUPVC7zFwXpb99qWz9a5DMm7G5JiucbJQXLY/" />
         )}
       </div>
     </div>
