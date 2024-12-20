@@ -42,9 +42,9 @@ export const NavBarOpen = ({ toggleOpen }) => {
         <Link className="menuWord" style={{ color: 'white' }} to="/resources">
           RESOURCES
         </Link>
-        <Link className="menuWord" style={{ color: 'white' }} to="/about">
+        {/* <Link className="menuWord" style={{ color: 'white' }} to="/about">
           ABOUT US
-        </Link>
+        </Link> */}
         <Link className="menuWord" style={{ color: 'white' }} to="/sponsors">
           SPONSORS
         </Link>
