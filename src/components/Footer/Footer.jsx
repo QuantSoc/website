@@ -27,7 +27,7 @@ const Footer = () => {
           <input
             id="newsletter-textfield"
             type="email"
-            placeholder="Coming Soon"
+            placeholder="New editions once a month!"
           />
         </div>
         <div className="nav-link-container">

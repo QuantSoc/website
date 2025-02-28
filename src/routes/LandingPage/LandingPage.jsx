@@ -19,10 +19,8 @@ const LandingPage = () => {
         <p>
           Dive into the fast-paced world of trading, hone your investment
           strategies, and compete with fellow traders in a mock environment.
-          Create your own markets and play amongst your friends.
-        </p>
-        <br />
-        <p>Learn, compete and have fun in QuantSoc&apos;s Mock Trading Game!</p>
+          <br/><br/>
+        Learn, compete and have fun in QuantSoc&apos;s very ownMock Trading Game!</p>
       </ResourceOutline>
       <EventsSection />
       <ResourcesSection />

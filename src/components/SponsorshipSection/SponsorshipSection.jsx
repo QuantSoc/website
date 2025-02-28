@@ -5,7 +5,7 @@ import SponsorTypeHeader from 'components/SponsorTypeHeader';
 import imcLogo from '../../assets/sponsor-logos/imc.svg';
 import optiverLogo from '../../assets/SponsorImages/optiver-2.png';
 import vivcourtLogo from '../../assets/sponsor-logos/vivcourt.svg';
-import sigLogo from '../../assets/SponsorImages/SIG_Blue.png';
+import sigLogo from '../../assets/SponsorImages/SUSQUEHANNA_Logo_blue.png';
 import citadelLogo from '../../assets/SponsorImages/citadel-2.png';
 import tibraLogo from '../../assets/sponsor-logos/tibra.svg';
 import janestreetLogo from '../../assets/sponsor-logos/jane-street.svg'
@@ -23,11 +23,11 @@ const SponsorshipSection = () => {
       <SponsorTypeHeader type="principal" />
       <div className="sponsorship-section__logos">
         <Sponsor logoSrc={janestreetLogo} sponsorLink="https://www.janestreet.com/" />
+        <Sponsor logoSrc={sigLogo} sponsorLink="https://www.sig.com" />
       </div>
       <SponsorTypeHeader type="major" />
       <div className="sponsorship-section__logos">
         <Sponsor logoSrc={optiverLogo} sponsorLink="https://www.optiver.com" />
-        <Sponsor logoSrc={sigLogo} sponsorLink="https://www.sig.com" />
         <Sponsor logoSrc={vivcourtLogo} sponsorLink="https://www.vivcourt.com" />
         <Sponsor logoSrc={citadelLogo} sponsorLink="https://www.citadelsecurities.com/" />          
         <Sponsor logoSrc={imcLogo} sponsorLink="https://www.imc.com/ap" />
