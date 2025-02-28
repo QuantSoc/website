@@ -54,33 +54,30 @@
   border-radius: 10px;
   border: solid white 3px;
   color: white;
-
   font-size: 20%;
   background-color: transparent;
-  font-family:  Poppins, sans-serif;
+  font-family: Poppins, sans-serif;
   filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.2));
-
+  
+  transition: background-color 500ms linear, color 500ms linear;
 
   &:hover {
     color: white;
     border: solid @dark-purple 3px;
     background-color: @dark-purple;
-
   }
-
 }
 
 #join-button {
-  // background-color: @mid-purple;
   border: solid @mid-purple 3px;
   color: white;
   background-color: @mid-purple;
 
+  transition: background-color 500ms linear, color 500ms linear;
 
   &:hover {
     color: white;
     border: solid @dark-purple 3px;
     background-color: @dark-purple;
   }
-
 }
