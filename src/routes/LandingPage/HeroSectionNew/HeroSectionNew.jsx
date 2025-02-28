@@ -9,7 +9,7 @@ const HeroSectionNew = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setFadeIn(true);
-    }, 1000); // Delay the text fade-in by 1 second
+    }, 300); // Delay the text fade-in by 1 second
 
     return () => clearTimeout(timer);
   }, []);
