@@ -2,59 +2,77 @@
 
 .background-container {
 
-  width: auto;
   height: 100dvh;
   background-image: url(../../../assets/quantsoc-graphics/new-hero-optimised.svg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   justify-content: center;
-  align-items: center;
-  text-align: center;
   background-position-y: bottom;
-  // background-attachment: fixed; /* Add this property for the parallax effect */ 
 }
 
-/* Assuming your logo component has a class name "quantsoc-logo" */
-.quantsoc-logo {
-  transform: scale(5); /* No scaling is needed if you set width and height to 25% */
-}
-
-.hero-content {
+.quantsoc-title-container {
   display: flex;
-  flex-direction: column;
+  column-gap: 30px;
   align-items: center;
-  justify-content: center;
-  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center; /* Ensures horizontal alignment */
 }
 
-.large-text {
-  font-size: 6vw; /* Scales text to 50% of the screen width */
+#landing-title {
+  font-size: 8vw; /* Scales text to 10% of the screen width */
   font-family: Poppins, sans-serif;
   font-weight: bold;
   color: white;
+  text-align: center; /* Ensures the text is centered */
+  min-width: 600px;
+
+}
+
+#quantsoc-logo {
+  width: 8vw;
+  min-width: 100px;
+  display: block; /* Ensures the logo is a block element */
+  margin-left: auto;
+  margin-right: auto; /* Centers the logo */
+}
+
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+.fadein-elements {
   opacity: 0;
   transition: opacity 3s ease-in-out;
   filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
 }
 
-.large-text.fade-in {
+.fadein-elements.fade-in {
   opacity: 1;
 }
 
 .button-container {
+  margin-top: 0vw;
   display: flex;
-  padding-top: 40%;
   column-gap: 10%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
 }
 
 .hero-button {
+  margin-top: 1.5rem;
   width: 300px;
-  padding: 10px 30px;
+  padding: 13px 30px;
   border-radius: 10px;
   border: solid white 3px;
   color: white;
-  font-size: 20%;
+  font-size: 1.5rem;
   background-color: transparent;
   font-family: Poppins, sans-serif;
   filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.2));

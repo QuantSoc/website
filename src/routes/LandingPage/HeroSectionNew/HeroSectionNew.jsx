@@ -1,6 +1,6 @@
 import './index.less';
 import { useEffect, useState, useRef } from 'react';
-import QuantSocLogo from 'components/QuantSocLogo';
+import QuantSocLogo from './../../../assets/logo-quantsoc.svg';
 
 const HeroSectionNew = () => {
   const [fadeIn, setFadeIn] = useState(false);
@@ -33,17 +33,16 @@ const HeroSectionNew = () => {
   return (
     <div className="background-container" ref={heroSectionRef}>
       <div className="hero-content">
-        <div className={`large-text ${fadeIn ? 'fade-in' : ''}`}>
-          <div className="quantsoc-logo-wrapper">
-            <div className="quantsoc-logo">
-              <QuantSocLogo />
+        <div className={`fadein-elements ${fadeIn ? 'fade-in' : ''}`}>
+            <div className="quantsoc-title-container">
+              <img src={QuantSocLogo} id="quantsoc-logo"></img>
+              <div id='landing-title'>QuantSoc</div>
             </div>
             <div className="button-container">
               <button className="hero-button" onClick={handleLearnMoreClick}>Learn More</button>
               <button className="hero-button" id="join-button" onClick={handleJoinUsClick}>Join Us</button>
             </div>
           </div>
-        </div>
       </div>
     </div>
   );
