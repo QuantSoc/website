@@ -1,0 +1,1755 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   height="0INVALID"
+   version="1.1"
+   viewBox="0 0 1920 1080"
+   id="svg411"
+   sodipodi:docname="new-hero-optimised.svg"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview411"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.38203408"
+     inkscape:cx="242.125"
+     inkscape:cy="1189.6844"
+     inkscape:window-width="2560"
+     inkscape:window-height="1369"
+     inkscape:window-x="-8"
+     inkscape:window-y="54"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg411" />
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient2"
+       x1="820.08"
+       x2="811.74"
+       y1="-325.46"
+       y2="1000.1"
+       gradientTransform="matrix(.95509 0 0 .93559 55 24.49)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         stop-color="#852bed"
+         stop-opacity=".92549"
+         offset="0"
+         id="stop1" />
+      <stop
+         stop-color="#852bed"
+         stop-opacity="0"
+         offset="1"
+         id="stop2" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4"
+       x1="1741.7"
+       x2="2174.8"
+       y1="220.26"
+       y2="459.02"
+       gradientTransform="translate(231.36 127.71)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         stop-color="#9740f4"
+         stop-opacity=".70196"
+         offset="0"
+         id="stop3" />
+      <stop
+         stop-color="#d6beff"
+         offset="1"
+         id="stop4" />
+    </linearGradient>
+  </defs>
+  <g
+     fill="#852bed"
+     fill-opacity=".92549"
+     id="g4">
+    <rect
+       width="1920"
+       height="1080"
+       fill="url(#linearGradient2)"
+       fill-opacity="1"
+       stroke-width=".94529"
+       id="rect4" />
+  </g>
+  <g
+     stroke-width=".53551"
+     id="g7">
+    <rect
+       x="270.1"
+       y="-248.64"
+       width="262.07"
+       height="169.94"
+       fill="#ededed"
+       id="rect5" />
+    <rect
+       x="1277.5"
+       y="-248.64"
+       width="274.74"
+       height="178.65"
+       fill="#9740f3"
+       fill-opacity=".70196"
+       id="rect6" />
+    <rect
+       x="979.52"
+       y="-248.88"
+       width="274.74"
+       height="178.65"
+       fill="#9740f3"
+       id="rect7" />
+  </g>
+  <rect
+     x="602.32"
+     y="-248.62"
+     width="259.96"
+     height="172.12"
+     fill="#d6beff"
+     stroke-width=".26299"
+     id="rect8" />
+  <path
+     d="m-101.8 118.46c198.05 218.41 396.09 436.81 643.5 492.96 247.41 56.143 544.16-49.973 800.51 20.672 256.35 70.645 472.29 318.04 688.22 565.45"
+     fill="none"
+     id="path8" />
+  <path
+     d="m-290.59 827.35c198.05-53.676 396.09-107.35 583.34-49.355 187.25 57.997 363.7 227.66 538.61 301.7 174.91 74.036 348.28 52.442 441.13 42.571 92.854-9.8715 105.19-8.0206 117.53-6.1697"
+     fill="none"
+     id="path9" />
+  <ellipse
+     id="path2"
+     cx="2390.4"
+     cy="512.7"
+     rx="113.83"
+     ry="109.2"
+     fill="url(#linearGradient4)" />
+  <g
+     transform="matrix(1.0603 0 0 1 11.075 0)"
+     id="g245">
+    <use
+       transform="matrix(.67364 .73906 -.73906 .67364 -1303.8 -2005.9)"
+       xlink:href="#path2"
+       id="use9" />
+    <use
+       transform="matrix(.67364 .73906 -.73906 .67364 -1296.6 -1998)"
+       xlink:href="#path2"
+       id="use10" />
+    <use
+       transform="matrix(.67364 .73906 -.73906 .67364 -1289.4 -1990.2)"
+       xlink:href="#path2"
+       id="use11" />
+    <use
+       transform="matrix(.67364 .73906 -.73906 .67364 -1282.3 -1982.3)"
+       xlink:href="#path2"
+       id="use12" />
+    <use
+       transform="matrix(.67364 .73906 -.73906 .67364 -1275.1 -1974.4)"
+       xlink:href="#path2"
+       id="use13" />
+    <use
+       transform="matrix(.67364 .73906 -.73906 .67364 -1267.9 -1966.5)"
+       xlink:href="#path2"
+       id="use14" />
+    <use
+       transform="matrix(.67364 .73906 -.73906 .67364 -1260.7 -1958.6)"
+       xlink:href="#path2"
+       id="use15" />
+    <use
+       transform="matrix(.67364 .73906 -.73906 .67364 -1253.5 -1950.8)"
+       xlink:href="#path2"
+       id="use16" />
+    <use
+       transform="matrix(.67364 .73906 -.73906 .67364 -1246.4 -1942.9)"
+       xlink:href="#path2"
+       id="use17" />
+    <use
+       transform="matrix(.67364 .73906 -.73906 .67364 -1239.2 -1935)"
+       xlink:href="#path2"
+       id="use18" />
+    <use
+       transform="matrix(.6808 .73247 -.73247 .6808 -1252.6 -1915.3)"
+       xlink:href="#path2"
+       id="use19" />
+    <use
+       transform="matrix(.6808 .73247 -.73247 .6808 -1245.4 -1907.5)"
+       xlink:href="#path2"
+       id="use20" />
+    <use
+       transform="matrix(.6808 .73247 -.73247 .6808 -1238.1 -1899.7)"
+       xlink:href="#path2"
+       id="use21" />
+    <use
+       transform="matrix(.6808 .73247 -.73247 .6808 -1230.8 -1891.8)"
+       xlink:href="#path2"
+       id="use22" />
+    <use
+       transform="matrix(.6808 .73247 -.73247 .6808 -1223.6 -1884)"
+       xlink:href="#path2"
+       id="use23" />
+    <use
+       transform="matrix(.6894 .72437 -.72437 .6894 -1241.2 -1861.6)"
+       xlink:href="#path2"
+       id="use24" />
+    <use
+       transform="matrix(.6894 .72437 -.72437 .6894 -1233.9 -1853.8)"
+       xlink:href="#path2"
+       id="use25" />
+    <use
+       transform="matrix(.6894 .72437 -.72437 .6894 -1226.5 -1846.1)"
+       xlink:href="#path2"
+       id="use26" />
+    <use
+       transform="matrix(.6894 .72437 -.72437 .6894 -1219.2 -1838.4)"
+       xlink:href="#path2"
+       id="use27" />
+    <use
+       transform="matrix(.6894 .72437 -.72437 .6894 -1211.8 -1830.7)"
+       xlink:href="#path2"
+       id="use28" />
+    <use
+       transform="matrix(.69768 .71641 -.71641 .69768 -1228.6 -1808.4)"
+       xlink:href="#path2"
+       id="use29" />
+    <use
+       transform="matrix(.69768 .71641 -.71641 .69768 -1221.1 -1800.8)"
+       xlink:href="#path2"
+       id="use30" />
+    <use
+       transform="matrix(.69768 .71641 -.71641 .69768 -1213.7 -1793.2)"
+       xlink:href="#path2"
+       id="use31" />
+    <use
+       transform="matrix(.70416 .71004 -.71004 .70416 -1225.1 -1773.9)"
+       xlink:href="#path2"
+       id="use32" />
+    <use
+       transform="matrix(.70416 .71004 -.71004 .70416 -1217.6 -1766.3)"
+       xlink:href="#path2"
+       id="use33" />
+    <use
+       transform="matrix(.71136 .70282 -.70282 .71136 -1231.2 -1745.4)"
+       xlink:href="#path2"
+       id="use34" />
+    <use
+       transform="matrix(.71136 .70282 -.70282 .71136 -1223.6 -1737.9)"
+       xlink:href="#path2"
+       id="use35" />
+    <use
+       transform="matrix(.71136 .70282 -.70282 .71136 -1216 -1730.4)"
+       xlink:href="#path2"
+       id="use36" />
+    <use
+       transform="matrix(.71929 .6947 -.6947 .71929 -1231.8 -1707.9)"
+       xlink:href="#path2"
+       id="use37" />
+    <use
+       transform="matrix(.71929 .6947 -.6947 .71929 -1224.1 -1700.5)"
+       xlink:href="#path2"
+       id="use38" />
+    <use
+       transform="matrix(.72794 .68563 -.68563 .72794 -1242 -1676.1)"
+       xlink:href="#path2"
+       id="use39" />
+    <use
+       transform="matrix(.72794 .68563 -.68563 .72794 -1234.2 -1668.8)"
+       xlink:href="#path2"
+       id="use40" />
+    <use
+       transform="matrix(.72794 .68563 -.68563 .72794 -1226.4 -1661.5)"
+       xlink:href="#path2"
+       id="use41" />
+    <use
+       transform="matrix(.7373 .67555 -.67555 .7373 -1246.4 -1635.3)"
+       xlink:href="#path2"
+       id="use42" />
+    <use
+       transform="matrix(.7373 .67555 -.67555 .7373 -1238.6 -1628.1)"
+       xlink:href="#path2"
+       id="use43" />
+    <use
+       transform="matrix(.74736 .6644 -.6644 .74736 -1260.8 -1599.7)"
+       xlink:href="#path2"
+       id="use44" />
+    <use
+       transform="matrix(.74736 .6644 -.6644 .74736 -1252.8 -1592.6)"
+       xlink:href="#path2"
+       id="use45" />
+    <use
+       transform="matrix(.74736 .6644 -.6644 .74736 -1244.8 -1585.5)"
+       xlink:href="#path2"
+       id="use46" />
+    <use
+       transform="matrix(.7581 .65211 -.65211 .7581 -1269.1 -1555)"
+       xlink:href="#path2"
+       id="use47" />
+    <use
+       transform="matrix(.7581 .65211 -.65211 .7581 -1261 -1548.1)"
+       xlink:href="#path2"
+       id="use48" />
+    <use
+       transform="matrix(.76951 .63861 -.63861 .76951 -1287.5 -1515.1)"
+       xlink:href="#path2"
+       id="use49" />
+    <use
+       transform="matrix(.76951 .63861 -.63861 .76951 -1279.3 -1508.3)"
+       xlink:href="#path2"
+       id="use50" />
+    <use
+       transform="matrix(.78155 .62382 -.62382 .78155 -1307.9 -1472.7)"
+       xlink:href="#path2"
+       id="use51" />
+    <use
+       transform="matrix(.78155 .62382 -.62382 .78155 -1299.5 -1466)"
+       xlink:href="#path2"
+       id="use52" />
+    <use
+       transform="matrix(.78155 .62382 -.62382 .78155 -1291.2 -1459.4)"
+       xlink:href="#path2"
+       id="use53" />
+    <use
+       transform="matrix(.79418 .60766 -.60766 .79418 -1321.7 -1421)"
+       xlink:href="#path2"
+       id="use54" />
+    <use
+       transform="matrix(.79418 .60766 -.60766 .79418 -1313.3 -1414.6)"
+       xlink:href="#path2"
+       id="use55" />
+    <use
+       transform="matrix(.804 .59462 -.59462 .804 -1335.3 -1382.3)"
+       xlink:href="#path2"
+       id="use56" />
+    <use
+       transform="matrix(.81071 .58544 -.58544 .81071 -1347.8 -1357.6)"
+       xlink:href="#path2"
+       id="use57" />
+    <use
+       transform="matrix(.81071 .58544 -.58544 .81071 -1339.1 -1351.4)"
+       xlink:href="#path2"
+       id="use58" />
+    <use
+       transform="matrix(.81754 .57586 -.57586 .81754 -1351.9 -1326.1)"
+       xlink:href="#path2"
+       id="use59" />
+    <use
+       transform="matrix(.82448 .56588 -.56588 .82448 -1365.2 -1299.9)"
+       xlink:href="#path2"
+       id="use60" />
+    <use
+       transform="matrix(.83151 .5555 -.5555 .83151 -1378.8 -1273)"
+       xlink:href="#path2"
+       id="use61" />
+    <use
+       transform="matrix(.83863 .54469 -.54469 .83863 -1392.8 -1245.1)"
+       xlink:href="#path2"
+       id="use62" />
+    <use
+       transform="matrix(.84582 .53345 -.53345 .84582 -1407.1 -1216.4)"
+       xlink:href="#path2"
+       id="use63" />
+    <use
+       transform="matrix(.85308 .52176 -.52176 .85308 -1421.7 -1186.7)"
+       xlink:href="#path2"
+       id="use64" />
+    <use
+       transform="matrix(.85308 .52176 -.52176 .85308 -1412.6 -1181.2)"
+       xlink:href="#path2"
+       id="use65" />
+    <use
+       transform="matrix(.86038 .50964 -.50964 .86038 -1427.5 -1150.7)"
+       xlink:href="#path2"
+       id="use66" />
+    <use
+       transform="matrix(.86771 .49705 -.49705 .86771 -1442.6 -1119.2)"
+       xlink:href="#path2"
+       id="use67" />
+    <use
+       transform="matrix(.87506 .484 -.484 .87506 -1458 -1086.8)"
+       xlink:href="#path2"
+       id="use68" />
+    <use
+       transform="matrix(.8824 .47047 -.47047 .8824 -1473.5 -1053.4)"
+       xlink:href="#path2"
+       id="use69" />
+    <use
+       transform="matrix(.88973 .45647 -.45647 .88973 -1489.1 -1019)"
+       xlink:href="#path2"
+       id="use70" />
+    <use
+       transform="matrix(.89701 .44199 -.44199 .89701 -1504.9 -983.47)"
+       xlink:href="#path2"
+       id="use71" />
+    <use
+       transform="matrix(.90423 .42702 -.42702 .90423 -1520.7 -946.93)"
+       xlink:href="#path2"
+       id="use72" />
+    <use
+       transform="matrix(.91136 .41157 -.41157 .91136 -1536.5 -909.32)"
+       xlink:href="#path2"
+       id="use73" />
+    <use
+       transform="matrix(.91136 .41157 -.41157 .91136 -1526.8 -904.93)"
+       xlink:href="#path2"
+       id="use74" />
+    <use
+       transform="matrix(.91839 .39563 -.39563 .91839 -1542.4 -866.42)"
+       xlink:href="#path2"
+       id="use75" />
+    <use
+       transform="matrix(.92529 .37921 -.37921 .92529 -1558 -826.83)"
+       xlink:href="#path2"
+       id="use76" />
+    <use
+       transform="matrix(.93204 .36232 -.36232 .93204 -1573.4 -786.18)"
+       xlink:href="#path2"
+       id="use77" />
+    <use
+       transform="matrix(.93861 .34494 -.34494 .93861 -1588.5 -744.46)"
+       xlink:href="#path2"
+       id="use78" />
+    <use
+       transform="matrix(.94497 .3271 -.3271 .94497 -1603.4 -701.68)"
+       xlink:href="#path2"
+       id="use79" />
+    <use
+       transform="matrix(.95111 .30881 -.30881 .95111 -1617.8 -657.86)"
+       xlink:href="#path2"
+       id="use80" />
+    <use
+       transform="matrix(.95698 .29008 -.29008 .95698 -1631.9 -613.02)"
+       xlink:href="#path2"
+       id="use81" />
+    <use
+       transform="matrix(.96258 .27092 -.27092 .96258 -1645.5 -567.2)"
+       xlink:href="#path2"
+       id="use82" />
+    <use
+       transform="matrix(.96788 .25135 -.25135 .96788 -1658.5 -520.41)"
+       xlink:href="#path2"
+       id="use83" />
+    <use
+       transform="matrix(.96788 .25135 -.25135 .96788 -1648.2 -517.73)"
+       xlink:href="#path2"
+       id="use84" />
+    <use
+       transform="matrix(.97284 .2314 -.2314 .97284 -1660.5 -470.23)"
+       xlink:href="#path2"
+       id="use85" />
+    <use
+       transform="matrix(.97742 .21124 -.21124 .97742 -1672 -422.23)"
+       xlink:href="#path2"
+       id="use86" />
+    <use
+       transform="matrix(.98146 .19156 -.19156 .98146 -1681.9 -375.27)"
+       xlink:href="#path2"
+       id="use87" />
+    <use
+       transform="matrix(.98499 .17254 -.17254 .98499 -1690.1 -329.79)"
+       xlink:href="#path2"
+       id="use88" />
+    <use
+       transform="matrix(.98802 .15422 -.15422 .98802 -1696.8 -285.87)"
+       xlink:href="#path2"
+       id="use89" />
+    <use
+       transform="matrix(.99062 .13659 -.13659 .99062 -1702 -243.55)"
+       xlink:href="#path2"
+       id="use90" />
+    <use
+       transform="matrix(.9928 .11968 -.11968 .9928 -1705.9 -202.88)"
+       xlink:href="#path2"
+       id="use91" />
+    <use
+       transform="matrix(.99462 .10348 -.10348 .99462 -1708.4 -163.9)"
+       xlink:href="#path2"
+       id="use92" />
+    <use
+       transform="matrix(.99462 .10348 -.10348 .99462 -1697.8 -162.8)"
+       xlink:href="#path2"
+       id="use93" />
+    <use
+       transform="matrix(.99611 .088025 -.088025 .99611 -1699.1 -125.7)"
+       xlink:href="#path2"
+       id="use94" />
+    <use
+       transform="matrix(.9973 .073296 -.073296 .9973 -1699.3 -90.316)"
+       xlink:href="#path2"
+       id="use95" />
+    <use
+       transform="matrix(.99823 .059297 -.059297 .99823 -1698.5 -56.67)"
+       xlink:href="#path2"
+       id="use96" />
+    <use
+       transform="matrix(.99893 .046025 -.046025 .99893 -1696.8 -24.763)"
+       xlink:href="#path2"
+       id="use97" />
+    <use
+       transform="matrix(.99943 .033477 -.033477 .99943 -1694.1 5.4059)"
+       xlink:href="#path2"
+       id="use98" />
+    <use
+       transform="matrix(.99976 .021646 -.021646 .99976 -1690.6 33.843)"
+       xlink:href="#path2"
+       id="use99" />
+    <use
+       transform="matrix(.99994 .010526 -.010526 .99994 -1686.4 60.556)"
+       xlink:href="#path2"
+       id="use100" />
+    <use
+       transform="matrix(.99994 .010526 -.010526 .99994 -1675.8 60.668)"
+       xlink:href="#path2"
+       id="use101" />
+    <use
+       transform="matrix(.99997 -.0047645 .0047645 .99997 -1673.5 97.171)"
+       xlink:href="#path2"
+       id="use102" />
+    <use
+       transform="matrix(.99997 -.0047645 .0047645 .99997 -1662.8 97.12)"
+       xlink:href="#path2"
+       id="use103" />
+    <use
+       transform="matrix(.99973 -.022852 .022852 .99973 -1661.4 140.34)"
+       xlink:href="#path2"
+       id="use104" />
+    <use
+       transform="matrix(.99973 -.022852 .022852 .99973 -1650.7 140.09)"
+       xlink:href="#path2"
+       id="use105" />
+    <use
+       transform="matrix(.99926 -.038259 .038259 .99926 -1647.3 176.9)"
+       xlink:href="#path2"
+       id="use106" />
+    <use
+       transform="matrix(.99926 -.038259 .038259 .99926 -1636.7 176.5)"
+       xlink:href="#path2"
+       id="use107" />
+    <use
+       transform="matrix(.99926 -.038259 .038259 .99926 -1626 176.09)"
+       xlink:href="#path2"
+       id="use108" />
+    <use
+       transform="matrix(.99869 -.051062 .051062 .99869 -1620.9 206.48)"
+       xlink:href="#path2"
+       id="use109" />
+    <use
+       transform="matrix(.99869 -.051062 .051062 .99869 -1610.3 205.94)"
+       xlink:href="#path2"
+       id="use110" />
+    <use
+       transform="matrix(.99811 -.061329 .061329 .99811 -1603.8 230.2)"
+       xlink:href="#path2"
+       id="use111" />
+    <use
+       transform="matrix(.99811 -.061329 .061329 .99811 -1593.2 229.54)"
+       xlink:href="#path2"
+       id="use112" />
+    <use
+       transform="matrix(.99741 -.07181 .07181 .99741 -1586.6 254.32)"
+       xlink:href="#path2"
+       id="use113" />
+    <use
+       transform="matrix(.99741 -.07181 .07181 .99741 -1575.9 253.56)"
+       xlink:href="#path2"
+       id="use114" />
+    <use
+       transform="matrix(.99741 -.07181 .07181 .99741 -1565.3 252.79)"
+       xlink:href="#path2"
+       id="use115" />
+    <use
+       transform="matrix(.99741 -.07181 .07181 .99741 -1554.7 252.02)"
+       xlink:href="#path2"
+       id="use116" />
+    <use
+       transform="matrix(.99741 -.07181 .07181 .99741 -1544 251.26)"
+       xlink:href="#path2"
+       id="use117" />
+    <use
+       transform="matrix(.99697 -.077789 .077789 .99697 -1535.6 265.01)"
+       xlink:href="#path2"
+       id="use118" />
+    <use
+       transform="matrix(.99697 -.077789 .077789 .99697 -1524.9 264.18)"
+       xlink:href="#path2"
+       id="use119" />
+    <use
+       transform="matrix(.99697 -.077789 .077789 .99697 -1514.3 263.35)"
+       xlink:href="#path2"
+       id="use120" />
+    <use
+       transform="matrix(.99697 -.077789 .077789 .99697 -1503.7 262.52)"
+       xlink:href="#path2"
+       id="use121" />
+    <use
+       transform="matrix(.99697 -.077789 .077789 .99697 -1493 261.69)"
+       xlink:href="#path2"
+       id="use122" />
+    <use
+       transform="matrix(.99723 -.074358 .074358 .99723 -1481.2 252.53)"
+       xlink:href="#path2"
+       id="use123" />
+    <use
+       transform="matrix(.99723 -.074358 .074358 .99723 -1470.5 251.74)"
+       xlink:href="#path2"
+       id="use124" />
+    <use
+       transform="matrix(.99723 -.074358 .074358 .99723 -1459.9 250.95)"
+       xlink:href="#path2"
+       id="use125" />
+    <use
+       transform="matrix(.99723 -.074358 .074358 .99723 -1449.3 250.16)"
+       xlink:href="#path2"
+       id="use126" />
+    <use
+       transform="matrix(.99723 -.074358 .074358 .99723 -1438.6 249.36)"
+       xlink:href="#path2"
+       id="use127" />
+    <use
+       transform="matrix(.99782 -.065918 .065918 .99782 -1424.8 228.12)"
+       xlink:href="#path2"
+       id="use128" />
+    <use
+       transform="matrix(.99782 -.065918 .065918 .99782 -1414.2 227.42)"
+       xlink:href="#path2"
+       id="use129" />
+    <use
+       transform="matrix(.99836 -.05713 .05713 .99836 -1400.1 205.43)"
+       xlink:href="#path2"
+       id="use130" />
+    <use
+       transform="matrix(.99836 -.05713 .05713 .99836 -1389.4 204.82)"
+       xlink:href="#path2"
+       id="use131" />
+    <use
+       transform="matrix(.99836 -.05713 .05713 .99836 -1378.8 204.21)"
+       xlink:href="#path2"
+       id="use132" />
+    <use
+       transform="matrix(.99894 -.045934 .045934 .99894 -1363.4 176.62)"
+       xlink:href="#path2"
+       id="use133" />
+    <use
+       transform="matrix(.99894 -.045934 .045934 .99894 -1352.8 176.13)"
+       xlink:href="#path2"
+       id="use134" />
+    <use
+       transform="matrix(.99947 -.032289 .032289 .99947 -1336 142.78)"
+       xlink:href="#path2"
+       id="use135" />
+    <use
+       transform="matrix(.99947 -.032289 .032289 .99947 -1325.3 142.44)"
+       xlink:href="#path2"
+       id="use136" />
+    <use
+       transform="matrix(.99947 -.032289 .032289 .99947 -1314.7 142.09)"
+       xlink:href="#path2"
+       id="use137" />
+    <use
+       transform="matrix(.99986 -.016148 .016148 .99986 -1296.2 103.11)"
+       xlink:href="#path2"
+       id="use138" />
+    <use
+       transform="matrix(.99986 -.016148 .016148 .99986 -1285.5 102.94)"
+       xlink:href="#path2"
+       id="use139" />
+    <use
+       transform="matrix(.99998 .0025358 -.0025358 .99998 -1265 58.144)"
+       xlink:href="#path2"
+       id="use140" />
+    <use
+       transform="matrix(.99998 .0025358 -.0025358 .99998 -1254.3 58.172)"
+       xlink:href="#path2"
+       id="use141" />
+    <use
+       transform="matrix(.99983 .018169 -.018169 .99983 -1234.8 20.934)"
+       xlink:href="#path2"
+       id="use142" />
+    <use
+       transform="matrix(.99983 .018169 -.018169 .99983 -1224.2 21.128)"
+       xlink:href="#path2"
+       id="use143" />
+    <use
+       transform="matrix(.99956 .02946 -.02946 .99956 -1206.7 -5.4069)"
+       xlink:href="#path2"
+       id="use144" />
+    <use
+       transform="matrix(.99914 .04141 -.04141 .99914 -1188.6 -33.329)"
+       xlink:href="#path2"
+       id="use145" />
+    <use
+       transform="matrix(.99853 .054021 -.054021 .99853 -1169.6 -62.629)"
+       xlink:href="#path2"
+       id="use146" />
+    <use
+       transform="matrix(.99772 .067296 -.067296 .99772 -1149.9 -93.291)"
+       xlink:href="#path2"
+       id="use147" />
+    <use
+       transform="matrix(.99669 .081235 -.081235 .99669 -1129.2 -125.3)"
+       xlink:href="#path2"
+       id="use148" />
+    <use
+       transform="matrix(.99539 .095836 -.095836 .99539 -1107.5 -158.62)"
+       xlink:href="#path2"
+       id="use149" />
+    <use
+       transform="matrix(.99539 .095836 -.095836 .99539 -1096.9 -157.6)"
+       xlink:href="#path2"
+       id="use150" />
+    <use
+       transform="matrix(.9938 .1111 -.1111 .9938 -1074.2 -192.05)"
+       xlink:href="#path2"
+       id="use151" />
+    <use
+       transform="matrix(.99189 .12701 -.12701 .99189 -1050.4 -227.75)"
+       xlink:href="#path2"
+       id="use152" />
+    <use
+       transform="matrix(.98963 .14356 -.14356 .98963 -1025.5 -264.65)"
+       xlink:href="#path2"
+       id="use153" />
+    <use
+       transform="matrix(.98698 .16075 -.16075 .98698 -999.29 -302.71)"
+       xlink:href="#path2"
+       id="use154" />
+    <use
+       transform="matrix(.98392 .17855 -.17855 .98392 -971.78 -341.85)"
+       xlink:href="#path2"
+       id="use155" />
+    <use
+       transform="matrix(.9804 .19696 -.19696 .9804 -942.89 -382.02)"
+       xlink:href="#path2"
+       id="use156" />
+    <use
+       transform="matrix(.9804 .19696 -.19696 .9804 -932.44 -379.92)"
+       xlink:href="#path2"
+       id="use157" />
+    <use
+       transform="matrix(.97639 .21593 -.21593 .97639 -902.15 -420.84)"
+       xlink:href="#path2"
+       id="use158" />
+    <use
+       transform="matrix(.97187 .23545 -.23545 .97187 -870.36 -462.61)"
+       xlink:href="#path2"
+       id="use159" />
+    <use
+       transform="matrix(.96679 .25549 -.25549 .96679 -837.01 -505.14)"
+       xlink:href="#path2"
+       id="use160" />
+    <use
+       transform="matrix(.96118 .27586 -.27586 .96118 -802.25 -547.97)"
+       xlink:href="#path2"
+       id="use161" />
+    <use
+       transform="matrix(.9552 .29589 -.29589 .9552 -766.86 -589.64)"
+       xlink:href="#path2"
+       id="use162" />
+    <use
+       transform="matrix(.9552 .29589 -.29589 .9552 -756.67 -586.49)"
+       xlink:href="#path2"
+       id="use163" />
+    <use
+       transform="matrix(.94893 .31542 -.31542 .94893 -720.97 -626.4)"
+       xlink:href="#path2"
+       id="use164" />
+    <use
+       transform="matrix(.9424 .33443 -.33443 .9424 -684.98 -664.77)"
+       xlink:href="#path2"
+       id="use165" />
+    <use
+       transform="matrix(.93564 .35291 -.35291 .93564 -648.78 -701.58)"
+       xlink:href="#path2"
+       id="use166" />
+    <use
+       transform="matrix(.92868 .37085 -.37085 .92868 -612.45 -736.84)"
+       xlink:href="#path2"
+       id="use167" />
+    <use
+       transform="matrix(.92154 .38826 -.38826 .92154 -576.06 -770.56)"
+       xlink:href="#path2"
+       id="use168" />
+    <use
+       transform="matrix(.91425 .40511 -.40511 .91425 -539.67 -802.74)"
+       xlink:href="#path2"
+       id="use169" />
+    <use
+       transform="matrix(.91425 .40511 -.40511 .91425 -529.92 -798.42)"
+       xlink:href="#path2"
+       id="use170" />
+    <use
+       transform="matrix(.90685 .42143 -.42143 .90685 -493.69 -828.93)"
+       xlink:href="#path2"
+       id="use171" />
+    <use
+       transform="matrix(.89935 .4372 -.4372 .89935 -457.6 -857.95)"
+       xlink:href="#path2"
+       id="use172" />
+    <use
+       transform="matrix(.89178 .45244 -.45244 .89178 -421.69 -885.51)"
+       xlink:href="#path2"
+       id="use173" />
+    <use
+       transform="matrix(.88417 .46714 -.46714 .88417 -386.04 -911.65)"
+       xlink:href="#path2"
+       id="use174" />
+    <use
+       transform="matrix(.87654 .48132 -.48132 .87654 -350.67 -936.4)"
+       xlink:href="#path2"
+       id="use175" />
+    <use
+       transform="matrix(.87654 .48132 -.48132 .87654 -341.32 -931.26)"
+       xlink:href="#path2"
+       id="use176" />
+    <use
+       transform="matrix(.8689 .49498 -.49498 .8689 -306.37 -954.51)"
+       xlink:href="#path2"
+       id="use177" />
+    <use
+       transform="matrix(.86127 .50813 -.50813 .86127 -271.8 -976.44)"
+       xlink:href="#path2"
+       id="use178" />
+    <use
+       transform="matrix(.85368 .52078 -.52078 .85368 -237.63 -997.08)"
+       xlink:href="#path2"
+       id="use179" />
+    <use
+       transform="matrix(.84614 .53295 -.53295 .84614 -203.92 -1016.5)"
+       xlink:href="#path2"
+       id="use180" />
+    <use
+       transform="matrix(.84614 .53295 -.53295 .84614 -194.89 -1010.8)"
+       xlink:href="#path2"
+       id="use181" />
+    <use
+       transform="matrix(.83866 .54464 -.54464 .83866 -161.73 -1028.9)"
+       xlink:href="#path2"
+       id="use182" />
+    <use
+       transform="matrix(.83126 .55587 -.55587 .83126 -129.06 -1045.8)"
+       xlink:href="#path2"
+       id="use183" />
+    <use
+       transform="matrix(.82395 .56665 -.56665 .82395 -96.906 -1061.6)"
+       xlink:href="#path2"
+       id="use184" />
+    <use
+       transform="matrix(.81674 .57699 -.57699 .81674 -65.294 -1076.4)"
+       xlink:href="#path2"
+       id="use185" />
+    <use
+       transform="matrix(.81674 .57699 -.57699 .81674 -56.584 -1070.2)"
+       xlink:href="#path2"
+       id="use186" />
+    <use
+       transform="matrix(.80964 .58691 -.58691 .80964 -25.602 -1083.8)"
+       xlink:href="#path2"
+       id="use187" />
+    <use
+       transform="matrix(.80267 .59642 -.59642 .80267 4.8131 -1096.4)"
+       xlink:href="#path2"
+       id="use188" />
+    <use
+       transform="matrix(.79582 .60552 -.60552 .79582 34.65 -1108.1)"
+       xlink:href="#path2"
+       id="use189" />
+    <use
+       transform="matrix(.78911 .61424 -.61424 .78911 63.898 -1118.8)"
+       xlink:href="#path2"
+       id="use190" />
+    <use
+       transform="matrix(.78911 .61424 -.61424 .78911 72.314 -1112.3)"
+       xlink:href="#path2"
+       id="use191" />
+    <use
+       transform="matrix(.78255 .62259 -.62259 .78255 100.9 -1122)"
+       xlink:href="#path2"
+       id="use192" />
+    <use
+       transform="matrix(.77299 .6344 -.6344 .77299 138.45 -1138.4)"
+       xlink:href="#path2"
+       id="use193" />
+    <use
+       transform="matrix(.77299 .6344 -.6344 .77299 146.69 -1131.6)"
+       xlink:href="#path2"
+       id="use194" />
+    <use
+       transform="matrix(.77299 .6344 -.6344 .77299 154.93 -1124.8)"
+       xlink:href="#path2"
+       id="use195" />
+    <use
+       transform="matrix(.76077 .649 -.649 .76077 200.17 -1146.2)"
+       xlink:href="#path2"
+       id="use196" />
+    <use
+       transform="matrix(.76077 .649 -.649 .76077 208.28 -1139.3)"
+       xlink:href="#path2"
+       id="use197" />
+    <use
+       transform="matrix(.74921 .66231 -.66231 .74921 251.22 -1157.9)"
+       xlink:href="#path2"
+       id="use198" />
+    <use
+       transform="matrix(.74921 .66231 -.66231 .74921 259.21 -1150.8)"
+       xlink:href="#path2"
+       id="use199" />
+    <use
+       transform="matrix(.74921 .66231 -.66231 .74921 267.2 -1143.7)"
+       xlink:href="#path2"
+       id="use200" />
+    <use
+       transform="matrix(.73832 .67444 -.67444 .73832 307.73 -1159.7)"
+       xlink:href="#path2"
+       id="use201" />
+    <use
+       transform="matrix(.73832 .67444 -.67444 .73832 315.6 -1152.5)"
+       xlink:href="#path2"
+       id="use202" />
+    <use
+       transform="matrix(.73832 .67444 -.67444 .73832 323.47 -1145.3)"
+       xlink:href="#path2"
+       id="use203" />
+    <use
+       transform="matrix(.72812 .68544 -.68544 .72812 361.61 -1158.7)"
+       xlink:href="#path2"
+       id="use204" />
+    <use
+       transform="matrix(.72812 .68544 -.68544 .72812 369.37 -1151.4)"
+       xlink:href="#path2"
+       id="use205" />
+    <use
+       transform="matrix(.71861 .6954 -.6954 .71861 405.25 -1162.8)"
+       xlink:href="#path2"
+       id="use206" />
+    <use
+       transform="matrix(.71861 .6954 -.6954 .71861 412.91 -1155.3)"
+       xlink:href="#path2"
+       id="use207" />
+    <use
+       transform="matrix(.71861 .6954 -.6954 .71861 420.57 -1147.9)"
+       xlink:href="#path2"
+       id="use208" />
+    <use
+       transform="matrix(.7098 .7044 -.7044 .7098 454.12 -1157.2)"
+       xlink:href="#path2"
+       id="use209" />
+    <use
+       transform="matrix(.7098 .7044 -.7044 .7098 461.69 -1149.7)"
+       xlink:href="#path2"
+       id="use210" />
+    <use
+       transform="matrix(.7098 .7044 -.7044 .7098 469.26 -1142.2)"
+       xlink:href="#path2"
+       id="use211" />
+    <use
+       transform="matrix(.70169 .71248 -.71248 .70169 500.53 -1149.5)"
+       xlink:href="#path2"
+       id="use212" />
+    <use
+       transform="matrix(.70169 .71248 -.71248 .70169 508.02 -1141.9)"
+       xlink:href="#path2"
+       id="use213" />
+    <use
+       transform="matrix(.69428 .7197 -.7197 .69428 537.13 -1147.5)"
+       xlink:href="#path2"
+       id="use214" />
+    <use
+       transform="matrix(.69428 .7197 -.7197 .69428 544.54 -1139.8)"
+       xlink:href="#path2"
+       id="use215" />
+    <use
+       transform="matrix(.69428 .7197 -.7197 .69428 551.94 -1132.2)"
+       xlink:href="#path2"
+       id="use216" />
+    <use
+       transform="matrix(.68757 .72612 -.72612 .68757 578.86 -1136.2)"
+       xlink:href="#path2"
+       id="use217" />
+    <use
+       transform="matrix(.68757 .72612 -.72612 .68757 586.19 -1128.4)"
+       xlink:href="#path2"
+       id="use218" />
+    <use
+       transform="matrix(.68757 .72612 -.72612 .68757 593.52 -1120.7)"
+       xlink:href="#path2"
+       id="use219" />
+    <use
+       transform="matrix(.68154 .73177 -.73177 .68154 618.29 -1123.2)"
+       xlink:href="#path2"
+       id="use220" />
+    <use
+       transform="matrix(.68154 .73177 -.73177 .68154 625.56 -1115.4)"
+       xlink:href="#path2"
+       id="use221" />
+    <use
+       transform="matrix(.68154 .73177 -.73177 .68154 632.83 -1107.6)"
+       xlink:href="#path2"
+       id="use222" />
+    <use
+       transform="matrix(.67388 .73883 -.73883 .67388 662.21 -1112.4)"
+       xlink:href="#path2"
+       id="use223" />
+    <use
+       transform="matrix(.67388 .73883 -.73883 .67388 669.39 -1104.6)"
+       xlink:href="#path2"
+       id="use224" />
+    <use
+       transform="matrix(.67388 .73883 -.73883 .67388 676.58 -1096.7)"
+       xlink:href="#path2"
+       id="use225" />
+    <use
+       transform="matrix(.67388 .73883 -.73883 .67388 683.77 -1088.8)"
+       xlink:href="#path2"
+       id="use226" />
+    <use
+       transform="matrix(.67388 .73883 -.73883 .67388 690.95 -1080.9)"
+       xlink:href="#path2"
+       id="use227" />
+    <use
+       transform="matrix(.67388 .73883 -.73883 .67388 698.14 -1073)"
+       xlink:href="#path2"
+       id="use228" />
+    <use
+       transform="matrix(.66592 .74602 -.74602 .66592 728.16 -1078)"
+       xlink:href="#path2"
+       id="use229" />
+    <use
+       transform="matrix(.66592 .74602 -.74602 .66592 735.26 -1070)"
+       xlink:href="#path2"
+       id="use230" />
+    <use
+       transform="matrix(.66592 .74602 -.74602 .66592 742.37 -1062)"
+       xlink:href="#path2"
+       id="use231" />
+    <use
+       transform="matrix(.66592 .74602 -.74602 .66592 749.47 -1054.1)"
+       xlink:href="#path2"
+       id="use232" />
+    <use
+       transform="matrix(.66592 .74602 -.74602 .66592 756.57 -1046.1)"
+       xlink:href="#path2"
+       id="use233" />
+    <use
+       transform="matrix(.65932 .75185 -.75185 .65932 782.6 -1048.5)"
+       xlink:href="#path2"
+       id="use234" />
+    <use
+       transform="matrix(.65932 .75185 -.75185 .65932 789.63 -1040.5)"
+       xlink:href="#path2"
+       id="use235" />
+    <use
+       transform="matrix(.65932 .75185 -.75185 .65932 796.66 -1032.5)"
+       xlink:href="#path2"
+       id="use236" />
+    <use
+       transform="matrix(.65932 .75185 -.75185 .65932 803.69 -1024.5)"
+       xlink:href="#path2"
+       id="use237" />
+    <use
+       transform="matrix(.65932 .75185 -.75185 .65932 810.72 -1016.5)"
+       xlink:href="#path2"
+       id="use238" />
+    <use
+       transform="matrix(.65932 .75185 -.75185 .65932 817.75 -1008.4)"
+       xlink:href="#path2"
+       id="use239" />
+    <use
+       transform="matrix(.65932 .75185 -.75185 .65932 824.78 -1000.4)"
+       xlink:href="#path2"
+       id="use240" />
+    <use
+       transform="matrix(.65932 .75185 -.75185 .65932 831.81 -992.42)"
+       xlink:href="#path2"
+       id="use241" />
+    <use
+       transform="matrix(.65932 .75185 -.75185 .65932 838.84 -984.4)"
+       xlink:href="#path2"
+       id="use242" />
+    <use
+       transform="matrix(.65932 .75185 -.75185 .65932 845.88 -976.38)"
+       xlink:href="#path2"
+       id="use243" />
+    <use
+       transform="matrix(.65932 .75185 -.75185 .65932 852.91 -968.36)"
+       xlink:href="#path2"
+       id="use244" />
+    <use
+       transform="matrix(.65932 .75185 -.75185 .65932 859.94 -960.35)"
+       xlink:href="#path2"
+       id="use245" />
+  </g>
+  <g
+     transform="matrix(1.3626 0 0 .94432 153.03 -852.41)"
+     id="g411">
+    <use
+       transform="matrix(.96587 -.25902 .25902 .96587 -2729.7 919.57)"
+       xlink:href="#path2"
+       id="use246" />
+    <use
+       transform="matrix(.96587 -.25902 .25902 .96587 -2719.4 916.81)"
+       xlink:href="#path2"
+       id="use247" />
+    <use
+       transform="matrix(.96587 -.25902 .25902 .96587 -2709.1 914.05)"
+       xlink:href="#path2"
+       id="use248" />
+    <use
+       transform="matrix(.96587 -.25902 .25902 .96587 -2698.8 911.28)"
+       xlink:href="#path2"
+       id="use249" />
+    <use
+       transform="matrix(.96587 -.25902 .25902 .96587 -2688.5 908.52)"
+       xlink:href="#path2"
+       id="use250" />
+    <use
+       transform="matrix(.96587 -.25902 .25902 .96587 -2678.2 905.76)"
+       xlink:href="#path2"
+       id="use251" />
+    <use
+       transform="matrix(.96587 -.25902 .25902 .96587 -2667.9 903)"
+       xlink:href="#path2"
+       id="use252" />
+    <use
+       transform="matrix(.96842 -.2493 .2493 .96842 -2658.4 875.7)"
+       xlink:href="#path2"
+       id="use253" />
+    <use
+       transform="matrix(.96842 -.2493 .2493 .96842 -2648.1 873.04)"
+       xlink:href="#path2"
+       id="use254" />
+    <use
+       transform="matrix(.96842 -.2493 .2493 .96842 -2637.8 870.38)"
+       xlink:href="#path2"
+       id="use255" />
+    <use
+       transform="matrix(.97138 -.23751 .23751 .97138 -2628.1 837.96)"
+       xlink:href="#path2"
+       id="use256" />
+    <use
+       transform="matrix(.97138 -.23751 .23751 .97138 -2617.7 835.43)"
+       xlink:href="#path2"
+       id="use257" />
+    <use
+       transform="matrix(.97138 -.23751 .23751 .97138 -2607.4 832.9)"
+       xlink:href="#path2"
+       id="use258" />
+    <use
+       transform="matrix(.97138 -.23751 .23751 .97138 -2597 830.36)"
+       xlink:href="#path2"
+       id="use259" />
+    <use
+       transform="matrix(.9741 -.22608 .22608 .9741 -2587 799.12)"
+       xlink:href="#path2"
+       id="use260" />
+    <use
+       transform="matrix(.9741 -.22608 .22608 .9741 -2576.6 796.7)"
+       xlink:href="#path2"
+       id="use261" />
+    <use
+       transform="matrix(.97616 -.21705 .21705 .97616 -2566.2 771.68)"
+       xlink:href="#path2"
+       id="use262" />
+    <use
+       transform="matrix(.97835 -.20694 .20694 .97835 -2555.5 744)"
+       xlink:href="#path2"
+       id="use263" />
+    <use
+       transform="matrix(.97835 -.20694 .20694 .97835 -2545.1 741.79)"
+       xlink:href="#path2"
+       id="use264" />
+    <use
+       transform="matrix(.98066 -.1957 .1957 .98066 -2534.1 711.52)"
+       xlink:href="#path2"
+       id="use265" />
+    <use
+       transform="matrix(.98066 -.1957 .1957 .98066 -2523.6 709.43)"
+       xlink:href="#path2"
+       id="use266" />
+    <use
+       transform="matrix(.98304 -.18333 .18333 .98304 -2512.1 676.55)"
+       xlink:href="#path2"
+       id="use267" />
+    <use
+       transform="matrix(.98304 -.18333 .18333 .98304 -2501.6 674.59)"
+       xlink:href="#path2"
+       id="use268" />
+    <use
+       transform="matrix(.98547 -.16979 .16979 .98547 -2489.6 639.07)"
+       xlink:href="#path2"
+       id="use269" />
+    <use
+       transform="matrix(.98789 -.15506 .15506 .98789 -2476.9 600.74)"
+       xlink:href="#path2"
+       id="use270" />
+    <use
+       transform="matrix(.98789 -.15506 .15506 .98789 -2466.3 599.09)"
+       xlink:href="#path2"
+       id="use271" />
+    <use
+       transform="matrix(.99026 -.13912 .13912 .99026 -2452.8 558.07)"
+       xlink:href="#path2"
+       id="use272" />
+    <use
+       transform="matrix(.99026 -.13912 .13912 .99026 -2442.2 556.59)"
+       xlink:href="#path2"
+       id="use273" />
+    <use
+       transform="matrix(.99252 -.12193 .12193 .99252 -2427.8 512.89)"
+       xlink:href="#path2"
+       id="use274" />
+    <use
+       transform="matrix(.99252 -.12193 .12193 .99252 -2417.2 511.59)"
+       xlink:href="#path2"
+       id="use275" />
+    <use
+       transform="matrix(.99462 -.10348 .10348 .99462 -2401.6 465.22)"
+       xlink:href="#path2"
+       id="use276" />
+    <use
+       transform="matrix(.99647 -.083754 .083754 .99647 -2384.7 415.98)"
+       xlink:href="#path2"
+       id="use277" />
+    <use
+       transform="matrix(.99647 -.083754 .083754 .99647 -2374 415.09)"
+       xlink:href="#path2"
+       id="use278" />
+    <use
+       transform="matrix(.99801 -.062742 .062742 .99801 -2355.7 363.22)"
+       xlink:href="#path2"
+       id="use279" />
+    <use
+       transform="matrix(.99801 -.062742 .062742 .99801 -2345 362.55)"
+       xlink:href="#path2"
+       id="use280" />
+    <use
+       transform="matrix(.99916 -.04044 .04044 .99916 -2325 308.1)"
+       xlink:href="#path2"
+       id="use281" />
+    <use
+       transform="matrix(.99916 -.04044 .04044 .99916 -2314.4 307.67)"
+       xlink:href="#path2"
+       id="use282" />
+    <use
+       transform="matrix(.99983 -.016852 .016852 .99983 -2292.5 250.74)"
+       xlink:href="#path2"
+       id="use283" />
+    <use
+       transform="matrix(.99994 .008004 -.008004 .99994 -2268.6 191.16)"
+       xlink:href="#path2"
+       id="use284" />
+    <use
+       transform="matrix(.99994 .008004 -.008004 .99994 -2258 191.24)"
+       xlink:href="#path2"
+       id="use285" />
+    <use
+       transform="matrix(.99962 .027428 -.027428 .99962 -2236 145.19)"
+       xlink:href="#path2"
+       id="use286" />
+    <use
+       transform="matrix(.99916 .04078 -.04078 .99916 -2217 113.92)"
+       xlink:href="#path2"
+       id="use287" />
+    <use
+       transform="matrix(.99765 .06837 -.06837 .99765 -2187.8 49.357)"
+       xlink:href="#path2"
+       id="use288" />
+    <use
+       transform="matrix(.99658 .082591 -.082591 .99658 -2166.8 16.705)"
+       xlink:href="#path2"
+       id="use289" />
+    <use
+       transform="matrix(.99527 .097086 -.097086 .99527 -2145.2 -16.297)"
+       xlink:href="#path2"
+       id="use290" />
+    <use
+       transform="matrix(.99372 .11184 -.11184 .99372 -2122.9 -49.614)"
+       xlink:href="#path2"
+       id="use291" />
+    <use
+       transform="matrix(.99191 .12685 -.12685 .99191 -2099.9 -83.211)"
+       xlink:href="#path2"
+       id="use292" />
+    <use
+       transform="matrix(.98984 .1421 -.1421 .98984 -2076.1 -117.05)"
+       xlink:href="#path2"
+       id="use293" />
+    <use
+       transform="matrix(.98487 .17325 -.17325 .98487 -2036.8 -187.12)"
+       xlink:href="#path2"
+       id="use294" />
+    <use
+       transform="matrix(.98194 .18913 -.18913 .98194 -2010.6 -221.6)"
+       xlink:href="#path2"
+       id="use295" />
+    <use
+       transform="matrix(.97871 .20519 -.20519 .97871 -1983.8 -256.14)"
+       xlink:href="#path2"
+       id="use296" />
+    <use
+       transform="matrix(.97517 .22141 -.22141 .97517 -1956.1 -290.69)"
+       xlink:href="#path2"
+       id="use297" />
+    <use
+       transform="matrix(.97131 .23777 -.23777 .97131 -1927.6 -325.22)"
+       xlink:href="#path2"
+       id="use298" />
+    <use
+       transform="matrix(.96261 .27084 -.27084 .96261 -1878.6 -396.86)"
+       xlink:href="#path2"
+       id="use299" />
+    <use
+       transform="matrix(.95776 .28751 -.28751 .95776 -1847.7 -431.15)"
+       xlink:href="#path2"
+       id="use300" />
+    <use
+       transform="matrix(.95262 .30412 -.30412 .95262 -1816.2 -464.93)"
+       xlink:href="#path2"
+       id="use301" />
+    <use
+       transform="matrix(.94735 .32016 -.32016 .94735 -1784.7 -497.1)"
+       xlink:href="#path2"
+       id="use302" />
+    <use
+       transform="matrix(.94202 .33553 -.33553 .94202 -1753.6 -527.44)"
+       xlink:href="#path2"
+       id="use303" />
+    <use
+       transform="matrix(.93665 .35023 -.35023 .93665 -1722.8 -555.98)"
+       xlink:href="#path2"
+       id="use304" />
+    <use
+       transform="matrix(.93128 .36429 -.36429 .93128 -1692.3 -582.8)"
+       xlink:href="#path2"
+       id="use305" />
+    <use
+       transform="matrix(.9206 .39049 -.39049 .9206 -1642.7 -635.61)"
+       xlink:href="#path2"
+       id="use306" />
+    <use
+       transform="matrix(.91534 .40267 -.40267 .91534 -1613.7 -657.68)"
+       xlink:href="#path2"
+       id="use307" />
+    <use
+       transform="matrix(.9076 .41978 -.41978 .9076 -1576.2 -690.02)"
+       xlink:href="#path2"
+       id="use308" />
+    <use
+       transform="matrix(.9076 .41978 -.41978 .9076 -1566.5 -685.54)"
+       xlink:href="#path2"
+       id="use309" />
+    <use
+       transform="matrix(.89764 .44069 -.44069 .89764 -1521.7 -725.53)"
+       xlink:href="#path2"
+       id="use310" />
+    <use
+       transform="matrix(.89764 .44069 -.44069 .89764 -1512.2 -720.83)"
+       xlink:href="#path2"
+       id="use311" />
+    <use
+       transform="matrix(.88818 .45945 -.45945 .88818 -1469.9 -755.7)"
+       xlink:href="#path2"
+       id="use312" />
+    <use
+       transform="matrix(.88818 .45945 -.45945 .88818 -1460.4 -750.8)"
+       xlink:href="#path2"
+       id="use313" />
+    <use
+       transform="matrix(.87933 .47618 -.47618 .87933 -1420.8 -780.94)"
+       xlink:href="#path2"
+       id="use314" />
+    <use
+       transform="matrix(.87114 .49101 -.49101 .87114 -1383.8 -806.84)"
+       xlink:href="#path2"
+       id="use315" />
+    <use
+       transform="matrix(.87114 .49101 -.49101 .87114 -1374.5 -801.6)"
+       xlink:href="#path2"
+       id="use316" />
+    <use
+       transform="matrix(.86368 .50403 -.50403 .86368 -1340.3 -823.41)"
+       xlink:href="#path2"
+       id="use317" />
+    <use
+       transform="matrix(.86368 .50403 -.50403 .86368 -1331.1 -818.03)"
+       xlink:href="#path2"
+       id="use318" />
+    <use
+       transform="matrix(.85697 .51535 -.51535 .85697 -1299.8 -836.02)"
+       xlink:href="#path2"
+       id="use319" />
+    <use
+       transform="matrix(.85697 .51535 -.51535 .85697 -1290.6 -830.52)"
+       xlink:href="#path2"
+       id="use320" />
+    <use
+       transform="matrix(.85107 .52504 -.52504 .85107 -1262.2 -844.94)"
+       xlink:href="#path2"
+       id="use321" />
+    <use
+       transform="matrix(.85107 .52504 -.52504 .85107 -1253.1 -839.34)"
+       xlink:href="#path2"
+       id="use322" />
+    <use
+       transform="matrix(.84387 .53652 -.53652 .84387 -1220.6 -857.21)"
+       xlink:href="#path2"
+       id="use323" />
+    <use
+       transform="matrix(.84387 .53652 -.53652 .84387 -1211.6 -851.48)"
+       xlink:href="#path2"
+       id="use324" />
+    <use
+       transform="matrix(.84387 .53652 -.53652 .84387 -1202.6 -845.76)"
+       xlink:href="#path2"
+       id="use325" />
+    <use
+       transform="matrix(.84387 .53652 -.53652 .84387 -1193.6 -840.04)"
+       xlink:href="#path2"
+       id="use326" />
+    <use
+       transform="matrix(.83713 .547 -.547 .83713 -1162.9 -855.59)"
+       xlink:href="#path2"
+       id="use327" />
+    <use
+       transform="matrix(.83713 .547 -.547 .83713 -1154 -849.76)"
+       xlink:href="#path2"
+       id="use328" />
+    <use
+       transform="matrix(.83713 .547 -.547 .83713 -1145 -843.92)"
+       xlink:href="#path2"
+       id="use329" />
+    <use
+       transform="matrix(.83406 .55167 -.55167 .83406 -1126.2 -847.59)"
+       xlink:href="#path2"
+       id="use330" />
+    <use
+       transform="matrix(.83406 .55167 -.55167 .83406 -1117.3 -841.7)"
+       xlink:href="#path2"
+       id="use331" />
+    <use
+       transform="matrix(.83406 .55167 -.55167 .83406 -1108.4 -835.82)"
+       xlink:href="#path2"
+       id="use332" />
+    <use
+       transform="matrix(.83406 .55167 -.55167 .83406 -1099.6 -829.94)"
+       xlink:href="#path2"
+       id="use333" />
+    <use
+       transform="matrix(.83406 .55167 -.55167 .83406 -1090.7 -824.06)"
+       xlink:href="#path2"
+       id="use334" />
+    <use
+       transform="matrix(.83406 .55167 -.55167 .83406 -1081.8 -818.17)"
+       xlink:href="#path2"
+       id="use335" />
+    <use
+       transform="matrix(.83406 .55167 -.55167 .83406 -1072.9 -812.29)"
+       xlink:href="#path2"
+       id="use336" />
+    <use
+       transform="matrix(.83406 .55167 -.55167 .83406 -1064 -806.41)"
+       xlink:href="#path2"
+       id="use337" />
+    <use
+       transform="matrix(.83817 .5454 -.5454 .83817 -1068.3 -787.81)"
+       xlink:href="#path2"
+       id="use338" />
+    <use
+       transform="matrix(.83817 .5454 -.5454 .83817 -1059.4 -781.99)"
+       xlink:href="#path2"
+       id="use339" />
+    <use
+       transform="matrix(.83817 .5454 -.5454 .83817 -1050.4 -776.17)"
+       xlink:href="#path2"
+       id="use340" />
+    <use
+       transform="matrix(.83817 .5454 -.5454 .83817 -1041.5 -770.36)"
+       xlink:href="#path2"
+       id="use341" />
+    <use
+       transform="matrix(.8434 .53728 -.53728 .8434 -1049.4 -748.05)"
+       xlink:href="#path2"
+       id="use342" />
+    <use
+       transform="matrix(.84809 .52984 -.52984 .84809 -1055.6 -727.1)"
+       xlink:href="#path2"
+       id="use343" />
+    <use
+       transform="matrix(.84809 .52984 -.52984 .84809 -1046.6 -721.45)"
+       xlink:href="#path2"
+       id="use344" />
+    <use
+       transform="matrix(.85368 .52079 -.52079 .85368 -1055.8 -697.22)"
+       xlink:href="#path2"
+       id="use345" />
+    <use
+       transform="matrix(.85368 .52079 -.52079 .85368 -1046.7 -691.67)"
+       xlink:href="#path2"
+       id="use346" />
+    <use
+       transform="matrix(.86014 .51004 -.51004 .86014 -1058.8 -663.97)"
+       xlink:href="#path2"
+       id="use347" />
+    <use
+       transform="matrix(.86014 .51004 -.51004 .86014 -1049.7 -658.53)"
+       xlink:href="#path2"
+       id="use348" />
+    <use
+       transform="matrix(.86747 .49747 -.49747 .86747 -1064.8 -627.11)"
+       xlink:href="#path2"
+       id="use349" />
+    <use
+       transform="matrix(.86747 .49747 -.49747 .86747 -1055.5 -621.8)"
+       xlink:href="#path2"
+       id="use350" />
+    <use
+       transform="matrix(.87563 .48296 -.48296 .87563 -1073.6 -586.39)"
+       xlink:href="#path2"
+       id="use351" />
+    <use
+       transform="matrix(.88456 .46638 -.46638 .88456 -1094.6 -546.48)"
+       xlink:href="#path2"
+       id="use352" />
+    <use
+       transform="matrix(.88456 .46638 -.46638 .88456 -1085.2 -541.5)"
+       xlink:href="#path2"
+       id="use353" />
+    <use
+       transform="matrix(.89422 .44758 -.44758 .89422 -1109 -496.89)"
+       xlink:href="#path2"
+       id="use354" />
+    <use
+       transform="matrix(.89422 .44758 -.44758 .89422 -1099.4 -492.11)"
+       xlink:href="#path2"
+       id="use355" />
+    <use
+       transform="matrix(.90452 .42638 -.42638 .90452 -1126 -442.4)"
+       xlink:href="#path2"
+       id="use356" />
+    <use
+       transform="matrix(.90452 .42638 -.42638 .90452 -1116.3 -437.85)"
+       xlink:href="#path2"
+       id="use357" />
+    <use
+       transform="matrix(.91811 .39631 -.39631 .91811 -1155.4 -369)"
+       xlink:href="#path2"
+       id="use358" />
+    <use
+       transform="matrix(.92366 .38318 -.38318 .92366 -1166 -336.46)"
+       xlink:href="#path2"
+       id="use359" />
+    <use
+       transform="matrix(.92902 .37 -.37 .92902 -1176.1 -303.81)"
+       xlink:href="#path2"
+       id="use360" />
+    <use
+       transform="matrix(.93414 .35688 -.35688 .93414 -1185.5 -271.38)"
+       xlink:href="#path2"
+       id="use361" />
+    <use
+       transform="matrix(.93902 .34385 -.34385 .93902 -1194.2 -239.17)"
+       xlink:href="#path2"
+       id="use362" />
+    <use
+       transform="matrix(.94806 .31806 -.31806 .94806 -1219.8 -178.92)"
+       xlink:href="#path2"
+       id="use363" />
+    <use
+       transform="matrix(.95421 .29903 -.29903 .95421 -1234.6 -133.46)"
+       xlink:href="#path2"
+       id="use364" />
+    <use
+       transform="matrix(.95421 .29903 -.29903 .95421 -1224.5 -130.27)"
+       xlink:href="#path2"
+       id="use365" />
+    <use
+       transform="matrix(.96169 .27404 -.27404 .96169 -1245.7 -71.602)"
+       xlink:href="#path2"
+       id="use366" />
+    <use
+       transform="matrix(.96833 .24958 -.24958 .96833 -1264.6 -13.864)"
+       xlink:href="#path2"
+       id="use367" />
+    <use
+       transform="matrix(.96833 .24958 -.24958 .96833 -1254.2 -11.203)"
+       xlink:href="#path2"
+       id="use368" />
+    <use
+       transform="matrix(.97417 .22571 -.22571 .97417 -1270.8 45.199)"
+       xlink:href="#path2"
+       id="use369" />
+    <use
+       transform="matrix(.97927 .20246 -.20246 .97927 -1285.2 100.39)"
+       xlink:href="#path2"
+       id="use370" />
+    <use
+       transform="matrix(.97927 .20246 -.20246 .97927 -1274.7 102.55)"
+       xlink:href="#path2"
+       id="use371" />
+    <use
+       transform="matrix(.98367 .17988 -.17988 .98367 -1287 156.17)"
+       xlink:href="#path2"
+       id="use372" />
+    <use
+       transform="matrix(.98742 .158 -.158 .98742 -1297.4 208.36)"
+       xlink:href="#path2"
+       id="use373" />
+    <use
+       transform="matrix(.98742 .158 -.158 .98742 -1286.9 210.05)"
+       xlink:href="#path2"
+       id="use374" />
+    <use
+       transform="matrix(.99058 .13683 -.13683 .99058 -1295.4 260.48)"
+       xlink:href="#path2"
+       id="use375" />
+    <use
+       transform="matrix(.99318 .11641 -.11641 .99318 -1302.1 309.32)"
+       xlink:href="#path2"
+       id="use376" />
+    <use
+       transform="matrix(.99318 .11641 -.11641 .99318 -1291.5 310.56)"
+       xlink:href="#path2"
+       id="use377" />
+    <use
+       transform="matrix(.99529 .096758 -.096758 .99529 -1296.6 357.51)"
+       xlink:href="#path2"
+       id="use378" />
+    <use
+       transform="matrix(.99695 .077881 -.077881 .99695 -1300.2 402.73)"
+       xlink:href="#path2"
+       id="use379" />
+    <use
+       transform="matrix(.99695 .077881 -.077881 .99695 -1289.6 403.56)"
+       xlink:href="#path2"
+       id="use380" />
+    <use
+       transform="matrix(.9982 .059795 -.059795 .9982 -1291.7 446.79)"
+       xlink:href="#path2"
+       id="use381" />
+    <use
+       transform="matrix(.99908 .042513 -.042513 .99908 -1292.6 488.18)"
+       xlink:href="#path2"
+       id="use382" />
+    <use
+       transform="matrix(.99965 .026044 -.026044 .99965 -1292.2 527.69)"
+       xlink:href="#path2"
+       id="use383" />
+    <use
+       transform="matrix(.99965 .026044 -.026044 .99965 -1281.6 527.97)"
+       xlink:href="#path2"
+       id="use384" />
+    <use
+       transform="matrix(.99994 .0104 -.0104 .99994 -1280.1 565.37)"
+       xlink:href="#path2"
+       id="use385" />
+    <use
+       transform="matrix(.99998 -.004409 .004409 .99998 -1277.6 600.79)"
+       xlink:href="#path2"
+       id="use386" />
+    <use
+       transform="matrix(.99982 -.018369 .018369 .99982 -1274.1 634.18)"
+       xlink:href="#path2"
+       id="use387" />
+    <use
+       transform="matrix(.99982 -.018369 .018369 .99982 -1263.4 633.99)"
+       xlink:href="#path2"
+       id="use388" />
+    <use
+       transform="matrix(.9995 -.031464 .031464 .9995 -1259.1 665.15)"
+       xlink:href="#path2"
+       id="use389" />
+    <use
+       transform="matrix(.99904 -.043675 .043675 .99904 -1254 694.18)"
+       xlink:href="#path2"
+       id="use390" />
+    <use
+       transform="matrix(.99818 -.06009 .06009 .99818 -1250.2 733.35)"
+       xlink:href="#path2"
+       id="use391" />
+    <use
+       transform="matrix(.99818 -.06009 .06009 .99818 -1239.5 732.71)"
+       xlink:href="#path2"
+       id="use392" />
+    <use
+       transform="matrix(.99688 -.078837 .078837 .99688 -1235.9 777.57)"
+       xlink:href="#path2"
+       id="use393" />
+    <use
+       transform="matrix(.99688 -.078837 .078837 .99688 -1225.3 776.73)"
+       xlink:href="#path2"
+       id="use394" />
+    <use
+       transform="matrix(.99688 -.078837 .078837 .99688 -1214.7 775.89)"
+       xlink:href="#path2"
+       id="use395" />
+    <use
+       transform="matrix(.99563 -.093324 .093324 .99563 -1208.9 810.22)"
+       xlink:href="#path2"
+       id="use396" />
+    <use
+       transform="matrix(.99563 -.093324 .093324 .99563 -1198.3 809.22)"
+       xlink:href="#path2"
+       id="use397" />
+    <use
+       transform="matrix(.99451 -.10456 .10456 .99451 -1191.2 835.6)"
+       xlink:href="#path2"
+       id="use398" />
+    <use
+       transform="matrix(.99451 -.10456 .10456 .99451 -1180.5 834.49)"
+       xlink:href="#path2"
+       id="use399" />
+    <use
+       transform="matrix(.99451 -.10456 .10456 .99451 -1169.9 833.37)"
+       xlink:href="#path2"
+       id="use400" />
+    <use
+       transform="matrix(.99486 -.10124 .10124 .99486 -1158.4 824.12)"
+       xlink:href="#path2"
+       id="use401" />
+    <use
+       transform="matrix(.99486 -.10124 .10124 .99486 -1147.7 823.04)"
+       xlink:href="#path2"
+       id="use402" />
+    <use
+       transform="matrix(.99486 -.10124 .10124 .99486 -1137.1 821.96)"
+       xlink:href="#path2"
+       id="use403" />
+    <use
+       transform="matrix(.99597 -.089627 .089627 .99597 -1122.9 792.56)"
+       xlink:href="#path2"
+       id="use404" />
+    <use
+       transform="matrix(.99597 -.089627 .089627 .99597 -1112.2 791.61)"
+       xlink:href="#path2"
+       id="use405" />
+    <use
+       transform="matrix(.99597 -.089627 .089627 .99597 -1101.6 790.65)"
+       xlink:href="#path2"
+       id="use406" />
+    <use
+       transform="matrix(.9973 -.073169 .073169 .9973 -1085.3 749.8)"
+       xlink:href="#path2"
+       id="use407" />
+    <use
+       transform="matrix(.99875 -.049343 .049343 .99875 -1065.1 691.32)"
+       xlink:href="#path2"
+       id="use408" />
+    <use
+       transform="matrix(.99875 -.049343 .049343 .99875 -1054.5 690.8)"
+       xlink:href="#path2"
+       id="use409" />
+    <use
+       transform="matrix(.99997 -.0034135 .0034135 .99997 -1021.8 580.11)"
+       xlink:href="#path2"
+       id="use410" />
+    <use
+       transform="matrix(.99683 .079052 -.079052 .99683 -958.92 385.06)"
+       xlink:href="#path2"
+       id="use411" />
+  </g>
+</svg>

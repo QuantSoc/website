@@ -1,33 +1,45 @@
 @import '../../../styles/constants.less';
 
-.candlestick-container {
-  width: 100vw; /* Full screen width */
-  height: 700px; 
-  overflow: hidden; /* Hide overflow */
-  position: relative;
+.background-container {
+
+  width: auto;
+  height: 100dvh;
+  background-image: url(../../../assets/quantsoc-graphics/new-hero-optimised.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  // background-attachment: fixed; /* Add this property for the parallax effect */
+  
 }
 
-.candlestick-scroller {
-  overflow: visible;
-  position:absolute;
-  top:0px; 
-  left:0px; 
-  animation: scrollRight 100s linear infinite;
+/* Assuming your logo component has a class name "quantsoc-logo" */
+.quantsoc-logo {
+  transform: scale(5); /* No scaling is needed if you set width and height to 25% */
 }
 
-.candlestick-scroller img {
-  // width: 100vw; /* Each image spans the full screen width */
-  height: auto; /* Maintain aspect ratio */
-  overflow: hidden; /* Hide overflow */
-  white-space: nowrap;
-  margin: 0 0.5em 
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-@keyframes scrollRight {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50vw);
-  }
+.large-text {
+  font-size: 6vw; /* Scales text to 50% of the screen width */
+  font-family: Poppins, sans-serif;
+  font-weight: bold;
+  color: white;
+  opacity: 0;
+  transition: opacity 3s ease-in-out;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.large-text.fade-in {
+  opacity: 1;
 }

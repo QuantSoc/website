@@ -2,7 +2,9 @@ import mockTradingScreenshot from 'assets/quantsoc-graphics/mock-trading-screens
 import ResourceOutline from 'components/ResourceOutline';
 import HeroSection from './HeroSection/HeroSection';
 import WorkshopSection from './WorkshopSection/WorkshopSection';
-import OpportunitiesSection from './OpportunitiesSection/OpportunitiesSection';
+import JobListings from './JobListingsSection/JobListings';
+
+
 
 const ResourcesPage = () => {
   return (
@@ -26,7 +28,8 @@ const ResourcesPage = () => {
         <p>Learn, compete and have fun in QuantSoc&apos;s Mock Trading Game!</p>
       </ResourceOutline>
       <WorkshopSection anchorTag="workshops" />
-      <OpportunitiesSection anchorTag="opportunities" />
+
+      <JobListings />
     </div>
   );
 };
