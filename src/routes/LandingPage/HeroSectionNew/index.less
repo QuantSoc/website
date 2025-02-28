@@ -11,16 +11,14 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  flex-direction: column;
-  // background-attachment: fixed; /* Add this property for the parallax effect */
-  
+  background-position-y: bottom;
+  // background-attachment: fixed; /* Add this property for the parallax effect */ 
 }
 
 /* Assuming your logo component has a class name "quantsoc-logo" */
 .quantsoc-logo {
   transform: scale(5); /* No scaling is needed if you set width and height to 25% */
 }
-
 
 .hero-content {
   display: flex;
@@ -42,4 +40,47 @@
 
 .large-text.fade-in {
   opacity: 1;
+}
+
+.button-container {
+  display: flex;
+  padding-top: 40%;
+  column-gap: 10%;
+}
+
+.hero-button {
+  width: 300px;
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: solid white 3px;
+  color: white;
+
+  font-size: 20%;
+  background-color: transparent;
+  font-family:  Poppins, sans-serif;
+  filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.2));
+
+
+  &:hover {
+    color: white;
+    border: solid @dark-purple 3px;
+    background-color: @dark-purple;
+
+  }
+
+}
+
+#join-button {
+  // background-color: @mid-purple;
+  border: solid @mid-purple 3px;
+  color: white;
+  background-color: @mid-purple;
+
+
+  &:hover {
+    color: white;
+    border: solid @dark-purple 3px;
+    background-color: @dark-purple;
+  }
+
 }

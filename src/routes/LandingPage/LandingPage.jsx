@@ -4,11 +4,13 @@ import EventsSection from './EventsSection/EventsSection';
 import ResourcesSection from './ResourcesSection/ResourcesSection';
 import HeroSectionNew from './HeroSectionNew/HeroSectionNew';
 import SponsorshipSection from '../../components/SponsorshipSection';
+import AboutUsPage from 'routes/AboutUsPage';
 
 const LandingPage = () => {
   return (
     <div className="page">
       <HeroSectionNew />
+      <AboutUsPage />
       <ResourceOutline
         outlineTitle="Mock Trading Game"
         index={0}

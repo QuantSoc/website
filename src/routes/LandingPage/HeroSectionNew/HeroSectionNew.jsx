@@ -22,6 +22,11 @@ const HeroSectionNew = () => {
           <div class="quantsoc-logo">
           <QuantSocLogo />
           </div>
+          <div className='button-container'>
+            <button className='hero-button'>Learn More</button>
+            <button className='hero-button' id='join-button'>Join Us</button>
+
+          </div>
         </div>
 
       </div>

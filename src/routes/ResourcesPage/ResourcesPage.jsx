@@ -28,8 +28,9 @@ const ResourcesPage = () => {
         <p>Learn, compete and have fun in QuantSoc&apos;s Mock Trading Game!</p>
       </ResourceOutline>
       <WorkshopSection anchorTag="workshops" />
-
-      <JobListings />
+      {/* <h1 className="events-section__header">Job Opportunities</h1>
+      <JobListings /> */}
+      
     </div>
   );
 };

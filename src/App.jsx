@@ -28,7 +28,6 @@ const App = () => {
           {/* Public Pages */}
           <Route path="*" element={<NotFoundPage />} />
           <Route path="/" element={<LandingPage />} />
-          <Route path="/about" element={<AboutUsPage />} />
           <Route path="/events" element={<EventsPage />} />
           <Route path="/articles" element={<ArticlesPage />} />
           <Route path="/resources" element={<ResourcesPage />} />
