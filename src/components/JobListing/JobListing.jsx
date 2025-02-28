@@ -7,7 +7,7 @@ const JobListing = ({ job }) => {
   // const Date = job.applicationsClose.toDate()
 
   return (
-    <div>
+    <div className='job-listing'>
       <br />
       <h3>{job.title}</h3>
       <p>

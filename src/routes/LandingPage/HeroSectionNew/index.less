@@ -1,0 +1,97 @@
+@import '../../../styles/constants.less';
+
+.background-container {
+
+  height: 100dvh;
+  background-image: url(../../../assets/quantsoc-graphics/new-hero-optimised.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  background-position-y: bottom;
+  // background-attachment: fixed;
+}
+
+.quantsoc-title-container {
+  display: flex;
+  column-gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center; /* Ensures horizontal alignment */
+}
+
+#landing-title {
+  font-size: 8vw; /* Scales text to 10% of the screen width */
+  font-family: Poppins, sans-serif;
+  font-weight: bold;
+  color: white;
+  text-align: center; /* Ensures the text is centered */
+  min-width: 600px;
+}
+
+#quantsoc-logo {
+  width: 8vw;
+  min-width: 100px;
+}
+
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+.fadein-elements {
+  opacity: 0;
+  transition: opacity 3s ease-in-out;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.fadein-elements.fade-in {
+  opacity: 1;
+}
+
+.button-container {
+  margin-top: 0vw;
+  display: flex;
+  column-gap: 10%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.hero-button {
+  margin-top: 1.5rem;
+  width: 300px;
+  padding: 13px 30px;
+  border-radius: 10px;
+  border: solid white 3px;
+  color: white;
+  font-size: 1.5rem;
+  background-color: transparent;
+  font-family: Poppins, sans-serif;
+  filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.2));
+  
+  transition: background-color 200ms linear, color 200ms linear, border 200ms linear;
+
+  &:hover {
+    color: white;
+    border: solid @dark-purple 3px;
+    background-color: @dark-purple;
+  }
+}
+
+#join-button {
+  border: solid @mid-purple 3px;
+  color: white;
+  background-color: @mid-purple;
+
+  transition: background-color 500ms linear, color 500ms linear, border 500ms linear;
+
+  &:hover {
+    color: white;
+    border: solid @dark-purple 3px;
+    background-color: @dark-purple;
+  }
+}

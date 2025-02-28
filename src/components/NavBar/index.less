@@ -1,8 +1,16 @@
+@import "../../styles/constants.less";
+@import "../../styles/global.less";
+
+
 nav {
   display: flex;
+  background-color: @quantsoc-light;
   justify-content: space-between;
-  padding: 20px 0;
-  width: 100%;
+  padding: 20px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add this line for drop shadow */
 }
 
 .menu {
