@@ -3,12 +3,11 @@ import ResourceOutline from 'components/ResourceOutline';
 import HeroSection from './HeroSection/HeroSection';
 import WorkshopSection from './WorkshopSection/WorkshopSection';
 import JobListings from './JobListingsSection/JobListings';
-
-
+import './index.less';
 
 const ResourcesPage = () => {
   return (
-    <div className="page">
+    <div className="page" id='resources-page'>
       <HeroSection />
       {/* separate div to ensure universal focusability of anchor */}
       <ResourceOutline

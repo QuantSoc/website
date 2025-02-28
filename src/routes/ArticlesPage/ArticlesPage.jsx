@@ -9,7 +9,7 @@ import HeroSection from './HeroSection/HeroSection';
 
 const ArticlesPage = () => {
   return (
-    <div className="articles-page">
+    <div id="articles-page">
       <HeroSection />
       {/* The recent section contains the most recent news article */}
       <RecentSection />
