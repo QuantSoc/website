@@ -29,7 +29,7 @@ const LandingPage = () => {
           Learn, compete and have fun in QuantSoc&apos;s very ownMock Trading Game!</p>
         </ResourceOutline>
         <EventsSection />
-        <ResourcesSection />
+        {/* <ResourcesSection /> */}
         <SponsorshipSection />
       </div>
      
