@@ -27,11 +27,20 @@ const SponsorshipSection = () => {
       </div>
       <SponsorTypeHeader type="major" />
       <div className="sponsorship-section__logos">
-        <Sponsor logoSrc={optiverLogo} sponsorLink="https://www.optiver.com" />
-        <Sponsor logoSrc={vivcourtLogo} sponsorLink="https://www.vivcourt.com" />
         <Sponsor logoSrc={citadelLogo} sponsorLink="https://www.citadelsecurities.com/" />          
         <Sponsor logoSrc={imcLogo} sponsorLink="https://www.imc.com/ap" />
+        <Sponsor logoSrc={optiverLogo} sponsorLink="https://www.optiver.com" />
+        <Sponsor logoSrc={vivcourtLogo} sponsorLink="https://www.vivcourt.com" />
       </div>
+      {/* For Testing
+      <SponsorTypeHeader type="Affiliate" />
+      <div className="sponsorship-section__logos">
+        <Sponsor logoSrc={citadelLogo} sponsorLink="https://www.citadelsecurities.com/" />          
+        <Sponsor logoSrc={imcLogo} sponsorLink="https://www.imc.com/ap" />
+        <Sponsor logoSrc={optiverLogo} sponsorLink="https://www.optiver.com" />
+        <Sponsor logoSrc={tibraLogo} sponsorLink="https://www.vivcourt.com" />
+        <Sponsor logoSrc={vivcourtLogo} sponsorLink="https://www.vivcourt.com" />
+      </div> */}
       <div className="sponsorship-section__sponsor-us">
         <p>
           Interact with our growing community and reach out to UNSW&apos;s
