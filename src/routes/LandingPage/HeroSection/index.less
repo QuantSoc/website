@@ -1,6 +1,6 @@
 @import '../../../styles/constants.less';
 .empowering-section {
-    width: 80%;
+    width: 100%;
     justify-items: center;
     text-align: center; /* Ensures the text is centered */
     margin: 10% 0;
@@ -16,7 +16,7 @@
 
         &:hover{
             > .highlight-text {
-                filter: drop-shadow(2px 5px 4px @quantsoc-accent-light);
+                filter: drop-shadow(2px 5px 10px @quantsoc-accent-light);
 
             }
         }
@@ -25,9 +25,17 @@
     
 }
 
+@media (max-width: 768px) {
+    .empowering-section  {
+        > h1 {
+            font-size: 2rem;
+        }
+    }
+}
+
 .highlight-text {
     color: @dark-purple;
-    filter: drop-shadow(1px 1px 1px @quantsoc-accent-light);
+    filter: drop-shadow(1px 1px 3px @quantsoc-accent-light);
     transition: filter 500ms ease-in-out;
 
 }

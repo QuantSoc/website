@@ -50,7 +50,7 @@ const AboutUsPage = () => {
         <HeroSlide hideRedirect />
       </section>
       <CultureAndValuesSection />
-      <section>
+      {/* <section>
         <h2>Our Teams</h2>
         <p className="tagline">
           QuantSoc&apos;s teams work hard to create innovative and exciting
@@ -101,7 +101,6 @@ const AboutUsPage = () => {
             src={teamImg}
             alt={`quantsoc-${teamName}-banner`}
           />
-          {/* prettier-ignore */}
           <p>
             Source:
             {' '}
@@ -111,7 +110,7 @@ const AboutUsPage = () => {
           </p>
           <p>{teamDesc}</p>
         </Modal>
-      </section>
+      </section> */}
     </div>
   );
 };

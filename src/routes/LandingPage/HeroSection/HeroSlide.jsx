@@ -5,7 +5,7 @@ import './index.less';
 const HeroSlide = ({ hideRedirect = false }) => {
   return (
       <div className="empowering-section">
-        <h1>We are UNSW's <span className='highlight-text'>largest</span> community for quantitative trading</h1>
+        <h1>Welcome to UNSW's <span className='highlight-text'>largest</span> community for quantitative trading</h1>
         {!hideRedirect && (
           <RedirectButton btnText="Join Us" destination="https://docs.google.com/forms/d/1yJJ246LoUPVC7zFwXpb99qWz9a5DMm7G5JiucbJQXLY/" />
         )}

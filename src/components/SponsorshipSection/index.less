@@ -1,6 +1,12 @@
+@import '../../styles/constants.less';
+
 .sponsorship-section > p {
   margin-bottom: 1.5rem;
   width: 100%; // for some reason this fixes the text
+  text-align: center;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+
 }
 
 .sponsorship-section__logos {
@@ -28,4 +34,29 @@
 svg {
   height: 20px;
   width: 20px;
+}
+
+.sponsor-button {
+  margin-top: 20px;
+  text-decoration: none;
+  background-color: transparent;
+  display: flex;
+  width: 30vw;
+  padding: 1%;
+  min-width: 300px;
+  color: @quantsoc-dark;
+  justify-self: center;
+  text-align: center;
+  justify-content: center;
+  font-weight: 1000;
+  border: solid 3px @quantsoc-dark;
+  border-radius: 20px;
+
+  transition: background-color 500ms linear, color 500ms linear, border 500ms linear;
+
+  &:hover {
+    color: @dark-purple;
+    border: solid 3px   @dark-purple;
+
+  }
 }
