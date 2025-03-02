@@ -32,13 +32,13 @@ const SponsorshipSection = () => {
         <Sponsor logoSrc={citadelLogo} sponsorLink="https://www.citadelsecurities.com/" />          
         <Sponsor logoSrc={imcLogo} sponsorLink="https://www.imc.com/ap" />
       </div>
-      <div className="sponsorship-section__sponsor-us">
-        <p>
-          Interact with our growing community and reach out to UNSW&apos;s
-          brightest and most passionate minds!
-        </p>
-        <RedirectButton btnText="Sponsor Us" destination="/sponsorship" />
-      </div>
+      <p>
+      If you wish to sponsor us, reach out to our society, and we would be delighted to discuss partnership opportunities, collaborate on events, and create valuable experiences together!
+      </p>
+      <a href="mailto:quantsoc.unsw@gmail.com" class="sponsor-button">
+      SPONSOR US
+      </a>
+
     </section>
   );
 };
