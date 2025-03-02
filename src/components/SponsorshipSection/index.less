@@ -41,22 +41,23 @@ svg {
   text-decoration: none;
   background-color: transparent;
   display: flex;
-  width: 30vw;
+  width: 40vw;
+  max-width: 700px;
   padding: 1%;
-  min-width: 300px;
   color: @quantsoc-dark;
   justify-self: center;
   text-align: center;
   justify-content: center;
   font-weight: 1000;
   border: solid 3px @quantsoc-dark;
-  border-radius: 20px;
+  border-radius: 10px;
 
   transition: background-color 500ms linear, color 500ms linear, border 500ms linear;
+  filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.25));
 
   &:hover {
     color: @dark-purple;
     border: solid 3px   @dark-purple;
-
+    filter: drop-shadow(3px 3px 5px @quantsoc-primary);
   }
 }

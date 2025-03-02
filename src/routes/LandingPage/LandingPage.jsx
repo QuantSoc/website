@@ -17,20 +17,6 @@ const LandingPage = () => {
       <div className='main-body'>
         <AboutUsPage />
         <GamesSection />
-
-        {/* <ResourceOutline
-          outlineTitle="Mock Trading Game"
-          index={0}
-          imgSrc={mockTradingScreenshot}
-          redirectLink="https://mtg.quantsoc.org"
-          redirectBtnText="Play Now"
-        >
-          <p>
-            Dive into the fast-paced world of trading, hone your investment
-            strategies, and compete with fellow traders in a mock environment.
-            <br/><br/>
-          Learn, compete and have fun in QuantSoc&apos;s very ownMock Trading Game!</p>
-        </ResourceOutline> */}
         <EventsSection />
         <SponsorshipSection />
       </div>

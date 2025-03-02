@@ -4,7 +4,7 @@ import { Routes, Route, BrowserRouter } from 'react-router-dom';
 
 import NotFoundPage from 'routes/NotFoundPage';
 import LandingPage from 'routes/LandingPage';
-import AboutUsPage from 'routes/AboutUsPage';
+// import AboutUsPage from 'routes/AboutUsPage';
 import EventsPage from 'routes/EventsPage';
 import ResourcesPage from 'routes/ResourcesPage';
 import EventCreationPage from 'routes/EventCreationPage';
@@ -43,9 +43,6 @@ const App = () => {
           <Route path="/joblistingform" element={<PrivateRoute />}>
             <Route path="/joblistingform" element={<JobListingFormPage />} />
           </Route>
-          {/* <Route path="/sponsors" element={<SponsorsPage />} /> */}
-          {/* The following route *may* just be integrated to AboutUsPage; TBA */}
-          {/* <Route path="/contact" element={<NotFoundPage />} /> */}
         </Routes>
         <Footer />
       </div>

@@ -95,3 +95,42 @@
     background-color: @dark-purple;
   }
 }
+
+
+.socials-container {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%); // Center horizontally
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 50px;
+  z-index: 1000; // Ensure it's on top of other elements if needed
+  height: 100%;
+
+  > * > * {
+    color: white;
+    transition: color 100ms linear;
+    filter: drop-shadow(4px 4px 30px 0.9);
+    transition: color 300ms linear;
+    width: 2rem !important;
+    height: 2rem !important;
+
+    &:hover {
+      color: @dark-purple;
+      cursor: pointer;
+    }
+
+   
+  }
+
+  @media screen and (max-width: @mobile) {
+    column-gap: 25px;
+
+    > * > *{
+      width: 1.5rem !important;
+      height: 1.5rem !important;
+    }
+  }
+    
+  }
