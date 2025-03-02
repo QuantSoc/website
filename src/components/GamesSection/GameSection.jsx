@@ -7,7 +7,7 @@ const GamesSection = () => {
             <div className="games-container">
                 <a href="https://mtg.quantsoc.org" className="game-box large mock-trading-card">Mock Trading Game</a>
                 <a href="/mathsprint" className="game-box small mathsprint-card">~MathSprint~
-                {/* animated background for mathsprint*/}
+                {/* animated background for mathsprint just ignore this stuff*/}
                     <div class="area" >
                         <ul class="circles">
                                 <li></li>

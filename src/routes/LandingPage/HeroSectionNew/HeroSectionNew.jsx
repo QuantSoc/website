@@ -2,6 +2,9 @@ import './index.less';
 import { useEffect, useState, useRef } from 'react';
 import QuantSocLogo from './../../../assets/logo-quantsoc.svg';
 
+import { BsFacebook, BsDiscord, BsLinkedin, BsInstagram, BsLink } from 'react-icons/bs';
+
+
 const HeroSectionNew = () => {
   const [fadeIn, setFadeIn] = useState(false);
   const heroSectionRef = useRef(null);
@@ -42,6 +45,21 @@ const HeroSectionNew = () => {
               <button className="hero-button" onClick={handleLearnMoreClick}>Learn More</button>
               <button className="hero-button" id="join-button" onClick={handleJoinUsClick}>Join Us</button>
             </div>
+            <div className="socials-container">
+              <a href="https://discord.gg/2qYRNKubRz" target="_blank" rel="noopener noreferrer">
+                  <BsDiscord />
+              </a>
+              <a href="https://www.facebook.com/unswquantsoc/" target="_blank" rel="noopener noreferrer">
+                  <BsFacebook />
+              </a>
+              <a href="https://www.linkedin.com/company/quantsoc/" target="_blank" rel="noopener noreferrer">
+                  <BsLinkedin />
+              </a>
+              <a href="https://www.instagram.com/quantsoc_unsw/" target="_blank" rel="noopener noreferrer">
+                  <BsInstagram />
+              </a>
+          </div>
+
           </div>
       </div>
     </div>
