@@ -20,8 +20,8 @@ const LandingPage = () => {
         {/* <AboutUsPage /> */}
         <EventsSection />
 
-        <GamesSection />
-        <SponsorshipSection />
+        <div className='landing-page__container'><GamesSection /></div>
+        <div className='landing-page__container'><SponsorshipSection /></div>
       </div>
      
     </div>

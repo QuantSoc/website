@@ -23,7 +23,7 @@
          offset="0"
          id="stop75" />
       <stop
-         style="stop-color:#ede4fd;stop-opacity:1;"
+         style="stop-color:#f4f7fa;stop-opacity:1;"
          offset="1"
          id="stop76" />
     </linearGradient>
@@ -36,7 +36,7 @@
        fx="627.19336"
        fy="-639.25568"
        r="274.60751"
-       gradientTransform="matrix(0.80455831,-0.76346816,0.82011493,0.86431567,347.40512,1211.2001)"
+       gradientTransform="matrix(1.1786071,-0.18326911,0.18302588,1.1773409,-294.45858,1047.4062)"
        gradientUnits="userSpaceOnUse"
        spreadMethod="pad" />
   </defs>
