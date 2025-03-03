@@ -4,11 +4,11 @@ import EventsSection from './EventsSection/EventsSection';
 import ResourcesSection from './ResourcesSection/ResourcesSection';
 import HeroSectionNew from './HeroSectionNew/HeroSectionNew';
 import SponsorshipSection from '../../components/SponsorshipSection';
-import AboutUsPage from 'routes/AboutUsPage';
+// import AboutUsPage from 'routes/AboutUsPage';
 import GamesSection from 'components/GamesSection/GameSection';
 
 import './index.less';
-import HeroSlide from './HeroSection/HeroSlide';
+import WelcomeSection from './WelcomeSection/WelcomeSection';
 
 
 const LandingPage = () => {
@@ -16,7 +16,7 @@ const LandingPage = () => {
     <div className="page">
       <HeroSectionNew />
       <div className='main-body'>
-        <HeroSlide hideRedirect/>
+        <WelcomeSection hideRedirect/>
         {/* <AboutUsPage /> */}
         <EventsSection />
 
