@@ -23,9 +23,9 @@ const HeroSection = () => {
         <br /> Stay informed and connected with us as we keep you updated on all the important happenings.
         </p>
 
-        <div className="socials-buttons">
-          <RedirectButton btnText="Sign Up" destination="https://docs.google.com/forms/d/e/1FAIpQLSfzxswnxt3i2kA6ShYJ-OLb3iJnvRLtm4g83wkzhzECannTNA/viewform?pli=1" />
-        </div>
+        {/* PUT FORM HERE */}
+
+        <iframe className="newsletter-form" scrolling='no' src='https://dashboard.mailerlite.com/forms/829979/147821366068905374/share'></iframe>
       </div>
     </section>
   );
