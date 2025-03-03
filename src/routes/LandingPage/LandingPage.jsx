@@ -6,6 +6,7 @@ import HeroSectionNew from './HeroSectionNew/HeroSectionNew';
 import SponsorshipSection from '../../components/SponsorshipSection';
 import AboutUsPage from 'routes/AboutUsPage';
 import GamesSection from 'components/GamesSection/GameSection';
+import AboutSection from './AboutSection/AboutSection';
 
 import './index.less';
 
@@ -15,7 +16,7 @@ const LandingPage = () => {
     <div className="page">
       <HeroSectionNew />
       <div className='main-body'>
-        <AboutUsPage />
+        <AboutSection/>
         <GamesSection />
         <EventsSection />
         <SponsorshipSection />
