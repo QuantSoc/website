@@ -1,9 +1,14 @@
 
-import RedirectButton from 'components/RedirectButton/RedirectButton';
 import eventGathering from 'assets/quantsoc-graphics/event-gathering-alt.svg';
+import { useState, useEffect } from 'react';
+
 import './index.less';
 
 const HeroSection = () => {
+
+  const [loaded, setLoaded] = useState(false);
+
+
   return (
     <section className="hero-section">
       <div className="hero-item">
@@ -25,7 +30,12 @@ const HeroSection = () => {
 
         {/* PUT FORM HERE */}
 
-        <iframe className="newsletter-form" scrolling='no' src='https://dashboard.mailerlite.com/forms/829979/147821366068905374/share'></iframe>
+        <iframe
+          className={`newsletter-form ${loaded ? 'loaded' : ''}`}
+          scrolling="no"
+          src="https://dashboard.mailerlite.com/forms/829979/147821366068905374/share"
+          onLoad={() => setLoaded(true)}
+        />
       </div>
     </section>
   );
