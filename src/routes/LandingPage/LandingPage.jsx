@@ -8,6 +8,7 @@ import AboutUsPage from 'routes/AboutUsPage';
 import GamesSection from 'components/GamesSection/GameSection';
 
 import './index.less';
+import HeroSlide from './HeroSection/HeroSlide';
 
 
 const LandingPage = () => {
@@ -15,9 +16,11 @@ const LandingPage = () => {
     <div className="page">
       <HeroSectionNew />
       <div className='main-body'>
-        <AboutUsPage />
-        <GamesSection />
+        <HeroSlide hideRedirect/>
+        {/* <AboutUsPage /> */}
         <EventsSection />
+
+        <GamesSection />
         <SponsorshipSection />
       </div>
      
