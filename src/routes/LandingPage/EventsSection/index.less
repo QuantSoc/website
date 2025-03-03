@@ -1,0 +1,49 @@
+@import '../../../styles/constants.less';
+
+.events-container {
+    display: flex;
+    flex-direction: col;
+    flex-wrap:wrap;
+    width: 100%;
+    justify-content: space-between;
+    vertical-align: center;
+    
+    @media screen and (max-width: @tablet) {
+        justify-self: left;
+    }
+}
+
+.events-item {
+    margin-top: 1.5rem;
+    width: 50%;
+
+    @media screen and (max-width: @tablet) {
+        min-width: 100%;
+    }
+    
+}
+
+.events-text-container {
+    width: 60%;
+    height:fit-content;
+    // background: linear-gradient(45deg, @quantsoc-accent,@quantsoc-secondary);
+    // border-radius: 15px;
+    padding: 5%;
+    > p {
+        font-size: 28px;
+        // color: white;
+        // text-shadow: 2px 2px 14px black;
+
+    }
+    // box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+
+.events-embed {
+    width: 360px;
+    max-width: 40%;
+    height: 600px;
+    overflow: hidden;
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
+
+}

@@ -33,7 +33,7 @@ const NavBar = () => {
         >
           About Us
         </div> */}
-        <div
+        {/* <div
           role="button"
           tabIndex={-1}
           onKeyDown={() => {}}
@@ -43,7 +43,7 @@ const NavBar = () => {
           className="text-main menu-item menu-item-mobile"
         >
           Events
-        </div>
+        </div> */}
         <div
           role="button"
           tabIndex={-1}
