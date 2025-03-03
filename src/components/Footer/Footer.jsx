@@ -23,12 +23,12 @@ const Footer = () => {
               Email us here!
             </a>
           </p>
-          <p id="newsletter-subscription">Subscribe to our newsletter</p>
+          {/* <p id="newsletter-subscription">Subscribe to our newsletter</p>
           <input
             id="newsletter-textfield"
             type="email"
             placeholder="New editions once a month!"
-          />
+          /> */}
         </div>
         <div className="nav-link-container">
           <div id="exploration" className="nav-link-section">
