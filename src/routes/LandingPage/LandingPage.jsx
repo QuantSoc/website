@@ -18,10 +18,10 @@ const LandingPage = () => {
       <div className='main-body'>
         <WelcomeSection hideRedirect/>
         {/* <AboutUsPage /> */}
-        <div id='landing-page__events'><EventsSection /></div>
+        <EventsSection />
 
         <div className='landing-page__container'><GamesSection /></div>
-        <div className='landing-page__container' id='landing-page__sponsorships'><SponsorshipSection /></div>
+        <div className='landing-page__container'><SponsorshipSection /></div>
       </div>
      
     </div>

@@ -4,7 +4,6 @@ import './index.less';
 import QuantSocLogo from 'components/QuantSocLogo';
 import { useNavigate } from 'react-router-dom';
 
-
 const NavBar = () => {
   const navigate = useNavigate();
   return (
@@ -12,7 +11,7 @@ const NavBar = () => {
       <QuantSocLogo />
       <BurgerMenu />
       <div className="menu hidden">
-        {/* <div
+        <div
           role="button"
           tabIndex={-1}
           onKeyDown={() => {}}
@@ -22,7 +21,7 @@ const NavBar = () => {
           className="text-main menu-item menu-item-mobile"
         >
           Home
-        </div> */}
+        </div>
         {/* <div
           role="button"
           tabIndex={-1}
@@ -34,15 +33,17 @@ const NavBar = () => {
         >
           About Us
         </div> */}
-        <a
+        {/* <div
           role="button"
           tabIndex={-1}
           onKeyDown={() => {}}
-          href='/#landing-page__events'
+          onClick={() => {
+            navigate('/events');
+          }}
           className="text-main menu-item menu-item-mobile"
         >
           Events
-        </a>
+        </div> */}
         <div
           role="button"
           tabIndex={-1}
@@ -65,12 +66,17 @@ const NavBar = () => {
         >
           Resources
         </div>
-        <a
-          href='/#landing-page__sponsorships'
+        {/* <div
+          role="button"
+          tabIndex={-1}
+          onKeyDown={() => {}}
+          onClick={() => {
+            navigate('/sponsors');
+          }}
           className="text-main menu-item menu-item-mobile"
         >
           Sponsors
-        </a>
+        </div> */}
       </div>
     </nav>
   );
