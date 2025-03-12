@@ -13,7 +13,7 @@ const ResourcesPage = () => {
       <HeroSection />
       {/* separate div to ensure universal focusability of anchor */}
       <GamesSection />
-      <WorkshopSection anchorTag="workshops" />
+      {/* <WorkshopSection anchorTag="workshops" /> */}
       <JobListings />
       
     </div>

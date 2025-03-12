@@ -1,40 +1,33 @@
-import ApplyButton from 'components/ApplyButton';
 import './index.less';
-import { BsFacebook, BsDiscord, BsInstagram } from 'react-icons/bs';
 
 const JobListing = ({ job }) => {
-  // console.log(job.applicationsClose);
-  // const Date = job.applicationsClose.toDate()
-
   return (
-    <div className='job-listing'>
-      <br />
-      <h3>{job.title}</h3>
-      <p>
-        {job.company}
-        {' '}
-        |
-        {' '}
-        {job.location}
-      </p>
+    <a href={job.link} target="_blank" rel="noopener noreferrer" className="job-listing">
+      <div>
+        <br />
+        <h3>{job.title}</h3>
+        <span>
+          {job.company} | {job.location}
+        </span>
 
-      {(job.applicationsClose !== undefined
-            && job.applicationsClose !== '')
-                && (
-                <p>
-                  <em>
-                    Applications close on
-                    {job.applicationsClose.toDate().getDate()}
-                    /
-                    {job.applicationsClose.toDate().getMonth() + 1}
-                    /
-                    {job.applicationsClose.toDate().getFullYear()}
-                  </em>
-                </p>
-                )}
-      <p id="desc">{job.description}</p>
-      <ApplyButton btnText="Apply" destination={job.link} />
-    </div>
+        {job.applicationsClose && (
+          <p>
+            <em>
+              Applications close on{' '}
+              {job.applicationsClose.toDate().getDate()}/
+              {job.applicationsClose.toDate().getMonth() + 1}/
+              {job.applicationsClose.toDate().getFullYear()}
+            </em>
+          </p>
+        )}
+
+        <p id="desc">
+          {job.description.length > 50
+            ? `${job.description.slice(0, 150)}...`
+            : job.description}
+        </p>
+      </div>
+    </a>
   );
 };
 
