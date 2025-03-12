@@ -67,17 +67,15 @@ const BurgerMenu = () => {
         >
           About Us
         </div> */}
-        {/* <div
+        <a
           className="burger-menu-item"
           role="button"
           onKeyDown={() => {}}
           tabIndex={-1}
-          onClick={() => {
-            handleLinkClick('/events');
-          }}
+          href='/#landing-page__events'
         >
           Events
-        </div> */}
+        </a>
         <div
           className="burger-menu-item"
           role="button"
@@ -100,17 +98,15 @@ const BurgerMenu = () => {
         >
           Resources
         </div>
-        {/* <div
+        <a
           className="burger-menu-item"
           role="button"
           onKeyDown={() => {}}
           tabIndex={-1}
-          onClick={() => {
-            handleLinkClick('/sponsors');
-          }}
+          href='/#landing-page__sponsorships'
         >
           Sponsors
-        </div> */}
+        </a>
       </div>
     </div>
   );
