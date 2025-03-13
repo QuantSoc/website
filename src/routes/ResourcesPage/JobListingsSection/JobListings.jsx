@@ -46,7 +46,7 @@ const JobListings = () => {
   }, []);
 
   return (
-    <div>
+    <section>
       <h1 className="events-section__header">Job Opportunities</h1>
       <div className="job-listings">
       {error ? 'There was an error, please contact the QuantSoc team.'
@@ -60,7 +60,7 @@ const JobListings = () => {
           </>
         )}
         </div>
-    </div>
+    </section>
   );
 };
 export default JobListings;
