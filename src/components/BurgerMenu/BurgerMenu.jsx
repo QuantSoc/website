@@ -67,14 +67,41 @@ const BurgerMenu = () => {
         >
           About Us
         </div> */}
+         <a
+          className="burger-menu-item"
+          role="button"
+          onKeyDown={() => {}}
+          tabIndex={-1}
+          href='/#about-us'
+        >
+          About Us
+        </a>
         <a
           className="burger-menu-item"
           role="button"
           onKeyDown={() => {}}
           tabIndex={-1}
-          href='/#landing-page__events'
+          href='/#events'
         >
           Events
+        </a>
+        <a
+          className="burger-menu-item"
+          role="button"
+          onKeyDown={() => {}}
+          tabIndex={-1}
+          href='/#resources'
+        >
+          Resources
+        </a>
+        <a
+          className="burger-menu-item"
+          role="button"
+          onKeyDown={() => {}}
+          tabIndex={-1}
+          href='/#sponsorships'
+        >
+          Sponsors
         </a>
         <div
           className="burger-menu-item"
@@ -87,26 +114,6 @@ const BurgerMenu = () => {
         >
           News
         </div>
-        <div
-          className="burger-menu-item"
-          role="button"
-          onKeyDown={() => {}}
-          tabIndex={-1}
-          onClick={() => {
-            handleLinkClick('/resources');
-          }}
-        >
-          Resources
-        </div>
-        <a
-          className="burger-menu-item"
-          role="button"
-          onKeyDown={() => {}}
-          tabIndex={-1}
-          href='/#landing-page__sponsorships'
-        >
-          Sponsors
-        </a>
       </div>
     </div>
   );

@@ -7,7 +7,7 @@ const EventsSection = () => {
     <section className="events-section">
       <div className='events-container'>
         <div className='events-item events-text-container'>
-        <h1 className="events-section__header">Our Events</h1>
+        <h1 className="events-section__header">Events</h1>
           <p>
           We offer a wide variety of events for fun, learning new skills, and networking opportunities. 
           Join us with our regular workshops, competitions, games nights, company meet-and-greets, and more. You can view just what we have in store on our social media!

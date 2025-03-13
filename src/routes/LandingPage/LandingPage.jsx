@@ -12,6 +12,8 @@ import WelcomeSection from './WelcomeSection/WelcomeSection';
 
 import AboutUsSection from './AboutUsSection/AboutUsSection';
 
+import { Link } from 'react-router-dom';
+
 
 const LandingPage = () => {
   return (
@@ -19,15 +21,14 @@ const LandingPage = () => {
       <HeroSectionNew />
       <div className='main-body'>
         {/* <AboutUsPage /> */}
-        <div className='landing-page__container'><AboutUsSection /></div>
-        
+        <div className='landing-page__container' id='about-us'><AboutUsSection /></div>
         <WelcomeSection hideRedirect/>
+        <div id='events'><EventsSection /></div>
 
-
-        <div id='landing-page__events'><EventsSection /></div>
-
-        <div className='landing-page__container'><GamesSection /></div>
-        <div className='landing-page__container' id='landing-page__sponsorships'><SponsorshipSection /></div>
+        <div className='landing-page__container' id='resources'><GamesSection />
+        <Link to={'/resources'} className='more-resources-button'>More Resources → </Link>
+        </div>
+        <div className='landing-page__container' id='sponsorships'><SponsorshipSection /></div>
       </div>
      
     </div>

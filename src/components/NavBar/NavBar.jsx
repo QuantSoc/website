@@ -23,25 +23,39 @@ const NavBar = () => {
         >
           Home
         </div> */}
-        {/* <div
-          role="button"
-          tabIndex={-1}
-          onKeyDown={() => {}}
-          onClick={() => {
-            navigate('/about');
-          }}
-          className="text-main menu-item menu-item-mobile"
-        >
-          About Us
-        </div> */}
         <a
           role="button"
           tabIndex={-1}
           onKeyDown={() => {}}
-          href='/#landing-page__events'
+          href='/#about-us'
+          className="text-main menu-item menu-item-mobile"
+        >
+          About Us
+        </a>
+        <a
+          role="button"
+          tabIndex={-1}
+          onKeyDown={() => {}}
+          href='/#events'
           className="text-main menu-item menu-item-mobile"
         >
           Events
+        </a>
+        
+        <a
+          role="button"
+          tabIndex={-1}
+          onKeyDown={() => {}}
+          href='/#resources'
+          className="text-main menu-item menu-item-mobile"
+        >
+          Resources
+        </a>
+        <a
+          href='/#sponsorships'
+          className="text-main menu-item menu-item-mobile"
+        >
+          Sponsors
         </a>
         <div
           role="button"
@@ -54,23 +68,6 @@ const NavBar = () => {
         >
           News
         </div>
-        <div
-          role="button"
-          tabIndex={-1}
-          onKeyDown={() => {}}
-          onClick={() => {
-            navigate('/resources');
-          }}
-          className="text-main menu-item menu-item-mobile"
-        >
-          Resources
-        </div>
-        <a
-          href='/#landing-page__sponsorships'
-          className="text-main menu-item menu-item-mobile"
-        >
-          Sponsors
-        </a>
       </div>
     </nav>
   );
