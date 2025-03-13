@@ -10,14 +10,20 @@ import GamesSection from 'components/GamesSection/GameSection';
 import './index.less';
 import WelcomeSection from './WelcomeSection/WelcomeSection';
 
+import AboutUsSection from './AboutUsSection/AboutUsSection';
+
 
 const LandingPage = () => {
   return (
     <div className="page">
       <HeroSectionNew />
       <div className='main-body'>
-        <WelcomeSection hideRedirect/>
         {/* <AboutUsPage /> */}
+        <div className='landing-page__container'><AboutUsSection /></div>
+        
+        <WelcomeSection hideRedirect/>
+
+
         <div id='landing-page__events'><EventsSection /></div>
 
         <div className='landing-page__container'><GamesSection /></div>

@@ -1,0 +1,69 @@
+@import '../../../styles/constants.less';
+
+
+.about-us-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25vh;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 3rem;
+
+    p {
+        font-size: 28px;
+    }
+}
+
+.about-us-header {
+    margin-bottom: 1.5rem;
+}
+
+.about-impact-section {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 3rem;
+    row-gap: 2rem;
+    margin-top: 2rem;
+    flex-direction: row;
+    
+    > * {
+        text-align: left;
+        font-size: 30px;
+    }
+
+    @media screen and (max-width: @tablet) {
+        flex-direction: row;
+    }
+}
+
+.counter-highlight-text {
+    color: @dark-purple;
+    font-weight: bold;
+    filter: drop-shadow(1.5px 2px 4px rgba(0, 0, 0, 0.2));
+
+    font-size: 36px;
+
+
+    &:hover {
+        filter: drop-shadow(2px 5px 10px @quantsoc-accent-light);
+    }
+}
+
+.about-us-left-side, .about-us-right-side{
+    width: 45%;
+
+    @media screen and (max-width: 1800px) {
+        width: 100%;
+    }
+
+}
+
+.about-us-right-side {
+    @media screen and (max-width: 1800px) {
+        display: none;
+    }
+}
+
+.impact-trailing-text {
+    font-size: 22px;
+}
