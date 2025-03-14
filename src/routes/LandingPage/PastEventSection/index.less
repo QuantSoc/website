@@ -1,0 +1,54 @@
+@import '../../../styles/constants.less';
+
+.past-events {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: @tablet) {
+        display: none;
+    }
+
+    height: 200px
+
+}
+
+.events-row {
+    display: flex;
+    flex-wrap: nowrap; /* Ensures that the images stay in a single row */
+    gap: 16px; /* Adjust the gap between the images */
+    overflow-x: hidden;    
+}
+
+.event-card img {
+    width: 100%;
+    // min-width: 150px; /* You can adjust the width as per your design */
+    height: auto;
+    border-radius: 8px; /* Optional: for rounded corners */
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+
+}
+
+
+.past-events {
+    .events-row {
+        transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    }
+
+    .fade-in {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .fade-out {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    .event-card {
+        transition: transform 0.5s ease-in-out;
+        // &:hover {
+        //     transform: scale(1.05);
+        // }
+    }
+}

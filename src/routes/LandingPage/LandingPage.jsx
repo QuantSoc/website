@@ -13,6 +13,8 @@ import WelcomeSection from './WelcomeSection/WelcomeSection';
 import AboutUsSection from './AboutUsSection/AboutUsSection';
 import { HashLink } from 'react-router-hash-link';
 
+import PastEventSection from './PastEventSection/PastEventSection';
+
 
 const LandingPage = () => {
   return (
@@ -21,8 +23,11 @@ const LandingPage = () => {
       <div className='main-body'>
         {/* <AboutUsPage /> */}
         <div className='landing-page__container' id='about-us'><AboutUsSection /></div>
-        <WelcomeSection hideRedirect/>
+        {/* <WelcomeSection hideRedirect/> */}
+        <div className='landing-page__container'><PastEventSection /></div>
+        
         <div id='events'><EventsSection /></div>
+
 
         <div className='landing-page__container' id='resources'><GamesSection />
         <HashLink to={'/resources#'} className='more-resources-button'>More Resources → </HashLink>
