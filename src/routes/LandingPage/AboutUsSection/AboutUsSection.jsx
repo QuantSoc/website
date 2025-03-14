@@ -6,6 +6,7 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaCalendarMinus } from "react-icons/fa6";
 import AboutCandlestick from '../../../assets/quantsoc-graphics/hero-candlestick.svg';
 
+import { GoPersonFill } from "react-icons/go";
 
 
 const AboutUsSection = () => {
@@ -21,7 +22,7 @@ const AboutUsSection = () => {
                     like-minded students and connect them to unique opportunities within this industry.
                 </p>
                 <div className='about-impact-section'>
-                <div><span className='about-us-icon'><BsFillPersonLinesFill /> </span><Counter target={400} />+<br/><span className='impact-trailing-text'>members</span></div>
+                <div><span className='about-us-icon'><GoPersonFill /> </span><Counter target={400} />+<br/><span className='impact-trailing-text'>members</span></div>
                 <div><span className='about-us-icon'><FaCalendarMinus/> </span><Counter target={20} />+<br/><span className='impact-trailing-text'>events last year</span></div>
                 <div><span className='about-us-icon'><FaSquareFacebook/> </span><Counter target={1000} />+<br/><span className='impact-trailing-text'>facebook followers</span></div>
             </div>
