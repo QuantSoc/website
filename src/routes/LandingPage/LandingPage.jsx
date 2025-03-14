@@ -11,8 +11,7 @@ import './index.less';
 import WelcomeSection from './WelcomeSection/WelcomeSection';
 
 import AboutUsSection from './AboutUsSection/AboutUsSection';
-
-import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 
 const LandingPage = () => {
@@ -26,7 +25,7 @@ const LandingPage = () => {
         <div id='events'><EventsSection /></div>
 
         <div className='landing-page__container' id='resources'><GamesSection />
-        <Link to={'/resources'} className='more-resources-button'>More Resources → </Link>
+        <HashLink to={'/resources#'} className='more-resources-button'>More Resources → </HashLink>
         </div>
         <div className='landing-page__container' id='sponsorships'><SponsorshipSection /></div>
       </div>

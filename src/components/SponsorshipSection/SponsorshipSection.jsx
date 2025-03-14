@@ -33,7 +33,7 @@ const SponsorshipSection = () => {
         <Sponsor logoSrc={imcLogo} sponsorLink="https://www.imc.com/ap" />
       </div>
       <p>
-      If you wish to sponsor us, reach out to our society, and we would be delighted to discuss partnership opportunities and collaborate on valuable experiences together!
+      You want to sponsor us? Get in touch with us and we would be more than delighted to discuss partnership opportunities and potential collaborations!
       </p>
       <a href="mailto:quantsoc.unsw@gmail.com" class="sponsor-button">
       SPONSOR US

@@ -13,8 +13,8 @@ const AboutUsSection = () => {
                     We are the Quantitative Finance and Trading Society of UNSW.<br/>
                     Quantitative finance is distinguished from other financial industries
                     by its math-heavy approach to financial theory, unique interview problems,
-                    and specialized software engineering challenges. Our goal is to create a network of 
-                    like-minded students to explore and learn about this industry.
+                    and software engineering challenges. Our mission is to create a network of 
+                    like-minded students and connect them to unique opportunities within this industry.
                 </p>
                 <div className='about-impact-section'>
                 <div><Counter target={400} />+<br/><span className='impact-trailing-text'>members</span></div>
