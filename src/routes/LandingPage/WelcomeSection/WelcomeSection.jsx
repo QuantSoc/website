@@ -44,7 +44,7 @@ const WelcomeSection = ({ hideRedirect = false }) => {
       </h1>
       <br /> */}
       <h1>
-        Welcome to UNSW's <span className="highlight-text">largest</span> community for quantitative trading
+        Welcome to UNSW's <span className="highlight-text">greatest</span> community for quantitative trading
       </h1>
     </section>
   );

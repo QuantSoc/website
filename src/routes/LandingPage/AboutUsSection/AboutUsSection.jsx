@@ -1,7 +1,11 @@
 import './index.less';
 import React, { useEffect, useRef, useState } from 'react';
-import {BsFacebook} from 'react-icons/bs';
+
+import { FaSquareFacebook } from "react-icons/fa6";
+import { BsFillPersonLinesFill } from "react-icons/bs";
+import { FaCalendarMinus } from "react-icons/fa6";
 import AboutCandlestick from '../../../assets/quantsoc-graphics/hero-candlestick.svg';
+
 
 
 const AboutUsSection = () => {
@@ -17,9 +21,9 @@ const AboutUsSection = () => {
                     like-minded students and connect them to unique opportunities within this industry.
                 </p>
                 <div className='about-impact-section'>
-                <div><Counter target={400} />+<br/><span className='impact-trailing-text'>members</span></div>
-                <div><Counter target={20} />+<br/><span className='impact-trailing-text'>events last year</span></div>
-                <div><Counter target={1000} />+<br/><span className='impact-trailing-text'>facebook followers</span></div>
+                <div><span className='about-us-icon'><BsFillPersonLinesFill /> </span><Counter target={400} />+<br/><span className='impact-trailing-text'>members</span></div>
+                <div><span className='about-us-icon'><FaCalendarMinus/> </span><Counter target={20} />+<br/><span className='impact-trailing-text'>events last year</span></div>
+                <div><span className='about-us-icon'><FaSquareFacebook/> </span><Counter target={1000} />+<br/><span className='impact-trailing-text'>facebook followers</span></div>
             </div>
             </div>
             <img className='about-us-right-side'src={AboutCandlestick}/>
