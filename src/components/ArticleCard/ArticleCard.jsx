@@ -1,18 +1,17 @@
 import './index.less';
 import { BiExpandVertical } from 'react-icons/bi';
+import { RiExternalLinkFill } from "react-icons/ri";
+
 
 const ArticlesCard = ({ heading, date, link }) => {
   return (
-    <div className="article-card__container">
-      <h4 className="article-card__heading">{heading}</h4>
-      <h6>{date}</h6>
-      <a href={link} style={{ textDecoration: 'none'}}>
-        <div className="event-card__button">
-          <BiExpandVertical />
-          <button type="button">Read More</button>
-        </div>
-      </a>
-    </div>
+    <a className="article-card__container" href={link} >
+      <span>
+        <span className="article-card__heading">{heading}</span>
+        <h6>{date}</h6>
+      </span> 
+      <span className='article-card-extern-link'><RiExternalLinkFill /></span>
+    </a>
   );
 };
 

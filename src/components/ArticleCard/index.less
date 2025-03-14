@@ -3,43 +3,47 @@
 
 .article-card__container {
     background-color: #fafafa;
-    filter: drop-shadow(0px 0.5px 0.5px rgba(0, 0, 0, 0.25));
+    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.25));
     border-radius: 12px;
-    box-shadow: 0px 1px 0.5px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 0.5px rgba(0, 0, 0, 0.15);
     width: 360px;
     padding: 0.5rem 1rem;
     padding-bottom: 1rem;
+    border-left: 0px solid transparent; // Explicitly set initial border-left
+
+    display: flex;
+    justify-content: space-between;
+
+    text-decoration: none;
+    color: inherit;
+
+    transition: border-left 0.5s ease;
+
+    h6 {
+      color: darkslategray;
+    }
+
+    &:hover {
+      border-left: 5px solid @dark-purple;
+      text-decoration: underline;
+      color: @dark-purple;
+
+      // .article-card-extern-link {
+      //   visibility: visible;
+      // }
+    }
+
+    .article-card-extern-link {
+      // background: blue;
+      display: block;
+      text-align: right;
+      // visibility: hidden;
+    }
+
+    .article-card__heading {
+      font-weight: 500;
+    }
+
   }
 
-.article-card__author {
-  padding: 0.5rem 0rem;
-}
-
-.article-card__heading {
-  padding: 0.5rem 0rem;
-}
-
-.article-card__sample {
-  padding: 0.5rem 0rem;
-  color:rgba(0, 0, 0, 0.5)
-}
-
-.article-card__read-button {
-  width:100%;
-  border: none;
-  background-color: transparent;
-  opacity: 0;
-  transition: opacity 0.3s ease, color 0.3s ease, text-decoration 0.3s ease; /* Add a smooth transition effect */
-  color: lightgray;
-  text-align: right;
-
-  &:hover {
-    color: gray;
-    text-decoration: underline;
-  }
-
-  .article-card__container:hover & {
-    opacity: 1;
-  }
-}
 

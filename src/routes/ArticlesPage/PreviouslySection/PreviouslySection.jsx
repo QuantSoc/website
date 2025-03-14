@@ -34,7 +34,7 @@ const PreviouslySection = () => {
 
   return (
     <section className="past-articles">
-      <h1>Previously...</h1>
+      <h1>Archive</h1>
       <div className='previously-flex'>
         {articles.map((article, index) => (
           <ArticleCard
