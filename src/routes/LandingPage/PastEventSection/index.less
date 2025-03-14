@@ -17,7 +17,7 @@
     display: flex;
     flex-wrap: nowrap; /* Ensures that the images stay in a single row */
     gap: 16px; /* Adjust the gap between the images */
-    overflow-x: hidden;    
+    // overflow-x: hidden;    
 }
 
 .event-card img {
@@ -32,21 +32,19 @@
 
 .past-events {
     .events-row {
-        transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+        transition: opacity 0.5s linear;
     }
 
     .fade-in {
         opacity: 1;
-        transform: translateY(0);
     }
 
     .fade-out {
         opacity: 0;
-        transform: translateY(10px);
     }
 
     .event-card {
-        transition: transform 0.5s ease-in-out;
+        transition: transform 0.5s linear;
         // &:hover {
         //     transform: scale(1.05);
         // }

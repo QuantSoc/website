@@ -26,7 +26,7 @@ const PastEventSection = () => {
                 setCurrentIndex(prevIndex => (prevIndex + 1) % Math.ceil(images.length / 4));
                 setIsFading(false); // Start fade-in
             }, 500); // Match fade-out duration
-        }, 3000);
+        }, 8000);
 
         return () => clearInterval(interval);
     }, [images, currentIndex]);
