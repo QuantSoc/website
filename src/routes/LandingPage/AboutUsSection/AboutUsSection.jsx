@@ -15,9 +15,8 @@ const AboutUsSection = () => {
             <div className='about-us-left-side'>
                 <h1 className='about-us-header'>About Us</h1>
                 <p>
-                    We are the Quantitative Finance and Trading Society of UNSW.<br/>
-                    Our mission is to create a network of like-minded students and connect them to unique opportunities within 
-                    the unique industry of quantitative finance.
+                We are the Quantitative Finance and Trading Society of UNSW.<br/>
+                Our mission is to foster a large community of like-minded students and connect them with opportunities in the unique field of quantitative finance.
                 </p>
                 <div className='about-impact-section'>
                 <div><span className='about-us-icon'><GoPersonFill /> </span><Counter target={400} />+<br/><span className='impact-trailing-text'>members</span></div>
