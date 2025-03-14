@@ -10,8 +10,7 @@ const EventsSection = () => {
         <h1 className="events-section__header">Events</h1>
           <p>
           We offer a wide variety of events to have fun, learn new skills, and network. 
-          Join us with our regular workshops, competitions, games nights, company meet-and-greets, and more. 
-          You can view the full listings of what we have in store on our social media accounts!
+          Check out the full listings for what we have in store on the QuantSoc Discord and Facebook page!
           </p>
         </div>
         <iframe className='events-item events-embed'
