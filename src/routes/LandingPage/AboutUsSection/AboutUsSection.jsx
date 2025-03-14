@@ -16,10 +16,8 @@ const AboutUsSection = () => {
                 <h1 className='about-us-header'>About Us</h1>
                 <p>
                     We are the Quantitative Finance and Trading Society of UNSW.<br/>
-                    Quantitative finance is distinguished from other financial industries
-                    by its math-heavy approach to financial theory, unique interview problems,
-                    and software engineering challenges. Our mission is to create a network of 
-                    like-minded students and connect them to unique opportunities within this industry.
+                    Our mission is to create a network of like-minded students and connect them to unique opportunities within 
+                    the unique industry of quantitative finance.
                 </p>
                 <div className='about-impact-section'>
                 <div><span className='about-us-icon'><GoPersonFill /> </span><Counter target={400} />+<br/><span className='impact-trailing-text'>members</span></div>

@@ -15,7 +15,7 @@ import './index.less';
 const SponsorshipSection = () => {
   return (
     <section className="sponsorship-section">
-      <h1 className="sponsorship-section__header">Our Sponsors</h1>
+      <h1 className="sponsorship-section__header">Sponsors</h1>
       <p>
         Special thanks to our sponsors, whose unwavering support helps turn our
         shared visions into a reality.
