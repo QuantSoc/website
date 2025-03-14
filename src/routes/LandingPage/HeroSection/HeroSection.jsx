@@ -5,7 +5,7 @@ import QuantSocLogo from './../../../assets/logo-quantsoc.svg';
 import { BsFacebook, BsDiscord, BsLinkedin, BsInstagram, BsLink } from 'react-icons/bs';
 
 
-const HeroSectionNew = () => {
+const HeroSection = () => {
   const [fadeIn, setFadeIn] = useState(false);
   const heroSectionRef = useRef(null);
 
@@ -66,4 +66,4 @@ const HeroSectionNew = () => {
   );
 };
 
-export default HeroSectionNew;
+export default HeroSection;
