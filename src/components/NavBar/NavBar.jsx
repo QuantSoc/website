@@ -4,70 +4,71 @@ import './index.less';
 import QuantSocLogo from 'components/QuantSocLogo';
 import { useNavigate } from 'react-router-dom';
 
+import { HashLink } from 'react-router-hash-link';
+
 
 const NavBar = () => {
   const navigate = useNavigate();
+  const scrollWithOffset = (el) => {
+    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+    const yOffset = -130; 
+    window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' }); 
+}
+
   return (
     <nav>
       <QuantSocLogo />
       <BurgerMenu />
       <div className="menu hidden">
-        {/* <div
-          role="button"
+        <HashLink
           tabIndex={-1}
           onKeyDown={() => {}}
-          onClick={() => {
-            navigate('/');
-          }}
+          smooth
+          to='/#about-us'
           className="text-main menu-item menu-item-mobile"
-        >
-          Home
-        </div> */}
-        <a
-          role="button"
-          tabIndex={-1}
-          onKeyDown={() => {}}
-          href='/#about-us'
-          className="text-main menu-item menu-item-mobile"
+          scroll={el => scrollWithOffset(el)}
         >
           About Us
-        </a>
-        <a
-          role="button"
+        </HashLink>
+        <HashLink
           tabIndex={-1}
+          smooth
           onKeyDown={() => {}}
-          href='/#events'
+          to='/#events'
           className="text-main menu-item menu-item-mobile"
+          scroll={el => scrollWithOffset(el)}
         >
           Events
-        </a>
+        </HashLink>
         
-        <a
-          role="button"
+        <HashLink
           tabIndex={-1}
           onKeyDown={() => {}}
-          href='/#resources'
+          to='/#resources'
           className="text-main menu-item menu-item-mobile"
+          scroll={el => scrollWithOffset(el)}
+
         >
           Resources
-        </a>
-        <a
-          href='/#sponsorships'
+        </HashLink>
+        <HashLink
+          to='/#sponsorships'
+          smooth
           className="text-main menu-item menu-item-mobile"
+          scroll={el => scrollWithOffset(el)}
+
         >
           Sponsors
-        </a>
-        <div
-          role="button"
+        </HashLink>
+        <HashLink
           tabIndex={-1}
           onKeyDown={() => {}}
-          onClick={() => {
-            navigate('/articles');
-          }}
+          smooth
+          to='/articles#'
           className="text-main menu-item menu-item-mobile"
         >
           News
-        </div>
+        </HashLink>
       </div>
     </nav>
   );

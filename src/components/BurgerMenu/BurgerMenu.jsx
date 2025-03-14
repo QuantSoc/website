@@ -3,6 +3,8 @@ import './index.less';
 import { useNavigate } from 'react-router-dom';
 import logo from '../../assets/logo-quantsoc.svg';
 
+import { HashLink } from 'react-router-hash-link';
+
 const BurgerMenu = () => {
   const navigate = useNavigate();
   const [isChecked, setIsChecked] = useState(false);
@@ -45,75 +47,59 @@ const BurgerMenu = () => {
           className="burger-menu__logo"
         />
         <h2>QuantSoc</h2>
-        <div
+        <HashLink
           className="burger-menu-item"
-          role="button"
           onKeyDown={() => {}}
           tabIndex={-1}
-          onClick={() => {
-            handleLinkClick('/');
-          }}
+          smooth
+          to='/#'
         >
           Home
-        </div>
-        {/* <div
+        </HashLink>
+         <HashLink
           className="burger-menu-item"
-          role="button"
           onKeyDown={() => {}}
           tabIndex={-1}
-          onClick={() => {
-            handleLinkClick('/about');
-          }}
+          to='/#about-us'
+          smooth
         >
           About Us
-        </div> */}
-         <a
+        </HashLink>
+        <HashLink
           className="burger-menu-item"
-          role="button"
           onKeyDown={() => {}}
           tabIndex={-1}
-          href='/#about-us'
-        >
-          About Us
-        </a>
-        <a
-          className="burger-menu-item"
-          role="button"
-          onKeyDown={() => {}}
-          tabIndex={-1}
-          href='/#events'
+          to='/#events'
         >
           Events
-        </a>
-        <a
+        </HashLink>
+        <HashLink
           className="burger-menu-item"
-          role="button"
           onKeyDown={() => {}}
           tabIndex={-1}
-          href='/#resources'
+          smooth
+          to='/#resources'
         >
           Resources
-        </a>
-        <a
+        </HashLink>
+        <HashLink
           className="burger-menu-item"
-          role="button"
           onKeyDown={() => {}}
           tabIndex={-1}
-          href='/#sponsorships'
+          smooth
+          to='/#sponsorships'
         >
           Sponsors
-        </a>
-        <div
+        </HashLink>
+        <HashLink
           className="burger-menu-item"
-          role="button"
           onKeyDown={() => {}}
           tabIndex={-1}
-          onClick={() => {
-            handleLinkClick('/articles');
-          }}
+          smooth
+          to='/articles#'
         >
           News
-        </div>
+        </HashLink>
       </div>
     </div>
   );
