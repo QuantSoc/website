@@ -24,8 +24,8 @@ const AboutUsSection = () => {
                 <div><span className='about-us-icon'><FaSquareFacebook/> </span><Counter target={1000} />+<br/><span className='impact-trailing-text'>facebook followers</span></div>
             </div>
             </div>
-            <img className='about-us-right-side'src={AboutCandlestick}/>
-
+            {/* <img className='about-us-right-side'src={AboutCandlestick}/> */}
+            <span className='about-us-right-side'> EMPOWERING<br/><span id='about-us-quantitative-text'>QUANTITATIVE</span><br/>FUTURES ⇱</span>
             
         </section>
     );

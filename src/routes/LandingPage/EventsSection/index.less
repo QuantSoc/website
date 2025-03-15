@@ -42,12 +42,22 @@
     width:340px;
     height: 500px;
     overflow: hidden;
-    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(0px 0px 2px @mid-purple);
     @media screen and (max-width: @tablet) {
         margin-top: 1rem;
     }
     margin: 0 auto;
     border-radius: 5px;
+
+    transition: transform 200ms ease-out, filter 400ms ease-out;
+
+    @media screen and (min-width: @tablet) {
+        &:hover {
+            transform: scale(1.1);
+            filter: drop-shadow(0px 0px 20px @mid-purple);
+
+        }
+    }
 }
 
 .events-embed-container {
@@ -74,6 +84,8 @@
       left: 50%; // Align the background to the center horizontally
       margin-left: -170px; // Offset by half of the background width (340px / 2)
       overflow-x: hidden;
+
+      filter: drop-shadow(0px 0px 4px @mid-purple);
 
       @media screen and (max-width: @mobile) {
         display: none;
