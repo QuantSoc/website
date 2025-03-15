@@ -30,12 +30,23 @@
   font-weight: bold;
   color: white;
   text-align: center; /* Ensures the text is centered */
-  min-width: 600px;
+  min-width: 4vw;
+
+  @media screen and (max-width:@mobile) {
+    display: none;
+  }
+  @media screen and (max-width:@tablet) {
+    font-size: 65px;
+  }
 }
 
 #quantsoc-logo {
   width: 8vw;
   min-width: 100px;
+
+  @media screen and (max-width:@mobile) {
+    margin-bottom: 1rem;
+  }
 }
 
 
