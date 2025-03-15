@@ -94,16 +94,12 @@
 
 .float-right {
     position: absolute;
-    transform: translateY(-110px) translateX(210px);
+    transform: translateY(140px) translateX(230px);
     font-size: 50px;
     font-weight: 800;
-    color: white;  // Text color
+    color: @dark-purple;  // Text color
     cursor:default;
-    text-shadow: 
-        1px 1px 1px @mid-purple, 
-        -1px -1px 1px @mid-purple,  
-        1px -1px 1px @mid-purple, 
-        -1px 1px 1px @mid-purple;  // Create an outline effect
+    display: none;
 
     @media screen and (max-width: 600px) {
         display: none;
