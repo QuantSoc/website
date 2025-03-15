@@ -20,6 +20,7 @@ const EventsSection = () => {
               scrolling='no'
               frameBorder="0"
           />
+          <div className="float-right">⇵</div>
         </div>
 
 

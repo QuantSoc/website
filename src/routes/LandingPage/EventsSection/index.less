@@ -47,7 +47,6 @@
         margin-top: 1rem;
     }
     margin: 0 auto;
-    border-radius: 5px;
 
     transition: transform 200ms ease-out, filter 400ms ease-out;
 
@@ -90,5 +89,23 @@
       @media screen and (max-width: @mobile) {
         display: none;
       }
+    }
+}
+
+.float-right {
+    position: absolute;
+    transform: translateY(-110px) translateX(210px);
+    font-size: 50px;
+    font-weight: 800;
+    color: white;  // Text color
+    cursor:default;
+    text-shadow: 
+        1px 1px 1px @mid-purple, 
+        -1px -1px 1px @mid-purple,  
+        1px -1px 1px @mid-purple, 
+        -1px 1px 1px @mid-purple;  // Create an outline effect
+
+    @media screen and (max-width: 600px) {
+        display: none;
     }
 }
