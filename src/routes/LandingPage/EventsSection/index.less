@@ -2,14 +2,16 @@
 
 .events-container {
     display: flex;
-    flex-direction: col;
-    flex-wrap:wrap;
+    flex-direction: row;
+    flex-wrap:nowrap;
     width: 100%;
     justify-content: space-between;
     vertical-align: center;
     
     @media screen and (max-width: @tablet) {
         justify-self: left;
+        flex-wrap: wrap;
+
     }
 }
 
@@ -30,16 +32,9 @@
     width: 60%;
 
     height:fit-content;
-    // background: linear-gradient(45deg, @quantsoc-accent,@quantsoc-secondary);
-    // border-radius: 15px;
-    // padding: 5%;
     > p {
         font-size: 28px;
-        // color: white;
-        // text-shadow: 2px 2px 14px black;
-
     }
-    // box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -52,4 +47,31 @@
         margin-top: 1rem;
     }
     margin: 0 auto;
+    border-radius: 5px;
+}
+
+.events-embed-container {
+    position: relative;
+    margin-top: 2rem;
+    width: 40%;
+    display: flex;
+    justify-content: center; // Centers the iframe horizontally
+    align-items: center; // Centers it vertically (if needed)
+  
+    height: 500px; // Match the iframe height
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 5px; 
+      left: 5px; 
+      width: 340px; 
+      height: 500px; 
+      background: linear-gradient(45deg, @darkest-purple, @mid-purple);
+      z-index: -1;
+      transform: rotate(5deg) translateX(5%); 
+      border-radius: 10px; 
+      left: 50%; // Align the background to the center horizontally
+      margin-left: -170px; // Offset by half of the background width (340px / 2)
+    }
 }

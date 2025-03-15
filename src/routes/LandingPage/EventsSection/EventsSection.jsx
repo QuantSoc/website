@@ -13,12 +13,15 @@ const EventsSection = () => {
           Check out the full listings for what we have in store on the QuantSoc Discord and Facebook page!
           </p>
         </div>
-        <iframe className='events-item events-embed'
-            src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/unswquantsoc/&tabs=timeline&small_header=true"
-            allow="encrypted-media; clipboard-write; encrypted-media; picture-in-picture; web-share"
-            scrolling='no'
-            frameborder="0"
+        <div className="events-item events-embed-container">
+          <iframe className='events-embed'
+              src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/unswquantsoc/&tabs=timeline&small_header=true"
+              allow="encrypted-media; clipboard-write; encrypted-media; picture-in-picture; web-share"
+              scrolling='no'
+              frameBorder="0"
           />
+        </div>
+
 
       </div>
     </section>
