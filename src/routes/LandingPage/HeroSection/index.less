@@ -88,8 +88,10 @@
   background-color: transparent;
   font-family: Poppins, sans-serif;
   filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.2));
+
+  cursor:pointer;
   
-  transition: background-color 200ms linear, color 200ms linear, border 200ms linear;
+  transition: background-color 200ms linear, color 200ms linear, border 200ms linear, transform 300ms ease-out;
 
   &:hover {
     color: white;
@@ -104,12 +106,14 @@
   color: white;
   background-color: @mid-purple;
 
-  transition: background-color 500ms linear, color 500ms linear, border 500ms linear;
+  transition: background-color 500ms linear, color 500ms linear, border 500ms linear, transform 300ms ease-out;
 
   &:hover {
     color: white;
     border: solid @dark-purple 3px;
     background-color: @dark-purple;
+    transform: scale(1.03);
+
   }
 }
 
@@ -126,9 +130,9 @@
 
   > * > * {
     color: white;
-    transition: color 100ms linear;
+    transition: color 100ms ease-out, transform 200ms ease-out;
     filter: drop-shadow(4px 4px 30px 0.9);
-    transition: color 300ms linear;
+    // transition: color 300ms linear;
     width: 2rem !important;
     height: 2rem !important;
 
