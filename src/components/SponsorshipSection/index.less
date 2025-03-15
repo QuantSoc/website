@@ -53,7 +53,7 @@ svg {
   font-size: 28px;
 
 
-  transition: background-color 500ms linear, color 500ms linear, border 500ms linear;
+  transition: background-color 500ms linear, color 500ms ease-out, border 500ms linear, transform 500ms ease-out;
   filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.25));
 
   &:hover {
@@ -61,5 +61,6 @@ svg {
     border: solid 3px   @dark-purple;
     filter: drop-shadow(3px 3px 10px @quantsoc-primary);
     background-color: @dark-purple;
+    transform: scale(1.05);
   }
 }
