@@ -76,9 +76,9 @@
       left: 5px; 
       width: 340px; 
       height: 500px; 
-      background: linear-gradient(45deg, @darkest-purple, @mid-purple);
+      background: linear-gradient(45deg, @dark-purple, @mid-purple);
       z-index: -1;
-      transform: rotate(5deg) translateX(5%); 
+      transform: rotate(5deg) translateX(6%); 
       border-radius: 10px; 
       left: 50%; // Align the background to the center horizontally
       margin-left: -170px; // Offset by half of the background width (340px / 2)
@@ -90,6 +90,25 @@
         display: none;
       }
     }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 15px;  // Slightly offset from ::before
+        left: 50%;
+        width: 320px; // Slightly smaller width than ::before
+        height: 480px; // Slightly smaller height than ::before
+        background: linear-gradient(45deg, @darkest-purple, @dark-purple);
+        z-index: -2; // Places it behind ::before
+        transform: rotate(10deg) translateX(15%);
+        border-radius: 10px;
+        margin-left: -160px; // Offset to match centering
+        filter: drop-shadow(0px 0px 6px @darkest-purple);
+  
+        @media screen and (max-width: 700px) {
+          display: none;
+        }
+      }
 }
 
 .float-right {

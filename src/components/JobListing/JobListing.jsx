@@ -1,10 +1,16 @@
 import './index.less';
 
+import { RiExternalLinkFill } from "react-icons/ri";
+
+
 const JobListing = ({ job }) => {
   return (
     <a href={job.link} target="_blank" rel="noopener noreferrer" className="job-listing">
+      <div className="external-link">
+        <RiExternalLinkFill />
+      </div>
+
       <div>
-        <br />
         <h3>{job.title}</h3>
         <span>
           {job.company} | {job.location}
