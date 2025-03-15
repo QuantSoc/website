@@ -1,22 +1,32 @@
+import { useState } from 'react';
 import './index.less';
 
 import ArticleCardLarge from 'components/ArticleCardLarge';
 
-
-import placeholder from 'assets/comingsoon.png'
-
-
 const RecentSection = () => {
+  const [isVisible, setIsVisible] = useState(true);
+
+  const toggleVisibility = () => {
+    setIsVisible(prev => !prev);
+  };
+
   return (
     <section className="recent-articles">
-        <h1>Most Recent</h1>
+      <h1 id="most-recent-heading" onClick={toggleVisibility} style={{ cursor: 'pointer' }}>
+        Most Recent {' '}
+        <span id="dropdown-button" className={isVisible ? 'rotated' : ''}>
+          &nbsp;➤
+        </span>
+      </h1>
 
+      {isVisible && (
         <ArticleCardLarge 
-        heading="Welcome to our new QuantSoc Newsletter!" 
-        subheading="Let's have a look at what is going on this week. " 
+          heading="Welcome to our new QuantSoc Newsletter!" 
+          subheading="Let's have a look at what is going on this week." 
         />
-        
+      )}
     </section>
   );
 };
+
 export default RecentSection;
