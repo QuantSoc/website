@@ -73,5 +73,10 @@
       border-radius: 10px; 
       left: 50%; // Align the background to the center horizontally
       margin-left: -170px; // Offset by half of the background width (340px / 2)
+      overflow-x: hidden;
+
+      @media screen and (max-width: @mobile) {
+        display: none;
+      }
     }
 }
