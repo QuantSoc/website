@@ -29,7 +29,7 @@ const LandingPage = () => {
         <div id='events' className=' landing-page__container'><EventsSection /></div>
 
         <div className='landing-page__container' id='resources'><GamesSection />
-        <HashLink to={'/resources#'} className='more-resources-button'>View More → </HashLink>
+        <HashLink to={'/resources#'} className='more-resources-button'>See More → </HashLink>
         </div>
         <div className='landing-page__container' id='sponsorships'><SponsorshipSection /></div>
       </div>

@@ -17,11 +17,9 @@ const HeroSection = () => {
           Discover fun and educational Resources, Workshops and Opportunities!
         </h1>
         <p className="text-body">
-          Explore a fusion of fun and education through curated resources,
-          engaging workshops, and exciting opportunities. Immerse yourself in
+          Explore a fusion of fun and education through our curated resources. Immerse yourself in
           the world of quantitative trading, gaining insights, strategies, and
-          hands-on experience. Elevate your skills and embrace the journey of
-          discovery with us!
+          hands-on experience!
         </p>
       </div>
     </section>

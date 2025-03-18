@@ -23,8 +23,7 @@ const HeroSection = () => {
       <div className="hero-item stack">
         <h1 className="hero-heading">The Official Quantsoc Newsletter</h1>
         <p className="text-body">
-        Welcome to our fortnightly newsletter! Our team has been hard at work to bring you the latest financial news, 
-        exciting job opportunities, and details about our upcoming events. 
+        Welcome to our fortnightly newsletter! 
         <br /> Stay informed and connected with us as we keep you updated on all the important happenings.
         </p>
 

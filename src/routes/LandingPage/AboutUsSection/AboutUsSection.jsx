@@ -19,9 +19,9 @@ const AboutUsSection = () => {
                 Our mission is to foster a large community of like-minded students and connect them with opportunities in the unique field of quantitative finance.
                 </p>
                 <div className='about-impact-section'>
-                <div><span className='about-us-icon'><GoPersonFill /> </span><Counter target={400} />+<br/><span className='impact-trailing-text'>members</span></div>
-                <div><span className='about-us-icon'><FaCalendarMinus/> </span><Counter target={20} />+<br/><span className='impact-trailing-text'>events last year</span></div>
-                <div><span className='about-us-icon'><FaSquareFacebook/> </span><Counter target={1000} />+<br/><span className='impact-trailing-text'>facebook followers</span></div>
+                <div><span className=''></span><span className='about-us-icon'><GoPersonFill /> </span><Counter target={400} /><span className='counter-highlight-text'>+</span><br/><span className='impact-trailing-text'>members</span></div>
+                <div><span className='about-us-icon'><FaCalendarMinus/> </span><Counter target={20} /><span className='counter-highlight-text'>+</span><br/><span className='impact-trailing-text'>events last year</span></div>
+                <div><span className='about-us-icon'><FaSquareFacebook/> </span><Counter target={1000} /><span className='counter-highlight-text'>+</span><br/><span className='impact-trailing-text'>facebook followers</span></div>
             </div>
             </div>
             {/* <img className='about-us-right-side'src={AboutCandlestick}/> */}

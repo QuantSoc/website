@@ -39,10 +39,6 @@ const WelcomeSection = ({ hideRedirect = false }) => {
 
   return (
     <section className="empowering-section">
-      {/* <h1 className="membership-counter" ref={counterRef}>
-        <span className="highlight-text">{count}</span>+ members
-      </h1>
-      <br /> */}
       <h1>
         Welcome to UNSW's <span className="highlight-text">greatest</span> community for quantitative trading
       </h1>
