@@ -25,7 +25,7 @@
 }
 
 #landing-title {
-  font-size: 8vw; /* Scales text to 10% of the screen width */
+  font-size: 1050%; /* Scales text to 10% of the screen width */
   font-family: Poppins, sans-serif;
   font-weight: bold;
   color: white;
@@ -41,7 +41,7 @@
 }
 
 #quantsoc-logo {
-  width: 8vw;
+  width: 15%;
   min-width: 100px;
 
   @media screen and (max-width:@mobile) {
@@ -59,12 +59,14 @@
 
 .fadein-elements {
   opacity: 0;
-  transition: opacity 3s ease-in-out;
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
   filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
 }
 
 .fadein-elements.fade-in {
   opacity: 1;
+  transform: translateY(-20px);
+
 }
 
 .button-container {
