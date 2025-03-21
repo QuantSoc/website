@@ -22,11 +22,13 @@ const LandingPage = () => {
       <HeroSection />
       <div className='main-body'>
         {/* <AboutUsPage /> */}
-        <div className='landing-page__container' id='about-us'><AboutUsSection /></div>
         
-        <div className='landing-page__container'><PastEventSection /></div>
+        <div className='landing-page__container' id='about-us'><AboutUsSection /></div>
+        {/* <div className='landing-page__container'><PastEventSection /></div> */}
+
         
         <div id='events' className=' landing-page__container'><EventsSection /></div>
+
 
         <div className='landing-page__container' id='resources'><GamesSection />
         <HashLink to={'/resources#'} className='more-resources-button'>See More → </HashLink>
