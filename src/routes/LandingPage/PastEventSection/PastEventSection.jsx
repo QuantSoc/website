@@ -4,7 +4,6 @@ import './index.less';
 const PastEventSection = () => {
     const [images, setImages] = useState([]);
     const [currentIndex, setCurrentIndex] = useState(0);
-    const [isFading, setIsFading] = useState(false);
 
     useEffect(() => {
         const fetchImages = async () => {
@@ -16,31 +15,32 @@ const PastEventSection = () => {
         fetchImages();
     }, []);
 
-    useEffect(() => {
-        if (images.length === 0) return;
-
-        const interval = setInterval(() => {
-            setIsFading(true); // Start fade-out
-
-            setTimeout(() => {
-                setCurrentIndex(prevIndex => (prevIndex + 1) % Math.ceil(images.length / 4));
-                setIsFading(false); // Start fade-in
-            }, 500); // Match fade-out duration
-        }, 8000);
-
-        return () => clearInterval(interval);
-    }, [images, currentIndex]);
+    const totalSlides = Math.ceil(images.length / 4);
+    const goToSlide = (index) => {
+        setCurrentIndex(index);
+    };
 
     const currentImages = images.slice(currentIndex * 4, (currentIndex + 1) * 4);
 
     return (
         <section className="past-events">
-            <div className={`events-row ${isFading ? 'fade-out' : 'fade-in'}`}>
-                {currentImages.map((image, index) => (
-                    <div key={index} className="event-card">
-                        <img src={image} alt={`Past Event ${index}`} />
-                    </div>
-                ))}
+            <div className="slider-container">
+                <div className="events-row" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+                    {images.map((image, index) => (
+                        <div key={index} className="event-card">
+                            <img src={image} alt={`Past Event ${index}`} />
+                        </div>
+                    ))}
+                </div>
+                <div className="slider-indicators">
+                    {Array.from({ length: totalSlides }).map((_, index) => (
+                        <button
+                            key={index}
+                            className={`indicator ${index === currentIndex ? 'active' : ''}`}
+                            onClick={() => goToSlide(index)}
+                        />
+                    ))}
+                </div>
             </div>
         </section>
     );
