@@ -43,23 +43,25 @@ svg {
   max-width: 700px;
   min-width: fit-content;
   padding: 1%;
-  color: @quantsoc-dark;
+  color: black;
   justify-self: center;
   justify-content: center;
-  font-weight: 1000;
-  border: solid 3px @quantsoc-dark;
+  font-weight: 500;
+  border: solid 3px black;
   border-radius: 10px;
   font-size: 28px;
 
+  font-family: Roboto;
 
-  transition: background-color 500ms linear, color 500ms ease-out, border 500ms linear, transform 500ms ease-out;
+
+  transition: background-color 400ms ease-out, color 400ms ease-out, border 400ms linear, transform 400ms ease-out;
   filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.25));
 
   &:hover {
     color: white;
-    border: solid 3px   @dark-purple;
+    border: solid 3px @darkest-purple;
     filter: drop-shadow(3px 3px 10px @mid-purple);
-    background-color: @dark-purple;
+    background: linear-gradient(to right, @darkest-purple, @mid-purple);
     transform: scale(1.05);
   }
 }
