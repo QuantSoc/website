@@ -62,6 +62,7 @@
 .events-embed-container {
     position: relative;
     margin-top: 2rem;
+    margin-bottom: -2.5rem;
     width: 40%;
     display: flex;
     justify-content: center; // Centers the iframe horizontally
@@ -69,17 +70,23 @@
   
     height: 500px; // Match the iframe height
 
+    iframe {
+        // border: 2px solid @dark-purple;
+        border-radius: 8px;
+    }
+
+
     &::before {
       content: '';
       position: absolute;
       top: 5px; 
       left: 5px; 
       width: 340px; 
-      height: 500px; 
-      background: linear-gradient(45deg, @dark-purple, @mid-purple);
+      height: 460px; 
+      background: linear-gradient(90deg, @darkest-purple, @mid-purple);
       z-index: -1;
-      transform: rotate(5deg) translateX(6%); 
-      border-radius: 5px; 
+      transform: rotate(5deg) translateX(6%) translateY(1.5%); 
+      border-radius: 8px; 
       left: 50%; // Align the background to the center horizontally
       margin-left: -170px; // Offset by half of the background width (340px / 2)
       overflow-x: hidden;
@@ -97,11 +104,11 @@
         top: 15px;  // Slightly offset from ::before
         left: 50%;
         width: 320px; // Slightly smaller width than ::before
-        height: 480px; // Slightly smaller height than ::before
-        background: linear-gradient(45deg, @darkest-purple, @dark-purple);
+        height: 450px; // Slightly smaller height than ::before
+        background: linear-gradient(45deg, black, @mid-purple);
         z-index: -2; // Places it behind ::before
         transform: rotate(10deg) translateX(15%);
-        border-radius: 5px;
+        border-radius: 8px;
         margin-left: -160px; // Offset to match centering
         // filter: drop-shadow(0px 0px 5px @darkest-purple);
   

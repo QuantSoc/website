@@ -6,6 +6,9 @@ import { useNavigate } from 'react-router-dom';
 
 import { HashLink } from 'react-router-hash-link';
 
+import { BsFacebook, BsDiscord, BsLinkedin, BsInstagram, BsLink } from 'react-icons/bs';
+
+
 
 const NavBar = () => {
   const navigate = useNavigate();
@@ -18,6 +21,20 @@ const NavBar = () => {
   return (
     <nav>
       <QuantSocLogo />
+       {/* <div className="">
+                    <a href="https://discord.gg/2qYRNKubRz" target="_blank" rel="noopener noreferrer">
+                        <BsDiscord />
+                    </a>
+                    <a href="https://www.facebook.com/unswquantsoc/" target="_blank" rel="noopener noreferrer">
+                        <BsFacebook />
+                    </a>
+                    <a href="https://www.linkedin.com/company/quantsoc/" target="_blank" rel="noopener noreferrer">
+                        <BsLinkedin />
+                    </a>
+                    <a href="https://www.instagram.com/quantsoc_unsw/" target="_blank" rel="noopener noreferrer">
+                        <BsInstagram />
+                    </a>
+                </div> */}
       <BurgerMenu />
       <div className="menu hidden">
         <HashLink

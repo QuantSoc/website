@@ -16,12 +16,13 @@
 
 .about-us-icon{
     display: inline-block;
-    margin-top: -7px;
+    margin-top: -5px;
     color: @mid-purple;
     transform: scale(1.5);
     transform-origin: top left; // Adjust scaling direction
     vertical-align: top;
     margin-right: 15px;
+    
 }
 
 
@@ -47,15 +48,15 @@
 .counter-highlight-text {
     color: @mid-purple;
     font-weight: bold;
-    // filter: drop-shadow(1.5px 2px 4px rgba(0, 0, 0, 0.2));
-    // text-shadow: 0px 0px 3px @mid-purple;
-
     font-size: 36px;
     cursor: default;
 
-    // &:hover {
-    //     filter: drop-shadow(2px 5px 10px @quantsoc-accent-light);
-    // }
+    // font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+
+    background: linear-gradient(to right, @mid-purple, @dark-purple);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: filter 500ms ease-in-out;
 }
 
 .about-us-left-side, .about-us-right-side{
@@ -102,6 +103,12 @@
     #about-us-quantitative-text {
         font-size: 62px;
     }
+    
+
+    background: linear-gradient(to right, @mid-purple, @dark-purple);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: filter 500ms ease-in-out;
     
 
 }
