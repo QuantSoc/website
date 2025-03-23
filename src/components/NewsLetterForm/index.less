@@ -1,3 +1,5 @@
+@import '../../styles/constants.less';
+
 .ml-form-embedSubmitLoad {
     display: inline-block;
     width: 20px;
@@ -56,12 +58,14 @@
       text-transform: none !important;
       letter-spacing: normal !important;
     }
+
+    /* BOOKMARK: This section controls the background of the form */
     #mlb2-23253533.ml-form-embedContainer .ml-form-embedWrapper {
-      background-color: #f6f6f6;
+      background-color: #fafafa;
       
       border-width: 0px;
       border-color: transparent;
-      border-radius: 0px;
+      border-radius: 8px;
       border-style: solid;
       box-sizing: border-box;
       display: inline-block !important;
@@ -463,8 +467,8 @@
       height: auto;
     }
     #mlb2-23253533.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow button:hover {
-      background-color: #9740f3 !important;
-      border-color: #9740f3 !important;
+      background-color: @dark-purple !important;
+      border-color: @dark-purple !important;
     }
     #mlb2-23253533.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow input[type="checkbox"] {
       box-sizing: border-box;
@@ -517,8 +521,11 @@
       float: left;
       width: 100%;
     }
+
+    /* BOOKMARK: THIS CHUNK HERE CONTROLS THE COLOR FOR THE subscribe buton */
     #mlb2-23253533.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button {
-      background-color: #000000 !important;
+      background-color: black !important;
+      transition: background-color 400ms ease-out, box-shadow 400ms ease-out, transform 400ms ease-out !important;
       border: none !important;
       border-radius: 0px !important;
       box-shadow: none !important;
@@ -532,12 +539,15 @@
       padding: 10px !important;
       width: 100% !important;
       box-sizing: border-box !important;
+      border-radius: 4px !important;
     }
     #mlb2-23253533.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button.loading {
       display: none;
     }
     #mlb2-23253533.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button:hover {
-      background-color: #9740f3 !important;
+      background-color: @dark-purple !important;
+      box-shadow: 0px 0px 4px @mid-purple !important;
+      transform: scale(1.01);
     }
     .ml-subscribe-close {
       width: 30px;
