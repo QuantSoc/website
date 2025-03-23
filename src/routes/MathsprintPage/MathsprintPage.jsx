@@ -105,7 +105,7 @@ const Mathsprint = () => {
   }
 
   return (
-    <div>
+    <div className='main-body'>
       <h1 id="heading">MATHSPRINT</h1>
       <div className="top-row">
         <p id="timer">
