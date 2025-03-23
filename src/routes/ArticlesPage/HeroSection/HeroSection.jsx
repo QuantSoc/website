@@ -4,6 +4,8 @@ import { useState, useEffect } from 'react';
 
 import './index.less';
 
+import NewsLetterForm from 'components/NewsLetterForm/NewsLetterForm';
+
 const HeroSection = () => {
 
   const [loaded, setLoaded] = useState(false);
@@ -26,15 +28,7 @@ const HeroSection = () => {
         Welcome to our fortnightly newsletter! 
         <br /> Stay informed and connected with us as we keep you updated on all the important happenings.
         </p>
-
-        {/* PUT FORM HERE */}
-
-        <iframe
-          className={`newsletter-form ${loaded ? 'loaded' : ''}`}
-          scrolling="no"
-          src="https://dashboard.mailerlite.com/forms/829979/147821366068905374/share"
-          onLoad={() => setLoaded(true)}
-        />
+        <NewsLetterForm />
       </div>
     </section>
   );
