@@ -21,20 +21,6 @@ const NavBar = () => {
   return (
     <nav>
       <QuantSocLogo />
-       {/* <div className="">
-                    <a href="https://discord.gg/2qYRNKubRz" target="_blank" rel="noopener noreferrer">
-                        <BsDiscord />
-                    </a>
-                    <a href="https://www.facebook.com/unswquantsoc/" target="_blank" rel="noopener noreferrer">
-                        <BsFacebook />
-                    </a>
-                    <a href="https://www.linkedin.com/company/quantsoc/" target="_blank" rel="noopener noreferrer">
-                        <BsLinkedin />
-                    </a>
-                    <a href="https://www.instagram.com/quantsoc_unsw/" target="_blank" rel="noopener noreferrer">
-                        <BsInstagram />
-                    </a>
-                </div> */}
       <BurgerMenu />
       <div className="menu hidden">
         <HashLink
@@ -85,6 +71,16 @@ const NavBar = () => {
           className="text-main menu-item menu-item-mobile"
         >
           News
+        </HashLink>
+
+        <HashLink
+          tabIndex={-1}
+          onKeyDown={() => {}}
+          smooth
+          to='/shop'
+          className="text-main menu-item menu-item-mobile"
+        >
+          Shop
         </HashLink>
       </div>
     </nav>

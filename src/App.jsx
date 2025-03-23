@@ -14,6 +14,7 @@ import PrivateRoute from 'components/PrivateRoute/PrivateRoute';
 import JobListingFormPage from 'routes/JobListingFormPage/JobListingFormPage';
 import Mathsprint from 'routes/MathsprintPage/MathsprintPage';
 import ArticlesPage from 'routes/ArticlesPage';
+import ShoppingPage from 'routes/ShoppingPage/ShoppingPage';
 
 const App = () => {
   return (
@@ -29,6 +30,8 @@ const App = () => {
           <Route path="/boardlogin" element={<BoardLoginPage />} />
           <Route path="/mathsprint" element={<Mathsprint />} />
           {/* Private Pages: only accessibly by Google authenticated users */}
+          <Route path="/shop" element={<ShoppingPage />} />
+
           <Route path="/admin" element={<PrivateRoute />}>
             <Route path="/admin" element={<AdminPage />} />
           </Route>
