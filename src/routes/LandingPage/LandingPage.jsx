@@ -14,6 +14,7 @@ import AboutUsSection from './AboutUsSection/AboutUsSection';
 import { HashLink } from 'react-router-hash-link';
 
 import PastEventSection from './PastEventSection/PastEventSection';
+import ContactForm from 'components/ContactForm/ContactForm';
 
 
 const LandingPage = () => {
@@ -33,7 +34,12 @@ const LandingPage = () => {
         <div className='landing-page__container' id='resources'><GamesSection />
         <HashLink to={'/resources#'} className='more-resources-button'>See More → </HashLink>
         </div>
+        {/* <ContactForm/ > */}
+
         <div className='landing-page__container' id='sponsorships'><SponsorshipSection /></div>
+
+        <div>
+        </div>
       </div>
      
     </div>
