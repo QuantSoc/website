@@ -100,6 +100,15 @@ const BurgerMenu = () => {
         >
           News
         </HashLink>
+        <HashLink
+            to='/contact#'
+            onKeyDown={() => {}}
+            tabIndex={-1}
+            smooth
+            className="burger-menu-item"  
+          >
+            Contact Us
+          </HashLink>
       </div>
     </div>
   );

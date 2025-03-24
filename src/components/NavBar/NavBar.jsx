@@ -77,6 +77,7 @@ const NavBar = () => {
         >
           Sponsors
         </HashLink>
+        
         <HashLink
           tabIndex={-1}
           onKeyDown={() => {}}
@@ -85,6 +86,15 @@ const NavBar = () => {
           className="text-main menu-item menu-item-mobile"
         >
           News
+        </HashLink>
+        <HashLink
+          to='/contact#'
+          smooth
+          className="text-main menu-item menu-item-mobile"
+          scroll={el => scrollWithOffset(el)}
+
+        >
+          Contact Us
         </HashLink>
       </div>
     </nav>
