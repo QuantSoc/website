@@ -4,7 +4,7 @@ import ArticleCard from 'components/ArticleCard';
 import { collection, getDocs, query, orderBy } from 'firebase/firestore';
 import { db } from '../../../firebase.config';
 
-const PreviouslySection = () => {
+const PreviouslySection = ({ className = '' }) => {
   const [articles, setArticles] = useState([]);
   const heading = "This is a heading for the article";
 
@@ -33,7 +33,7 @@ const PreviouslySection = () => {
   }, []);
 
   return (
-    <section className="past-articles">
+    <section className={`past-articles ${className}`}>
       <h1>Archive</h1>
       <div className='previously-flex'>
         {articles.map((article, index) => (

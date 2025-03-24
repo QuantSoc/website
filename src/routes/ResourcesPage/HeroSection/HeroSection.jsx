@@ -1,18 +1,9 @@
-import resourcesGraphic from 'assets/quantsoc-graphics/resources-fireworks.svg';
+import './index.less'
 
-const HeroSection = () => {
+const HeroSection = ({ className = '' }) => {
   return (
-    <section className="hero-section">
-      <div className="hero-item">
-        <img
-          src={resourcesGraphic}
-          alt="quantsoc-hero-section-resources-firework-graphic"
-          className="hero-img"
-          loading="eager"
-        />
-      </div>
-
-      <div className="hero-item stack">
+    <section className={`hero-section ${className}`} id='resource-hero-section'>
+      <div className="hero-text-container">
         <h1 className="hero-heading">
           Discover fun and educational Resources, Workshops and Opportunities!
         </h1>
@@ -25,4 +16,5 @@ const HeroSection = () => {
     </section>
   );
 };
+
 export default HeroSection;

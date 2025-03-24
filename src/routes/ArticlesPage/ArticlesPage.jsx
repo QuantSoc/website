@@ -12,10 +12,10 @@ const ArticlesPage = () => {
     <div id="articles-page">
       <HeroSection />
       {/* The recent section contains the most recent news article */}
-      <RecentSection />
+      <RecentSection className='articles-page-body' />
       
       {/* This displays a bunch of links to the previous articles */}
-      <PreviouslySection />
+      <PreviouslySection className='articles-page-body' />
 
     </div>
   );

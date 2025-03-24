@@ -12,9 +12,9 @@ const ResourcesPage = () => {
     <div className="page" id='resources-page'>
       <HeroSection />
       {/* separate div to ensure universal focusability of anchor */}
-      <GamesSection />
+      <GamesSection className='articles-page-body' />
       {/* <WorkshopSection anchorTag="workshops" /> */}
-      <JobListings />
+      <JobListings className='articles-page-body' />
       
     </div>
   );

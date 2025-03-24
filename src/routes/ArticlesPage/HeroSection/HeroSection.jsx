@@ -13,16 +13,7 @@ const HeroSection = () => {
 
   return (
     <section className="hero-section">
-      <div className="hero-item">
-        <img
-          src={eventGathering}
-          alt="quantsoc-hero-section-event-gathering-graphic"
-          className="hero-img"
-          loading="eager"
-        />
-      </div>
-
-      <div className="hero-item stack">
+      <div className='hero-text-container'>
         <h1 className="hero-heading">The Official Quantsoc Newsletter</h1>
         <p className="text-body">
         Welcome to our fortnightly newsletter! 
@@ -30,6 +21,7 @@ const HeroSection = () => {
         </p>
         <NewsLetterForm />
       </div>
+        
     </section>
   );
 };

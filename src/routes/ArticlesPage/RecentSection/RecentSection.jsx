@@ -3,7 +3,7 @@ import './index.less';
 
 import ArticleCardLarge from 'components/ArticleCardLarge';
 
-const RecentSection = () => {
+const RecentSection = ({ className = '' }) => {
   const [isVisible, setIsVisible] = useState(true);
 
   const toggleVisibility = () => {
@@ -11,7 +11,7 @@ const RecentSection = () => {
   };
 
   return (
-    <section className="recent-articles">
+    <section className={`recent-articles ${className}`}>
       <h1 id="most-recent-heading" onClick={toggleVisibility} style={{ cursor: 'pointer' }}>
         Most Recent {' '}
         <span id="dropdown-button" className={isVisible ? 'rotated' : ''}>
