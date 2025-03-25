@@ -73,14 +73,16 @@
         display: none;
     }
 
+
     font-family:Poppins;
 
     line-height: 80px;
 
-    color: @mid-purple;
+    color: white;
+    text-shadow: 0px 0px 20px @dark-purple;
     font-weight: 600;
     text-align: left;
-    padding-left: 80px;
+    padding-left: 60px;
     font-size: 55px;
 
     width: 40%;
@@ -90,7 +92,9 @@
 
 
     border-left: 4px solid @mid-purple;
+    border-right: 4px solid @mid-purple;
 
+    margin-top: 3rem;
     padding-bottom: 2.5rem;
     padding-top: 2.5rem;
 
@@ -100,12 +104,17 @@
     }
     
 
-    background: linear-gradient(to right, @mid-purple, @dark-purple);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: filter 500ms ease-in-out;
+    // background: linear-gradient(to right, @mid-purple, @dark-purple);
+    // background-clip: text;
+    // -webkit-text-fill-color: transparent;
+    // transition: filter 500ms ease-in-out;
     
 
+    background-image: url("../../../assets/quantsoc-gallery/about-us-background.jpg"), linear-gradient(to left, @mid-purple, @dark-purple);
+    background-size: cover;
+    background-position-y: bottom;
+    border-radius: 8px;
+    background-blend-mode: overlay;
 }
 
 
