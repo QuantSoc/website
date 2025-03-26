@@ -2,10 +2,7 @@ import './index.less';
 import React, { useEffect, useRef, useState } from 'react';
 
 import { FaSquareFacebook } from "react-icons/fa6";
-import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaCalendarMinus } from "react-icons/fa6";
-import AboutCandlestick from '../../../assets/quantsoc-graphics/hero-candlestick.svg';
-
 import { GoPersonFill } from "react-icons/go";
 
 
@@ -24,7 +21,6 @@ const AboutUsSection = () => {
                 <div><span className='about-us-icon'><FaSquareFacebook/> </span><Counter target={1000} /><span className='counter-highlight-text'>+</span><br/><span className='impact-trailing-text'>facebook followers</span></div>
             </div>
             </div>
-            {/* <img className='about-us-right-side'src={AboutCandlestick}/> */}
             <span className='about-us-right-side'> EMPOWERING<br/><span id='about-us-quantitative-text'>QUANTITATIVE</span><br/>FUTURES ⇱</span>
             
         </section>
