@@ -1,6 +1,9 @@
 import { useEffect } from 'react';
 import './index.less';
 
+import { IoIosMail } from "react-icons/io";
+
+
 const NewsLetterForm = () => {
     useEffect(() => {
         // Load MailerLite script dynamically
@@ -39,16 +42,21 @@ const NewsLetterForm = () => {
                             <div className="ml-form-formContent">
                                 <div className="ml-form-fieldRow ml-last-item">
                                     <div className="ml-field-group ml-field-email ml-validate-email ml-validate-required">
-                                        <input
-                                            aria-label="email"
-                                            aria-required="true"
-                                            type="email"
-                                            className="form-control"
-                                            name="fields[email]"
-                                            placeholder="Email"
-                                            autoComplete="email"
-                                            required
-                                        />
+                                        <div id='article-email'>
+                                            <input
+                                                aria-label="email"
+                                                aria-required="true"
+                                                type="email"
+                                                className="form-control"
+                                                name="fields[email]"
+                                                placeholder="Email"
+                                                autoComplete="email"
+                                                required
+                                            />
+                                                                                        <IoIosMail id='article-email-icon' />
+
+                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>

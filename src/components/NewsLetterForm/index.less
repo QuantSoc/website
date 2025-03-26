@@ -61,8 +61,8 @@
 
     /* BOOKMARK: This section controls the background of the form */
     #mlb2-23253533.ml-form-embedContainer .ml-form-embedWrapper {
-      background-color: #fafafa;
-      box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+      background-color: transparent;
+      // box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
       border: transparent;
       border-radius: 8px;
       border-style: solid;
@@ -74,7 +74,7 @@
             }
     #mlb2-23253533.ml-form-embedContainer .ml-form-embedWrapper.embedPopup,
     #mlb2-23253533.ml-form-embedContainer .ml-form-embedWrapper.embedDefault { width: 480px; }
-    #mlb2-23253533.ml-form-embedContainer .ml-form-embedWrapper.embedForm { max-width: 480px; width: 100%; }
+    #mlb2-23253533.ml-form-embedContainer .ml-form-embedWrapper.embedForm { max-width: 600px; width: 100%; }
     #mlb2-23253533.ml-form-embedContainer .ml-form-align-left { text-align: left; }
     #mlb2-23253533.ml-form-embedContainer .ml-form-align-center { text-align: center; }
     #mlb2-23253533.ml-form-embedContainer .ml-form-align-default { display: table-cell !important; vertical-align: middle !important; text-align: center !important; }
@@ -187,28 +187,48 @@
     #mlb2-23253533.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow.ml-formfieldHorizintal {
       margin: 0;
     }
+
+    /// BOOKMARK: This controls the emal input background
     #mlb2-23253533.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input {
-      background-color: #ffffff !important;
+      background-color: #EEEEEE !important;
       color: #333333 !important;
       border-color: #cccccc;
-      border-radius: 4px !important;
-      border-style: solid !important;
+      border-radius: 8px !important;
+      border-style: none !important;
       border-width: 1px !important;
       font-family: Poppins;
-      font-size: 20px !important;
+      font-size: 23px !important;
       height: auto;
       line-height: 21px !important;
       margin-bottom: 0;
       margin-top: 0;
       margin-left: 0;
       margin-right: 0;
-      padding: 10px 10px !important;
+      padding: 15px 20px !important;
       width: 100% !important;
       box-sizing: border-box !important;
       max-width: 100% !important;
+      margin-right: -25px;
+
     }
+
+    #article-email {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      #article-email-icon {
+        transform: scale(2) translateX(-10px);
+        color: black;
+        background-color: #EEEEEE !important;
+      }
+      border-radius: 8px !important;
+      background-color: #EEEEEE !important;
+      // padding-right: 5px; 
+    }
+
+    // BOOKMARK: this controls the text color of the email input
     #mlb2-23253533.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input::-webkit-input-placeholder,
-    #mlb2-23253533.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input::-webkit-input-placeholder { color: #333333; }
+    #mlb2-23253533.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input::-webkit-input-placeholder { color: gray; }
 
     #mlb2-23253533.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input::-moz-placeholder,
     #mlb2-23253533.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input::-moz-placeholder { color: #333333; }
@@ -526,19 +546,19 @@
       background-color: black !important;
       transition: background-color 400ms ease-out, box-shadow 400ms ease-out, transform 400ms ease-out !important;
       border: none !important;
-      border-radius: 0px !important;
       box-shadow: none !important;
       color: #ffffff !important;
       cursor: pointer;
       font-family: Poppins !important;
-      font-size: 20px !important;
+      font-size: 24px !important;
       font-weight: 500 !important;
       line-height: 21px !important;
       height: auto;
-      padding: 10px !important;
+      padding: 20px!important;
       width: 100% !important;
       box-sizing: border-box !important;
-      border-radius: 4px !important;
+      border-radius: 8px !important;
+      
     }
     #mlb2-23253533.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button.loading {
       display: none;
