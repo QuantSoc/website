@@ -78,7 +78,7 @@ const BurgerMenu = () => {
           onKeyDown={() => {}}
           tabIndex={-1}
           smooth
-          to='/#resources'
+          to='/resources#'
         >
           Resources
         </HashLink>

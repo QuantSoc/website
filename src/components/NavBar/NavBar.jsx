@@ -61,7 +61,7 @@ const NavBar = () => {
         <HashLink
           tabIndex={-1}
           onKeyDown={() => {}}
-          to='/#resources'
+          to='/resources#'
           className="text-main menu-item menu-item-mobile"
           scroll={el => scrollWithOffset(el)}
 
