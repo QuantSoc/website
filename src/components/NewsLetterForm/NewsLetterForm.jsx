@@ -74,7 +74,7 @@ const NewsLetterForm = () => {
                     <div className="ml-form-successBody row-success" style={{ display: 'none' }}>
                         <div className="ml-form-successContent">
                             <h4>Thank you!</h4>
-                            <p>You have successfully joined our subscriber list.</p>
+                            <p>You have been sent an email to confirm.</p>
                         </div>
                     </div>
                 </div>
