@@ -2,7 +2,8 @@ import './index.less';
 import { useEffect, useState, useRef } from 'react';
 import QuantSocLogo from './../../../assets/logo-quantsoc.svg';
 
-import { BsFacebook, BsDiscord, BsLinkedin, BsInstagram, BsLink } from 'react-icons/bs';
+import { BsFacebook, BsDiscord, BsLinkedin, BsInstagram, BsYoutube } from 'react-icons/bs';
+import { IoLogoYoutube } from "react-icons/io";
 
 
 const HeroSection = () => {
@@ -49,15 +50,24 @@ const HeroSection = () => {
               <a href="https://discord.gg/2qYRNKubRz" target="_blank" rel="noopener noreferrer">
                   <BsDiscord />
               </a>
+              
               <a href="https://www.facebook.com/unswquantsoc/" target="_blank" rel="noopener noreferrer">
                   <BsFacebook />
               </a>
-              <a href="https://www.linkedin.com/company/quantsoc/" target="_blank" rel="noopener noreferrer">
-                  <BsLinkedin />
-              </a>
+
               <a href="https://www.instagram.com/quantsoc_unsw/" target="_blank" rel="noopener noreferrer">
                   <BsInstagram />
               </a>
+
+              
+              <a href="https://www.linkedin.com/company/quantsoc/" target="_blank" rel="noopener noreferrer">
+                  <BsLinkedin />
+              </a>
+
+              <a href="https://www.youtube.com/@QuantSocUNSW" target="_blank" rel="noopener noreferrer">
+                  <IoLogoYoutube />
+              </a>
+
           </div>
 
           </div>
