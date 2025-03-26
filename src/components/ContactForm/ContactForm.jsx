@@ -2,7 +2,9 @@ import { useState } from "react";
 
 import './index.less'
 
-import { IoIosSend } from "react-icons/io";
+import { IoIosMail } from "react-icons/io";
+import { FaUser } from "react-icons/fa";
+
 
 
 const ContactForm = () => {
@@ -36,15 +38,23 @@ const ContactForm = () => {
         <h1>Contact Us</h1>
         <form onSubmit={onSubmit} id="contact-form-container">
         <div id="contact-details">
-            <div>Name *</div>
-            <input type="text" name="name" required/>
-            <div>Email *</div>
-            <input type="email" name="email" required/>
+        <br/>
+          <div className="contact-input">
+            <input type="text" name="name" placeholder="Name *" required/>
+            <FaUser className="contact-input-icon"/>
+          </div>
+          <br/>
+          <div className="contact-input">
+            <input type="email" name="email" placeholder="Email *" required/>
+            <IoIosMail id="contact-mail-icon" className="contact-input-icon" />
+          </div>
+            
+            
         </div>
         <div>
+          <br/>
           <div id="contact-message">
-          <div>Message *</div>
-          <textarea name="message" required></textarea>
+          <textarea name="message" placeholder="Message *" required></textarea>
           </div>
           
 

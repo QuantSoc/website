@@ -50,8 +50,10 @@
 
     textarea {
         min-width: 400px;
-        height: 165px;
+        height: 220px;
         resize: none;
+
+        padding-top: 12px !important;
 
         @media screen and (max-width: @tablet) {
             min-width: 350px;
@@ -61,9 +63,16 @@
     input, textarea {
         font-size: 25px;
         padding: 4px;
+        padding-left: 15px;
         font-family: Poppins;
         margin-bottom: 0.5rem;
-        border-radius: 4px;
+        border-radius: 8px;
+        background: #EEEEEE;
+        border: none;
+    }
+
+    input {
+        outline: none;
     }
 
     #contact-details {
@@ -72,4 +81,24 @@
         flex-wrap: nowrap;
     }
 
+}
+
+.contact-input {
+    display: flex;
+    flex-wrap: nowrap;
+
+    background-color: #EEEEEE;
+    border-radius: 8px;
+    padding-top: 8px;
+}
+
+.contact-input-icon {
+    background-color: #EEEEEE;
+    margin-right: 20px;
+    margin-top: 14px;
+    transform: scale(1.5);
+}
+
+#contact-mail-icon {
+    transform: scale(2);
 }
