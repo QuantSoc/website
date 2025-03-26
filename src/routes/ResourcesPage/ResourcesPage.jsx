@@ -1,7 +1,5 @@
-import mockTradingScreenshot from 'assets/quantsoc-graphics/mock-trading-screenshot.svg';
-import ResourceOutline from 'components/ResourceOutline';
+
 import HeroSection from './HeroSection/HeroSection';
-import WorkshopSection from './WorkshopSection/WorkshopSection';
 import JobListings from './JobListingsSection/JobListings';
 import './index.less';
 

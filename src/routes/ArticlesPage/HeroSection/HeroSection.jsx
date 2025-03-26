@@ -1,5 +1,4 @@
 
-import eventGathering from 'assets/quantsoc-graphics/hero-candlestick.svg';
 import { useState, useEffect } from 'react';
 
 import './index.less';
