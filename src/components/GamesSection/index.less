@@ -76,11 +76,23 @@
 
 
 .mock-trading-card {
-    background: linear-gradient(130deg, @quantsoc-accent,@quantsoc-secondary);
-    background-image: url('../../assets/quantsoc-graphics/new-mock-trading-optimised.svg');
+    // background: linear-gradient(130deg, @quantsoc-accent,@quantsoc-secondary);
+    background: url('../../assets/quantsoc-graphics/new-mock-trading-optimised.svg');
+
+    background: 
+    url('https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZXVpMXdqY3NueXZqa243ZGN5ODhrbGE4Znd1NjZ6M28wNDFheno5bCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3og0IItvqTxugz4Ph6/giphy.gif'), 
+    url("https://i.gifer.com/KM74.gif"), 
+    linear-gradient(145deg, @mid-purple ,@lightest-purple);
+
+
+    background-blend-mode: overlay;
+    
     background-size: cover;
+    background-position: center;
     font-family: 'Consolas', 'Courier New', Courier, monospace;
     text-shadow: 2px 2px 12px @dark-purple;
+
+    
 }
 
 .mathsprint-card {
