@@ -8,6 +8,15 @@
 
 .sponsor__container img {
   transition: transform 0.2s ease-in-out;
+
+  @media (prefers-color-scheme: dark) {
+    filter: invert(1) brightness(2000%);
+  }
+
+  @media (prefers-color-scheme: light) {
+    filter: unset;
+  }
+    
 }
 .sponsor__container img:hover {
   transform: scale(1.1);
@@ -16,8 +25,6 @@
 .sponsor__logo {
   max-height: 300px;
   max-width: 300px;
-
-  // filter: invert(light-dark(0,1)) brightness(light-dark(0,2000));
 }
 
 @media screen and (max-width: @mobile) {
