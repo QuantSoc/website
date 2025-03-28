@@ -10,7 +10,7 @@ const GamesSection = ({ className = '' }) => {
                     Mock Trading Game
                 </a>
                 <a href="/mathsprint" className="game-box small mathsprint-card">
-                    ~MathSprint~
+                    MathSprint
                     {/* Animated background for Mathsprint, just ignore this stuff */}
                     <AnimatedSquaresBackground />
                 </a>
