@@ -543,9 +543,9 @@
 
     /* BOOKMARK: THIS CHUNK HERE CONTROLS THE COLOR FOR THE subscribe buton */
     #mlb2-23253533.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button {
-      background-color: light-dark(black, @blacker-purple) !important;
+      background-color: light-dark(black, @dark-mode-button) !important;
       transition: background-color 400ms ease-out, box-shadow 400ms ease-out, transform 400ms ease-out !important;
-      border: none !important;
+      border: solid 2px black !important;
       box-shadow: none !important;
       color: #ffffff !important;
       cursor: pointer;
@@ -564,8 +564,8 @@
       display: none;
     }
     #mlb2-23253533.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button:hover {
-      background-color: @dark-purple !important;
-      box-shadow: 0px 0px 4px @mid-purple !important;
+      filter: drop-shadow(3px 3px 10px @mid-purple);
+      background: linear-gradient(to right, @darkest-purple, @mid-purple);
       transform: scale(1.01);
     }
     .ml-subscribe-close {

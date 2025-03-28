@@ -94,13 +94,17 @@
 
   cursor:pointer;
   
-  transition: background-color 200ms linear, color 200ms linear, border 200ms linear, transform 300ms ease-out;
+  transition: background 300ms ease-out, color 300ms ease-out, border 300ms ease-out, transform 300ms ease-out, filter 500ms ease-out;
 
   &:hover {
     color: white;
     border: solid @dark-purple 3px;
-    background-color: @dark-purple;
+    // background-color: @dark-purple;
     transform: scale(1.03);
+
+    
+    filter: drop-shadow(3px 3px 10px @mid-purple);
+    background: linear-gradient(to right, @darkest-purple, @mid-purple);
   }
 }
 
@@ -108,16 +112,13 @@
   border: solid @mid-purple 3px;
   color: white;
   background: linear-gradient(to bottom right, @dark-purple, @mid-purple);
-
-  transition: background 500ms linear, color 500ms linear, border 500ms linear, transform 300ms ease-out;
+  transition: background 500ms linear, color 500ms linear, border 500ms linear, transform 300ms ease-out, filter 500ms ease-out;
 
   &:hover {
-    color: white;
-    border: solid @dark-purple 3px;
-    background: @dark-purple;
-    transform: scale(1.03);
+    background: linear-gradient(to right, @darkest-purple, @mid-purple);
 
   }
+
 }
 
 

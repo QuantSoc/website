@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: @text-secondary;
+  color: light-dark(@text-secondary, white);
   p {
     margin-left: 0.25rem;
     font-size: 23px;
@@ -30,6 +30,6 @@
   transform: translateX(-50%);
   top: 50%;
   width: 90%;
-  border-top: 1px solid @text-secondary;
+  border-top: 1px solid light-dark(@text-secondary, white);
   z-index: -1;
 }
