@@ -3,17 +3,29 @@
 .background-container {
   // width: 100vdw;
   height: 100dvh;
-  background-image: url(../../../assets/quantsoc-graphics/new-hero-optimised.svg);
+  // background-image: url(../../../assets/quantsoc-graphics/new-hero-optimised.svg);
   background-repeat: no-repeat;
   background-size:cover;
   display: flex;
   justify-content: center;
   background-position-y: center;
   overflow-x:hidden;
-  background-attachment: cover;
 
   @media screen and (max-width: @tablet) {
     background-attachment:unset;
+  }
+
+
+  @media (prefers-color-scheme: dark) {
+    // filter: invert(1) brightness(2000%);
+    background: url(../../../assets/quantsoc-graphics/new-hero-optimised.svg), @dark-purple;
+    background-blend-mode:overlay;
+    background-size: cover;
+  }
+
+  @media (prefers-color-scheme: light) {
+    background: url(../../../assets/quantsoc-graphics/new-hero-optimised.svg);
+    background-size: cover;
   }
 }
 
