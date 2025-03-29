@@ -6,6 +6,7 @@ import logo from '../../assets/logo-quantsoc.svg';
 import { HashLink } from 'react-router-hash-link';
 
 const BurgerMenu = () => {
+  
   const navigate = useNavigate();
   const [isChecked, setIsChecked] = useState(false);
   const menuRef = useRef(null);

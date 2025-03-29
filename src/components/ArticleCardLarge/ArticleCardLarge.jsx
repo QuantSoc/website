@@ -52,5 +52,5 @@ const ArticleCardLarge = ({
   );
 };
 
-  export default ArticleCardLarge;
+export default ArticleCardLarge;
   
