@@ -2,13 +2,20 @@ import RedirectButton from 'components/RedirectButton';
 import Sponsor from 'components/Sponsor';
 import SponsorTypeHeader from 'components/SponsorTypeHeader';
 
+// Normal logos
 import imcLogo from '../../assets/sponsor-logos/imc.svg';
-import optiverLogo from '../../assets/SponsorImages/optiver-2.png';
+import optiverLogo from '../../assets/sponsor-logos/optiver.svg';
 import vivcourtLogo from '../../assets/sponsor-logos/vivcourt.svg';
-import sigLogo from '../../assets/SponsorImages/SUSQUEHANNA_Logo_blue.png';
-import citadelLogo from '../../assets/SponsorImages/citadel-2.png';
-import tibraLogo from '../../assets/sponsor-logos/tibra.svg';
-import janestreetLogo from '../../assets/sponsor-logos/jane-street.svg'
+import citadelLogo from '../../assets/sponsor-logos/citadel.svg';
+import janestreetLogo from '../../assets/sponsor-logos/jane-street.svg';
+import sigLogo from '../../assets/sponsor-logos/sig.png';
+
+// Inverted lgoos
+import optiverLogoInv from '../../assets/sponsor-logos/optiver-alt.svg';
+import vivcourtLogoInv from '../../assets/sponsor-logos/vivcourt-alt.svg';
+import citadelLogoInv from '../../assets/sponsor-logos/citadel-alt.svg';
+import janestreetLogoInv from '../../assets/sponsor-logos/jane-street-alt.svg';
+import sigLogoInv from '../../assets/sponsor-logos/sig-alt.svg';
 
 import './index.less';
 
@@ -22,14 +29,14 @@ const SponsorshipSection = () => {
       </p>
       <SponsorTypeHeader type="principal" />
       <div className="sponsorship-section__logos">
-        <Sponsor logoSrc={janestreetLogo} sponsorLink="https://www.janestreet.com/" />
-        <Sponsor logoSrc={sigLogo} sponsorLink="https://www.sig.com" />
+        <Sponsor logoSrc={janestreetLogo} logoSrcInv={janestreetLogoInv} sponsorLink="https://www.janestreet.com/" />
+        <Sponsor logoSrc={sigLogo} logoSrcInv={sigLogoInv} sponsorLink="https://www.sig.com" />
       </div>
       <SponsorTypeHeader type="major" />
       <div className="sponsorship-section__logos">
-        <Sponsor logoSrc={optiverLogo} sponsorLink="https://www.optiver.com" />
-        <Sponsor logoSrc={vivcourtLogo} sponsorLink="https://www.vivcourt.com" />
-        <Sponsor logoSrc={citadelLogo} sponsorLink="https://www.citadelsecurities.com/" />          
+        <Sponsor logoSrc={optiverLogo} logoSrcInv={optiverLogoInv} sponsorLink="https://www.optiver.com" />
+        <Sponsor logoSrc={vivcourtLogo} logoSrcInv={vivcourtLogoInv} sponsorLink="https://www.vivcourt.com" />
+        <Sponsor logoSrc={citadelLogo} logoSrcInv={citadelLogoInv} sponsorLink="https://www.citadelsecurities.com/" />          
         <Sponsor logoSrc={imcLogo} sponsorLink="https://www.imc.com/ap" />
       </div>
       <p>
