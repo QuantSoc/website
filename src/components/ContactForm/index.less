@@ -1,6 +1,36 @@
 @import '../../styles/constants.less';
 
 
+// This style sheet copied from https://codepen.io/uncommonjoe/pen/wxvXXZ
+.contact-floating-label-group {
+	position: relative;
+
+
+	.floating-label {
+		font-size: 26px !important;
+    font-family: Poppins !important;
+    font-weight: 400 !important;
+		color: darkslategrey !important;
+		position: absolute;
+		pointer-events: none;
+		top: 5px !important;
+		left: 15px !important;
+		transition: all 0.1s ease;
+	}
+
+	input:focus ~ .floating-label,
+	input:not(:focus):valid ~ .floating-label {
+		top: -38px !important;
+		bottom: 0px;
+		left: 0px;
+		font-size: 15px !important;
+		opacity: 1;
+		color: light-dark(black, white) !important;
+	}
+}
+////////////////////
+
+
 #contact-section {
 
     h1 {

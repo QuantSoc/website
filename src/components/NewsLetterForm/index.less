@@ -1,5 +1,40 @@
 @import '../../styles/constants.less';
 
+
+
+// This style sheet copied from https://codepen.io/uncommonjoe/pen/wxvXXZ
+.floating-label-group {
+	position: relative;
+
+
+	.floating-label {
+		font-size: 26px !important;
+    font-family: Poppins !important;
+    font-weight: 400 !important;
+		color: darkslategrey !important;
+		position: absolute;
+		pointer-events: none;
+		top: 20px !important;
+		left: 12px;
+		transition: all 0.1s ease;
+	}
+
+	input:focus ~ .floating-label,
+	input:not(:focus):valid ~ .floating-label {
+		top: -22px !important;
+		bottom: 0px;
+		left: 0px;
+		font-size: 15px !important;
+		opacity: 1;
+		color: light-dark(black, white) !important;
+	}
+}
+
+//////////////////////////////////////////////////////////
+
+
+
+// style sheet copied directly from form
 .ml-form-embedSubmitLoad {
     display: inline-block;
     width: 20px;
@@ -531,9 +566,11 @@
       line-height: 18px !important;
       padding: 0 !important;
       margin: 0 5px 0 0 !important;
+      
     }
     #mlb2-23253533.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow label p:last-child {
       margin: 0;
+
     }
     #mlb2-23253533.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit {
       margin: 0 0 20px 0;

@@ -39,13 +39,17 @@ const ContactForm = () => {
         <form onSubmit={onSubmit} id="contact-form-container">
         <div id="contact-details">
         <br/>
-          <div className="contact-input">
-            <input type="text" name="name" placeholder="Name *" required/>
+          <div className="contact-input contact-floating-label-group">
+            <input type="text" name="name" required/>
+            <label class="floating-label">Name *</label>
+
             <FaUser className="contact-input-icon"/>
           </div>
           <br/>
-          <div className="contact-input">
-            <input type="email" name="email" placeholder="Email *" required/>
+          <div className="contact-input contact-floating-label-group">
+            <input type="email" name="email" required/>
+            <label class="floating-label">Email *</label>
+
             <IoIosMail id="contact-mail-icon" className="contact-input-icon" />
           </div>
             
@@ -54,7 +58,8 @@ const ContactForm = () => {
         <div>
           <br/>
           <div id="contact-message">
-          <textarea name="message" placeholder="Message *" required></textarea>
+          <textarea name="message" placeholder="Message" required></textarea>
+          {/* <label class="floating-label">Message *</label> */}
           </div>
           
 

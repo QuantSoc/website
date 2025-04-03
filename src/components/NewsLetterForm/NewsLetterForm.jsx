@@ -42,18 +42,19 @@ const NewsLetterForm = () => {
                             <div className="ml-form-formContent">
                                 <div className="ml-form-fieldRow ml-last-item">
                                     <div className="ml-field-group ml-field-email ml-validate-email ml-validate-required">
-                                        <div id='article-email'>
+                                        <div id='article-email' className='floating-label-group'>
                                             <input
                                                 aria-label="email"
                                                 aria-required="true"
                                                 type="email"
                                                 className="form-control"
                                                 name="fields[email]"
-                                                placeholder="Email"
-                                                autoComplete="email"
+                                                // placeholder="Email"
+                                                autoComplete="off"
                                                 required
                                             />
-                                                                                        <IoIosMail id='article-email-icon' />
+                                            <label class="floating-label">Email *</label>
+                                                <IoIosMail id='article-email-icon' />
 
                                         </div>
                                         
