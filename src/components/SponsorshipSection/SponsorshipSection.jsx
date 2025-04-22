@@ -36,7 +36,7 @@ const SponsorshipSection = () => {
       <SponsorTypeHeader type="major" />
       <div className="sponsorship-section__logos">
         <Sponsor logoSrc={citadelLogo} logoSrcInv={citadelLogoInv} sponsorLink="https://www.citadelsecurities.com/" />          
-        <Sponsor logoSrc={imcLogo} logoSrcINV = {imcLogoInv} sponsorLink="https://www.imc.com/ap" />
+        <Sponsor logoSrc={imcLogo} logoSrcInv={imcLogoInv} sponsorLink="https://www.imc.com/ap" />
         <Sponsor logoSrc={optiverLogo} logoSrcInv={optiverLogoInv} sponsorLink="https://www.optiver.com" />
         <Sponsor logoSrc={vivcourtLogo} logoSrcInv={vivcourtLogoInv} sponsorLink="https://www.vivcourt.com" />
       </div>
