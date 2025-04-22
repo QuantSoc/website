@@ -7,15 +7,16 @@ import imcLogo from '../../assets/sponsor-logos/imc.svg';
 import optiverLogo from '../../assets/sponsor-logos/optiver.svg';
 import vivcourtLogo from '../../assets/sponsor-logos/vivcourt.svg';
 import citadelLogo from '../../assets/sponsor-logos/citadel.svg';
-import janestreetLogo from '../../assets/sponsor-logos/jane-street.svg';
+import janestreetLogo from '../../assets/sponsor-logos/JS_horizontal_black.png';
 import sigLogo from '../../assets/sponsor-logos/sig.png';
 
 // Inverted lgoos
 import optiverLogoInv from '../../assets/sponsor-logos/optiver-alt.svg';
 import vivcourtLogoInv from '../../assets/sponsor-logos/vivcourt-alt.svg';
 import citadelLogoInv from '../../assets/sponsor-logos/citadel-alt.svg';
-import janestreetLogoInv from '../../assets/sponsor-logos/jane-street-alt.svg';
+import janestreetLogoInv from '../../assets/sponsor-logos/JS_horizontal_white.png';
 import sigLogoInv from '../../assets/sponsor-logos/sig-alt.svg';
+import imcLogoInv from '../../assets/sponsor-logos/IMC_logo.png';
 
 import './index.less';
 
@@ -34,10 +35,10 @@ const SponsorshipSection = () => {
       </div>
       <SponsorTypeHeader type="major" />
       <div className="sponsorship-section__logos">
-        <Sponsor logoSrc={optiverLogo} logoSrcInv={optiverLogoInv} sponsorLink="https://www.optiver.com" />
-        <Sponsor logoSrc={vivcourtLogo} logoSrcInv={vivcourtLogoInv} sponsorLink="https://www.vivcourt.com" />
         <Sponsor logoSrc={citadelLogo} logoSrcInv={citadelLogoInv} sponsorLink="https://www.citadelsecurities.com/" />          
         <Sponsor logoSrc={imcLogo} sponsorLink="https://www.imc.com/ap" />
+        <Sponsor logoSrc={optiverLogo} logoSrcInv={optiverLogoInv} sponsorLink="https://www.optiver.com" />
+        <Sponsor logoSrc={vivcourtLogo} logoSrcInv={vivcourtLogoInv} sponsorLink="https://www.vivcourt.com" />
       </div>
       <p>
       Want to sponsor us? Get in touch with our team and we would be more than delighted to discuss partnership opportunities and potential collaborations!
