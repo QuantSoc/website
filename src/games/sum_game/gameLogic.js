@@ -128,12 +128,12 @@ function createNumberFromDifficulty(difficulty) {
   else if (difficulty >= 6) {
     // Introduce small negatives
     lowerBound = -10;
-    upperBound =  20;
+    upperBound =  25;
   }
   else {
     // Easy: positive only
     lowerBound =   1;
-    upperBound =  10;
+    upperBound =  25;
   }
 
   return randomInt(lowerBound, upperBound);
