@@ -15,6 +15,7 @@ import JobListingFormPage from 'routes/JobListingFormPage/JobListingFormPage';
 import Mathsprint from 'routes/MathsprintPage/MathsprintPage';
 import ArticlesPage from 'routes/ArticlesPage';
 import ContactPage from 'routes/ContactPage/ContactPage';
+import GamesPage from 'routes/GamesPage/GamesPage';
 import SumGame from './games/sum_game/SumGame';
 
 const App = () => {
@@ -31,6 +32,7 @@ const App = () => {
           <Route path="/boardlogin" element={<BoardLoginPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/mathsprint" element={<Mathsprint />} />
+          <Route path="/games" element={<GamesPage />} />
           <Route path="/sum-game" element={<SumGame />} />
           {/* Private Pages: only accessibly by Google authenticated users */}
           <Route path="/admin" element={<PrivateRoute />}>

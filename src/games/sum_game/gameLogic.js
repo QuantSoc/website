@@ -31,15 +31,15 @@ function createCorrectTerms(correctNumber, difficulty, depth) {
     let number1;
 
     if (difficulty === 100) {
-        number1 = randomInt(-100, 100);
+        number1 = randomInt(-correctNumber, correctNumber - 1);
     } else if (difficulty > 75) {
-        number1 = randomInt(1, correctNumber - 1);
+        number1 = randomInt(-correctNumber, correctNumber - 1);
     } else if (difficulty > 50) {
-        number1 = randomInt(1, correctNumber - 1);
+        number1 = randomInt(-correctNumber, correctNumber - 1);
     } else if (difficulty > 25) {
-        number1 = randomInt(1, correctNumber - 1);
-    } else if (difficulty > 10) {
-        number1 = randomInt(1, correctNumber - 1);
+        number1 = randomInt(-correctNumber, correctNumber - 1);
+    } else if (difficulty >= 11) {
+        number1 = randomInt(-correctNumber, correctNumber - 1);
     } else {
         number1 = randomInt(1, correctNumber - 1);
     }

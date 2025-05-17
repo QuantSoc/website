@@ -1,22 +1,29 @@
 // src/games/sum_game/SumGame.jsx
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { generateRound } from './gameLogic';
 
 export default function SumGame() {
+  // game state
+  const [started, setStarted]   = useState(false);
   const [difficulty, setDifficulty] = useState(1);
   const [lives, setLives]           = useState(3);
   const [round, setRound]           = useState(0);
   const [score, setScore]           = useState(0);
-  const [puzzle, setPuzzle]         = useState(() => generateRound(1));
+  const [puzzle, setPuzzle]         = useState(null);
   const [feedback, setFeedback]     = useState('');
 
-  // generate first puzzle
-  useEffect(() => {
+  // start handler
+  const handleStart = () => {
+    // reset everything
+    setDifficulty(1);
+    setLives(3);
+    setScore(0);
+    setRound(0);
+    setFeedback('');
+    // generate first puzzle at diff=1
     setPuzzle(generateRound(1));
-  }, []);
-
-  // Determine theme class
-  const themeClass = puzzle?.isBlue ? 'theme-blue' : 'theme-red';
+    setStarted(true);
+  };
 
   const handleAnswer = (choice) => {
     if (!puzzle) return;
@@ -40,7 +47,20 @@ export default function SumGame() {
     }
   };
 
-  if (!puzzle) return <div className="sum-game"><p>Loading…</p></div>;
+  // if not started, show start screen
+  if (!started) {
+    return (
+      <div className="sum-game p-6 theme-blue">
+        <h2 className="text-xl font-bold mb-4">Sum Game</h2>
+        <button className="btn btn-primary" onClick={handleStart}>
+          Start Game
+        </button>
+      </div>
+    );
+  }
+
+  // once started, show the game
+  const themeClass = puzzle?.isBlue ? 'theme-blue' : 'theme-red';
 
   return (
     <div className={`sum-game p-6 ${themeClass}`}>
@@ -79,14 +99,7 @@ export default function SumGame() {
           <p className="text-lg font-semibold">Game Over!</p>
           <button
             className="btn btn-secondary mt-2"
-            onClick={() => {
-              setDifficulty(1);
-              setLives(3);
-              setScore(0);
-              setRound(0);
-              setFeedback('');
-              setPuzzle(generateRound(1));
-            }}
+            onClick={handleStart}
           >
             Restart
           </button>
