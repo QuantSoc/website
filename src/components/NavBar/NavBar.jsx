@@ -96,6 +96,17 @@ const NavBar = () => {
         >
           Contact Us
         </HashLink>
+
+        <HashLink
+            tabIndex={-1}
+            smooth
+            to='/sum-game'
+            className="text-main menu-item menu-item-mobile"
+        >
+            Sum Game
+        </HashLink>
+
+        
       </div>
     </nav>
   );
