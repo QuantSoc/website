@@ -74,6 +74,10 @@ function createIncorrectTerms(correctNumber, difficulty, depth) {
   
     // pick an offset in [ -errorMargin .. +errorMargin ]
     const offset = randomInt(-errorMargin, errorMargin);
+
+    if (offset === 0) {
+        offset = 1;
+    }
   
     // now build a correct‐terms list for the “wrong” total
     return createCorrectTerms(correctNumber + offset, difficulty, depth);
@@ -171,5 +175,6 @@ export function generateRound(difficulty) {
 
     // correct index stores the position in the expressions array
     // for which object should be picked.
+    console.log({ target, isBlue, expressions, correctIndex})
     return { target, isBlue, expressions, correctIndex}
 }
