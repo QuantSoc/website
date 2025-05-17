@@ -31,7 +31,6 @@ const App = () => {
           <Route path="/boardlogin" element={<BoardLoginPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/mathsprint" element={<Mathsprint />} />
-          <Route path="/games" element={<GamesPage />} />
           <Route path="/sum-game" element={<SumGame />} />
           {/* Private Pages: only accessibly by Google authenticated users */}
           <Route path="/admin" element={<PrivateRoute />}>
