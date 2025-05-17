@@ -153,27 +153,46 @@ function createNumberFromDifficulty(difficulty) {
  *   - expressions {number[][]}: array of 6 arrays of terms.
  *   - correctIndex {number}: index in `expressions` of the answer.
  */
+/**
+ * Generate a round with 6 expressions and ensure no duplicates.
+ */
 export function generateRound(difficulty) {
-    const target = createNumberFromDifficulty(difficulty);
-    const depth = getDepthFromDifficulty(difficulty)
-
-    const isBlue = Math.random() < 0.3;
-    const expressions = [];
-    let correctIndex = randomInt(0,5);
-
-    if (isBlue) {
-        // one correct, 5 wrong
+    let round;
+    do {
+      const target = createNumberFromDifficulty(difficulty);
+      const depth = getDepthFromDifficulty(difficulty);
+      const isBlue = Math.random() < 0.3;
+      const expressions = [];
+      const correctIndex = randomInt(0, 5);
+  
+      if (isBlue) {
         for (let i = 0; i < 6; i++) {
-            expressions.push(i === correctIndex ? createCorrectTerms(target, difficulty, depth) : createIncorrectTerms(target, difficulty, depth))
+          expressions.push(
+            i === correctIndex
+              ? createCorrectTerms(target, difficulty, depth)
+              : createIncorrectTerms(target, difficulty, depth)
+          );
         }
-    } else {
-        // five correct, 1 wrong
+      } else {
         for (let i = 0; i < 6; i++) {
-            expressions.push(i === correctIndex ? createIncorrectTerms(target, difficulty, depth) : createCorrectTerms(target, difficulty, depth))
-        }        
-    }
-
-    // correct index stores the position in the expressions array
-    // for which object should be picked.
-    return { target, isBlue, expressions, correctIndex}
-}
+          expressions.push(
+            i === correctIndex
+              ? createIncorrectTerms(target, difficulty, depth)
+              : createCorrectTerms(target, difficulty, depth)
+          );
+        }
+      }
+  
+    // Check uniqueness: sort terms to catch commutative duplicates
+    const keys = expressions.map(arr =>
+        [...arr].sort((a, b) => a - b).join(',')
+      );
+      if (new Set(keys).size === keys.length) {
+        round = { target, isBlue, expressions, correctIndex };
+        break;
+      }
+      // else retry
+    } while (true);
+  
+    return round;
+  }
