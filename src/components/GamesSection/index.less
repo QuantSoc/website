@@ -4,7 +4,6 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
 }
 
 .games-section__header {
@@ -19,23 +18,22 @@
 
 .game-box {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     color: white;
     margin: 10px;
     border-radius: 15px;
-    height: 150px;
     flex: 1 1 100%;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-    margin-top: 5px;
-    height: 250px;
     text-align: center;
     cursor: pointer;
     text-decoration: none;
     font-size: 30px;
-    transition: font-size 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease-out; /* Add this line for transitions */
+    transition: font-size 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease-out;
     overflow: hidden;
-    position: relative; /* Add this line to position .area relative to .game-box */
+    position: relative;
+    height: 250px;
 
     &:hover {
         box-shadow: inset 0 0 20px @quantsoc-primary, 0 0 20px @quantsoc-primary;
@@ -63,36 +61,29 @@
 }
 
 @media (max-width: 768px) {
-    .large, .small {
+    .large,
+    .small {
         flex: 1 1 100%;
         width: 100%;
         padding: 20%;
     }
 
-    .games-container, .row {
+    .games-container,
+    .row {
         flex-direction: column;
     }
 }
 
-
 .mock-trading-card {
-    // background: linear-gradient(130deg, @quantsoc-accent,@quantsoc-secondary);
-    background: url('../../assets/quantsoc-graphics/new-mock-trading-optimised.svg');
-
-    background: 
-    url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmxoOWZ1ejlnYmYwYnpsN3Z3ajdhNTNoNnl2N3B4MXpjNmxzdDQwdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/d1Gvd3wrtBcaMkhO/giphy.gif'), 
-    url("https://i.gifer.com/KM74.gif"), 
-    linear-gradient(145deg, @mid-purple ,@lightest-purple);
-
-
+    background: url('../../assets/quantsoc-graphics/new-mock-trading-optimised.svg'),
+                url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmxoOWZ1ejlnYmYwYnpsN3Z3ajdhNTNoNnl2N3B4MXpjNmxzdDQwdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/d1Gvd3wrtBcaMkhO/giphy.gif'),
+                url("https://i.gifer.com/KM74.gif"),
+                linear-gradient(145deg, @mid-purple, @lightest-purple);
     background-blend-mode: overlay;
-    
     background-size: cover;
     background-position: center;
     font-family: 'Consolas', 'Courier New', Courier, monospace;
     text-shadow: 2px 2px 12px @dark-purple;
-
-    
 }
 
 .mathsprint-card {
@@ -102,4 +93,34 @@
     font-family: 'Consolas', 'Courier New', Courier, monospace;
     color: white;
     text-shadow: 2px 2px 12px @dark-purple;
+}
+
+/* NEW GAME CARDS */
+.sum-game-card {
+    background-color: #FF9800;  /* Orange for Sum Game */
+}
+
+.sequence-game-card {
+    background-color: #9C27B0;  /* Purple for Sequence Game */
+}
+
+.pendominoes-game-card {
+    background-color: #673AB7;  /* Deep purple for Pendominoes Game */
+}
+
+/* Title & description inside each card */
+.game-box__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.game-box__desc {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+/* Coming-soon styling */
+.game-box.coming-soon {
+    opacity: 0.6;
+    cursor: not-allowed;
 }

@@ -70,15 +70,6 @@ const NavBar = () => {
         </HashLink>
 
         <HashLink
-            tabIndex={-1}
-            smooth
-            to="games"
-            className="text-main menu-item menu-item-mobile"
-        >
-            Games
-        </HashLink>
-
-        <HashLink
           to='/#sponsorships'
           smooth
           className="text-main menu-item menu-item-mobile"
