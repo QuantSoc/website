@@ -30,10 +30,10 @@
     cursor: pointer;
     text-decoration: none;
     font-size: 30px;
-    transition: font-size 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease-out;
+    transition: font-size 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease-out;  /* Add this line for transitions */
     overflow: hidden;
-    position: relative;
-    height: 250px;
+    position: relative;  /* Add this line for transitions */
+    height: 200px;
 
     &:hover {
         box-shadow: inset 0 0 20px @quantsoc-primary, 0 0 20px @quantsoc-primary;
@@ -61,15 +61,13 @@
 }
 
 @media (max-width: 768px) {
-    .large,
-    .small {
+    .large, .small {
         flex: 1 1 100%;
         width: 100%;
         padding: 20%;
     }
 
-    .games-container,
-    .row {
+    .games-container, .row {
         flex-direction: column;
     }
 }
@@ -97,15 +95,15 @@
 
 /* NEW GAME CARDS */
 .sum-game-card {
-    background-color: #FF9800;  /* Orange for Sum Game */
+    background-color: #FF9800; 
 }
 
 .sequence-game-card {
-    background-color: #9C27B0;  /* Purple for Sequence Game */
+    background-color: #9C27B0;  
 }
 
 .pendominoes-game-card {
-    background-color: #673AB7;  /* Deep purple for Pendominoes Game */
+    background-color: #673AB7;  
 }
 
 /* Title & description inside each card */

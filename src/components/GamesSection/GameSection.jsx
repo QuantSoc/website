@@ -1,4 +1,3 @@
-// src/components/GamesSection/GamesSection.jsx
 import './index.less';
 import AnimatedSquaresBackground from 'components/AnimatedSquaresBackground/AnimatedSquaresBackground';
 

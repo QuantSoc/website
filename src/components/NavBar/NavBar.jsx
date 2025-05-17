@@ -68,7 +68,6 @@ const NavBar = () => {
         >
           Resources
         </HashLink>
-
         <HashLink
           to='/#sponsorships'
           smooth
