@@ -175,6 +175,5 @@ export function generateRound(difficulty) {
 
     // correct index stores the position in the expressions array
     // for which object should be picked.
-    console.log({ target, isBlue, expressions, correctIndex})
     return { target, isBlue, expressions, correctIndex}
 }
