@@ -73,7 +73,7 @@ function createIncorrectTerms(correctNumber, difficulty, depth) {
     );
   
     // pick an offset in [ -errorMargin .. +errorMargin ]
-    const offset = randomInt(-errorMargin, errorMargin);
+    let offset = randomInt(-errorMargin, errorMargin);
 
     if (offset === 0) {
         offset = 1;

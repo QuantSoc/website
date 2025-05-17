@@ -1,22 +1,67 @@
 import './index.less';
 import AnimatedSquaresBackground from 'components/AnimatedSquaresBackground/AnimatedSquaresBackground';
 
-const GamesSection = ({ className = '' }) => {
-    return (
-        <section className={`games-section ${className}`}>
-            <h1 className="games-section__header">Resources</h1>
-            <div className="games-container">
-                <a href="https://mtg.quantsoc.org" className="game-box large mock-trading-card">
-                    Mock Trading Game
-                </a>
-                <a href="/mathsprint" className="game-box small mathsprint-card">
-                    MathSprint
-                    {/* Animated background for Mathsprint, just ignore this stuff */}
-                    <AnimatedSquaresBackground />
-                </a>
-            </div>
-        </section>
-    );
-};
+const games = [
+  {
+    title: 'Mock Trading Game',
+    description: '',
+    path: 'https://mtg.quantsoc.org',
+    size: 'large',
+    className: 'mock-trading-card',
+    comingSoon: false,
+  },
+  {
+    title: 'MathSprint',
+    description: 'A fast paced calculation game',
+    path: '/mathsprint',
+    size: 'small',
+    className: 'mathsprint-card',
+    comingSoon: false,
+    background: <AnimatedSquaresBackground />,
+  },
+  {
+    title: 'Sum Sleuth',
+    description: 'Find the right expression and dodge the decoys!',
+    path: '/sum-game',
+    size: 'small',
+    className: 'sum-game-card',
+    comingSoon: false,
+  },
+  {
+    title: 'Sequence Game',
+    description: 'Coming soon…',
+    path: '#',
+    size: 'small',
+    className: 'sequence-game-card',
+    comingSoon: true,
+  },
+  {
+    title: 'Pendominoes Game',
+    description: 'Coming soon…',
+    path: '#',
+    size: 'small',
+    className: 'pendominoes-game-card',
+    comingSoon: true,
+  },
+];
+
+const GamesSection = ({ className = '' }) => (
+  <section className={`games-section ${className}`}>
+    <h1 className="games-section__header">Resources</h1>
+    <div className="games-container">
+      {games.map(({ title, description, path, size, className: cardClass, comingSoon, background }) => (
+        <a
+          key={title}
+          href={path}
+          className={`game-box ${size} ${cardClass} ${comingSoon ? 'coming-soon' : ''}`}
+        >
+          <div className="game-box__title">{title}</div>
+          {description && <div className="game-box__desc">{description}</div>}
+          {background}
+        </a>
+      ))}
+    </div>
+  </section>
+);
 
 export default GamesSection;

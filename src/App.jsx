@@ -15,7 +15,6 @@ import JobListingFormPage from 'routes/JobListingFormPage/JobListingFormPage';
 import Mathsprint from 'routes/MathsprintPage/MathsprintPage';
 import ArticlesPage from 'routes/ArticlesPage';
 import ContactPage from 'routes/ContactPage/ContactPage';
-import GamesPage from 'routes/GamesPage/GamesPage';
 import SumGame from './games/sum_game/SumGame';
 
 const App = () => {
