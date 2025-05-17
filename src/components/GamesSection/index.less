@@ -1,82 +1,81 @@
 @import '../../styles/constants.less';
 
 .games-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    /* 3 “small” units per row */
+    grid-template-columns: repeat(3, 1fr);
+    /* gap between columns (and rows) */
+    gap: 20px;
 }
 
 .games-section__header {
     margin-bottom: 1rem;
 }
 
+/* no longer needed, but you can keep if used elsewhere */
 .row {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
 }
 
+/* base card styles */
 .game-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    /* spacing is handled by the grid’s `gap` */
+    margin: 0;
+
     color: white;
-    margin: 10px;
     border-radius: 15px;
-    flex: 1 1 100%;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     text-align: center;
     cursor: pointer;
     text-decoration: none;
     font-size: 30px;
-    transition: font-size 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease-out;  /* Add this line for transitions */
+    transition:
+        font-size 0.3s ease,
+        box-shadow 0.3s ease,
+        transform 0.3s ease-out;
     overflow: hidden;
-    position: relative;  /* Add this line for transitions */
+    position: relative;
     height: 200px;
 
     &:hover {
-        box-shadow: inset 0 0 20px @quantsoc-primary, 0 0 20px @quantsoc-primary;
+        box-shadow:
+            inset 0 0 20px @quantsoc-primary,
+            0 0 20px @quantsoc-primary;
         font-size: 40px;
         transform: scale(1.03);
     }
 }
 
-.large {
-    flex: 3 1 50%;
-    background-color: #4CAF50;
+/* only controls grid-span now, no colours */
+.game-box.small {
+    grid-column: span 1;
 }
 
-.small {
-    flex: 1 1 25%;
-    background-color: #2196F3;
-}
-
-.row:nth-child(even) .large {
-    width: 30%;
-}
-
-.row:nth-child(even) .small {
-    width: 60%;
+.game-box.large {
+    grid-column: span 2;
 }
 
 @media (max-width: 768px) {
-    .large, .small {
-        flex: 1 1 100%;
+    .games-container {
+        grid-template-columns: 1fr;
+    }
+    .game-box {
         width: 100%;
         padding: 20%;
     }
-
-    .games-container, .row {
-        flex-direction: column;
-    }
 }
 
+/* Card-specific colours/backgrounds */
 .mock-trading-card {
-    background: url('../../assets/quantsoc-graphics/new-mock-trading-optimised.svg'),
-                url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmxoOWZ1ejlnYmYwYnpsN3Z3ajdhNTNoNnl2N3B4MXpjNmxzdDQwdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/d1Gvd3wrtBcaMkhO/giphy.gif'),
-                url("https://i.gifer.com/KM74.gif"),
-                linear-gradient(145deg, @mid-purple, @lightest-purple);
+    background:
+        url('../../assets/quantsoc-graphics/new-mock-trading-optimised.svg'),
+        url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmxoOWZ1ejlnYmYwYnpsN3Z3ajdhNTNoNnl2N3B4MXpjNmxzdDQwdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/d1Gvd3wrtBcaMkhO/giphy.gif'),
+        url("https://i.gifer.com/KM74.gif"),
+        linear-gradient(145deg, @mid-purple, @lightest-purple);
     background-blend-mode: overlay;
     background-size: cover;
     background-position: center;
@@ -93,17 +92,31 @@
     text-shadow: 2px 2px 12px @dark-purple;
 }
 
-/* NEW GAME CARDS */
 .sum-game-card {
-    background-color: #FF9800; 
+    background-color: #FF9800;
+    background-size: cover;
+    font-weight: 400;
+    font-family: 'Consolas', 'Courier New', Courier, monospace;
+    color: white;
+    text-shadow: 2px 2px 12px @dark-purple;
 }
 
 .sequence-game-card {
-    background-color: #9C27B0;  
+    background-color: #9C27B0;
+    background-size: cover;
+    font-weight: 400;
+    font-family: 'Consolas', 'Courier New', Courier, monospace;
+    color: white;
+    text-shadow: 2px 2px 12px @dark-purple;
 }
 
 .pendominoes-game-card {
-    background-color: #673AB7;  
+    background-color: #673AB7;
+    background-size: cover;
+    font-weight: 400;
+    font-family: 'Consolas', 'Courier New', Courier, monospace;
+    color: white;
+    text-shadow: 2px 2px 12px @dark-purple;
 }
 
 /* Title & description inside each card */
