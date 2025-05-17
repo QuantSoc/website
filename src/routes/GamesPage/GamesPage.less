@@ -1,0 +1,106 @@
+.games-page {
+    padding: 3rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f0f4ff 0%, #ffffff 100%);
+  
+    .games-title {
+      font-size: 3rem;
+      font-weight: 800;
+      text-align: center;
+      margin: 0; /* reset margin since we're only using top-padding */
+      padding-bottom: 2rem;
+      background: linear-gradient(90deg, #2563eb, #1e3a8a);
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+    }
+  }
+  
+  /* --- break the grid out to full viewport --- */
+  .game-grid {
+    /* let it span the full viewport */
+    width: 100vw;
+    max-width: none;
+    /* horizontally centre a full-width block */
+    margin-left: calc(50% - 50vw);
+    margin-top: 0; /* cards sit directly under title padding */
+  
+    /* your existing flex layout */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  
+    /* optional padding inside the full-width */
+    padding: 1rem;
+  }
+  
+  .game-card {
+    position: relative;
+    flex: 0 1 280px;
+    max-width: 280px;
+    background: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+  
+    &:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+    }
+  
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      height: 6px; width: 100%;
+      background: #2563eb;
+      transition: background 0.3s;
+    }
+    &:hover::before {
+      background: #1e40af;
+    }
+  
+    .game-card-content {
+      padding: 2rem;
+  
+      h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        color: #1e40af;
+      }
+  
+      .game-card-desc {
+        margin-bottom: 1.5rem;
+        color: #4b5563;
+        line-height: 1.4;
+      }
+  
+      .game-card-btn {
+        display: inline-block;
+        padding: 0.75rem 1.5rem;
+        border: none;
+        border-radius: 0.5rem;
+        background: linear-gradient(90deg, #2563eb, #1e40af);
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 600;
+        text-decoration: none;
+        cursor: pointer;
+        transition: background 0.3s, transform 0.2s;
+  
+        &:hover:not(:disabled) {
+          background: linear-gradient(90deg, #1e40af, #2563eb);
+          transform: translateY(-2px);
+        }
+  
+        &:disabled {
+          background-color: #cbd5e1;
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
+  
