@@ -1,0 +1,45 @@
+@import 'styles/global.less';
+@import 'styles/constants.less';
+
+#title {
+  text-align: center;
+  padding: 20px;
+  font-size: 45px;
+  font-style: bold;
+  font-weight: bold;
+}
+
+
+#backButtonContainer {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 200px;
+  margin-bottom: 10%;
+}
+
+.centreButtonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  margin-bottom: 2%;
+}
+
+.button {
+  justify-self: center;
+  background-color: @quantsoc-primary;
+  border-radius: 6px;
+  border-style: none;
+  box-sizing: border-box;
+  display: inline-block;
+  width: fit-content;
+  min-width: 120px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: 300;
+  margin: 2rem 0;
+  &:hover {
+    background-color: @quantsoc-accent-light;
+  }
+}
