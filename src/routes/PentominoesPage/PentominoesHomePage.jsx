@@ -26,20 +26,18 @@ const Pentominoes = () => {
   for (let i = 0; i < instructionList.length; i += 1) {
     resultInstructions.push({
       id: i,
-      slide: 
-        <>
-          <div className="instructionCard__container">
-            {instructionList[i]}
-            <p>
-              <img 
-                alt="GIF here"
-                src="some.gif"
-                width="fit-content"
-              />
-            </p>
-            
-          </div>       
-        </>,
+      slide:
+  <div className="instructionCard__container">
+    {instructionList[i]}
+    <p>
+      <img
+        alt="GIF here"
+        src="some.gif"
+        width="fit-content"
+      />
+    </p>
+
+  </div>,
     });
   }
 
@@ -53,9 +51,9 @@ const Pentominoes = () => {
               isOpen={isOpen}
               toggleModal={toggleModal}
               header="How to play"
-              style={{justifyContent: "center", display: "flex"}}
+              style={{ justifyContent: 'center', display: 'flex' }}
             >
-                <Carousel slides={resultInstructions} style={{justifySelf: "center"}}/>              
+              <Carousel slides={resultInstructions} style={{ justifySelf: 'center' }} />
             </Modal>
           </div>
           <div className="centreButtonContainer">
