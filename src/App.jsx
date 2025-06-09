@@ -13,7 +13,7 @@ import BoardLoginPage from 'routes/BoardLoginPage';
 import PrivateRoute from 'components/PrivateRoute/PrivateRoute';
 import JobListingFormPage from 'routes/JobListingFormPage/JobListingFormPage';
 import Mathsprint from 'routes/MathsprintPage/MathsprintPage';
-import Pentominoes from 'routes/PentominoesPage/PentominoesPage';
+import Pentominoes from 'routes/PentominoesPage/PentominoesHomePage';
 import ArticlesPage from 'routes/ArticlesPage';
 import ContactPage from 'routes/ContactPage/ContactPage';
 

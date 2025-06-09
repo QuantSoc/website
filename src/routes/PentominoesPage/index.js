@@ -1,3 +1,3 @@
-import PentominoesPage from './PentominoesPage';
+import PentominoesPage from './PentominoesHomePage';
 
 export default PentominoesPage;
