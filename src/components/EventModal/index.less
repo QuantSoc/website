@@ -22,7 +22,6 @@
   top: 50%;
   transform: translate(-50%, -50%);
   background-color: #fff;
-  padding: 1.75em 2.5rem 2.5rem;
 }
 
 .close-btn {
@@ -50,7 +49,7 @@
   font-family: Poppins;
   font-size: 32px;
   font-weight: 500;
-  padding-bottom: 5%;
+  padding-bottom: 7%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -65,12 +64,15 @@
 
 .modal-body {
   max-height: 50vh;
-  max-width: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   overflow-y: scroll;
+  overflow-x: hidden;
+  padding-right: 50px !important;
+  padding-left: 50px !important;
+      outline: 2px dashed red;
   p {
     font-size: 16px;
     font-weight: 300;

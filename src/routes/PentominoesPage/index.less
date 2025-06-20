@@ -14,8 +14,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  justify-self: center;
+  //padding: 20px;
   color: black;
+  max-height: 96vh;
+  max-width: 900px;
 }
 
 #backButtonContainer {
@@ -37,7 +40,8 @@
 }
 
 .instructionCard__container {
-  display: flex;
+  display: inline-flex;
+  position: relative;
   background-color: white;
   align-items: center;
   justify-content: center;
@@ -45,8 +49,8 @@
   filter: drop-shadow(0px 0.5px 0.5px rgba(0, 0, 0, 0.25));
   border-radius: 12px;
   box-shadow: 0px 1px 0.5px rgba(0, 0, 0, 0.15);
-  width: 325px;
-  height: 300px;
+  min-width: 100%;
+  min-height: 300px;
   padding: 0.5rem 1rem;
   text-wrap: wrap;
 }

@@ -41,7 +41,7 @@ const Modal = ({ isOpen, toggleModal, header, children }) => {
         </div>
         <div className="modal-header">{header}</div>
         <div
-          className="modal-body scroll-indicator"
+          className="modal-body" // scroll-indicator
           ref={scrollableDivRef}
           onScroll={handleScroll}
         >

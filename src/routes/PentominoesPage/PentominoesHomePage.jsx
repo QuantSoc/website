@@ -28,7 +28,9 @@ const Pentominoes = () => {
       id: i,
       slide:
   <div className="instructionCard__container">
-    {instructionList[i]}
+    <p>
+      {instructionList[i]}
+    </p>
     <p>
       <img
         alt="GIF here"
@@ -51,10 +53,8 @@ const Pentominoes = () => {
               isOpen={isOpen}
               toggleModal={toggleModal}
               header="How to play"
-              style={{ justifyContent: 'center', display: 'flex' }}
-            >
-              <Carousel slides={resultInstructions} style={{ justifySelf: 'center' }} />
-            </Modal>
+              children={<Carousel slides={resultInstructions}/>}
+            />
           </div>
           <div className="centreButtonContainer">
             <button className="button" onClick={toggleModal} type="button">

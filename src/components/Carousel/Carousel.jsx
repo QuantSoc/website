@@ -82,41 +82,43 @@ const Carousel = ({ slides, hideArrows = false }) => {
           ❱
         </div>
       )}
-      <div
-        className="inner"
-        style={{ transform: `translate(-${currentIndex * 100}%)` }}
-        onTouchStart={handleTouchStart}
-        onTouchMove={handleTouchMove}
-      >
-        {slides.map((slide) => {
-          return (
-            <div key={slide.id} className="slide">
-              {slide.slide}
-            </div>
-          );
-        })}
-      </div>
-      <div className="bullet-container">
-        {slides.map((slide, slideIndex) => {
-          return (
-            <div
-              key={slide.id}
-              className={`slide-bullet ${
-                currentIndex === slideIndex && 'selected'
-              }`}
-              onClick={() => {
-                setCurrentIndex(slideIndex);
-              }}
-              onKeyDown={() => {
-                setCurrentIndex(slideIndex);
-              }}
-              role="button"
-              tabIndex={0}
-            >
-              •
-            </div>
-          );
-        })}
+      <div className='centre-container'>
+        <div
+          className="inner"
+          style={{ transform: `translate(-${currentIndex * 100}%)` }}
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
+        >
+          {slides.map((slide) => {
+            return (
+              <div key={slide.id} className="slide">
+                {slide.slide}
+              </div>
+            );
+          })}
+        </div>
+        <div className="bullet-container">
+          {slides.map((slide, slideIndex) => {
+            return (
+              <div
+                key={slide.id}
+                className={`slide-bullet ${
+                  currentIndex === slideIndex && 'selected'
+                }`}
+                onClick={() => {
+                  setCurrentIndex(slideIndex);
+                }}
+                onKeyDown={() => {
+                  setCurrentIndex(slideIndex);
+                }}
+                role="button"
+                tabIndex={0}
+              >
+                •
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
