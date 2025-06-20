@@ -12,9 +12,10 @@
 
 .modal-container {
   min-height: 500px;
-  min-width: 800px;
+  // min-width: 300px;
   max-height: 96vh;
   max-width: 900px;
+  width: 60vw;
   flex-shrink: 0;
   border-radius: 10px;
   position: absolute;
@@ -65,7 +66,7 @@
 
 .modal-body {
   max-height: 50vh;
-  max-width: 80vh;
+  // max-width: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -110,12 +111,14 @@
 }
 @media screen and (max-width: 900px) {
   .modal-container {
+    // min-width: 300px;
     width: 85vw;
     padding: 1rem 2rem 2.5rem;
   }
 }
 @media screen and (max-width: 400px) {
   .modal-container {
+    // min-width: 300px;
     width: 95vw;
     padding: 1rem 2rem 2.5rem;
   }

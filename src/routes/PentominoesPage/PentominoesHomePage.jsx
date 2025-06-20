@@ -7,7 +7,10 @@ import Carousel from 'components/Carousel/Carousel';
 
 const Pentominoes = () => {
   const { isOpen, toggleModal } = useModal();
+  const [modalType, setModalType] = useState(null);
   const [active, setActive] = useState(false);
+  const [name, setName] = useState('')
+  const [timer, setTimer] = useState(120)
 
   function startGame() {
     setActive(true);
@@ -49,24 +52,78 @@ const Pentominoes = () => {
           <div id="modalContainer">
             <Modal
               isOpen={isOpen}
-              toggleModal={toggleModal}
-              header="How to play"
-              style={{ justifyContent: 'center', display: 'flex' }}
+              toggleModal={() => {
+                toggleModal();
+                setModalType(null);
+              }}
+              header={modalType === 'howToPlay' ? 'How To Play' : 'Start Game'}
+              // style={{ justifyContent: 'center', display: 'flex', alignItems: 'center' }}
             >
-              <Carousel slides={resultInstructions} style={{ justifySelf: 'center' }} />
+              {modalType === 'howToPlay' ? (
+                <Carousel slides={resultInstructions} style={{ justifySelf: 'center' }} />
+              ) : (
+                <form className="gameForm" onSubmit={startGame}>
+                  <label className="formLabel">
+                    Your name
+                    <input
+                      type="text"
+                      value={name}
+                      placeholder='Name'
+                      onChange={(e) => setName(e.target.value)}
+                      className="formInput"
+                      required
+                    />
+                  </label>
+
+                  <label className="formLabel">
+                    Timer
+                    <input
+                      type="number"
+                      value={timer ?? ''}
+                      onChange={(e) => setTimer(e.target.value)}
+                      className="formInput"
+                      required
+                    />
+                  </label>
+
+                  <button
+                    type="submit"
+                    className="button"
+                    // onClick={startGame}
+                  >
+                    Let’s go
+                  </button>
+                </form>
+
+              )}
             </Modal>
           </div>
           <div className="centreButtonContainer">
-            <button className="button" onClick={toggleModal} type="button">
+            <button
+              className="button"
+              onClick={() => {
+                setModalType('howToPlay')
+                toggleModal()
+              }}
+              type="button">
               How to play
             </button>
-            <button className="button" onClick={startGame} type="button">
+            <button
+              className="button"
+              onClick={() => {
+                setModalType('startGame')
+                toggleModal()
+              }}
+              type="button">
               Start
             </button>
           </div>
         </>
       ) : (
-        <h1>WE ARE NOW PLAYING THE GAME</h1>
+        <>
+          <h1>NAME: {name}</h1>
+          <h2>TIMER: {timer}</h2>
+        </>
       )}
     </div>
   );

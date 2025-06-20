@@ -68,3 +68,36 @@
     background-color: @quantsoc-accent-light;
   }
 }
+
+.gameForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 5px;
+}
+
+.formLabel {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 300px;
+  font-size: 18px;
+  // font-weight: bold;
+  color: #333;
+}
+
+.formInput {
+  width: 200px;
+  padding: 10px;
+  background-color: @lightest-purple;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  color: #333;
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(100, 100, 255, 0.5);
+  }
+}
