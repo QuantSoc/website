@@ -4,7 +4,7 @@ import AnimatedSquaresBackground from 'components/AnimatedSquaresBackground/Anim
 const GamesSection = ({ className = '' }) => {
     return (
         <section className={`games-section ${className}`}>
-            <h1 className="games-section__header">Resources</h1>
+            <h1 className="games-section__header">Interactives</h1>
             <div className="games-container">
                 <a href="https://mtg.quantsoc.org" className="game-box large mock-trading-card">
                     Mock Trading Game

@@ -42,7 +42,7 @@ const SponsorshipSection = () => {
       <p>
       Want to sponsor us? Get in touch with our team and we would be more than delighted to discuss partnership opportunities and potential collaborations!
       </p>
-      <a href="mailto:quantsoc.unsw@gmail.com" class="sponsor-button">
+      <a href="mailto:contact@unswquantsoc.org" class="sponsor-button">
       Sponsor Us
       </a>
 
