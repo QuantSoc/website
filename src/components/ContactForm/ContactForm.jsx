@@ -53,7 +53,7 @@ const ContactForm = () => {
 
           <button type="submit">Submit</button>
       </form>
-      {/* <span>{result}</span> */}
+      <span>{result}</span>
     </section>
   );
 }

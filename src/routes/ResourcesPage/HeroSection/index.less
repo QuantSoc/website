@@ -3,10 +3,17 @@
 #resource-hero-section {
     background-image: url("../../../assets/quantsoc-graphics/resource-hero.svg") !important;
 
+    p {
+      padding-inline: 6%
+    }
+
     @media screen and (max-width: @tablet) {
         padding: 0 15% !important;
         background: unset !important;
 
+        p {
+          padding-inline: unset;
+        }
       }
   
       @media screen and (max-width: @mobile) {
@@ -14,3 +21,4 @@
       }
 
 }
+

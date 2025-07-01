@@ -5,12 +5,10 @@ const HeroSection = ({ className = '' }) => {
     <section className={`hero-section ${className}`} id='resource-hero-section'>
       <div className="hero-text-container">
         <h1 className="hero-heading">
-          Discover fun and educational Resources, Workshops and Opportunities!
+          Discover Our Resources!
         </h1>
         <p className="text-body">
-          Explore a fusion of fun and education through our curated resources. Immerse yourself in
-          the world of quantitative trading, gaining insights, strategies, and
-          hands-on experience!
+         Use our interactive apps, opportunities board and more to immerse yourself in the world of quantitative trading...
         </p>
       </div>
     </section>
