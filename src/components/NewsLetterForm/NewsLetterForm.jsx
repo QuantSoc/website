@@ -28,7 +28,7 @@ const NewsLetterForm = () => {
 
     return (
         <div id="mlb2-23253533" className="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-23253533">
-            <div className="ml-form-align-left">
+            <div className="ml-form-align-center">
                 <div className="ml-form-embedWrapper embedForm">
                     <div className="ml-form-embedBody ml-form-embedBodyDefault row-form">
                         <div className="ml-form-embedContent" style={{ marginBottom: "0px" }}></div>
