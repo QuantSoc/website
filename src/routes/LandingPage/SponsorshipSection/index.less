@@ -1,0 +1,67 @@
+@import '../../../styles/constants.less';
+
+.sponsorship-section > p {
+  margin-bottom: 1.5rem;
+  width: 100%; // for some reason this fixes the text
+  text-align: left;
+  padding-bottom: 1.5rem;
+}
+
+.sponsorship-section__logos {
+  margin: 2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  row-gap: 4rem;
+  padding-top: 20px;
+}
+
+.sponsorship-section__sponsor-us {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 650px) {
+  .sponsorship-section__sponsor-us {
+    display: block;
+  }
+}
+
+svg {
+  height: 20px;
+  width: 20px;
+}
+
+.sponsor-button {
+  margin-top: 20px;
+  text-decoration: none;
+  background-color: light-dark(@quantsoc-darker, @dark-mode-button);
+  display: flex;
+  width: 50%;
+  max-width: 700px;
+  min-width: fit-content;
+  padding: 10px;
+  color: white;
+  justify-self: center;
+  justify-content: center;
+  font-weight: 500;
+  border: solid 3px black;
+  border-radius: 8px;
+  font-size: 28px;
+
+  font-family: Poppins;
+
+
+  transition: background-color 400ms ease-out, color 400ms ease-out, border 400ms linear, transform 400ms ease-out;
+  filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.25));
+
+  &:hover {
+    color: white;
+    border: solid 3px @darkest-purple;
+    filter: drop-shadow(3px 3px 10px @mid-purple);
+    background: linear-gradient(to right, @darkest-purple, @mid-purple);
+    transform: scale(1.05);
+  }
+}

@@ -1,9 +1,11 @@
 
 import HeroSection from './HeroSection/HeroSection';
 import JobListings from './JobListingsSection/JobListings';
+import GamesSection from 'components/GamesSection/GameSection';
+
+
 import './index.less';
 
-import GamesSection from 'components/GamesSection/GameSection';
 
 const ResourcesPage = () => {
   return (

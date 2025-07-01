@@ -1,4 +1,4 @@
-import JobListing from 'components/JobListing/JobListing';
+import JobListing from './JobListing/JobListing';
 import { useEffect, useState } from 'react';
 import { collection, getDocs, query } from 'firebase/firestore';
 import { HashLink } from 'react-router-hash-link';

@@ -1,4 +1,4 @@
-import ArticleCardLarge from 'components/ArticleCardLarge';
+import ArticleCardLarge from 'routes/ArticlesPage/ArticleCardLarge';
 import './index.less';
 
  

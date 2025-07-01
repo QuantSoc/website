@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './index.less';
-import ArticleCard from 'components/ArticleCard';
+import ArticleCard from 'routes/ArticlesPage/ArticleCard';
 import { collection, getDocs, query, orderBy } from 'firebase/firestore';
 import { db } from '../../../firebase.config';
 

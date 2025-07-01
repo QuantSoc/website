@@ -1,4 +1,3 @@
-import EventsCarousel from 'components/EventsCarousel';
 
 import './index.less'
 

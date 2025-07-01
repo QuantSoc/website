@@ -1,6 +1,6 @@
 import EventsSection from './EventsSection/EventsSection';
 import HeroSection from './HeroSection/HeroSection';
-import SponsorshipSection from '../../components/SponsorshipSection';
+import SponsorshipSection from './SponsorshipSection/SponsorshipSection';
 // import AboutUsPage from 'routes/AboutUsPage';
 import GamesSection from 'components/GamesSection/GameSection';
 
@@ -23,7 +23,7 @@ const LandingPage = () => {
         <div className='landing-page__container' id='resources'><GamesSection />
         <HashLink to={'/resources#'} className='more-resources-button'>See More → </HashLink>
         </div>
-        
+
         <div className='landing-page__container' id='sponsorships'><SponsorshipSection /></div>
 
         <div>

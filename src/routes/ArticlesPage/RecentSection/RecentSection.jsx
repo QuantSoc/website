@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './index.less';
 
-import ArticleCardLarge from 'components/ArticleCardLarge';
+import ArticleCardLarge from 'routes/ArticlesPage/ArticleCardLarge';
 
 const RecentSection = ({ className = '' }) => {
   const [isVisible, setIsVisible] = useState(true);
