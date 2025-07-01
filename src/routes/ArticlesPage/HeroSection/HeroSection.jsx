@@ -15,8 +15,7 @@ const HeroSection = () => {
       <div className='hero-text-container'>
         <h1 className="hero-heading">The Official Quantsoc Newsletter</h1>
         <p className="text-body">
-        Welcome to our fortnightly newsletter! 
-        <br /> Stay informed and connected with us as we keep you updated on all the important happenings.
+        Stay informed and connected with us as we keep you updated on all the important happenings!
         </p>
         <NewsLetterForm />
       </div>

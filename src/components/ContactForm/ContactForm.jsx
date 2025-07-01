@@ -37,39 +37,23 @@ const ContactForm = () => {
     <section id="contact-section">
         <h1>Contact Us</h1>
         <form onSubmit={onSubmit} id="contact-form-container">
-        <div id="contact-details">
-        <br/>
           <div className="contact-input contact-floating-label-group">
             <input type="text" name="name" required/>
-            <label class="floating-label">Name *</label>
-
+            <label class="floating-label">Company/Name</label>
             <FaUser className="contact-input-icon"/>
           </div>
           <br/>
           <div className="contact-input contact-floating-label-group">
             <input type="email" name="email" required/>
-            <label class="floating-label">Email *</label>
-
+            <label class="floating-label">Email</label>
             <IoIosMail id="contact-mail-icon" className="contact-input-icon" />
           </div>
             
-            
-        </div>
-        <div>
-          <br/>
-          <div id="contact-message">
           <textarea name="message" placeholder="Message" required></textarea>
-          {/* <label class="floating-label">Message *</label> */}
-          </div>
-          
 
-          <button type="submit">Send</button>
-        </div>
-        
-
+          <button type="submit">Submit</button>
       </form>
-      <span>{result}</span>
-
+      {/* <span>{result}</span> */}
     </section>
   );
 }
