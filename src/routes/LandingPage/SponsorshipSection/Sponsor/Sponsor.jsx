@@ -18,7 +18,7 @@ const Sponsor = ({ logoSrc, sponsorLink, logoSrcInv }) => {
     <div className="sponsor__container">
       <a href={sponsorLink} target="_blank" rel="noreferrer">
         <img
-          src={isDarkMode && logoSrcInv ? logoSrcInv : logoSrc}
+          src={logoSrc} // For now we only use light mode so this doesn't matter
           alt="sponsor"
           className="sponsor__logo"
         />
