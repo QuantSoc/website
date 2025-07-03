@@ -54,16 +54,12 @@ const HeroSection = () => {
               <a href="https://www.facebook.com/unswquantsoc/" target="_blank" rel="noopener noreferrer">
                   <BsFacebook />
               </a>
-
               <a href="https://www.instagram.com/quantsoc_unsw/" target="_blank" rel="noopener noreferrer">
                   <BsInstagram />
               </a>
-
-              
               <a href="https://www.linkedin.com/company/quantsoc/" target="_blank" rel="noopener noreferrer">
                   <BsLinkedin />
               </a>
-
               <a href="https://www.youtube.com/@QuantSocUNSW" target="_blank" rel="noopener noreferrer">
                   <IoLogoYoutube />
               </a>
