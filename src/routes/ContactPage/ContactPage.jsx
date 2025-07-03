@@ -1,6 +1,6 @@
 import './index.less';
 
-import ContactForm from 'components/ContactForm/ContactForm';
+import ContactForm from 'routes/ContactPage/ContactForm/ContactForm';
 
 const ContactPage = () => {
 

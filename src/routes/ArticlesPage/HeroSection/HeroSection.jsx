@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 
 import './index.less';
 
-import NewsLetterForm from 'components/NewsLetterForm/NewsLetterForm';
+import NewsLetterForm from './../NewsLetterForm/NewsLetterForm';
 
 const HeroSection = () => {
 
