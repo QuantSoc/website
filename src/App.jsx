@@ -13,6 +13,7 @@ import BoardLoginPage from 'routes/BoardLoginPage';
 import PrivateRoute from 'components/PrivateRoute/PrivateRoute';
 import JobListingFormPage from 'routes/JobListingFormPage/JobListingFormPage';
 import Mathsprint from 'routes/MathsprintPage/MathsprintPage';
+import Pentominoes from 'routes/PentominoesPage/PentominoesHomePage';
 import ArticlesPage from 'routes/ArticlesPage';
 import ContactPage from 'routes/ContactPage/ContactPage';
 
@@ -30,6 +31,7 @@ const App = () => {
           <Route path="/boardlogin" element={<BoardLoginPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/mathsprint" element={<Mathsprint />} />
+          <Route path="/pentominoes" element={<Pentominoes />} />
           {/* Private Pages: only accessibly by Google authenticated users */}
           <Route path="/admin" element={<PrivateRoute />}>
             <Route path="/admin" element={<AdminPage />} />

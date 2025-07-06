@@ -12,9 +12,10 @@
 
 .modal-container {
   min-height: 500px;
-  min-width: 800px;
+  // min-width: 300px;
   max-height: 96vh;
   max-width: 900px;
+  width: 60vw;
   flex-shrink: 0;
   border-radius: 10px;
   position: absolute;
@@ -50,6 +51,7 @@
   font-family: Poppins;
   font-size: 32px;
   font-weight: 500;
+  padding-bottom: 5%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -64,9 +66,11 @@
 
 .modal-body {
   max-height: 50vh;
+  // max-width: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   overflow-y: scroll;
   p {
     font-size: 16px;
@@ -107,12 +111,14 @@
 }
 @media screen and (max-width: 900px) {
   .modal-container {
+    // min-width: 300px;
     width: 85vw;
     padding: 1rem 2rem 2.5rem;
   }
 }
 @media screen and (max-width: 400px) {
   .modal-container {
+    // min-width: 300px;
     width: 95vw;
     padding: 1rem 2rem 2.5rem;
   }
