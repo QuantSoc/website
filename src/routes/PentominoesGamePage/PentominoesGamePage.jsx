@@ -95,13 +95,24 @@ const PentominoesGamePage = () => {
         p => p.id === activeId ? {
           ...p,
           shape: newShape,
-          valid: validPlacement(x, y, newShape),
+          valid: isInBounds(x, y, newShape) && isOverlapping(x, y, newShape),
         } : p
       )
     );
   }
 
-  const validPlacement = (newX, newY, newShape) => {
+  const isInBounds = (newX, newY, newShape) => {
+    for (const coord of newShape) {
+      const x = newX + coord[0];
+      const y = newY + coord[1];
+      if (!(x >= 0 && x < 10 && y >= 0 && y < 6)) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  const isOverlapping = (newX, newY, newShape) => {
     const occupiedCells = new Set();
     const otherPieces = placedPieces.filter(p => p.id !== activeId && p.valid);
 
@@ -118,7 +129,7 @@ const PentominoesGamePage = () => {
     for (const coord of newShape) {
       const x = newX + coord[0];
       const y = newY + coord[1];
-      if (!(x >= 0 && x < 10 && y >= 0 && y < 6) || occupiedCells.has(`${x},${y}`)) {
+      if (occupiedCells.has(`${x},${y}`)) {
         return false;
       }
     }
@@ -157,13 +168,13 @@ const PentominoesGamePage = () => {
       const snappedX = Math.round(relativeX / 60);
       const snappedY = Math.round(relativeY / 60);
   
-      if (validPlacement(snappedX, snappedY, activeData.shape)) {
+      if (isInBounds(snappedX, snappedY, activeData.shape)) {
         // if piece is on grid, move the existing piece
         // if piece is from tray, create new piece
         if (fromGrid) {
           setPlacedPieces((prev) =>
             prev.map((p) =>
-              p.id === activeId ? { ...p, x: snappedX, y: snappedY, valid: true } : p
+              p.id === activeId ? { ...p,x: snappedX, y: snappedY, valid: isOverlapping(snappedX, snappedY, activeData.shape) } : p
             )
           );
         } else {
@@ -176,9 +187,10 @@ const PentominoesGamePage = () => {
               shape: PENTOMINO_SHAPES[type],
               x: snappedX,
               y: snappedY,
-              valid: true,
+              valid: isOverlapping(snappedX, snappedY, activeData.shape),
             }
           ]);
+          
           setActiveId(newId);
           setActiveData({
             ...activeData,
