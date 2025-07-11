@@ -16,6 +16,7 @@ import Mathsprint from 'routes/MathsprintPage/MathsprintPage';
 import Pentominoes from 'routes/PentominoesPage/PentominoesHomePage';
 import ArticlesPage from 'routes/ArticlesPage';
 import ContactPage from 'routes/ContactPage/ContactPage';
+import PentominoesGamePage from 'routes/PentominoesGamePage';
 
 const App = () => {
   return (
@@ -32,6 +33,7 @@ const App = () => {
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/mathsprint" element={<Mathsprint />} />
           <Route path="/pentominoes" element={<Pentominoes />} />
+          <Route path="/pentominoes/game" element={<PentominoesGamePage />} />
           {/* Private Pages: only accessibly by Google authenticated users */}
           <Route path="/admin" element={<PrivateRoute />}>
             <Route path="/admin" element={<AdminPage />} />
