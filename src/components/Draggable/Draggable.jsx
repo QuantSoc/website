@@ -17,7 +17,6 @@ function Draggable(props) {
     opacity: isDragging ? 0.3 : 1,
     pointerEvents: 'none',
     outline: 'none'
-    // display: 'inline-block'
   }
   
   return (

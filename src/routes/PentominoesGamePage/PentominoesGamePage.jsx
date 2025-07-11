@@ -62,6 +62,11 @@ const PentominoesGamePage = () => {
         event.preventDefault();
         rotateActivePiece("counterClockwise");
       }
+
+      if (event.key === "f") {
+        event.preventDefault();
+        flipActivePiece();
+      }
     }
 
     document.addEventListener('keydown', handleKeyDown);
@@ -89,6 +94,27 @@ const PentominoesGamePage = () => {
     const activePiece = placedPieces.find(p => p.id === activeId);
     const { x, y } = activePiece;
     const newShape = rotateShape(activePiece.shape, direction);
+
+    setPlacedPieces((prev) =>
+      prev.map(
+        p => p.id === activeId ? {
+          ...p,
+          shape: newShape,
+          valid: isInBounds(x, y, newShape) && isOverlapping(x, y, newShape),
+        } : p
+      )
+    );
+  }
+
+  const flipShape = (shape) => {
+    const maxX = Math.max(...shape.map(([x]) => x));
+    return shape.map(([x, y]) => [maxX - x, y]);
+  };
+
+  const flipActivePiece = () => {
+    const activePiece = placedPieces.find(p => p.id === activeId);
+    const { x, y } = activePiece;
+    const newShape = flipShape(activePiece.shape);
 
     setPlacedPieces((prev) =>
       prev.map(
