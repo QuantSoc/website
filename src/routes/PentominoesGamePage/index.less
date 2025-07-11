@@ -10,13 +10,43 @@
     width: 100%;
 }
 
+.control-button {
+    justify-self: center;
+  background-color: @quantsoc-primary;
+  border-radius: 6px;
+  border-style: none;
+  box-sizing: border-box;
+  display: inline-block;
+  width: fit-content;
+  min-width: 175px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: 300;
+  margin: 2rem 0;
+  &:hover {
+    background-color: @quantsoc-accent-light;
+  }
+}
+
 .timer-box {
     background-color: @quantsoc-primary;
+    min-width: 120px;
+    width: fit-content;
     height: 50px;
     padding: 12px 15px;
+    border-radius: 6px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.game-container {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
 }
 
 .game-component {
@@ -24,6 +54,15 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+
+.game-controls-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
     padding-bottom: 50px;

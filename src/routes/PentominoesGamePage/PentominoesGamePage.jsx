@@ -39,8 +39,9 @@ const PentominoesGamePage = () => {
         activePieceRef.current &&
         !activePieceRef.current.contains(event.target)
       ) {
-        setActiveId(null);
-        setActiveData(null);
+        // commented out since this blocks flip/rotate button functionality
+        // setActiveId(null);
+        // setActiveData(null);
       }
     };
 
@@ -78,7 +79,7 @@ const PentominoesGamePage = () => {
   // 90 degree clockwise rotation
   const rotateShape = (shape, direction) => {
     // Rotate each coordinate: (x, y) -> (y, -x)
-    const rotated = direction === "clockwise" ?
+    const rotated = direction === "counterClockwise" ?
       shape.map(([x, y]) => [y, -x]) : shape.map(([x, y]) => [-y, x]);
 
     // Normalize shape so min x and y become 0 (shift shape to top-left)
@@ -162,6 +163,12 @@ const PentominoesGamePage = () => {
     return true;
   }
 
+  const restartGame = () => {
+    setActiveData([]);
+    setActiveId(null);
+    setPlacedPieces([]);
+  }
+
   const handleDragStart = (event) => {
     setActiveId(event.active.id);
     setActiveData(event.active.data.current)
@@ -218,6 +225,7 @@ const PentominoesGamePage = () => {
           ]);
           
           setActiveId(newId);
+          console.log(newId);
           setActiveData({
             ...activeData,
             onGrid: true,
@@ -251,20 +259,59 @@ const PentominoesGamePage = () => {
             <div className="timer-box">Timer: 10s</div>
           </div>
 
-          <PentominoesGrid gridRef={gridRef}>
-            {placedPieces.map(({ id, type, shape, x, y, valid }) => (
-              <Draggable key={id} id={id} data={{ onGrid: true, type, shape }} position={{ row: y, col: x }}>
-                <PentominoBlock
-                  ref={activeId === id ? activePieceRef : null}
-                  piece={{ shape, type }}
-                  onGrid={true}
-                  position={{ row: y, col: x }}
-                  active={activeId == id}
-                  valid={valid}
-                />
-              </Draggable>
-            ))}
-          </PentominoesGrid>
+          <div className="game-container">
+            <div className="game-controls-container">
+              <button
+                className="control-button"
+                onClick={() => {
+                  restartGame()
+                }}
+                type="button">
+                Restart
+              </button>
+              <button
+                className="control-button"
+                onClick={() => {
+                  flipActivePiece()
+                }}
+                type="button">
+                Flip horizontally
+              </button>
+            </div>
+            <PentominoesGrid gridRef={gridRef}>
+              {placedPieces.map(({ id, type, shape, x, y, valid }) => (
+                <Draggable key={id} id={id} data={{ onGrid: true, type, shape }} position={{ row: y, col: x }}>
+                  <PentominoBlock
+                    ref={activeId === id ? activePieceRef : null}
+                    piece={{ shape, type }}
+                    onGrid={true}
+                    position={{ row: y, col: x }}
+                    active={activeId == id}
+                    valid={valid}
+                  />
+                </Draggable>
+              ))}
+            </PentominoesGrid>
+            <div className="game-controls-container">
+              <button
+                className="control-button"
+                onClick={() => {
+                  rotateActivePiece("counterClockwise")
+                }}
+                type="button">
+                Rotate anticlockwise
+              </button>
+              <button
+                className="control-button"
+                onClick={() => {
+                  rotateActivePiece("clockwise")
+                }}
+                type="button">
+                Rotate clockwise
+              </button>
+            </div>
+          </div>
+          
 
           <PentominoesContainer active={!!activeId}>
             {Object.entries(PENTOMINO_SHAPES).map(([type, shape], i) => {
