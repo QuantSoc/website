@@ -29,7 +29,7 @@ const PentominoBlock = forwardRef(function PentominoBlock({ piece, onGrid, posit
       {shape.map(([x, y], i) => (
         <div
           key={i}
-          className={`${type} pentomino-cell ${active && 'active'} ${!valid && 'invalid'}`}
+          className={`${type} pentomino-cell ${active ? 'active' : ''} ${valid ? '' : 'invalid'}`}
           style={{
             gridColumnStart: x + 1,
             gridRowStart: y + 1,
