@@ -34,14 +34,14 @@ const PentominoesGamePage = () => {
 
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (
-        activeId &&
-        activePieceRef.current &&
-        !activePieceRef.current.contains(event.target)
-      ) {
-        // commented out since this blocks flip/rotate button functionality
-        // setActiveId(null);
-        // setActiveData(null);
+      if (!activeId || !activePieceRef.current) return;
+
+      const clickedInsidePiece = activePieceRef.current.contains(event.target);
+      const clickedOnControlButton = event.target.closest('.control-button');
+
+      if (!clickedInsidePiece && !clickedOnControlButton) {
+        setActiveId(null);
+        setActiveData(null);
       }
     };
 
