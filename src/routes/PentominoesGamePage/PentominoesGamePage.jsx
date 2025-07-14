@@ -23,6 +23,7 @@ const PENTOMINO_SHAPES = {
 };
 
 const PentominoesGamePage = () => {
+  // use location to note the start time and name received from home page
   const location = useLocation();
   const navigate = useNavigate();
   const [activeId, setActiveId] = useState(null);
@@ -32,6 +33,9 @@ const PentominoesGamePage = () => {
   // const [previewPieces, setPreviewPieces] = useState([]);
   const gridRef = useRef(null);
   const activePieceRef = useRef(null);
+  const [seconds, setSeconds] = useState(location.state.gameInfo.startTime);
+  const [winner, setWinner] = useState(false);
+  const [gameOver, setGameOver] = useState(false);
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -93,6 +97,9 @@ const PentominoesGamePage = () => {
   }
   
   const rotateActivePiece = (direction) => {
+    if (gameOver) {
+      return;
+    }
     const activePiece = placedPieces.find(p => p.id === activeId);
     const { x, y } = activePiece;
     const newShape = rotateShape(activePiece.shape, direction);
@@ -114,6 +121,9 @@ const PentominoesGamePage = () => {
   };
 
   const flipActivePiece = () => {
+    if (gameOver) {
+      return;
+    }
     const activePiece = placedPieces.find(p => p.id === activeId);
     const { x, y } = activePiece;
     const newShape = flipShape(activePiece.shape);
@@ -165,12 +175,18 @@ const PentominoesGamePage = () => {
   }
 
   const restartGame = () => {
+    if (gameOver) {
+      return;
+    }
     setActiveData([]);
     setActiveId(null);
     setPlacedPieces([]);
   }
 
   const handleDragStart = (event) => {
+    if (gameOver) {
+      return;
+    }
     setActiveId(event.active.id);
     setActiveData(event.active.data.current)
     console.log(placedPieces)
@@ -226,7 +242,7 @@ const PentominoesGamePage = () => {
           ]);
           
           setActiveId(newId);
-          console.log(newId);
+          // console.log(newId);
           setActiveData({
             ...activeData,
             onGrid: true,
@@ -243,28 +259,43 @@ const PentominoesGamePage = () => {
 
   };
 
-  // timer - start at 0 and stop when game is complete
-  // need to add a start modal
-  const [seconds, setSeconds] = useState(0);
+  // timer - start at user given time and stop when game is complete or when time == 0
   useEffect(() => {
     let interval = null;
-    if (!isComplete) {
+    if (!isComplete && seconds > 0) {
       interval = setInterval(() => {
-        setSeconds(prev => prev + 1);
+        setSeconds(prev => prev - 1);
       }, 1000);
-    } else if (isComplete && seconds !== 0) {
+    } else if (isComplete && seconds !== 0 || seconds === 0) {
       clearInterval(interval);
     }
+
+    // calculate win?
+    if (isComplete && seconds > 0) {
+      setWinner(true);
+      setGameOver(true);
+    } else if (seconds == 0) {
+      setGameOver(true);
+    }
+    
     return () => clearInterval(interval);
-  }, [isComplete]);
+  }, [isComplete, seconds]);
 
   return (
     <div className="page">
       <div className="game-component">
-        {isComplete && (
-          <p>You have finished...</p>
+        {winner && (
+          <p>{location.state.gameInfo.name}, you have finished in {location.state.gameInfo.startTime - seconds} seconds</p>
         )}
-        <DndContext onDragStart={handleDragStart} onDragOver={handleDragOver} onDragEnd={handleDragEnd}>
+        {!winner && gameOver && (
+          <p>You didn't finish in {location.state.gameInfo.startTime} seconds</p>
+        )}
+        {}
+        <DndContext
+          onDragStart={handleDragStart}
+          onDragOver={handleDragOver}
+          onDragEnd={handleDragEnd}
+        >
           <div className="button-bar">
             <button
               className="button"

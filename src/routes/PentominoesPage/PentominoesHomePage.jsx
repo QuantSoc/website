@@ -17,6 +17,7 @@ const Pentominoes = () => {
     event.preventDefault();
     toggleModal();
     setModalType(null);
+    console.log(timer);
     navigate('game', { state: { gameInfo: { startTime: timer, name: name } } });
   }
 
