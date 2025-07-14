@@ -1,5 +1,5 @@
 import './index.less';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import PentominoBlock from 'components/PentominoesBlocks/PentominoBlock';
 import { DndContext, DragOverlay } from '@dnd-kit/core';
 import PentominoesGrid from 'components/PentominoesGrid/PentominoesGrid';
@@ -23,6 +23,7 @@ const PENTOMINO_SHAPES = {
 };
 
 const PentominoesGamePage = () => {
+  const location = useLocation();
   const navigate = useNavigate();
   const [activeId, setActiveId] = useState(null);
   const [activeData, setActiveData] = useState(null);
@@ -242,6 +243,21 @@ const PentominoesGamePage = () => {
 
   };
 
+  // timer - start at 0 and stop when game is complete
+  // need to add a start modal
+  const [seconds, setSeconds] = useState(0);
+  useEffect(() => {
+    let interval = null;
+    if (!isComplete) {
+      interval = setInterval(() => {
+        setSeconds(prev => prev + 1);
+      }, 1000);
+    } else if (isComplete && seconds !== 0) {
+      clearInterval(interval);
+    }
+    return () => clearInterval(interval);
+  }, [isComplete]);
+
   return (
     <div className="page">
       <div className="game-component">
@@ -256,7 +272,7 @@ const PentominoesGamePage = () => {
             >
               Back
             </button>
-            <div className="timer-box">Timer: 10s</div>
+            <div className="timer-box">Timer: {seconds}</div>
           </div>
 
           <div className="game-container">

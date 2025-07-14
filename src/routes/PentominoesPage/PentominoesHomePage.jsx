@@ -17,7 +17,7 @@ const Pentominoes = () => {
     event.preventDefault();
     toggleModal();
     setModalType(null);
-    navigate('game');
+    navigate('game', { state: { gameInfo: { startTime: timer, name: name } } });
   }
 
   const instructionList = [
@@ -93,7 +93,7 @@ const Pentominoes = () => {
                 <button
                   type="submit"
                   className="button"
-                  // onClick={startGame}
+                  onClick={startGame}
                 >
                   Let’s go
                 </button>
