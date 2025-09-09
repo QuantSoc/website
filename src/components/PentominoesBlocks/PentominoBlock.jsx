@@ -5,7 +5,7 @@ import './index.less';
 
 const CELL_SIZE = 60;
 
-const PentominoBlock = forwardRef(function PentominoBlock({ piece, onGrid, position, active, valid }, ref) {
+const PentominoBlock = forwardRef(function PentominoBlock({ piece, onGrid, overId, position, active, valid }, ref) {
   const { shape, type } = piece;
 
   const maxX = Math.max(...shape.map(([x]) => x));
@@ -24,6 +24,7 @@ const PentominoBlock = forwardRef(function PentominoBlock({ piece, onGrid, posit
         gridTemplateRows: `repeat(${maxY + 1}, ${CELL_SIZE}px)`,
         width: (maxX + 1) * CELL_SIZE,
         height: (maxY + 1) * CELL_SIZE,
+        transform: !onGrid && overId === 'tray' ? 'scale(0.3)' : 'scale(1)'
       }}
     >
       {shape.map(([x, y], i) => (
@@ -34,7 +35,7 @@ const PentominoBlock = forwardRef(function PentominoBlock({ piece, onGrid, posit
             gridColumnStart: x + 1,
             gridRowStart: y + 1,
             width: CELL_SIZE,
-            height: CELL_SIZE,
+            height: CELL_SIZE
           }}
         />
       ))}

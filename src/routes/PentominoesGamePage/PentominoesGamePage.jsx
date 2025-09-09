@@ -33,7 +33,7 @@ const PentominoesGamePage = () => {
   // const [previewPieces, setPreviewPieces] = useState([]);
   const gridRef = useRef(null);
   const activePieceRef = useRef(null);
-  const [seconds, setSeconds] = useState(location.state.gameInfo.startTime);
+  const [seconds, setSeconds] = useState(location.state?.gameInfo.startTime ?? 120);
   const [winner, setWinner] = useState(false);
   const [gameOver, setGameOver] = useState(false);
 
@@ -285,10 +285,10 @@ const PentominoesGamePage = () => {
     <div className="page">
       <div className="game-component">
         {winner && (
-          <p>{location.state.gameInfo.name}, you have finished in {location.state.gameInfo.startTime - seconds} seconds</p>
+          <p>{location.state?.gameInfo?.name ?? "Congratulations"}, you have finished in {location.state?.gameInfo.startTime ?? 120 - seconds} seconds</p>
         )}
         {!winner && gameOver && (
-          <p>You didn't finish in {location.state.gameInfo.startTime} seconds</p>
+          <p>You didn't finish in {location.state?.gameInfo.startTime ?? 120} seconds</p>
         )}
         {}
         <DndContext
@@ -332,6 +332,7 @@ const PentominoesGamePage = () => {
                     ref={activeId === id ? activePieceRef : null}
                     piece={{ shape, type }}
                     onGrid={true}
+                    overId={overId}
                     position={{ row: y, col: x }}
                     active={activeId == id}
                     valid={valid}
@@ -365,7 +366,12 @@ const PentominoesGamePage = () => {
               return (
                 <div key={i} className="pentominoes-container-cell">
                   <Draggable id={type} data={{ onGrid: false, type, shape }} >
-                    <PentominoBlock piece={{ shape, type }} onGrid={false} valid />
+                    <PentominoBlock
+                      piece={{ shape, type }}
+                      onGrid={false}
+                      overId={'tray'}
+                      valid
+                    />
                   </Draggable>
                 </div>
               );
@@ -377,6 +383,7 @@ const PentominoesGamePage = () => {
             {activeId ? (
               <div style={{ 
                 opacity: overId === 'tray' ? 0.5 : 1, 
+                transform: overId === 'tray' ? 'scale(0.5)' : 'scale(1)',
               }}>
                 <PentominoBlock
                   piece={{
