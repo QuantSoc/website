@@ -63,6 +63,13 @@
             filter: drop-shadow(3px 3px 10px @mid-purple);
             background: linear-gradient(to right, @darkest-purple, @mid-purple);
           }
+
+        // While a message is sending
+        &:disabled {
+            opacity: 0.6;
+            cursor: wait;
+            pointer-events: none;
+        }
     }
 
     textarea {
