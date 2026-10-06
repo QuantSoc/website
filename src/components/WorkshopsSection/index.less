@@ -1,0 +1,64 @@
+@import '../../styles/constants.less';
+
+.workshops-section__header {
+  margin-bottom: 1rem;
+}
+
+.workshops-card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 10px;
+  padding: 2rem;
+  border-radius: 15px;
+  background: linear-gradient(130deg, @black-purple, @darkest-purple);
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.3s ease, transform 0.3s ease-out;
+
+  &:hover {
+    color: white;
+    box-shadow: inset 0 0 20px @quantsoc-primary, 0 0 20px @quantsoc-primary;
+    transform: scale(1.02);
+  }
+}
+
+// Override the global `svg { height: 20px }` rule from the sponsorship section
+.workshops-card svg.workshops-card__icon {
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+}
+
+.workshops-card__text {
+  flex: 1;
+  text-align: left;
+}
+
+.workshops-card__title {
+  font-size: 28px;
+  font-weight: 500;
+  font-family: 'Consolas', 'Courier New', Courier, monospace;
+}
+
+.workshops-card__subtext {
+  margin-top: 0.25rem;
+  color: @quantsoc-primary;
+}
+
+.workshops-card__cta {
+  flex-shrink: 0;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .workshops-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .workshops-card__text {
+    text-align: center;
+  }
+}

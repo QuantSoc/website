@@ -2,6 +2,7 @@
 import HeroSection from './HeroSection/HeroSection';
 import JobListings from './JobListingsSection/JobListings';
 import GamesSection from 'components/GamesSection/GameSection';
+import WorkshopsSection from 'components/WorkshopsSection/WorkshopsSection';
 
 
 import './index.less';
@@ -13,7 +14,9 @@ const ResourcesPage = () => {
       <HeroSection />
       {/* separate div to ensure universal focusability of anchor */}
       <GamesSection className='articles-page-body' />
-      {/* <WorkshopSection anchorTag="workshops" /> */}
+      <div id="workshops">
+        <WorkshopsSection className='articles-page-body' />
+      </div>
       <JobListings className='articles-page-body' />
       
     </div>
