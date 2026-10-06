@@ -3,6 +3,7 @@ import HeroSection from './HeroSection/HeroSection';
 import SponsorshipSection from './SponsorshipSection/SponsorshipSection';
 // import AboutUsPage from 'routes/AboutUsPage';
 import GamesSection from 'components/GamesSection/GameSection';
+import WorkshopsSection from 'components/WorkshopsSection/WorkshopsSection';
 
 import './index.less';
 
@@ -21,6 +22,7 @@ const LandingPage = () => {
         <div id='events' className=' landing-page__container'><EventsSection /></div>
 
         <div className='landing-page__container' id='resources'><GamesSection />
+        <WorkshopsSection showHeader={false} />
         <HashLink to={'/resources#'} className='more-resources-button'>See More → </HashLink>
         </div>
 

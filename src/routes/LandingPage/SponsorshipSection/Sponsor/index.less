@@ -18,9 +18,20 @@
 }
 
 
+// Very wide logos (e.g. Citadel Securities) look tiny at 300px, so allow more width
+.sponsor__container--wide img {
+  width: 500px;
+  max-width: 100%;
+}
+
 @media screen and (max-width: @mobile) {
   .sponsor__container img {
     max-width: 200px;
     min-width: 150px;
+  }
+
+  .sponsor__container--wide img {
+    width: 100%;
+    max-width: 100%;
   }
 }
