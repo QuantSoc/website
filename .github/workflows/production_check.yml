@@ -1,21 +1,25 @@
 name: Production test
 on:
-  pull_request: # run only on created pull request on main
-    branches: 
+  pull_request: # run on pull requests into the deployed branch (dev) and main
+    branches:
+      - dev
       - main
-      
+
 jobs:
   build:
-    name: run lint and tests
+    name: run lint and production build
     runs-on: ubuntu-latest
     steps:
-      - name: check out code 
-        uses: actions/checkout@v2
+      - name: check out code
+        uses: actions/checkout@v4
       - name: setup node
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
       - name: install dependencies
-        run: npm install
+        run: npm ci
       - name: running lint
         run: npm run lint
-      - name: run eslint
-        run: npm run alltests
+      - name: production build
+        run: npm run build
