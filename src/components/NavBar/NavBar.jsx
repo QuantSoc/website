@@ -49,6 +49,24 @@ const NavBar = () => {
         </HashLink>
         <HashLink
           tabIndex={-1}
+          onKeyDown={() => {}}
+          smooth
+          to='/team#'
+          className="text-main menu-item menu-item-mobile"
+        >
+          Team
+        </HashLink>
+        <HashLink
+          tabIndex={-1}
+          onKeyDown={() => {}}
+          smooth
+          to='/constitution#'
+          className="text-main menu-item menu-item-mobile"
+        >
+          Constitution
+        </HashLink>
+        <HashLink
+          tabIndex={-1}
           smooth
           onKeyDown={() => {}}
           to='/#events'
@@ -78,15 +96,6 @@ const NavBar = () => {
           Sponsors
         </HashLink>
         
-        <HashLink
-          tabIndex={-1}
-          onKeyDown={() => {}}
-          smooth
-          to='/articles#'
-          className="text-main menu-item menu-item-mobile"
-        >
-          News
-        </HashLink>
         <HashLink
           to='/contact#'
           smooth

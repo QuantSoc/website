@@ -70,6 +70,24 @@ const BurgerMenu = () => {
           className="burger-menu-item"
           onKeyDown={() => {}}
           tabIndex={-1}
+          smooth
+          to='/team#'
+        >
+          Team
+        </HashLink>
+        <HashLink
+          className="burger-menu-item"
+          onKeyDown={() => {}}
+          tabIndex={-1}
+          smooth
+          to='/constitution#'
+        >
+          Constitution
+        </HashLink>
+        <HashLink
+          className="burger-menu-item"
+          onKeyDown={() => {}}
+          tabIndex={-1}
           to='/#events'
         >
           Events
@@ -91,15 +109,6 @@ const BurgerMenu = () => {
           to='/#sponsorships'
         >
           Sponsors
-        </HashLink>
-        <HashLink
-          className="burger-menu-item"
-          onKeyDown={() => {}}
-          tabIndex={-1}
-          smooth
-          to='/articles#'
-        >
-          News
         </HashLink>
         <HashLink
             to='/contact#'

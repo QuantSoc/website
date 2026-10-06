@@ -1,0 +1,32 @@
+@import '../../styles/constants.less';
+
+.team-section {
+  text-align: left;
+  scroll-margin-top: 62px; // + global scroll-padding-top (3rem) clears the sticky nav bar
+
+  h1 {
+    margin-bottom: 2rem;
+  }
+
+  h2 {
+    margin: 2.5rem 0 1rem;
+  }
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+@media screen and (max-width: @mobile) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+}
+
+.team-grid.team-grid--compact {
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+}
