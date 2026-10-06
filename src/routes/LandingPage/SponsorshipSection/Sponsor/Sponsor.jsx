@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./index.less";
 
-const Sponsor = ({ logoSrc, sponsorLink, logoSrcInv }) => {
+const Sponsor = ({ logoSrc, sponsorLink, logoSrcInv, wide = false }) => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
@@ -15,7 +15,7 @@ const Sponsor = ({ logoSrc, sponsorLink, logoSrcInv }) => {
   }, []);
 
   return (
-    <div className="sponsor__container">
+    <div className={`sponsor__container${wide ? ' sponsor__container--wide' : ''}`}>
       <a href={sponsorLink} target="_blank" rel="noreferrer">
         <img
           src={logoSrc} // For now we only use light mode so this doesn't matter

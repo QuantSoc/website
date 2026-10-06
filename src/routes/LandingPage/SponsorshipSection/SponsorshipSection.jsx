@@ -44,7 +44,7 @@ const SponsorshipSection = () => {
         <Sponsor logoSrc={sigLogo} logoSrcInv={sigLogoInv} sponsorLink="https://www.sig.com" />
         <Sponsor logoSrc={nineMileLogo} sponsorLink="https://www.nmftrading.com/" />
         <Sponsor logoSrc={qrtLogo} sponsorLink="https://www.qube-rt.com/" />
-        <Sponsor logoSrc={citadelLogo} logoSrcInv={citadelLogoInv} sponsorLink="https://www.citadelsecurities.com/" />
+        <Sponsor logoSrc={citadelLogo} logoSrcInv={citadelLogoInv} sponsorLink="https://www.citadelsecurities.com/" wide />
       </div>
       <p>
       Want to sponsor us? Get in touch with our team and we would be more than delighted to discuss partnership opportunities and potential collaborations!
