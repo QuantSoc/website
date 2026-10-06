@@ -45,6 +45,16 @@ const Footer = () => {
                 </a>
               </li>
               <li>
+                <a
+                  className="nav-link"
+                  href="https://github.com/QuantSoc/workshop-materials"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Workshop Materials
+                </a>
+              </li>
+              <li>
                 <a className="nav-link" href="/admin">
                   Board Login
                 </a>
