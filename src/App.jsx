@@ -10,6 +10,8 @@ import Footer from 'components/Footer';
 import Mathsprint from 'routes/MathsprintPage/MathsprintPage';
 import ArticlesPage from 'routes/ArticlesPage';
 import ContactPage from 'routes/ContactPage/ContactPage';
+import TeamPage from 'routes/TeamPage/TeamPage';
+import ConstitutionPage from 'routes/ConstitutionPage/ConstitutionPage';
 
 const App = () => {
   return (
@@ -24,6 +26,8 @@ const App = () => {
           <Route path="/resources" element={<ResourcesPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/mathsprint" element={<Mathsprint />} />
+          <Route path="/team" element={<TeamPage />} />
+          <Route path="/constitution" element={<ConstitutionPage />} />
         </Routes>
         <Footer />
       </div>

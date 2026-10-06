@@ -45,6 +45,16 @@ const Footer = () => {
                 </a>
               </li>
               <li>
+                <a className="nav-link" href="/team">
+                  Our Team
+                </a>
+              </li>
+              <li>
+                <a className="nav-link" href="/constitution">
+                  Constitution
+                </a>
+              </li>
+              <li>
                 <a
                   className="nav-link"
                   href="https://github.com/QuantSoc/workshop-materials"
