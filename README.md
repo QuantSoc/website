@@ -71,6 +71,14 @@ Sponsors are hard-coded in `src/routes/LandingPage/SponsorshipSection/Sponsorshi
 
 Workshop slides and code are published in the [QuantSoc/workshop-materials](https://github.com/QuantSoc/workshop-materials) repo.
 
+### Updating the team page
+
+The executives shown on `/team` are listed in `src/routes/TeamPage/executives.js`, newest year first. The first year in the list is shown as the current executive. For a new year, copy a year's block to the top of the list and fill in the names, roles and (optional) LinkedIn links.
+
+### Updating the constitution
+
+The `/constitution` page is generated from `src/routes/ConstitutionPage/constitution.txt`. It can be updated directly from `constitution.txt`, or you can open it up on Google Docs, choose **File -> Download -> Plain text (.txt)**, and insert the new file instead of the old `constitution.text`.
+
 ### Updating Jobs Listings & Articles
 
 All the Job Listings are stored in the [Firebase Firestore](https://firebase.google.com/docs/firestore) database. Simply log into Firebase Hosting using quantsoc email OAuth, and then end it manually from there.
