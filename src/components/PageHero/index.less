@@ -1,0 +1,135 @@
+@import '../../styles/constants.less';
+
+// Solid background with faint grid lines for a subtle "trading chart" feel
+.page-hero {
+  padding: 6rem 15% 5rem;
+  color: white;
+  font-family: 'Poppins';
+  text-align: left;
+  background-color: @black-purple;
+  background-image:
+    linear-gradient(fade(white, 5%) 1px, transparent 1px),
+    linear-gradient(90deg, fade(white, 5%) 1px, transparent 1px);
+  background-size: 48px 48px;
+
+  @media screen and (max-width: @tablet) {
+    padding: 5rem 8% 4rem;
+  }
+
+  @media screen and (max-width: @mobile) {
+    padding: 3.5rem 1.5rem 3rem;
+  }
+}
+
+.page-hero__content {
+  max-width: 760px;
+}
+
+.page-hero__eyebrow {
+  margin-bottom: 1rem;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: @quantsoc-primary;
+}
+
+.page-hero__title {
+  margin: 0 0 1.5rem;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 1.1;
+  color: white;
+
+  span {
+    color: @quantsoc-primary;
+  }
+
+  @media screen and (max-width: @mobile) {
+    font-size: 40px;
+  }
+}
+
+.page-hero__subtitle {
+  max-width: 600px;
+  font-size: 20px;
+  line-height: 1.6;
+  color: fade(white, 80%);
+
+  @media screen and (max-width: @mobile) {
+    font-size: 16px;
+  }
+}
+
+.page-hero__stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 3rem;
+  margin-top: 2.5rem;
+
+  @media screen and (max-width: @mobile) {
+    gap: 1rem 1.25rem;
+  }
+}
+
+.page-hero__stat {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+  border-left: 3px solid @mid-purple;
+
+  @media screen and (max-width: @mobile) {
+    padding-left: 0.75rem;
+  }
+}
+
+.page-hero__stat-value {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.2;
+  font-variant-numeric: tabular-nums;
+
+  @media screen and (max-width: @mobile) {
+    font-size: 28px;
+  }
+}
+
+.page-hero__stat-label {
+  font-size: 14px;
+  color: fade(white, 65%);
+}
+
+.page-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+.page-hero__button {
+  padding: 0.75rem 1.5rem;
+  border: 2px solid fade(white, 60%);
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease-out;
+
+  &:hover {
+    color: white;
+    border-color: white;
+    background-color: fade(white, 10%);
+    transform: translateY(-2px);
+  }
+}
+
+.page-hero__button--primary {
+  border-color: @mid-purple;
+  background-color: @mid-purple;
+
+  &:hover {
+    border-color: @dark-purple;
+    background-color: @dark-purple;
+  }
+}

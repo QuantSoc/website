@@ -1,0 +1,161 @@
+@import '../../styles/constants.less';
+
+// Below this width the contents sidebar moves above the text
+@constitution-single-column: 900px;
+
+.constitution {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: 4rem;
+  margin: 4rem 10% 6rem;
+  text-align: left;
+
+  @media screen and (max-width: @constitution-single-column) {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2rem;
+    margin: 2.5rem 5% 4rem;
+  }
+
+  @media screen and (max-width: @mobile) {
+    margin: 2rem 1.25rem 3rem;
+  }
+}
+
+// Contents: a sticky sidebar on desktop, a box above the text on mobile
+.constitution__contents {
+  position: sticky;
+  top: 130px;
+  align-self: start;
+
+  ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  a {
+    display: flex;
+    gap: 0.75rem;
+    padding: 0.5rem 0 0.5rem 1rem;
+    border-left: 2px solid @quantsoc-secondary;
+    font-size: 16px;
+    color: @text-secondary;
+    text-decoration: none;
+    transition: color 0.2s ease, border-color 0.2s ease;
+
+    span {
+      min-width: 1rem;
+      font-variant-numeric: tabular-nums;
+    }
+
+    &:hover {
+      color: @dark-purple;
+    }
+
+    &.active {
+      border-left-color: @mid-purple;
+      color: @dark-purple;
+      font-weight: 500;
+    }
+  }
+
+  @media screen and (max-width: @constitution-single-column) {
+    position: static;
+    padding: 1.25rem 1.5rem;
+    border-radius: 12px;
+    background-color: @lightest-purple;
+
+    a,
+    a.active {
+      border-left: none;
+      padding-left: 0;
+      font-weight: 300;
+      color: @dark-purple;
+    }
+  }
+}
+
+.constitution__contents-title {
+  margin-bottom: 0.75rem;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: @quantsoc-dark;
+}
+
+.constitution__body {
+  max-width: 820px;
+}
+
+.constitution__section {
+  margin: 0 0 3.5rem;
+  padding: 0;
+  // Keep headings clear of the sticky nav bar when jumping to them
+  scroll-margin-top: 120px;
+
+  h2 {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    margin: 0 0 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid @quantsoc-secondary;
+    font-size: 30px;
+  }
+
+  h3 {
+    margin: 2rem 0 1rem;
+    font-size: 19px;
+    font-weight: 500;
+    color: @darkest-purple;
+  }
+
+  @media screen and (max-width: @mobile) {
+    h2 {
+      font-size: 24px;
+    }
+  }
+}
+
+.constitution__section-number {
+  font-variant-numeric: tabular-nums;
+  color: @mid-purple;
+}
+
+.constitution__clause {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+  // Nested clauses (1.1.1, a), ...) are indented one step per level
+  padding-left: calc(var(--depth, 0) * 2rem);
+
+  p {
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.7;
+  }
+
+  @media screen and (max-width: @mobile) {
+    padding-left: calc(var(--depth, 0) * 0.75rem);
+    gap: 0.5rem;
+
+    p {
+      font-size: 15px;
+    }
+  }
+}
+
+.constitution__clause-number {
+  flex-shrink: 0;
+  min-width: 4rem;
+  font-size: 15px;
+  line-height: 1.95; // lines the number up with the first line of the clause
+  color: @text-secondary;
+  font-variant-numeric: tabular-nums;
+
+  @media screen and (max-width: @mobile) {
+    min-width: 2.5rem;
+    font-size: 13px;
+  }
+}

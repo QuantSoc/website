@@ -1,0 +1,85 @@
+@import '../../../styles/constants.less';
+
+.executive-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1.75rem 1rem 1.5rem;
+  border-top: 4px solid @mid-purple;
+  border-radius: 15px;
+  background-color: white;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  transition: box-shadow 0.3s ease, transform 0.3s ease-out;
+
+  &:hover {
+    box-shadow: 0 0 20px @quantsoc-primary;
+    transform: translateY(-3px);
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+.executive-card__name {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.executive-card__role {
+  font-size: 16px;
+  color: @text-secondary;
+}
+
+.executive-card__linkedin {
+  display: flex;
+  color: @quantsoc-dark;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: #0a66c2; // LinkedIn blue
+  }
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media screen and (max-width: @mobile) {
+  .executive-card:not(.executive-card--compact) {
+    padding: 1.25rem 0.5rem 1rem;
+
+    .executive-card__name {
+      font-size: 16px;
+    }
+
+    .executive-card__role {
+      font-size: 14px;
+    }
+  }
+}
+
+// Smaller horizontal layout used for past executives
+.executive-card--compact {
+  flex-direction: row;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  border-top: none;
+  border-left: 4px solid @mid-purple;
+  text-align: left;
+
+  .executive-card__text {
+    flex: 1;
+  }
+
+  .executive-card__name {
+    font-size: 17px;
+  }
+
+  .executive-card__role {
+    font-size: 15px;
+  }
+}
