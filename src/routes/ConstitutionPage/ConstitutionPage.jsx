@@ -14,21 +14,27 @@ const useActiveSection = () => {
   const [activeId, setActiveId] = useState(sections[0]?.id);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) setActiveId(entry.target.id);
-        });
-      },
-      // A section counts as "active" once its top passes just below the nav bar
-      { rootMargin: '-130px 0px -65% 0px' },
-    );
-    sections.forEach((section) => {
-      const el = document.getElementById(section.id);
-      if (el) observer.observe(el);
-    });
+    // The active section is the last one whose heading has scrolled up to just
+    // below the nav bar (or the final section once the page is scrolled to the bottom)
+    const update = () => {
+      const atBottom = window.innerHeight + window.scrollY
+        >= document.documentElement.scrollHeight - 2;
+      let current = sections[0]?.id;
+      sections.forEach((section) => {
+        const el = document.getElementById(section.id);
+        if (el && (atBottom || el.getBoundingClientRect().top <= 150)) {
+          current = section.id;
+        }
+      });
+      setActiveId(current);
+    };
+
+    update();
+    window.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
     return () => {
-      return observer.disconnect();
+      window.removeEventListener('scroll', update);
+      window.removeEventListener('resize', update);
     };
   }, []);
 
@@ -46,7 +52,7 @@ const ConstitutionPage = () => {
             Our Constitution
           </>
         )}
-        subtitle="The rules that govern how QuantSoc is run, voted by the members at the yearly AGM. QuantSoc is affiliated with Arc @ UNSW."
+        subtitle="The rules that govern how QuantSoc is run, voted on the members at the general meetings (typically the yearly AGM). QuantSoc is affiliated with Arc @ UNSW."
       />
 
       <div className="constitution">

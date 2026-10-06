@@ -2,7 +2,7 @@
 
 .team-section {
   text-align: left;
-  scroll-margin-top: 110px; // clear the sticky nav bar when jumping here
+  scroll-margin-top: 62px; // + global scroll-padding-top (3rem) clears the sticky nav bar
 
   h1 {
     margin-bottom: 2rem;
@@ -29,14 +29,4 @@
 .team-grid.team-grid--compact {
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 1rem;
-}
-
-.team-section__constitution {
-  margin-top: 4rem;
-  font-size: 18px;
-  color: @text-secondary;
-
-  a {
-    color: @dark-purple;
-  }
 }

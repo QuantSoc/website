@@ -29,7 +29,7 @@ const TeamPage = () => {
             Meet the Executives
           </>
         )}
-        subtitle="The Executives who lead QuantSoc, promoting quant trading in UNSW through workshops, competitions and industry events."
+        subtitle="The Executives who lead QuantSoc, promoting quant trading at UNSW through workshops, competitions and industry events."
       >
         <div className="page-hero__stats">
           {heroStats.map((stat) => {
