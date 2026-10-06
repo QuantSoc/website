@@ -54,11 +54,6 @@ const Footer = () => {
                   Workshop Materials
                 </a>
               </li>
-              <li>
-                <a className="nav-link" href="/admin">
-                  Board Login
-                </a>
-              </li>
             </ul>
           </div>
           <div id="socials" className="nav-link-section">
