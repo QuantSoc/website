@@ -52,7 +52,7 @@ const ConstitutionPage = () => {
             Our Constitution
           </>
         )}
-        subtitle="The rules that govern how QuantSoc is run, voted on the members at the general meetings (typically the yearly AGM). QuantSoc is affiliated with Arc @ UNSW."
+        subtitle="The rules that govern how QuantSoc is run, voted on by the members at the general meetings (typically the yearly AGM). QuantSoc is affiliated with Arc @ UNSW."
       />
 
       <div className="constitution">
