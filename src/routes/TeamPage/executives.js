@@ -31,7 +31,7 @@ const executives = [
     members: [
       { name: 'Peter Boylan', role: 'President', linkedin: 'https://www.linkedin.com/in/peter-boylan-0350b613b/' },
       { name: 'Austin Hoe', role: 'Treasurer', linkedin: 'https://www.linkedin.com/in/austin-hoe/' },
-      { name: 'Yovonne L', role: 'Secretary' },
+      { name: 'Venecia Yong', role: 'Secretary' },
       { name: 'Victor Tang', role: 'Arc Delegate', linkedin: 'https://www.linkedin.com/in/victortang423/' },
       { name: 'Vincent Lim', role: 'Grievance Officer' },
     ],
