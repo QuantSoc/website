@@ -4,6 +4,20 @@
 
 const executives = [
   {
+    year: 2027,
+    members: [
+      { name: 'Max Campbell', role: 'co-President', linkedin: 'https://www.linkedin.com/in/max-campbell-33b368318/' },
+      { name: 'Daria Poleshchuk', role: 'co-President', linkedin: 'https://www.linkedin.com/in/polluckk/' },
+      { name: 'Toby Wang', role: 'Secretary/Treasurer' },
+      { name: 'Christian Ciarroni', role: 'Administrator', linkedin: 'https://www.linkedin.com/in/christian-ciarroni/' },
+      { name: 'Aaron Jeng', role: 'VP External', linkedin: 'https://www.linkedin.com/in/aaron-jeng/' },
+      { name: 'Gourab Sharma', role: 'VP External', linkedin: 'https://www.linkedin.com/in/gourab-sharma-84289b2b2/' },
+      { name: 'Mark Bastoulis', role: 'VP Technical', linkedin: 'https://www.linkedin.com/in/mark-bastoulis/' },
+      { name: 'Yvonne Liu', role: 'VP Marketing' },
+      { name: 'Krish Suri', role: 'VP Events', linkedin: 'https://www.linkedin.com/in/krish-suri-327a99209/' },
+    ],
+  },
+  {
     year: 2026,
     members: [
       { name: 'Xuanyu Liu', role: 'President', linkedin: 'https://www.linkedin.com/in/xuanyu-liu-5b6305261/' },
