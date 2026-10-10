@@ -8,7 +8,7 @@ const executives = [
     members: [
       { name: 'Max Campbell', role: 'co-President', linkedin: 'https://www.linkedin.com/in/max-campbell-33b368318/' },
       { name: 'Daria Poleshchuk', role: 'co-President', linkedin: 'https://www.linkedin.com/in/polluckk/' },
-      { name: 'Toby Wang', role: 'Secretary/Treasurer' },
+      { name: 'Toby Wang', role: 'Secretary/Treasurer', linkedin: 'https://www.linkedin.com/in/toby-w11235' },
       { name: 'Christian Ciarroni', role: 'Administrator', linkedin: 'https://www.linkedin.com/in/christian-ciarroni/' },
       { name: 'Aaron Jeng', role: 'VP External', linkedin: 'https://www.linkedin.com/in/aaron-jeng/' },
       { name: 'Gourab Sharma', role: 'VP External', linkedin: 'https://www.linkedin.com/in/gourab-sharma-84289b2b2/' },
@@ -45,17 +45,17 @@ const executives = [
     members: [
       { name: 'Peter Boylan', role: 'President', linkedin: 'https://www.linkedin.com/in/peter-boylan-0350b613b/' },
       { name: 'Austin Hoe', role: 'Treasurer', linkedin: 'https://www.linkedin.com/in/austin-hoe/' },
-      { name: 'Venecia Yong', role: 'Secretary' },
+      { name: 'Venecia Yong', role: 'Secretary', linkedin: 'https://www.linkedin.com/in/venecia-yong/' },
       { name: 'Victor Tang', role: 'Arc Delegate', linkedin: 'https://www.linkedin.com/in/victortang423/' },
-      { name: 'Vincent Lim', role: 'Grievance Officer' },
+      { name: 'Vincent Lim', role: 'Grievance Officer', linkedin: 'https://www.linkedin.com/in/vincent-lim-259629208' },
     ],
   },
   {
     year: 2023,
     members: [
       { name: 'Yuelanda Dai', role: 'President', linkedin: 'https://www.linkedin.com/in/yuelanda-dai/' },
-      { name: 'Kevin Zhu', role: 'Treasurer' },
-      { name: 'Yifan Jia', role: 'Secretary' },
+      { name: 'Kevin Zhu', role: 'Treasurer', linkedin: 'https://www.linkedin.com/in/kevin416380090' },
+      { name: 'Yifan Jia', role: 'Secretary', linkedin: 'https://www.linkedin.com/in/yfn-jia' },
       { name: 'Marco Musa', role: 'Arc Delegate' },
       { name: 'Oden Petersen', role: 'Grievance Officer', linkedin: 'https://www.linkedin.com/in/oden-petersen/' },
     ],
@@ -64,9 +64,9 @@ const executives = [
     year: 2022,
     members: [
       { name: 'Oden Petersen', role: 'President', linkedin: 'https://www.linkedin.com/in/oden-petersen/' },
-      { name: 'William Li', role: 'Treasurer' },
-      { name: 'Harry Braithwaite', role: 'Secretary & Grievance Officer' },
-      { name: 'Lehan Zhang', role: 'Arc Delegate' },
+      { name: 'William Li', role: 'Treasurer', linkedin: 'https://www.linkedin.com/in/william-li-75686a138' },
+      { name: 'Harry Braithwaite', role: 'Secretary & Grievance Officer', linkedin: 'https://www.linkedin.com/in/harry-braithwaite-75334a1b7' },
+      { name: 'Lehan Zhang', role: 'Arc Delegate', linkedin: 'https://www.linkedin.com/in/lehanzhang' },
     ],
   },
 ];
