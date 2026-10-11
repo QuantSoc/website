@@ -13,7 +13,7 @@ const executives = [
       { name: 'Aaron Jeng', role: 'VP External', linkedin: 'https://www.linkedin.com/in/aaron-jeng/' },
       { name: 'Gourab Sharma', role: 'VP External', linkedin: 'https://www.linkedin.com/in/gourab-sharma-84289b2b2/' },
       { name: 'Mark Bastoulis', role: 'VP Technical', linkedin: 'https://www.linkedin.com/in/mark-bastoulis/' },
-      { name: 'Yvonne Liu', role: 'VP Marketing', linkedin: 'www.linkedin.com/in/yvonne-liu-680895229' },
+      { name: 'Yvonne Liu', role: 'VP Marketing', linkedin: 'https://www.linkedin.com/in/yvonne-liu-680895229' },
       { name: 'Krish Suri', role: 'VP Events', linkedin: 'https://www.linkedin.com/in/krish-suri-327a99209/' },
     ],
   },
